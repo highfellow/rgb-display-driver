@@ -40,9 +40,9 @@ ISR(TIMER2_OVF_vect) {
 }
 
 unsigned char valueToLevel(float value) {
-  if (value < 0) value = 0;
-  if (value > 1) value = 1;
-  unsigned char level=256*value;//256*(powf(10,-2*(1-value)));
+  unsigned char level=255*(powf(10,-2.5*(1-value)));
+  if (level < 0) level = 0;
+  if (level > 255) level = 255;
 //  Serial.println(level,DEC);
   return level;
 }
@@ -51,6 +51,7 @@ float ranFloat(float maxVal) {
   return random(65536)*maxVal/65536;
 }
 
+/*
 void chaosCycle(float gr, float bg, float rb, unsigned char rgb[]) {
   static float reds = 0;
   static float greens = 0;
@@ -62,7 +63,7 @@ void chaosCycle(float gr, float bg, float rb, unsigned char rgb[]) {
   greens += ranFloat(ran) + growth * (greens - greens * greens - greens * blues * bg);
   blues += ranFloat(ran) + growth * (blues - blues * blues - blues * reds * rb);
   setRGB(reds/2, greens/2, blues/2, out);
-}
+}*/
 
 void setRGB(float red,float green, float blue, unsigned char rgb[]) {
   rgb[0]=valueToLevel(red);
@@ -97,6 +98,50 @@ void setHSV(float hue, float saturation, float value, unsigned char rgb[]) {
       break;
   }
 }
+/*
+void setHCL(float hue, float chroma, float luma, unsigned char rgb[]) {
+  // hsv to rgb from wikipedia algorithm. hue,saturation,value are all floats 0<=h,s,v<=1.
+  float h_=hue*6;
+  float x=chroma*(1-abs(fmodf(h_,2)-1));
+  float m;
+  float r_;
+  float g_;
+  float b_;
+  switch ((char)h_) {
+    case 0:
+      r_=chroma;
+      g_=x;
+      b_=0;
+      break;
+    case 1:
+      r_=x;
+      g_=chroma;
+      b_=0;
+      break;
+    case 2:
+      r_=0;
+      g_=chroma;
+      b_=x;
+      break;
+    case 3:
+      r_=0;
+      g_=x;
+      b_=chroma;
+      break;
+    case 4:
+      r_=x;
+      g_=0;
+      b_=chroma;
+      break;
+    case 5:
+      r_=chroma;
+      g_=0;
+      b_=x;
+      break;
+  }
+  m = luma - (.3 * r_ + .59 * g_ + .11 * b_);
+  setRGB(r_ + m, g_ + m, b_ + m, rgb);
+}*/
 
 void colourChange(float a, float b, float c) {
   switch (mode) {
@@ -106,9 +151,12 @@ void colourChange(float a, float b, float c) {
     case 1:
       setRGB(a,b,c,out);
       break;
-    case 2:
+/*    case 2:
       chaosCycle(a,b,c,out);
-      break;
+      break;*/
+/*    case 3:
+      setHCL(a,b,c,out);
+      break;*/
   }
 }  
 
