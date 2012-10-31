@@ -9,7 +9,9 @@
 #define OUT_MAX 1023 // maximum pwm output value.
 #define OUTPUT_BASE 2 // output pin to count from.
 #define ANALOG_BASE 0 // analog pin to count from.
-#define MODES 2 // number of driver modes.
+#define MODES 3 // number of driver modes.
+#define MIN_TIME 100 // minimum fade time in 100ths of a second
+#define MAX_TIME 1000 // ditto maximum.
 
 unsigned int out[] = {0, 0, 0}; // rgb output value.
 unsigned int count = 0; // PWM count.
@@ -119,6 +121,47 @@ void setHSV(float hue, float saturation, float value) {
   }
 }
 
+void colourCycle(float a, float b, float c) {
+  static float lastHue = 0;
+  static float nextHue = 0;
+  static float lastSat = 1;
+  static float nextSat = 1;
+  static int time = 0;
+  static int nextTime = 0;
+  float hue;
+  float nextHue_;
+  float hueStep;
+  float sat;
+  float frac;
+  float minTime;
+  float maxTime;
+  if (time == nextTime) {
+
+    time = 0;
+    nextTime = random(MIN_TIME, MAX_TIME);
+    lastHue = nextHue;
+    lastSat = nextSat;
+    nextHue = (float) random(OUT_MAX) / (float) OUT_MAX;
+    nextSat = (float) random(OUT_MAX) / (float) OUT_MAX;
+  }
+  // do circular hue change.
+  hueStep = nextHue - lastHue;
+  if (hueStep > 0.5) {
+    nextHue_ = nextHue - 1;
+  } else if (hueStep < -0.5) {
+    nextHue_ = nextHue + 1;
+  } else {
+    nextHue_ = nextHue;
+  }
+  frac = (float) time / (float) nextTime;
+  hue = (1 - frac) * lastHue + frac * nextHue_;
+  if (hue > 1) hue -= 1;
+  if (hue < 0) hue += 1;
+  sat = (1 - frac) * lastSat + frac * nextSat; 
+  setHSV(hue, sat, c);
+  time++;
+}
+
 void colourChange(float a, float b, float c) {
   if (digitalRead(5) == LOW) {
     mode++;
@@ -139,9 +182,9 @@ void colourChange(float a, float b, float c) {
     case 1:
       setHSV(a,b,c);
       break;
-/*    case 2:
-      chaosCycle(a,b,c,out);
-      break;*/
+    case 2:
+      colourCycle(a,b,c);
+      break;
   }
 }  
 
