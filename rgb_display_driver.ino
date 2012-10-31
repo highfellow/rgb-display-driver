@@ -10,8 +10,7 @@
 #define OUTPUT_BASE 2 // output pin to count from.
 #define ANALOG_BASE 0 // analog pin to count from.
 #define MODES 3 // number of driver modes.
-#define MIN_TIME 100 // minimum fade time in 100ths of a second
-#define MAX_TIME 1000 // ditto maximum.
+#define MIN_TIME 50 // minimum fade time in 100ths of a second
 
 unsigned int out[] = {0, 0, 0}; // rgb output value.
 unsigned int count = 0; // PWM count.
@@ -136,9 +135,9 @@ void colourCycle(float a, float b, float c) {
   float minTime;
   float maxTime;
   if (time == nextTime) {
-
+    minTime = MIN_TIME * powf(10, b);
     time = 0;
-    nextTime = random(MIN_TIME, MAX_TIME);
+    nextTime = minTime * powf(10, a * (float) random(OUT_MAX) / (float) OUT_MAX);
     lastHue = nextHue;
     lastSat = nextSat;
     nextHue = (float) random(OUT_MAX) / (float) OUT_MAX;
