@@ -10,24 +10,34 @@
 #define OUTPUT_BASE 2 // output pin to count from.
 #define ANALOG_BASE 0 // analog pin to count from.
 #define MODES 3 // number of driver modes.
-#define MIN_TIME 50 // minimum fade time in 100ths of a second
+#define MIN_TIME 200 // minimum fade time in 100ths of a second
+#define LEVEL_SAMPS 300000 // samples to average level over.
 
 unsigned int out[] = {0, 0, 0}; // rgb output value.
 unsigned int count = 0; // PWM count.
 char mode = 0; // colour changing mode.
+volatile char sampleNow = false;
+int sigGround = 0;
 
 void setup() {
   PORTD = 0; // reset output port
   for (char i=0; i<3; i++)
     pinMode(OUTPUT_BASE+i, OUTPUT); // set control pins to output.
-  pinMode(5, OUTPUT); // mode switch button.
+  pinMode(5, INPUT); // mode switch button.
+  pinMode(6, OUTPUT); // diagnostic
   PORTD |= 0b100000; // set pullup resistor on pin 5.
+  // Increase the analog sample rate to 76 kHz.
+  ADCSRA &= ~( _BV(ADPS0) | _BV(ADPS1) ); // clear bits 0 and 1.
+  ADCSRA |= _BV(ADPS2); // set bit 2.
   // Set up the timer.
   TCCR2A = 0; // normal mode
   TCCR2B = _BV(CS20); // no prescaler;
   TCNT2 = 0; // reset counter.
   // Enable interrupt on overflow
   TIMSK2 |= _BV(TOIE2);
+  // find the false ground level.
+  delay(1000);
+  sigGround = analogRead(4);
   // Start the USB Serial.
   Serial.begin(115200);
 }
@@ -43,6 +53,7 @@ ISR(TIMER2_OVF_vect) {
     }
   }
   if (count > OUT_MAX) count = 0;
+  if (count % 2 == 0) sampleNow = true; // trigger a sample.
 }
 
 unsigned int valueToLevel(float value) {
@@ -82,12 +93,12 @@ void setOutput(float red, float green, float blue) {
   out[2]=valueToLevel(blue);
 }
 
-void setRGB(float red,float green, float blue) {
+void setRGB(float red,float green, float blue, float sample) {
   setOutput(logLevel(red), logLevel(green), logLevel(blue));
 }
 
 
-void setHSV(float hue, float saturation, float value) {
+void setHSV(float hue, float saturation, float value, float sample) {
   // hsv to rgb from wikipedia algorithm. hue,saturation,value are all floats 0<=h,s,v<=1.
   float c;
   float x;
@@ -120,7 +131,7 @@ void setHSV(float hue, float saturation, float value) {
   }
 }
 
-void colourCycle(float a, float b, float c) {
+void colourCycle(float a, float b, float c, float sample) {
   static float lastHue = 0;
   static float nextHue = 0;
   static float lastSat = 1;
@@ -133,7 +144,6 @@ void colourCycle(float a, float b, float c) {
   float sat;
   float frac;
   float minTime;
-  float maxTime;
   if (time == nextTime) {
     minTime = MIN_TIME * powf(10, b);
     time = 0;
@@ -157,11 +167,11 @@ void colourCycle(float a, float b, float c) {
   if (hue > 1) hue -= 1;
   if (hue < 0) hue += 1;
   sat = (1 - frac) * lastSat + frac * nextSat; 
-  setHSV(hue, sat, c);
+  setHSV(hue, sat, c, sample);
   time++;
 }
 
-void colourChange(float a, float b, float c) {
+void colourChange(float a, float b, float c, float sample) {
   if (digitalRead(5) == LOW) {
     mode++;
     if (mode == MODES) mode = 0;
@@ -176,24 +186,43 @@ void colourChange(float a, float b, float c) {
   }
   switch (mode) {
     case 0:
-      setRGB(a,b,c);
+      setRGB(a,b,c, sample);
       break;
     case 1:
-      setHSV(a,b,c);
+      setHSV(a,b,c, sample);
       break;
     case 2:
-      colourCycle(a,b,c);
+      colourCycle(a,b,c, sample);
       break;
   }
 }  
 
+void colourOrgan(float a, float b, float c, float sample) {
+  static float level = 0;
+  static float amp;
+  amp = fabs(sample);
+  if (amp > level) {
+    level = amp;
+  } else {
+    level -= level / LEVEL_SAMPS;
+  }
+  amp = amp / level;
+  setOutput(amp, 0, 0);
+}
+
+
 void loop() {
-  float a, b, c;
-  a=(float)analogRead(ANALOG_BASE) / 1024;
-  b=(float)analogRead(ANALOG_BASE + 1) / 1024;
-  c=(float)analogRead(ANALOG_BASE + 2) / 1024;
-  colourChange(a,b,c);
-  delay(10);
+  static float potVals[3];
+  static char pot = 0; // potentiometer to read.
+  float sample;
+  while (!sampleNow); // wait for sample time.
+  PORTD ^= 0b1000000;
+  sampleNow = false;
+  sample = ((float) analogRead(3) - sigGround) / (float) sigGround;
+  potVals[pot] = (float) analogRead(ANALOG_BASE + pot) / (float) 1024;
+  pot++;
+  if (pot > 2) pot = 0;
+  colourChange(potVals[0], potVals[1], potVals[2], sample);
 }
 
 
