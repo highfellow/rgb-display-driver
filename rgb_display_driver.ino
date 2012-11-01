@@ -53,7 +53,7 @@ ISR(TIMER2_OVF_vect) {
     }
   }
   if (count > OUT_MAX) count = 0;
-  if (count % 2 == 0) sampleNow = true; // trigger a sample.
+  if (count % 2 == 0) sampleNow = true; // trigger a sample at 31kHz.
 }
 
 unsigned int valueToLevel(float value) {
