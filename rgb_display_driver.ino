@@ -7,6 +7,7 @@
 #include <math.h>
 
 #define UNITY 4096 // fixed point unity value.
+#define UNITY_PWR 12 // same expressed as a power of 2.
 #define IN_POINTS 2 // binary points to add to input values.
 #define OUT_POINTS 2 // binary points to remove from output values.
 #define MODE_PIN 5 // mode switch button pin.
@@ -15,9 +16,17 @@
 #define ANALOG_BASE 0 // analog pin to count from.
 #define ANALOG_SIG 4 // analog pin for audio signal.
 #define ANALOG_GND 5 // analog pin for false ground.
-#define MODES 1 // number of driver modes.
+#define MODES 2 // number of driver modes.
 #define MIN_TIME 200 // minimum fade time in 100ths of a second
 #define LEVEL_SAMPS 300000 // samples to average level over.
+
+// defines for the meanings of the channels in non-RGB colour mode.
+#define VAL_RED 0 // red channel
+#define VAL_GREEN 1 // green channel
+#define VAL_BLUE 2 // blue channel
+#define VAL_VALUE 0 // hsv value
+#define VAL_SAT 1 // hsv saturation
+#define VAL_HUE 2 // hsv hue
 
 unsigned int out[] = {0, 0, 0}; // rgb output value.
 unsigned int count = 0; // PWM count.
@@ -81,45 +90,68 @@ void setOutput(int vals[3]) {
   }
 }
 
+void setOnOff(int vals[3], char on) {
+  // sets output either on or off.
+  int val = on ? UNITY : 0;
+  for (int chan = 0; chan < 3; chan++)
+    vals[chan] = val;
+  setOutput(vals);
+}
+
 void setRGB(int vals[3], int sample) {
   setOutput(vals);
 }
 
-/*
-void setHSV(float hue, float saturation, float value, float sample) {
-  // hsv to rgb from wikipedia algorithm. hue,saturation,value are all floats 0<=h,s,v<=1.
-  float c;
-  float x;
-  float h_;
-  float m;
-  value=logLevel(value);
-  c=value*saturation;
-  h_=hue*6;
-  x=c*(1-abs(fmodf(h_,2)-1));
-  m=value-c;
-  switch ((char)h_) {
+
+void setHSV(int vals[3], int sample) {
+  // hsv to rgb from wikipedia algorithm.
+  long c;
+  long x;
+  int h_;
+  int hmod;
+  long m;
+  c = ((long) vals[VAL_VALUE] * (long) vals[VAL_SAT]) >> UNITY_PWR;
+  h_ = vals[VAL_HUE] * 6;
+  hmod = h_ % (UNITY << 1) - UNITY;
+  if (hmod < 0) hmod = -hmod;
+  x = (c * (UNITY - (long) hmod)) >> UNITY_PWR;
+  m = vals[VAL_VALUE] - c;
+  switch (h_ >> UNITY_PWR) {
     case 0:
-      setOutput(c+m,x+m,m);
+      vals[VAL_RED] = c + m;
+      vals[VAL_GREEN] = x + m;
+      vals[VAL_BLUE] = m;
       break;
     case 1:
-      setOutput(x+m,c+m,m);
+      vals[VAL_RED] = x + m;
+      vals[VAL_GREEN] = c + m;
+      vals[VAL_BLUE] = m;
       break;
     case 2:
-      setOutput(m,c+m,x+m);
+      vals[VAL_RED] = m;
+      vals[VAL_GREEN] = c + m;
+      vals[VAL_BLUE] = x + m;
       break;
     case 3:
-      setOutput(m,x+m,c+m);
+      vals[VAL_RED] = m;
+      vals[VAL_GREEN] = x + m;
+      vals[VAL_BLUE] = c + m;
       break;
     case 4:
-      setOutput(x+m,m,c+m);
+      vals[VAL_RED] = x + m;
+      vals[VAL_GREEN] = m;
+      vals[VAL_BLUE] = c + m;
       break;
     case 5:
-      setOutput(c+m,m,x+m);
+      vals[VAL_RED] = c + m;
+      vals[VAL_GREEN] = m;
+      vals[VAL_BLUE] = x + m;
       break;
   }
+  setOutput(vals);
 }
 
-void colourCycle(float a, float b, float c, float sample) {
+/*void colourCycle(float a, float b, float c, float sample) {
   static float lastHue = 0;
   static float nextHue = 0;
   static float lastSat = 1;
@@ -172,35 +204,38 @@ void colourOrgan(float a, float b, float c, float sample) {
   setOutput(amp, 0, 0);
 }*/
 
-void doMode(int vals[3], int sample) {
-  /*if (PORTD & (1 << MODE_PIN)) {
+void doMode(int potVals[3], int sample) {
+  static int vals[3]; // values to pass to mode functions.
+  for (int chan = 0; chan < 3; chan++) 
+    vals[chan] = potVals[chan];
+  if (digitalRead(MODE_PIN) == LOW) {//PORTD & (0b100000) == 0) {
     mode++;
     if (mode == MODES) mode = 0;
     delay(500);
     for (char i = 0; i < mode + 1; i++) {
-      setOutput(1.0, 1.0, 1.0);
+      setOnOff(vals, true);
       delay(300);
-      setOutput(0.0, 0.0, 0.0);
+      setOnOff(vals, false);
       delay(300);
     }
     delay(500);
-  }*/
+  }
   switch (mode) {
     case 0:
       setRGB(vals, sample);
       break;
-    /*case 1:
-      setHSV(a,b,c, sample);
+    case 1:
+      setHSV(vals, sample);
       break;
-    case 2:
+    /*case 2:
       colourCycle(a,b,c, sample);
       break;*/
   }
 }  
 
 void loop() {
-  static int potVals[3];
-  static char pot = 0; // potentiometer to read.
+  static int potVals[3]; // values read from pots
+  static int pot = 0; // potentiometer to read.
   int sample; // audio sample value.
   while (!sampleNow); // wait for sample time.
   sampleNow = false;
