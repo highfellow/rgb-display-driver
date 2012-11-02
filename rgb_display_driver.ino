@@ -6,10 +6,16 @@
 #include <avr/interrupt.h>
 #include <math.h>
 
-#define OUT_MAX 1023 // maximum pwm output value.
+#define UNITY 4096 // fixed point unity value.
+#define IN_POINTS 2 // binary points to add to input values.
+#define OUT_POINTS 2 // binary points to remove from output values.
+#define MODE_PIN 5 // mode switch button pin.
+#define DIAG_PIN 6 // diagnostic output pin.
 #define OUTPUT_BASE 2 // output pin to count from.
 #define ANALOG_BASE 0 // analog pin to count from.
-#define MODES 3 // number of driver modes.
+#define ANALOG_SIG 4 // analog pin for audio signal.
+#define ANALOG_GND 5 // analog pin for false ground.
+#define MODES 1 // number of driver modes.
 #define MIN_TIME 200 // minimum fade time in 100ths of a second
 #define LEVEL_SAMPS 300000 // samples to average level over.
 
@@ -23,9 +29,9 @@ void setup() {
   PORTD = 0; // reset output port
   for (char i=0; i<3; i++)
     pinMode(OUTPUT_BASE+i, OUTPUT); // set control pins to output.
-  pinMode(5, INPUT); // mode switch button.
-  pinMode(6, OUTPUT); // diagnostic
-  PORTD |= 0b100000; // set pullup resistor on pin 5.
+  pinMode(MODE_PIN, INPUT); // mode switch button.
+  pinMode(DIAG_PIN, OUTPUT); // diagnostic
+  PORTD |= 1 << MODE_PIN; // set pullup resistor on pin 5.
   // Increase the analog sample rate to 76 kHz.
   ADCSRA &= ~( _BV(ADPS0) | _BV(ADPS1) ); // clear bits 0 and 1.
   ADCSRA |= _BV(ADPS2); // set bit 2.
@@ -35,33 +41,25 @@ void setup() {
   TCNT2 = 0; // reset counter.
   // Enable interrupt on overflow
   TIMSK2 |= _BV(TOIE2);
-  // find the false ground level.
-  delay(1000);
-  sigGround = analogRead(4);
+  // find the false ground signal level.
+  delay(500); // wait for it to settle.
+  sigGround = analogRead(ANALOG_GND);
   // Start the USB Serial.
-  Serial.begin(115200);
+  //Serial.begin(115200);
 }
 
 ISR(TIMER2_OVF_vect) {
   // Interrupt service routine for timer 2 overflow.
   count++;
-  for (char colour=0; colour < 3; colour++) {
-    if (count < out[colour]) {
-      PORTD |= 1 << (colour + OUTPUT_BASE); // turn pin on.
+  for (int chan = 0; chan < 3; chan++) {
+    if (count < out[chan]) {
+      PORTD |= 1 << (chan + OUTPUT_BASE); // turn pin on.
       } else {
-      PORTD &= ~(1 << (colour + OUTPUT_BASE)); // turn pin off.
+      PORTD &= ~(1 << (chan + OUTPUT_BASE)); // turn pin off.
     }
   }
-  if (count > OUT_MAX) count = 0;
+  if (count >= (UNITY >> OUT_POINTS)) count = 0;
   if (count % 2 == 0) sampleNow = true; // trigger a sample at 31kHz.
-}
-
-unsigned int valueToLevel(float value) {
-  unsigned int level = value * OUT_MAX; //
-  if (level < 0) level = 0;
-  if (level > OUT_MAX) level = OUT_MAX;
-//  Serial.println(level,DEC);
-  return level;
 }
 
 float ranFloat(float maxVal) {
@@ -73,31 +71,21 @@ float logLevel(float level) {
   return ret;
 }
 
+void setOutput(int vals[3]) {
+  int val;
+  for (int chan = 0; chan < 3; chan++) {
+    val = vals[chan];
+    if (val < 0) val = 0;
+    if (val >= UNITY) val = UNITY;
+    out[chan] = val >> OUT_POINTS;
+  }
+}
+
+void setRGB(int vals[3], int sample) {
+  setOutput(vals);
+}
+
 /*
-void chaosCycle(float gr, float bg, float rb, unsigned char rgb[]) {
-  static float reds = 0;
-  static float greens = 0;
-  static float blues = 0;
-  float growth = 0.01;
-  float ran = 0.0001;
-  float crowding = 0.01;
-  reds += ranFloat(ran) + growth * (reds - reds * reds - reds * greens * gr);
-  greens += ranFloat(ran) + growth * (greens - greens * greens - greens * blues * bg);
-  blues += ranFloat(ran) + growth * (blues - blues * blues - blues * reds * rb);
-  setRGB(reds/2, greens/2, blues/2, out);
-}*/
-
-void setOutput(float red, float green, float blue) {
-  out[0]=valueToLevel(red);
-  out[1]=valueToLevel(green);
-  out[2]=valueToLevel(blue);
-}
-
-void setRGB(float red,float green, float blue, float sample) {
-  setOutput(logLevel(red), logLevel(green), logLevel(blue));
-}
-
-
 void setHSV(float hue, float saturation, float value, float sample) {
   // hsv to rgb from wikipedia algorithm. hue,saturation,value are all floats 0<=h,s,v<=1.
   float c;
@@ -171,32 +159,6 @@ void colourCycle(float a, float b, float c, float sample) {
   time++;
 }
 
-void colourChange(float a, float b, float c, float sample) {
-  if (digitalRead(5) == LOW) {
-    mode++;
-    if (mode == MODES) mode = 0;
-    delay(500);
-    for (char i = 0; i < mode + 1; i++) {
-      setOutput(1.0, 1.0, 1.0);
-      delay(300);
-      setOutput(0.0, 0.0, 0.0);
-      delay(300);
-    }
-    delay(500);
-  }
-  switch (mode) {
-    case 0:
-      setRGB(a,b,c, sample);
-      break;
-    case 1:
-      setHSV(a,b,c, sample);
-      break;
-    case 2:
-      colourCycle(a,b,c, sample);
-      break;
-  }
-}  
-
 void colourOrgan(float a, float b, float c, float sample) {
   static float level = 0;
   static float amp;
@@ -208,21 +170,46 @@ void colourOrgan(float a, float b, float c, float sample) {
   }
   amp = amp / level;
   setOutput(amp, 0, 0);
-}
+}*/
 
+void doMode(int vals[3], int sample) {
+  /*if (PORTD & (1 << MODE_PIN)) {
+    mode++;
+    if (mode == MODES) mode = 0;
+    delay(500);
+    for (char i = 0; i < mode + 1; i++) {
+      setOutput(1.0, 1.0, 1.0);
+      delay(300);
+      setOutput(0.0, 0.0, 0.0);
+      delay(300);
+    }
+    delay(500);
+  }*/
+  switch (mode) {
+    case 0:
+      setRGB(vals, sample);
+      break;
+    /*case 1:
+      setHSV(a,b,c, sample);
+      break;
+    case 2:
+      colourCycle(a,b,c, sample);
+      break;*/
+  }
+}  
 
 void loop() {
-  static float potVals[3];
+  static int potVals[3];
   static char pot = 0; // potentiometer to read.
-  float sample;
+  int sample; // audio sample value.
   while (!sampleNow); // wait for sample time.
-  PORTD ^= 0b1000000;
   sampleNow = false;
-  sample = ((float) analogRead(3) - sigGround) / (float) sigGround;
-  potVals[pot] = (float) analogRead(ANALOG_BASE + pot) / (float) 1024;
+  PORTD ^= 1 << DIAG_PIN; // toggle diagnostic output
+  sample = (analogRead(ANALOG_SIG) - sigGround) << IN_POINTS;
+  potVals[pot] = analogRead(ANALOG_BASE + pot) << IN_POINTS;
   pot++;
   if (pot > 2) pot = 0;
-  colourChange(potVals[0], potVals[1], potVals[2], sample);
+  doMode(potVals, sample);
 }
 
 
