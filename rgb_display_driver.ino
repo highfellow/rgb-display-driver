@@ -6,10 +6,10 @@
 #include <avr/interrupt.h>
 #include <math.h>
 
-#define UNITY 4096 // fixed point16_t unity value.
+#define UNITY 4096 // fixed point unity value.
 #define UNITY_BITS 12 // same expressed as a power of 2.
-#define IN_POINTS 2 // binary point16_ts to add to input values.
-#define OUT_POINTS 2 // binary point16_ts to remove from output values.
+#define IN_POINTS 2 // binary points to add to input values.
+#define OUT_POINTS 4 // binary points to remove from output values.
 #define MODE_PIN 5 // mode switch button pin.
 #define DIAG_PIN 6 // diagnostic output pin.
 #define OUTPUT_BASE 2 // output pin to count from.
@@ -17,7 +17,7 @@
 #define ANALOG_SIG 4 // analog pin for audio signal.
 #define ANALOG_GND 5 // analog pin for false ground.
 #define MODES 3 // number of driver modes.
-#define MAX_TIME 1000 // maximum fade time in 30000ths of a second
+#define MAX_TIME 15000 // maximum fade time in 30000ths of a second
 #define LEVEL_SAMPS 300000 // samples to average level over.
 
 // defines for the meanings of the channels in non-RGB colour mode.
@@ -28,7 +28,7 @@
 #define VAL_SAT 1 // hsv saturation
 #define VAL_HUE 2 // hsv hue
 #define VAL_SPEED 1 // colour cycle speed.
-#define VAL_RANDOM 2 // colour cycle randomness.
+#define VAL_RANDOM 2 // colour cycle randomness
 
 volatile int16_t out[] = {0, 0, 0}; // rgb output value.
 volatile int16_t count = 0; // PWM count.
@@ -36,6 +36,30 @@ char mode = 0; // colour changing mode.
 volatile char sampleNow = false;
 int16_t sigGround = 0;
 volatile char printNow = false; // cycles to 0 every 4 secs.
+
+void setup() {
+  PORTD = 0; // reset output port
+  for (char i=0; i<3; i++)
+    pinMode(OUTPUT_BASE+i, OUTPUT); // set control pins to output.
+  pinMode(MODE_PIN, INPUT); // mode switch button.
+  pinMode(DIAG_PIN, OUTPUT); // diagnostic
+  PORTD |= 1 << MODE_PIN; // set pullup resistor on pin 5.
+  // Increase the analog sample rate to 76 kHz.
+  ADCSRA &= ~( _BV(ADPS0) | _BV(ADPS1) ); // clear bits 0 and 1.
+  ADCSRA |= _BV(ADPS2); // set bit 2.
+  // Set up the timer.
+  TCCR2A = _BV(WGM21); // normal mode
+  TCCR2B = _BV(CS21); // 1/8 prescaler;
+  OCR2A = 128; // interrupt at 15 Khz;
+  TCNT2 = 0; // reset counter.
+  // Enable interrupt on compare match
+  TIMSK2 |= _BV(OCIE2A);
+  // find the false ground signal level.
+  delay(500); // wait for it to settle.
+  sigGround = analogRead(ANALOG_GND);
+  // Start the USB Serial.
+  Serial.begin(115200);
+}
 
 uint32_t intExp(uint32_t power) {
   // returns 2 ^ power (approx.)
@@ -56,32 +80,10 @@ uint32_t intExp(uint32_t power) {
   return ret;
 }
 
-void setup() {
-  PORTD = 0; // reset output port
-  for (char i=0; i<3; i++)
-    pinMode(OUTPUT_BASE+i, OUTPUT); // set control pins to output.
-  pinMode(MODE_PIN, INPUT); // mode switch button.
-  pinMode(DIAG_PIN, OUTPUT); // diagnostic
-  PORTD |= 1 << MODE_PIN; // set pullup resistor on pin 5.
-  // Increase the analog sample rate to 76 kHz.
-  ADCSRA &= ~( _BV(ADPS0) | _BV(ADPS1) ); // clear bits 0 and 1.
-  ADCSRA |= _BV(ADPS2); // set bit 2.
-  // Set up the timer.
-  TCCR2A = 0; // normal mode
-  TCCR2B = _BV(CS20); // no prescaler;
-  TCNT2 = 0; // reset counter.
-  // Enable int16_terrupt on overflow
-  TIMSK2 |= _BV(TOIE2);
-  // find the false ground signal level.
-  delay(500); // wait for it to settle.
-  sigGround = analogRead(ANALOG_GND);
-  // Start the USB Serial.
-  Serial.begin(115200);
-}
-
-ISR(TIMER2_OVF_vect) {
+ISR(TIMER2_COMPA_vect) {
   // Interrupt service routine for timer 2 overflow.
   static char print = 0;
+  //PORTD |= 1 << DIAG_PIN;
   count++;
   for (int16_t chan = 0; chan < 3; chan++) {
     if (count < out[chan]) {
@@ -92,15 +94,17 @@ ISR(TIMER2_OVF_vect) {
   }
   if (count >= (UNITY >> OUT_POINTS)) {
     count = 0;
-    print++;
-    if (print % 64 == 0) printNow = true;
+    //print++;
+    //if (print % 64 == 0) printNow = true;
   }
-  if (count % 2 == 0) sampleNow = true; // trigger a sample at 31kHz.
+  sampleNow = true; // sample at 15 kHz;
+  //if (count % 2 == 0) sampleNow = true; // trigger a sample at 15kHz.
+  //PORTD &= ~(1 << DIAG_PIN);
 }
 
 void setOutput(int16_t vals[3]) {
   int16_t val;
-  if (printNow) {
+  /*if (printNow) {
     printNow = false;
     Serial.print("vals: ");
     for (int16_t chan = 0; chan < 3; chan++) {
@@ -108,7 +112,7 @@ void setOutput(int16_t vals[3]) {
       Serial.print(vals[chan]);
     }
     Serial.println(" ");
-  }
+  }*/
   for (int16_t chan = 0; chan < 3; chan++) {
     val = vals[chan];
     if (val < 0) val = 0;
@@ -129,8 +133,8 @@ void setRGB(int16_t vals[3], int16_t sample) {
   uint64_t exp;
   for (int16_t chan = 0; chan < 3; chan++) {
     exp = intExp((uint32_t)vals[chan] * 10);
-    if (printNow && chan == 0)
-      Serial.println(vals[chan]);
+    //if (printNow && chan == 0)
+      //Serial.println(vals[chan]);
     vals[chan] = exp >> 10;
   }
   setOutput(vals);
@@ -226,7 +230,6 @@ void colourCycle(int16_t vals[3], int16_t sample) {
   sat = ((UNITY - frac) * (int64_t) lastSat + frac * (int64_t) nextSat) >> UNITY_BITS;
   vals[VAL_SAT] = sat;
   vals[VAL_HUE] = hue;
-  vals[VAL_VALUE] = intExp((uint32_t) vals[VAL_VALUE] * 10) >> 10;
   setHSV(vals, sample);
   time++;
 }
@@ -246,9 +249,7 @@ void colourCycle(int16_t vals[3], int16_t sample) {
 
 void doMode(int16_t potVals[3], int16_t sample) {
   static int16_t vals[3]; // values to pass to mode functions.
-  for (int16_t chan = 0; chan < 3; chan++) 
-    vals[chan] = potVals[chan];
-  if (digitalRead(MODE_PIN) == LOW) {//PORTD & (0b100000) == 0) {
+  if ((PIND & (1 << MODE_PIN)) == 0) {
     mode++;
     if (mode == MODES) mode = 0;
     delay(500);
@@ -260,6 +261,8 @@ void doMode(int16_t potVals[3], int16_t sample) {
     }
     delay(500);
   }
+  for (int16_t chan = 0; chan < 3; chan++) 
+    vals[chan] = potVals[chan];
   switch (mode) {
     case 0:
       setRGB(vals, sample);
@@ -279,12 +282,13 @@ void loop() {
   int16_t sample; // audio sample value.
   while (!sampleNow); // wait for sample time.
   sampleNow = false;
-  PORTD ^= 1 << DIAG_PIN; // toggle diagnostic output
-  sample = (analogRead(ANALOG_SIG) - sigGround) << IN_POINTS;
+  PORTD |= 1 << DIAG_PIN;
+  //sample = (analogRead(ANALOG_SIG) - sigGround) << IN_POINTS;
   potVals[pot] = analogRead(ANALOG_BASE + pot) << IN_POINTS;
   pot++;
   if (pot > 2) pot = 0;
   doMode(potVals, sample);
+  PORTD &= ~(1 << DIAG_PIN);
 }
 
 
