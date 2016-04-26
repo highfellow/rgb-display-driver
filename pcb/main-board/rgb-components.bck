@@ -1,0 +1,14 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 7805_NUM
+D Linear Regulator +5V
+K POWER REGUL
+F regulator\lm78xx.pdf
+$ENDCMP
+#
+$CMP SW_POWER
+D Interrupteur simple
+K switch
+$ENDCMP
+#
+#End Doc Library

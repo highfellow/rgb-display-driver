@@ -1,0 +1,921 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:rgb-components
+LIBS:rgb-controller-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title "RGB LED Controller"
+Date "28 apr 2015"
+Rev "1"
+Comp "Andrew Baxter (highfellow.org)"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L PWR_IN J5
+U 1 1 5516EFA7
+P 1450 6850
+F 0 "J5" H 1450 6900 60  0000 C CNN
+F 1 "PWR_IN" H 1450 6350 60  0000 C CNN
+F 2 "~" H 1450 6850 60  0000 C CNN
+F 3 "~" H 1450 6850 60  0000 C CNN
+	1    1450 6850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L UART_HEADER J3
+U 1 1 5516EFB6
+P 6650 3500
+F 0 "J3" H 6650 3900 60  0000 C CNN
+F 1 "UART_HEADER" H 6650 2900 60  0000 C CNN
+F 2 "~" H 6550 3250 60  0000 C CNN
+F 3 "~" H 6550 3250 60  0000 C CNN
+	1    6650 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L +12V #PWR01
+U 1 1 5518B6D2
+P 900 4900
+F 0 "#PWR01" H 900 4850 20  0001 C CNN
+F 1 "+12V" H 900 5000 30  0000 C CNN
+F 2 "" H 900 4900 60  0000 C CNN
+F 3 "" H 900 4900 60  0000 C CNN
+	1    900  4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-rgb #PWR02
+U 1 1 5518B6E1
+P 2050 7350
+F 0 "#PWR02" H 2050 7350 30  0001 C CNN
+F 1 "GND-rgb" H 2050 7280 30  0001 C CNN
+F 2 "" H 2050 7350 60  0000 C CNN
+F 3 "" H 2050 7350 60  0000 C CNN
+	1    2050 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-rgb #PWR03
+U 1 1 5518B77B
+P 2250 3650
+F 0 "#PWR03" H 2250 3650 30  0001 C CNN
+F 1 "GND-rgb" H 2250 3580 30  0001 C CNN
+F 2 "" H 2250 3650 60  0000 C CNN
+F 3 "" H 2250 3650 60  0000 C CNN
+	1    2250 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR04
+U 1 1 5518B7A3
+P 2250 850
+F 0 "#PWR04" H 2250 940 20  0001 C CNN
+F 1 "+5V" H 2250 940 30  0000 C CNN
+F 2 "" H 2250 850 60  0000 C CNN
+F 3 "" H 2250 850 60  0000 C CNN
+	1    2250 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR05
+U 1 1 5518BAA6
+P 2050 5200
+F 0 "#PWR05" H 2050 5290 20  0001 C CNN
+F 1 "+5V" H 2050 5290 30  0000 C CNN
+F 2 "" H 2050 5200 60  0000 C CNN
+F 3 "" H 2050 5200 60  0000 C CNN
+	1    2050 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT-rgb RV2
+U 1 1 5518BBC5
+P 2050 1700
+F 0 "RV2" H 2050 1600 50  0000 C CNN
+F 1 "10k" H 2050 1700 50  0000 C CNN
+F 2 "~" H 2050 1700 60  0000 C CNN
+F 3 "~" H 2050 1700 60  0000 C CNN
+	1    2050 1700
+	0    1    -1   0   
+$EndComp
+$Comp
+L GND-rgb #PWR06
+U 1 1 5518BC47
+P 5950 3850
+F 0 "#PWR06" H 5950 3850 30  0001 C CNN
+F 1 "GND-rgb" H 5950 3780 30  0001 C CNN
+F 2 "" H 5950 3850 60  0000 C CNN
+F 3 "" H 5950 3850 60  0000 C CNN
+	1    5950 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR07
+U 1 1 5518BC4D
+P 5750 3850
+F 0 "#PWR07" H 5750 3940 20  0001 C CNN
+F 1 "+5V" H 5750 3940 30  0000 C CNN
+F 2 "" H 5750 3850 60  0000 C CNN
+F 3 "" H 5750 3850 60  0000 C CNN
+	1    5750 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L C-rgb C6
+U 1 1 551CCF75
+P 2450 1900
+F 0 "C6" H 2450 2000 40  0000 L CNN
+F 1 "100nF" H 2456 1815 40  0000 L CNN
+F 2 "~" H 2488 1750 30  0000 C CNN
+F 3 "~" H 2450 1900 60  0000 C CNN
+F 4 "20%" H 2450 1900 60  0001 C CNN "Tolerance"
+F 5 "Ceramic" H 2450 1900 60  0001 C CNN "Type"
+F 6 "Multicomp" H 2450 1900 60  0001 C CNN "Manufacturer"
+F 7 "Ceramic Capacitor, MC Series, 0.1 µF, ± 20%, Y5V, 50 V, Radial Leaded" H 2450 1900 60  0001 C CNN "Product description"
+F 8 "MC0805Y104M500A2.54MM" H 2450 1900 60  0001 C CNN "Product code"
+F 9 "Farnell" H 2450 1900 60  0001 C CNN "Supplier"
+F 10 "2112751" H 2450 1900 60  0001 C CNN "Supplier code"
+	1    2450 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-rgb C4
+U 1 1 551CCFB6
+P 1650 1600
+F 0 "C4" H 1650 1700 40  0000 L CNN
+F 1 "100nF" H 1656 1515 40  0000 L CNN
+F 2 "~" H 1688 1450 30  0000 C CNN
+F 3 "~" H 1650 1600 60  0000 C CNN
+F 4 "20%" H 1650 1600 60  0001 C CNN "Tolerance"
+F 5 "Ceramic" H 1650 1600 60  0001 C CNN "Type"
+F 6 "Multicomp" H 1650 1600 60  0001 C CNN "Manufacturer"
+F 7 "Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 20%, Y5V, 50 V, Radial Leaded" H 1650 1600 60  0001 C CNN "Product description"
+F 8 "MC0805Y104M500A2.54MM" H 1650 1600 60  0001 C CNN "Product code"
+F 9 "Farnell" H 1650 1600 60  0001 C CNN "Supplier"
+F 10 "2112751" H 1650 1600 60  0001 C CNN "Supplier code"
+	1    1650 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-rgb C3
+U 1 1 551CCFC2
+P 1250 1300
+F 0 "C3" H 1250 1400 40  0000 L CNN
+F 1 "100nF" H 1256 1215 40  0000 L CNN
+F 2 "~" H 1288 1150 30  0000 C CNN
+F 3 "~" H 1250 1300 60  0000 C CNN
+F 4 "20%" H 1250 1300 60  0001 C CNN "Tolerance"
+F 5 "Ceramic" H 1250 1300 60  0001 C CNN "Type"
+F 6 "Multicomp" H 1250 1300 60  0001 C CNN "Manufacturer"
+F 7 "Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 20%, Y5V, 50 V, Radial Leaded" H 1250 1300 60  0001 C CNN "Product description"
+F 8 "MC0805Y104M500A2.54MM" H 1250 1300 60  0001 C CNN "Product code"
+F 9 "Farnell" H 1250 1300 60  0001 C CNN "Supplier"
+F 10 "2112751" H 1250 1300 60  0001 C CNN "Supplier code"
+	1    1250 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP-rgb C2
+U 1 1 551CD0BD
+P 850 1300
+F 0 "C2" H 850 1400 40  0000 L CNN
+F 1 "10uF" H 856 1215 40  0000 L CNN
+F 2 "~" H 888 1150 30  0000 C CNN
+F 3 "~" H 850 1300 60  0000 C CNN
+F 4 "20%" H 850 1300 60  0001 C CNN "Tolerance"
+F 5 "Tantalum" H 850 1300 60  0001 C CNN "Type"
+F 6 "Vishay" H 850 1300 60  0001 C CNN "Manufacturer"
+F 7 "Tantalum Capacitor, Resin Coated, 489D Series, 10 µF, ± 20%, 16 V, Radial Leaded, 2.5 mm" H 850 1300 60  0001 C CNN "Product description"
+F 8 "489D106X0016C1VE3" H 850 1300 60  0001 C CNN "Product code"
+F 9 "Farnell" H 850 1300 60  0001 C CNN "Supplier"
+F 10 "1753975" H 850 1300 60  0001 C CNN "Supplier code"
+	1    850  1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CRYSTAL-rgb X1
+U 1 1 551CD177
+P 5800 1500
+F 0 "X1" H 5800 1650 60  0000 C CNN
+F 1 "16MHz" H 5800 1350 60  0000 C CNN
+F 2 "~" H 5800 1500 60  0000 C CNN
+F 3 "~" H 5800 1500 60  0000 C CNN
+	1    5800 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L C-RESCUE-rgb-controller C1
+U 1 1 551CD1F6
+P 6300 1200
+F 0 "C1" H 6300 1300 40  0000 L CNN
+F 1 "22pF" H 6306 1115 40  0000 L CNN
+F 2 "~" H 6338 1050 30  0000 C CNN
+F 3 "~" H 6300 1200 60  0000 C CNN
+F 4 "20%" H 6300 1200 60  0001 C CNN "Tolerance"
+F 5 "Ceramic" H 6300 1200 60  0001 C CNN "Type"
+F 6 "Have" H 6300 1200 60  0001 C CNN "Supplier"
+	1    6300 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C-RESCUE-rgb-controller C5
+U 1 1 551CD214
+P 6300 1800
+F 0 "C5" H 6300 1900 40  0000 L CNN
+F 1 "22pF" H 6306 1715 40  0000 L CNN
+F 2 "~" H 6338 1650 30  0000 C CNN
+F 3 "~" H 6300 1800 60  0000 C CNN
+F 4 "20%" H 6300 1800 60  0001 C CNN "Tolerance"
+F 5 "Ceramic" H 6300 1800 60  0001 C CNN "Type"
+F 6 "Have" H 6300 1800 60  0001 C CNN "Supplier"
+	1    6300 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND-RESCUE-rgb-controller #PWR08
+U 1 1 551CD2CB
+P 6350 2650
+F 0 "#PWR08" H 6350 2650 30  0001 C CNN
+F 1 "GND" H 6350 2580 30  0001 C CNN
+F 2 "" H 6350 2650 60  0000 C CNN
+F 3 "" H 6350 2650 60  0000 C CNN
+	1    6350 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-rgb R1
+U 1 1 551CD37C
+P 5400 2300
+F 0 "R1" H 5480 2300 40  0000 C CNN
+F 1 "10k" V 5407 2301 40  0000 C CNN
+F 2 "~" V 5330 2300 30  0000 C CNN
+F 3 "~" H 5400 2300 30  0000 C CNN
+	1    5400 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L +5V #PWR09
+U 1 1 551CD394
+P 5400 2000
+F 0 "#PWR09" H 5400 2090 20  0001 C CNN
+F 1 "+5V" H 5400 2090 30  0000 C CNN
+F 2 "" H 5400 2000 60  0000 C CNN
+F 3 "" H 5400 2000 60  0000 C CNN
+	1    5400 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-rgb-controller #PWR010
+U 1 1 551CD490
+P 6650 1900
+F 0 "#PWR010" H 6650 1900 30  0001 C CNN
+F 1 "GND" H 6650 1830 30  0001 C CNN
+F 2 "" H 6650 1900 60  0000 C CNN
+F 3 "" H 6650 1900 60  0000 C CNN
+	1    6650 1900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4450 2250
+NoConn ~ 4450 2350
+NoConn ~ 4450 2450
+$Comp
+L STP35NF10 Q1
+U 1 1 551D9315
+P 2950 6150
+F 0 "Q1" H 2950 5600 60  0000 C CNN
+F 1 "STP35NF10" H 3500 6150 60  0000 C CNN
+F 2 "" H 2950 6150 60  0000 C CNN
+F 3 "" H 2950 6150 60  0000 C CNN
+	1    2950 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L STP35NF10 Q2
+U 1 1 551D9322
+P 4550 6150
+F 0 "Q2" H 4550 5600 60  0000 C CNN
+F 1 "STP35NF10" H 5100 6150 60  0000 C CNN
+F 2 "" H 4550 6150 60  0000 C CNN
+F 3 "" H 4550 6150 60  0000 C CNN
+	1    4550 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L STP35NF10 Q3
+U 1 1 551D9328
+P 6100 6150
+F 0 "Q3" H 6100 5600 60  0000 C CNN
+F 1 "STP35NF10" H 6650 6150 60  0000 C CNN
+F 2 "" H 6100 6150 60  0000 C CNN
+F 3 "" H 6100 6150 60  0000 C CNN
+	1    6100 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED_HEADER J4
+U 1 1 551D9585
+P 4850 5100
+F 0 "J4" H 4900 4500 60  0000 C CNN
+F 1 "LED_HEADER" H 4850 5650 60  0000 C CNN
+F 2 "" H 4600 5100 60  0000 C CNN
+F 3 "" H 4600 5100 60  0000 C CNN
+	1    4850 5100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2550 3400 2250 3400
+Wire Wire Line
+	2250 3300 2250 3650
+Wire Wire Line
+	850  3300 2550 3300
+Connection ~ 2250 3400
+Connection ~ 2250 3300
+Connection ~ 1250 3300
+Wire Wire Line
+	1650 1800 1650 3300
+Connection ~ 1650 3300
+Wire Wire Line
+	2050 1950 2050 3300
+Connection ~ 2050 3300
+Wire Wire Line
+	2450 2100 2450 3300
+Connection ~ 2450 3300
+Wire Wire Line
+	2200 1700 2550 1700
+Connection ~ 2450 1700
+Wire Wire Line
+	1650 1400 2550 1400
+Wire Wire Line
+	2050 1450 2050 1400
+Connection ~ 2050 1400
+Wire Wire Line
+	850  1100 2550 1100
+Connection ~ 1250 1100
+Wire Wire Line
+	2250 850  2250 1100
+Connection ~ 2250 1100
+Wire Wire Line
+	2250 950  2450 950 
+Wire Wire Line
+	2450 950  2450 1400
+Connection ~ 2450 1400
+Connection ~ 2250 950 
+Wire Wire Line
+	5550 2550 5550 3100
+Wire Wire Line
+	4450 2550 5650 2550
+Connection ~ 5550 2550
+Wire Wire Line
+	6250 2550 6350 2550
+Wire Wire Line
+	6350 2550 6350 2650
+Wire Wire Line
+	5400 2050 5400 2000
+Wire Wire Line
+	4450 1800 6100 1800
+Wire Wire Line
+	6500 1800 6650 1800
+Wire Wire Line
+	6650 1200 6650 1900
+Wire Wire Line
+	6650 1200 6500 1200
+Connection ~ 6650 1800
+Connection ~ 5800 1800
+Connection ~ 5800 1200
+Wire Wire Line
+	5400 1200 6100 1200
+Wire Wire Line
+	5400 1200 5400 1700
+Wire Wire Line
+	5400 1700 4450 1700
+Wire Wire Line
+	5950 3850 5950 3700
+Wire Wire Line
+	5750 3850 5750 3550
+Wire Wire Line
+	5750 3550 6250 3550
+Wire Wire Line
+	6250 3250 5400 3250
+Wire Wire Line
+	5400 3250 5400 2800
+Wire Wire Line
+	5400 2800 4450 2800
+Wire Wire Line
+	6250 3400 5250 3400
+Wire Wire Line
+	5250 3400 5250 2700
+Wire Wire Line
+	5250 2700 4450 2700
+Wire Wire Line
+	1700 5200 2050 5200
+Wire Wire Line
+	1300 5500 2050 5500
+Wire Wire Line
+	2050 5500 2050 7350
+Connection ~ 4650 6550
+Connection ~ 3050 6550
+$Comp
+L +12V #PWR011
+U 1 1 551D98BB
+P 5750 5500
+F 0 "#PWR011" H 5750 5450 20  0001 C CNN
+F 1 "+12V" H 5750 5600 30  0000 C CNN
+F 2 "" H 5750 5500 60  0000 C CNN
+F 3 "" H 5750 5500 60  0000 C CNN
+	1    5750 5500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4950 5450 5750 5450
+Connection ~ 5100 5450
+Wire Wire Line
+	5750 5450 5750 5500
+Connection ~ 5250 5450
+Text Label 4650 2900 0    60   ~ 0
+G_RED
+Text Label 4650 3000 0    60   ~ 0
+G_GREEN
+Text Label 4650 3100 0    60   ~ 0
+G_BLUE
+Wire Wire Line
+	4650 2900 4450 2900
+Wire Wire Line
+	4650 3000 4450 3000
+Wire Wire Line
+	4650 3100 4450 3100
+Text Label 2250 6300 0    60   ~ 0
+G_RED
+Text Label 3750 6300 0    60   ~ 0
+G_GREEN
+Text Label 5350 6300 0    60   ~ 0
+G_BLUE
+Wire Wire Line
+	5750 6350 5350 6350
+Wire Wire Line
+	5350 6350 5350 6300
+Wire Wire Line
+	3750 6350 4200 6350
+Wire Wire Line
+	3750 6350 3750 6300
+Connection ~ 2050 6550
+Wire Wire Line
+	4650 5750 4650 5450
+Wire Wire Line
+	6200 5750 4800 5750
+Wire Wire Line
+	4800 5750 4800 5450
+Wire Wire Line
+	3050 5750 4500 5750
+Wire Wire Line
+	4500 5750 4500 5450
+Wire Wire Line
+	2050 6550 6200 6550
+Wire Wire Line
+	2600 6350 2250 6350
+Wire Wire Line
+	2250 6350 2250 6300
+$Comp
+L LCD_HEADER J1
+U 1 1 551E0FC8
+P 8900 1750
+F 0 "J1" H 8950 400 60  0000 C CNN
+F 1 "LCD_HEADER" H 9000 2500 60  0000 C CNN
+F 2 "" H 8900 1750 60  0000 C CNN
+F 3 "" H 8900 1750 60  0000 C CNN
+	1    8900 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONTROL_HEADER J2
+U 1 1 551E0FD7
+P 10500 2600
+F 0 "J2" H 10500 2200 60  0000 C CNN
+F 1 "CONTROL_HEADER" H 10550 3350 60  0000 C CNN
+F 2 "" H 10050 2550 60  0000 C CNN
+F 3 "" H 10050 2550 60  0000 C CNN
+	1    10500 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR012
+U 1 1 551E0FE4
+P 8350 1250
+F 0 "#PWR012" H 8350 1340 20  0001 C CNN
+F 1 "+5V" H 8350 1340 30  0000 C CNN
+F 2 "" H 8350 1250 60  0000 C CNN
+F 3 "" H 8350 1250 60  0000 C CNN
+	1    8350 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-rgb #PWR013
+U 1 1 551E0FEB
+P 8350 1450
+F 0 "#PWR013" H 8350 1450 30  0001 C CNN
+F 1 "GND-rgb" H 8350 1380 30  0001 C CNN
+F 2 "" H 8350 1450 60  0000 C CNN
+F 3 "" H 8350 1450 60  0000 C CNN
+	1    8350 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT-rgb RV1
+U 1 1 551E1005
+P 7850 1500
+F 0 "RV1" H 7850 1400 50  0000 C CNN
+F 1 "10k" H 7850 1500 50  0000 C CNN
+F 2 "~" H 7850 1500 60  0000 C CNN
+F 3 "~" H 7850 1500 60  0000 C CNN
+	1    7850 1500
+	0    1    -1   0   
+$EndComp
+$Comp
+L GND-rgb #PWR014
+U 1 1 551E1185
+P 7850 1900
+F 0 "#PWR014" H 7850 1900 30  0001 C CNN
+F 1 "GND-rgb" H 7850 1830 30  0001 C CNN
+F 2 "" H 7850 1900 60  0000 C CNN
+F 3 "" H 7850 1900 60  0000 C CNN
+	1    7850 1900
+	1    0    0    -1  
+$EndComp
+Text Label 8300 1700 0    60   ~ 0
+RS
+Text Label 8300 2150 0    60   ~ 0
+DB0
+Text Label 8300 2300 0    60   ~ 0
+DB1
+Text Label 8300 2450 0    60   ~ 0
+DB2
+Text Label 8300 2600 0    60   ~ 0
+DB3
+Wire Wire Line
+	7850 1250 8600 1250
+Connection ~ 8350 1250
+Wire Wire Line
+	8350 1400 8600 1400
+Wire Wire Line
+	8350 1400 8350 1450
+Wire Wire Line
+	7850 1750 7850 1900
+Wire Wire Line
+	8300 1700 8600 1700
+Wire Wire Line
+	8600 2150 8300 2150
+Wire Wire Line
+	8300 2300 8600 2300
+Wire Wire Line
+	8600 2450 8300 2450
+Wire Wire Line
+	8300 2600 8600 2600
+$Comp
+L ATMEGA328-P-rgb IC1
+U 1 1 5516EFC5
+P 3450 2200
+F 0 "IC1" H 2700 3450 40  0000 L BNN
+F 1 "ATMEGA328-P" H 3850 800 40  0000 L BNN
+F 2 "DIL28" H 3450 2200 30  0000 C CIN
+F 3 "" H 3450 2200 60  0000 C CNN
+F 4 "Atmel" H 3450 2200 60  0001 C CNN "Manufacturer"
+F 5 "AT-MEGA 328-P microcontroller" H 3450 2200 60  0001 C CNN "Product description"
+F 6 "AT-MEGA328-P" H 3450 2200 60  0001 C CNN "Product code"
+F 7 "Have" H 3450 2200 60  0001 C CNN "Supplier"
+	1    3450 2200
+	1    0    0    -1  
+$EndComp
+Text Label 4600 1100 0    60   ~ 0
+RS
+Text Label 4600 1200 0    60   ~ 0
+DB0
+Text Label 4600 1300 0    60   ~ 0
+DB1
+Text Label 4600 1400 0    60   ~ 0
+DB2
+Text Label 4600 1500 0    60   ~ 0
+DB3
+Wire Wire Line
+	4450 1100 4600 1100
+Wire Wire Line
+	4600 1200 4450 1200
+Wire Wire Line
+	4450 1300 4600 1300
+Wire Wire Line
+	4600 1400 4450 1400
+Wire Wire Line
+	4600 1500 4450 1500
+$Comp
+L GND-rgb #PWR015
+U 1 1 551E1894
+P 10050 2100
+F 0 "#PWR015" H 10050 2100 30  0001 C CNN
+F 1 "GND-rgb" H 10050 2030 30  0001 C CNN
+F 2 "" H 10050 2100 60  0000 C CNN
+F 3 "" H 10050 2100 60  0000 C CNN
+	1    10050 2100
+	1    0    0    -1  
+$EndComp
+Text Label 9600 2200 0    60   ~ 0
+ENC_CW
+Text Label 9600 2350 0    60   ~ 0
+ENC_CCW
+Text Label 9600 2500 0    60   ~ 0
+MODE
+Text Label 9600 2650 0    60   ~ 0
+PARAM
+Wire Wire Line
+	10050 2050 10050 2100
+Wire Wire Line
+	10050 2200 9600 2200
+Wire Wire Line
+	10050 2350 9600 2350
+Wire Wire Line
+	9600 2500 10050 2500
+Wire Wire Line
+	10050 2650 9600 2650
+Text Label 4650 3200 0    60   ~ 0
+ENC_CW
+Text Label 4650 3300 0    60   ~ 0
+ENC_CCW
+Text Label 4650 3400 0    60   ~ 0
+MODE
+Text Label 4600 1600 0    60   ~ 0
+PARAM
+Wire Wire Line
+	4600 1600 4450 1600
+Wire Wire Line
+	4650 3200 4450 3200
+Wire Wire Line
+	4450 3300 4650 3300
+Wire Wire Line
+	4650 3400 4450 3400
+$Sheet
+S 8150 3750 1600 1150
+U 551EAE66
+F0 "Audio processing" 50
+F1 "audio-process.sch" 50
+F2 "ORGAN_VCC" U L 8150 3900 60 
+F3 "ORGAN_GND" U L 8150 4150 60 
+F4 "AUDIO" O L 8150 4500 60 
+F5 "AGND" U L 8150 4700 60 
+$EndSheet
+Text Label 4650 1950 0    60   ~ 0
+LEVEL_RED
+Text Label 4650 2050 0    60   ~ 0
+LEVEL_GREEN
+Text Label 4650 2150 0    60   ~ 0
+LEVEL_BLUE
+Wire Wire Line
+	4650 1950 4450 1950
+Wire Wire Line
+	4650 2050 4450 2050
+Wire Wire Line
+	4650 2150 4450 2150
+$Comp
+L GND-rgb #PWR016
+U 1 1 551EB8A4
+P 7400 4250
+F 0 "#PWR016" H 7400 4250 30  0001 C CNN
+F 1 "GND-rgb" H 7400 4180 30  0001 C CNN
+F 2 "" H 7400 4250 60  0000 C CNN
+F 3 "" H 7400 4250 60  0000 C CNN
+	1    7400 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3900 8150 3900
+Wire Wire Line
+	8150 4150 7400 4150
+Wire Wire Line
+	7400 4150 7400 4250
+Wire Wire Line
+	8150 4500 7550 4500
+Wire Wire Line
+	7550 4500 7550 5700
+Wire Wire Line
+	7550 5700 8150 5700
+Wire Wire Line
+	8150 4700 7800 4700
+Wire Wire Line
+	7800 4700 7800 5500
+Wire Wire Line
+	7800 5500 8150 5500
+Text Label 10050 5500 0    60   ~ 0
+LEVEL_RED
+Text Label 10050 5700 0    60   ~ 0
+LEVEL_GREEN
+Text Label 10050 5900 0    60   ~ 0
+LEVEL_BLUE
+Wire Wire Line
+	9800 5500 10050 5500
+Wire Wire Line
+	10050 5700 9800 5700
+Wire Wire Line
+	10050 5900 9800 5900
+$Comp
+L GND-rgb #PWR017
+U 1 1 551F1C53
+P 7400 6350
+F 0 "#PWR017" H 7400 6350 30  0001 C CNN
+F 1 "GND-rgb" H 7400 6280 30  0001 C CNN
+F 2 "" H 7400 6350 60  0000 C CNN
+F 3 "" H 7400 6350 60  0000 C CNN
+	1    7400 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR018
+U 1 1 551F1D25
+P 7400 3900
+F 0 "#PWR018" H 7400 3850 20  0001 C CNN
+F 1 "+12V" H 7400 4000 30  0000 C CNN
+F 2 "" H 7400 3900 60  0000 C CNN
+F 3 "" H 7400 3900 60  0000 C CNN
+	1    7400 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR019
+U 1 1 551F1D4C
+P 7400 5900
+F 0 "#PWR019" H 7400 5850 20  0001 C CNN
+F 1 "+12V" H 7400 6000 30  0000 C CNN
+F 2 "" H 7400 5900 60  0000 C CNN
+F 3 "" H 7400 5900 60  0000 C CNN
+	1    7400 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 5950 7400 5950
+Wire Wire Line
+	7400 5950 7400 5900
+Wire Wire Line
+	8150 6200 7400 6200
+Wire Wire Line
+	7400 6200 7400 6350
+Wire Wire Line
+	5550 2550 5400 2550
+Connection ~ 5400 2550
+Wire Wire Line
+	8000 1500 8000 1550
+Wire Wire Line
+	8000 1550 8600 1550
+Wire Wire Line
+	8500 1400 8500 1850
+Wire Wire Line
+	8500 1850 8600 1850
+Connection ~ 8500 1400
+Wire Wire Line
+	8600 2000 8200 2000
+Wire Wire Line
+	8200 2000 8200 1250
+Connection ~ 8200 1250
+$Comp
+L +5V #PWR020
+U 1 1 55226CCD
+P 8200 2700
+F 0 "#PWR020" H 8200 2790 20  0001 C CNN
+F 1 "+5V" H 8200 2790 30  0000 C CNN
+F 2 "" H 8200 2700 60  0000 C CNN
+F 3 "" H 8200 2700 60  0000 C CNN
+	1    8200 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-rgb #PWR021
+U 1 1 55226CD3
+P 8200 2950
+F 0 "#PWR021" H 8200 2950 30  0001 C CNN
+F 1 "GND-rgb" H 8200 2880 30  0001 C CNN
+F 2 "" H 8200 2950 60  0000 C CNN
+F 3 "" H 8200 2950 60  0000 C CNN
+	1    8200 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 2750 8200 2750
+Wire Wire Line
+	8200 2750 8200 2700
+Wire Wire Line
+	8600 2900 8200 2900
+Wire Wire Line
+	8200 2900 8200 2950
+$Comp
+L SW_PUSH SW1
+U 1 1 552A646F
+P 5950 2550
+F 0 "SW1" H 6100 2660 50  0000 C CNN
+F 1 "SW_PUSH" H 5950 2470 50  0000 C CNN
+F 2 "~" H 5950 2550 60  0000 C CNN
+F 3 "~" H 5950 2550 60  0000 C CNN
+	1    5950 2550
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 8150 5300 1650 1050
+U 551F0BF2
+F0 "Colour Organ" 50
+F1 "colour-organ.sch" 50
+F2 "AGND" U L 8150 5500 60 
+F3 "AUDIO" I L 8150 5700 60 
+F4 "LEVEL_RED" O R 9800 5500 60 
+F5 "LEVEL_GREEN" O R 9800 5700 60 
+F6 "LEVEL_BLUE" O R 9800 5900 60 
+F7 "VCC" U L 8150 5950 60 
+F8 "GND" U L 8150 6200 60 
+$EndSheet
+Wire Wire Line
+	2050 7150 2050 7000
+Connection ~ 2050 7000
+Connection ~ 2050 7150
+Wire Wire Line
+	900  6700 900  7150
+Connection ~ 900  7000
+Wire Wire Line
+	900  4900 900  5700
+Connection ~ 900  5200
+$Comp
+L SW_POWER SW2
+U 1 1 5532D291
+P 900 6200
+F 0 "SW2" H 900 6300 70  0000 C CNN
+F 1 "SW_POWER" H 900 6100 70  0000 C CNN
+F 2 "~" H 900 6200 60  0000 C CNN
+F 3 "~" H 900 6200 60  0000 C CNN
+	1    900  6200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 7805_NUM U1
+U 1 1 553FC751
+P 1300 5250
+F 0 "U1" H 1450 5054 60  0000 C CNN
+F 1 "7805_NUM" H 1300 5450 60  0000 C CNN
+F 2 "" H 1300 5250 60  0000 C CNN
+F 3 "" H 1300 5250 60  0000 C CNN
+	1    1300 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3700 6250 3700
+Wire Wire Line
+	850  1450 850  3300
+Wire Wire Line
+	1250 1500 1250 3300
+Wire Wire Line
+	5950 3100 6250 3100
+$Comp
+L C-rgb C7
+U 1 1 551CD4A5
+P 5750 3100
+F 0 "C7" H 5750 3200 40  0000 L CNN
+F 1 "100nF" H 5756 3015 40  0000 L CNN
+F 2 "~" H 5788 2950 30  0000 C CNN
+F 3 "~" H 5750 3100 60  0000 C CNN
+F 4 "20%" H 5750 3100 60  0001 C CNN "Tolerance"
+F 5 "Ceramic" H 5750 3100 60  0001 C CNN "Type"
+F 6 "Multicomp" H 5750 3100 60  0001 C CNN "Manufacturer"
+F 7 "Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 20%, Y5V, 50 V, Radial Leaded" H 5750 3100 60  0001 C CNN "Product description"
+F 8 "MC0805Y104M500A2.54MM" H 5750 3100 60  0001 C CNN "Product code"
+F 9 "Farnell" H 5750 3100 60  0001 C CNN "Supplier"
+F 10 "2112751" H 5750 3100 60  0001 C CNN "Supplier code"
+	1    5750 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	850  1150 850  1100
+$EndSCHEMATC

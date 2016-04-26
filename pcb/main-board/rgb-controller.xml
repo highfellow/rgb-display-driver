@@ -1,0 +1,1474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/andy/Desktop/projects/light-panel/pcb/main-board/rgb-controller.sch</source>
+    <date>Sun 03 Apr 2016 01:55:49 BST</date>
+    <tool>Eeschema 4.0.2-4+6225~38~ubuntu15.10.1-stable</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>RGB LED Controller</title>
+        <company>Andrew Baxter (highfellow.org)</company>
+        <rev>1</rev>
+        <date>28 apr 2015</date>
+        <source>rgb-controller.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Audio processing/" tstamps="/551EAE66/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date>28 apr 2015</date>
+        <source>audio-process.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/Colour Organ/" tstamps="/551F0BF2/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date>28 apr 2015</date>
+        <source>colour-organ.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J5">
+      <value>PWR_IN</value>
+      <libsource lib="rgb-components" part="PWR_IN"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5516EFA7</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>UART_HEADER</value>
+      <libsource lib="rgb-components" part="UART_HEADER"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5516EFB6</tstamp>
+    </comp>
+    <comp ref="RV2">
+      <value>10k</value>
+      <libsource lib="rgb-components" part="POT-rgb"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5518BBC5</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>100nF</value>
+      <fields>
+        <field name="Tolerance">20%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Manufacturer">Multicomp</field>
+        <field name="Product description">Ceramic Capacitor, MC Series, 0.1 µF, ± 20%, Y5V, 50 V, Radial Leaded</field>
+        <field name="Product code">MC0805Y104M500A2.54MM</field>
+        <field name="Supplier">Farnell</field>
+        <field name="Supplier code">2112751</field>
+      </fields>
+      <libsource lib="rgb-components" part="C-rgb"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>551CCF75</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>100nF</value>
+      <fields>
+        <field name="Tolerance">20%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Manufacturer">Multicomp</field>
+        <field name="Product description">Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 20%, Y5V, 50 V, Radial Leaded</field>
+        <field name="Product code">MC0805Y104M500A2.54MM</field>
+        <field name="Supplier">Farnell</field>
+        <field name="Supplier code">2112751</field>
+      </fields>
+      <libsource lib="rgb-components" part="C-rgb"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>551CCFB6</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>100nF</value>
+      <fields>
+        <field name="Tolerance">20%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Manufacturer">Multicomp</field>
+        <field name="Product description">Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 20%, Y5V, 50 V, Radial Leaded</field>
+        <field name="Product code">MC0805Y104M500A2.54MM</field>
+        <field name="Supplier">Farnell</field>
+        <field name="Supplier code">2112751</field>
+      </fields>
+      <libsource lib="rgb-components" part="C-rgb"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>551CCFC2</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>10uF</value>
+      <fields>
+        <field name="Tolerance">20%</field>
+        <field name="Type">Tantalum</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="Product description">Tantalum Capacitor, Resin Coated, 489D Series, 10 µF, ± 20%, 16 V, Radial Leaded, 2.5 mm</field>
+        <field name="Product code">489D106X0016C1VE3</field>
+        <field name="Supplier">Farnell</field>
+        <field name="Supplier code">1753975</field>
+      </fields>
+      <libsource lib="rgb-components" part="CP-rgb"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>551CD0BD</tstamp>
+    </comp>
+    <comp ref="X1">
+      <value>16MHz</value>
+      <libsource lib="rgb-components" part="CRYSTAL-rgb"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>551CD177</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>22pF</value>
+      <fields>
+        <field name="Tolerance">20%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Supplier">Have</field>
+      </fields>
+      <libsource lib="rgb-controller-cache" part="C-RESCUE-rgb-controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>551CD1F6</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>22pF</value>
+      <fields>
+        <field name="Tolerance">20%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Supplier">Have</field>
+      </fields>
+      <libsource lib="rgb-controller-cache" part="C-RESCUE-rgb-controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>551CD214</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>551CD37C</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>STP35NF10</value>
+      <libsource lib="rgb-components" part="STP35NF10"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>551D9315</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>STP35NF10</value>
+      <libsource lib="rgb-components" part="STP35NF10"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>551D9322</tstamp>
+    </comp>
+    <comp ref="Q3">
+      <value>STP35NF10</value>
+      <libsource lib="rgb-components" part="STP35NF10"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>551D9328</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>LED_HEADER</value>
+      <libsource lib="rgb-components" part="LED_HEADER"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>551D9585</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>LCD_HEADER</value>
+      <libsource lib="rgb-components" part="LCD_HEADER"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>551E0FC8</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>CONTROL_HEADER</value>
+      <libsource lib="rgb-components" part="CONTROL_HEADER"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>551E0FD7</tstamp>
+    </comp>
+    <comp ref="RV1">
+      <value>10k</value>
+      <libsource lib="rgb-components" part="POT-rgb"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>551E1005</tstamp>
+    </comp>
+    <comp ref="IC1">
+      <value>ATMEGA328-P</value>
+      <footprint>DIL28</footprint>
+      <fields>
+        <field name="Manufacturer">Atmel</field>
+        <field name="Product description">AT-MEGA 328-P microcontroller</field>
+        <field name="Product code">AT-MEGA328-P</field>
+        <field name="Supplier">Have</field>
+      </fields>
+      <libsource lib="rgb-components" part="ATMEGA328-P-rgb"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5516EFC5</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_PUSH</value>
+      <libsource lib="device" part="SW_PUSH"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>552A646F</tstamp>
+    </comp>
+    <comp ref="SW2">
+      <value>SW_POWER</value>
+      <libsource lib="rgb-components" part="SW_POWER"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5532D291</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>7805_NUM</value>
+      <libsource lib="rgb-components" part="7805_NUM"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>553FC751</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>100nF</value>
+      <fields>
+        <field name="Tolerance">20%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Manufacturer">Multicomp</field>
+        <field name="Product description">Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 20%, Y5V, 50 V, Radial Leaded</field>
+        <field name="Product code">MC0805Y104M500A2.54MM</field>
+        <field name="Supplier">Farnell</field>
+        <field name="Supplier code">2112751</field>
+      </fields>
+      <libsource lib="rgb-components" part="C-rgb"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>551CD4A5</tstamp>
+    </comp>
+    <comp ref="J7">
+      <value>AUDIO_HEADER_IN</value>
+      <libsource lib="rgb-components" part="AUDIO_HEADER"/>
+      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
+      <tstamp>551ECAF3</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>10k</value>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
+      <tstamp>551ECBDD</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>10k</value>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
+      <tstamp>551ECBEA</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>100nF</value>
+      <fields>
+        <field name="Tolerance">20%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Manufacturer">Multicomp</field>
+        <field name="Product description">Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 20%, Y5V, 50 V, Radial Leaded</field>
+        <field name="Product code">MC0805Y104M500A2.54MM</field>
+        <field name="Supplier">Farnell</field>
+        <field name="Supplier code">2112751</field>
+      </fields>
+      <libsource lib="rgb-components" part="C-rgb"/>
+      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
+      <tstamp>551ECC7E</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>10uF</value>
+      <fields>
+        <field name="Tolerance">20%</field>
+        <field name="Type">Tantalum</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="Product description">Tantalum Capacitor, Resin Coated, 489D Series, 10 µF, ± 20%, 16 V, Radial Leaded, 2.5 mm</field>
+        <field name="Product code">489D106X0016C1VE3</field>
+        <field name="Supplier">Farnell</field>
+        <field name="Supplier code">1753975</field>
+      </fields>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
+      <tstamp>551ECCF9</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>AUDIO_HEADER_OUT</value>
+      <libsource lib="rgb-components" part="AUDIO_HEADER"/>
+      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
+      <tstamp>551ED003</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>100nF</value>
+      <fields>
+        <field name="Tolerance">20%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Manufacturer">Multicomp</field>
+        <field name="Product description">Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 20%, Y5V, 50 V, Radial Leaded</field>
+        <field name="Product code">MC0805Y104M500A2.54MM</field>
+        <field name="Supplier">Farnell</field>
+        <field name="Supplier code">2112751</field>
+      </fields>
+      <libsource lib="rgb-components" part="C-rgb"/>
+      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
+      <tstamp>551EDD6E</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>100nF</value>
+      <fields>
+        <field name="Tolerance">20%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Manufacturer">Multicomp</field>
+        <field name="Product description">Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 20%, Y5V, 50 V, Radial Leaded</field>
+        <field name="Product code">MC0805Y104M500A2.54MM</field>
+        <field name="Supplier">Farnell</field>
+        <field name="Supplier code">2112751</field>
+      </fields>
+      <libsource lib="rgb-components" part="C-rgb"/>
+      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
+      <tstamp>551EDD9D</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>1M</value>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
+      <tstamp>551EDDA5</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>1M</value>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
+      <tstamp>551EDDCE</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>10k</value>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
+      <tstamp>551EE118</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>10k</value>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
+      <tstamp>551EE14A</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>33k</value>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
+      <tstamp>551EE150</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>LM358_BIG</value>
+      <libsource lib="rgb-components" part="LM358_BIG"/>
+      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
+      <tstamp>553FD08D</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>LM358_BIG</value>
+      <libsource lib="rgb-components" part="LM358_BIG"/>
+      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
+      <tstamp>553FD0BF</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>100nF</value>
+      <fields>
+        <field name="Tolerance">20%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Manufacturer">Multicomp</field>
+        <field name="Product description">Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 20%, Y5V, 50 V, Radial Leaded</field>
+        <field name="Product code">MC0805Y104M500A2.54MM</field>
+        <field name="Supplier">Farnell</field>
+        <field name="Supplier code">2112751</field>
+      </fields>
+      <libsource lib="rgb-components" part="C-rgb"/>
+      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
+      <tstamp>56EEEAF3</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>10uF</value>
+      <fields>
+        <field name="Tolerance">20%</field>
+        <field name="Type">Tantalum</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="Product description">Tantalum Capacitor, Resin Coated, 489D Series, 10 µF, ± 20%, 16 V, Radial Leaded, 2.5 mm</field>
+        <field name="Product code">489D106X0016C1VE3</field>
+        <field name="Supplier">Farnell</field>
+        <field name="Supplier code">1753975</field>
+      </fields>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
+      <tstamp>56EEEB6E</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>15k</value>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>55202980</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>15k</value>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>552029B0</tstamp>
+    </comp>
+    <comp ref="C23">
+      <value>47nF</value>
+      <fields>
+        <field name="Tolerance">10%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Manufacturer">Multicomp</field>
+        <field name="Product description">Multilayer Ceramic Capacitor, MCRR Series, 0.047 µF, ± 10%, X7R, 50 V, Radial Leaded</field>
+        <field name="Product code">MCRR25473X7RK0050</field>
+        <field name="Supplier">Farnell</field>
+        <field name="Supplier code">1216437</field>
+      </fields>
+      <libsource lib="rgb-components" part="C-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>552029B8</tstamp>
+    </comp>
+    <comp ref="C20">
+      <value>100nF</value>
+      <fields>
+        <field name="Tolerance">10%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Manufacturer">Multicomp</field>
+        <field name="Product description">Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 10%, X7R, 50 V, Radial Leaded</field>
+        <field name="Product code">MC0805B104K500A2.54MM</field>
+        <field name="Supplier">Farnell</field>
+        <field name="Supplier code">2309020</field>
+      </fields>
+      <libsource lib="rgb-components" part="C-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>552029D5</tstamp>
+    </comp>
+    <comp ref="C21">
+      <value>1uF</value>
+      <fields>
+        <field name="Tolerance">10%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Manufacturer">Multicomp</field>
+        <field name="Product description">Multilayer Ceramic Capacitor, MLR Series, 1 µF, ± 10%, X7R, 50 V, Radial Leaded</field>
+        <field name="Product code">MCMLR50V105KX7R</field>
+        <field name="Supplier">Farnell</field>
+        <field name="Supplier code">2112947</field>
+        <field name="Notes">5.08mm spacing</field>
+      </fields>
+      <libsource lib="rgb-components" part="C-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>55202D6A</tstamp>
+    </comp>
+    <comp ref="R22">
+      <value>680R</value>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>55202D7A</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>10k</value>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>55202D80</tstamp>
+    </comp>
+    <comp ref="R21">
+      <value>330k</value>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>55202DDC</tstamp>
+    </comp>
+    <comp ref="R23">
+      <value>3.9k</value>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>5520DC86</tstamp>
+    </comp>
+    <comp ref="R28">
+      <value>8.2k</value>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>5520DC8C</tstamp>
+    </comp>
+    <comp ref="R26">
+      <value>680R</value>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>5520DCD6</tstamp>
+    </comp>
+    <comp ref="R24">
+      <value>10k</value>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>5520DCDC</tstamp>
+    </comp>
+    <comp ref="R27">
+      <value>330k</value>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>5520DCF4</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>3.9k</value>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>55215897</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>8.2k</value>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>5521589D</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>15k</value>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>552158E3</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>15k</value>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>552158E9</tstamp>
+    </comp>
+    <comp ref="C19">
+      <value>4.7nF</value>
+      <fields>
+        <field name="Tolerance">10%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Manufacturer">Kemet</field>
+        <field name="Product description">Multilayer Ceramic Capacitor, Gold Max, C315 Series, 4700 pF, ± 10%, X7R, 100 V, Radial Leaded</field>
+        <field name="Product code">C315C472K1R5TA</field>
+        <field name="Supplier">Farnell</field>
+        <field name="Supplier code">1457649</field>
+      </fields>
+      <libsource lib="rgb-components" part="C-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>552158EF</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>10nF</value>
+      <fields>
+        <field name="Tolerance">10%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Manufacturer">Multicomp</field>
+        <field name="Product description">Multilayer Ceramic Capacitor, MCRR Series, 0.01 µF, ± 10%, X7R, 50 V, Radial Leaded</field>
+        <field name="Product code">MCRR25103X7RK0050</field>
+        <field name="Supplier">Farnell</field>
+        <field name="Supplier code">1216435</field>
+      </fields>
+      <libsource lib="rgb-components" part="C-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>552158F5</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>680R</value>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>5521591B</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>10k</value>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>55215921</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>DIODE</value>
+      <fields>
+        <field name="Manufacturer">Multicomp</field>
+        <field name="Product description">Small Signal Diode, Single, 100 V, 150 mA, 1 V, 4 ns, 500 mA</field>
+        <field name="Product code">1N4148</field>
+        <field name="Supplier">Farnell</field>
+        <field name="Supplier code">9565124</field>
+      </fields>
+      <libsource lib="rgb-components" part="DIODE-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>55215933</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>330k</value>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>55215939</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>LM358_BIG</value>
+      <libsource lib="rgb-components" part="LM358_BIG"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>553FD13A</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>LM358_BIG</value>
+      <libsource lib="rgb-components" part="LM358_BIG"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>553FD153</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>100k</value>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>56EDA1FB</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>100k</value>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>56EDAAFF</tstamp>
+    </comp>
+    <comp ref="R25">
+      <value>100k</value>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>56EDB60F</tstamp>
+    </comp>
+    <comp ref="C16">
+      <value>100nF</value>
+      <fields>
+        <field name="Tolerance">10%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Manufacturer">Multicomp</field>
+        <field name="Product description">Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 10%, X7R, 50 V, Radial Leaded</field>
+        <field name="Product code">MC0805B104K500A2.54MM</field>
+        <field name="Supplier">Farnell</field>
+        <field name="Supplier code">2309020</field>
+      </fields>
+      <libsource lib="rgb-components" part="C-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>56F796C5</tstamp>
+    </comp>
+    <comp ref="C17">
+      <value>100nF</value>
+      <fields>
+        <field name="Tolerance">10%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Manufacturer">Multicomp</field>
+        <field name="Product description">Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 10%, X7R, 50 V, Radial Leaded</field>
+        <field name="Product code">MC0805B104K500A2.54MM</field>
+        <field name="Supplier">Farnell</field>
+        <field name="Supplier code">2309020</field>
+      </fields>
+      <libsource lib="rgb-components" part="C-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>56F79836</tstamp>
+    </comp>
+    <comp ref="C22">
+      <value>100nF</value>
+      <fields>
+        <field name="Tolerance">10%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Manufacturer">Multicomp</field>
+        <field name="Product description">Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 10%, X7R, 50 V, Radial Leaded</field>
+        <field name="Product code">MC0805B104K500A2.54MM</field>
+        <field name="Supplier">Farnell</field>
+        <field name="Supplier code">2309020</field>
+      </fields>
+      <libsource lib="rgb-components" part="C-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>56F7993C</tstamp>
+    </comp>
+    <comp ref="C18">
+      <value>100nF</value>
+      <fields>
+        <field name="Tolerance">10%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Manufacturer">Multicomp</field>
+        <field name="Product description">Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 10%, X7R, 50 V, Radial Leaded</field>
+        <field name="Product code">MC0805B104K500A2.54MM</field>
+        <field name="Supplier">Farnell</field>
+        <field name="Supplier code">2309020</field>
+      </fields>
+      <libsource lib="rgb-components" part="C-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>56F79D38</tstamp>
+    </comp>
+    <comp ref="C27">
+      <value>100nF</value>
+      <fields>
+        <field name="Tolerance">10%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Manufacturer">Multicomp</field>
+        <field name="Product description">Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 10%, X7R, 50 V, Radial Leaded</field>
+        <field name="Product code">MC0805B104K500A2.54MM</field>
+        <field name="Supplier">Farnell</field>
+        <field name="Supplier code">2309020</field>
+      </fields>
+      <libsource lib="rgb-components" part="C-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>56F79E72</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>1uF</value>
+      <fields>
+        <field name="Tolerance">10%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Manufacturer">Multicomp</field>
+        <field name="Product description">Multilayer Ceramic Capacitor, MLR Series, 1 µF, ± 10%, X7R, 50 V, Radial Leaded</field>
+        <field name="Product code">MCMLR50V105KX7R</field>
+        <field name="Supplier">Farnell</field>
+        <field name="Supplier code">2112947</field>
+        <field name="Notes">5.08mm spacing</field>
+      </fields>
+      <libsource lib="rgb-components" part="C-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>56F7A1C3</tstamp>
+    </comp>
+    <comp ref="C24">
+      <value>1uF</value>
+      <fields>
+        <field name="Tolerance">10%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Manufacturer">Multicomp</field>
+        <field name="Product description">Multilayer Ceramic Capacitor, MLR Series, 1 µF, ± 10%, X7R, 50 V, Radial Leaded</field>
+        <field name="Product code">MCMLR50V105KX7R</field>
+        <field name="Supplier">Farnell</field>
+        <field name="Supplier code">2112947</field>
+        <field name="Notes">5.08mm spacing</field>
+      </fields>
+      <libsource lib="rgb-components" part="C-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>56F7A2CB</tstamp>
+    </comp>
+    <comp ref="C25">
+      <value>10nF</value>
+      <fields>
+        <field name="Tolerance">10%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Manufacturer">Multicomp</field>
+        <field name="Product description">Multilayer Ceramic Capacitor, MCRR Series, 0.01 µF, ± 10%, X7R, 50 V, Radial Leaded</field>
+        <field name="Product code">MCRR25103X7RK0050</field>
+        <field name="Supplier">Farnell</field>
+        <field name="Supplier code">1216435</field>
+      </fields>
+      <libsource lib="rgb-components" part="C-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>56F7A59B</tstamp>
+    </comp>
+    <comp ref="C26">
+      <value>10nF</value>
+      <fields>
+        <field name="Tolerance">10%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Manufacturer">Multicomp</field>
+        <field name="Product description">Multilayer Ceramic Capacitor, MCRR Series, 0.01 µF, ± 10%, X7R, 50 V, Radial Leaded</field>
+        <field name="Product code">MCRR25103X7RK0050</field>
+        <field name="Supplier">Farnell</field>
+        <field name="Supplier code">1216435</field>
+      </fields>
+      <libsource lib="rgb-components" part="C-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>56F7A6B9</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>DIODE</value>
+      <fields>
+        <field name="Manufacturer">Multicomp</field>
+        <field name="Product description">Small Signal Diode, Single, 100 V, 150 mA, 1 V, 4 ns, 500 mA</field>
+        <field name="Product code">1N4148</field>
+        <field name="Supplier">Farnell</field>
+        <field name="Supplier code">9565124</field>
+      </fields>
+      <libsource lib="rgb-components" part="DIODE-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>56F84D81</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>DIODE</value>
+      <fields>
+        <field name="Manufacturer">Multicomp</field>
+        <field name="Product description">Small Signal Diode, Single, 100 V, 150 mA, 1 V, 4 ns, 500 mA</field>
+        <field name="Product code">1N4148</field>
+        <field name="Supplier">Farnell</field>
+        <field name="Supplier code">9565124</field>
+      </fields>
+      <libsource lib="rgb-components" part="DIODE-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>56F84E79</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="rgb-components" part="7805_NUM">
+      <description>Linear Regulator +5V</description>
+      <docs>regulator\lm78xx.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">7805_NUM</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VI" type="input"/>
+        <pin num="2" name="GND" type="input"/>
+        <pin num="3" name="VO" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="rgb-components" part="ATMEGA328-P-rgb">
+      <footprints>
+        <fp>28DIP-ELL600</fp>
+        <fp>28dip600</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">ATMEGA328-P-rgb</field>
+        <field name="Footprint">DIL28</field>
+      </fields>
+      <pins>
+        <pin num="1" name="(PCINT14/~RESET~)PC6" type="BiDi"/>
+        <pin num="2" name="(PCINT16/RXD)PD0" type="BiDi"/>
+        <pin num="3" name="(PCINT17/TXD)PD1" type="BiDi"/>
+        <pin num="4" name="(PCINT18/INT0)PD2" type="BiDi"/>
+        <pin num="5" name="(PCINT19/OC2B/INT1)PD3" type="BiDi"/>
+        <pin num="6" name="(PCINT20/XCK/T0)PD4" type="BiDi"/>
+        <pin num="7" name="VCC" type="power_in"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="(PCINT6/XTAL1/TOSC1)PB6" type="BiDi"/>
+        <pin num="10" name="(PCINT7/XTAL2/TOSC2)PB7" type="BiDi"/>
+        <pin num="11" name="(PCINT21/OC0B/T1)PD5" type="BiDi"/>
+        <pin num="12" name="(PCINT22/OC0A/AIN0)PD6" type="BiDi"/>
+        <pin num="13" name="(PCINT23/AIN1)PD7" type="BiDi"/>
+        <pin num="14" name="(PCINT0/CLKO/ICP1)PB0" type="BiDi"/>
+        <pin num="15" name="(PCINT1/OC1A)PB1" type="BiDi"/>
+        <pin num="16" name="(PCINT2/OC1B/~SS~)PB2" type="BiDi"/>
+        <pin num="17" name="(PCINT3/OC2A/MOSI)PB3" type="BiDi"/>
+        <pin num="18" name="(PCINT4/MISO)PB4" type="BiDi"/>
+        <pin num="19" name="(PCINT5/SCK)PB5" type="BiDi"/>
+        <pin num="20" name="AVCC" type="power_in"/>
+        <pin num="21" name="AREF" type="BiDi"/>
+        <pin num="22" name="GND" type="power_in"/>
+        <pin num="23" name="(PCINT8/ADC0)PC0" type="BiDi"/>
+        <pin num="24" name="(PCINT9/ADC1)PC1" type="BiDi"/>
+        <pin num="25" name="(PCINT10/ADC2)PC2" type="BiDi"/>
+        <pin num="26" name="(PCINT11/ADC3)PC3" type="BiDi"/>
+        <pin num="27" name="(PCINT12/SDA/ADC4)PC4" type="BiDi"/>
+        <pin num="28" name="(PCINT14/SCL/ADC5)PC5" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="rgb-components" part="AUDIO_HEADER">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">AUDIO_HEADER</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="passive"/>
+        <pin num="2" name="LEFT" type="passive"/>
+        <pin num="3" name="RIGHT" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="rgb-controller-cache" part="C-RESCUE-rgb-controller">
+      <footprints>
+        <fp>SM*</fp>
+        <fp>C?</fp>
+        <fp>C1-1</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C-RESCUE-rgb-controller</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="rgb-components" part="C-rgb">
+      <footprints>
+        <fp>SM*</fp>
+        <fp>C?</fp>
+        <fp>C1-1</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C-rgb</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="rgb-components" part="CONTROL_HEADER">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONTROL_HEADER</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="ENC_CW" type="output"/>
+        <pin num="3" name="ENC_CCW" type="output"/>
+        <pin num="4" name="MODE" type="output"/>
+        <pin num="5" name="PARAM" type="output"/>
+        <pin num="6" name="NC" type="NotConnected"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="CP">
+      <description>Polarised capacitor</description>
+      <footprints>
+        <fp>CP*</fp>
+        <fp>Elko*</fp>
+        <fp>TantalC*</fp>
+        <fp>C*elec</fp>
+        <fp>c_elec*</fp>
+        <fp>SMD*_Pol</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="rgb-components" part="CP-rgb">
+      <description>Polarised capacitor</description>
+      <footprints>
+        <fp>CP*</fp>
+        <fp>Elko*</fp>
+        <fp>TantalC*</fp>
+        <fp>C*elec</fp>
+        <fp>c_elec*</fp>
+        <fp>SMD*_Pol</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP-rgb</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="rgb-components" part="CRYSTAL-rgb">
+      <fields>
+        <field name="Reference">X</field>
+        <field name="Value">CRYSTAL-rgb</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="rgb-components" part="DIODE-rgb">
+      <footprints>
+        <fp>D?</fp>
+        <fp>S*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">DIODE-rgb</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="K" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="rgb-components" part="LCD_HEADER">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">LCD_HEADER</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Vdd" type="power_in"/>
+        <pin num="2" name="Vss" type="power_in"/>
+        <pin num="3" name="Vo" type="passive"/>
+        <pin num="4" name="RS" type="input"/>
+        <pin num="5" name="R/W'" type="power_in"/>
+        <pin num="6" name="E" type="power_in"/>
+        <pin num="7" name="DB0" type="input"/>
+        <pin num="8" name="DB1" type="input"/>
+        <pin num="9" name="DB2" type="input"/>
+        <pin num="10" name="DB3" type="input"/>
+        <pin num="11" name="A" type="power_in"/>
+        <pin num="12" name="K" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="rgb-components" part="LED_HEADER">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">LED_HEADER</field>
+      </fields>
+      <pins>
+        <pin num="1" name="RED" type="passive"/>
+        <pin num="2" name="GREEN" type="passive"/>
+        <pin num="3" name="BLUE" type="passive"/>
+        <pin num="4" name="VCC1" type="passive"/>
+        <pin num="5" name="VCC2" type="passive"/>
+        <pin num="6" name="VCC3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="rgb-components" part="LM358_BIG">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM358_BIG</field>
+      </fields>
+      <pins>
+        <pin num="1" name="OUT" type="output"/>
+        <pin num="2" name="INV" type="input"/>
+        <pin num="3" name="NON_INV" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="NON_INV" type="input"/>
+        <pin num="6" name="INV" type="input"/>
+        <pin num="7" name="OUT" type="output"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="rgb-components" part="POT-rgb">
+      <fields>
+        <field name="Reference">RV</field>
+        <field name="Value">POT-rgb</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="rgb-components" part="PWR_IN">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">PWR_IN</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND1" type="power_out"/>
+        <pin num="2" name="GND2" type="passive"/>
+        <pin num="3" name="VCC1" type="power_out"/>
+        <pin num="4" name="VCC2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="rgb-components" part="R-rgb">
+      <footprints>
+        <fp>R?</fp>
+        <fp>SM0603</fp>
+        <fp>SM0805</fp>
+        <fp>R?-*</fp>
+        <fp>SM1206</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R-rgb</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="rgb-components" part="STP35NF10">
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">STP35NF10</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="passive"/>
+        <pin num="2" name="D" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="rgb-components" part="SW_POWER">
+      <description>Interrupteur simple</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_POWER</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="power_in"/>
+        <pin num="2" name="2" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="SW_PUSH">
+      <description>Button</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_PUSH</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="rgb-components" part="UART_HEADER">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">UART_HEADER</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="passive"/>
+        <pin num="2" name="VCC" type="passive"/>
+        <pin num="3" name="TX" type="output"/>
+        <pin num="4" name="RX" type="input"/>
+        <pin num="5" name="DTR" type="output"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="rgb-controller-cache">
+      <uri>/home/andy/Desktop/projects/light-panel/pcb/main-board/rgb-controller-cache.lib</uri>
+    </library>
+    <library logical="rgb-components">
+      <uri>/home/andy/Desktop/projects/light-panel/pcb/main-board/rgb-components.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(IC1-Pad28)">
+      <node ref="IC1" pin="28"/>
+    </net>
+    <net code="2" name="/DB2">
+      <node ref="J1" pin="9"/>
+      <node ref="IC1" pin="17"/>
+    </net>
+    <net code="3" name="/DB1">
+      <node ref="J1" pin="8"/>
+      <node ref="IC1" pin="16"/>
+    </net>
+    <net code="4" name="/DB0">
+      <node ref="J1" pin="7"/>
+      <node ref="IC1" pin="15"/>
+    </net>
+    <net code="5" name="/RS">
+      <node ref="J1" pin="4"/>
+      <node ref="IC1" pin="14"/>
+    </net>
+    <net code="6" name="/DB3">
+      <node ref="IC1" pin="18"/>
+      <node ref="J1" pin="10"/>
+    </net>
+    <net code="7" name="/PARAM">
+      <node ref="J2" pin="5"/>
+      <node ref="IC1" pin="19"/>
+    </net>
+    <net code="8" name="Net-(IC1-Pad27)">
+      <node ref="IC1" pin="27"/>
+    </net>
+    <net code="9" name="Net-(IC1-Pad26)">
+      <node ref="IC1" pin="26"/>
+    </net>
+    <net code="10" name="/Colour Organ/LEVEL_BLUE">
+      <node ref="R27" pin="2"/>
+      <node ref="IC1" pin="25"/>
+      <node ref="C27" pin="2"/>
+      <node ref="D3" pin="2"/>
+    </net>
+    <net code="11" name="/MODE">
+      <node ref="J2" pin="4"/>
+      <node ref="IC1" pin="13"/>
+    </net>
+    <net code="12" name="/ENC_CCW">
+      <node ref="J2" pin="3"/>
+      <node ref="IC1" pin="12"/>
+    </net>
+    <net code="13" name="/ENC_CW">
+      <node ref="IC1" pin="11"/>
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="14" name="GND">
+      <node ref="C11" pin="2"/>
+      <node ref="U3" pin="4"/>
+      <node ref="U2" pin="4"/>
+      <node ref="J6" pin="1"/>
+      <node ref="C8" pin="1"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="RV2" pin="1"/>
+      <node ref="J3" pin="1"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="J2" pin="1"/>
+      <node ref="J1" pin="12"/>
+      <node ref="J1" pin="5"/>
+      <node ref="J1" pin="2"/>
+      <node ref="R26" pin="1"/>
+      <node ref="R27" pin="1"/>
+      <node ref="R21" pin="1"/>
+      <node ref="U4" pin="4"/>
+      <node ref="U5" pin="4"/>
+      <node ref="C27" pin="1"/>
+      <node ref="C18" pin="1"/>
+      <node ref="R22" pin="1"/>
+      <node ref="C10" pin="1"/>
+      <node ref="R8" pin="2"/>
+      <node ref="J7" pin="1"/>
+      <node ref="C22" pin="1"/>
+      <node ref="R14" pin="1"/>
+      <node ref="R15" pin="1"/>
+      <node ref="U1" pin="2"/>
+      <node ref="J5" pin="1"/>
+      <node ref="SW1" pin="2"/>
+      <node ref="Q1" pin="3"/>
+      <node ref="Q2" pin="3"/>
+      <node ref="J5" pin="2"/>
+      <node ref="Q3" pin="3"/>
+      <node ref="IC1" pin="22"/>
+      <node ref="RV1" pin="1"/>
+      <node ref="IC1" pin="8"/>
+    </net>
+    <net code="15" name="Net-(C1-Pad1)">
+      <node ref="IC1" pin="9"/>
+      <node ref="X1" pin="1"/>
+      <node ref="C1" pin="1"/>
+    </net>
+    <net code="16" name="Net-(IC1-Pad3)">
+      <node ref="IC1" pin="3"/>
+      <node ref="J3" pin="4"/>
+    </net>
+    <net code="17" name="/Audio processing/AUDIO">
+      <node ref="R19" pin="1"/>
+      <node ref="C25" pin="2"/>
+      <node ref="C16" pin="2"/>
+      <node ref="R2" pin="2"/>
+      <node ref="U2" pin="7"/>
+    </net>
+    <net code="18" name="/Audio processing/AGND">
+      <node ref="C10" pin="2"/>
+      <node ref="U3" pin="7"/>
+      <node ref="R6" pin="2"/>
+      <node ref="R16" pin="1"/>
+      <node ref="R28" pin="1"/>
+      <node ref="C23" pin="2"/>
+      <node ref="C11" pin="1"/>
+      <node ref="U3" pin="6"/>
+      <node ref="U2" pin="5"/>
+      <node ref="C19" pin="2"/>
+      <node ref="R4" pin="2"/>
+    </net>
+    <net code="19" name="+5V">
+      <node ref="R1" pin="2"/>
+      <node ref="J1" pin="11"/>
+      <node ref="C3" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="J1" pin="1"/>
+      <node ref="IC1" pin="20"/>
+      <node ref="RV2" pin="3"/>
+      <node ref="U1" pin="3"/>
+      <node ref="J1" pin="6"/>
+      <node ref="IC1" pin="7"/>
+      <node ref="J3" pin="2"/>
+      <node ref="RV1" pin="3"/>
+      <node ref="C2" pin="1"/>
+    </net>
+    <net code="20" name="Net-(C7-Pad2)">
+      <node ref="J3" pin="5"/>
+      <node ref="C7" pin="2"/>
+    </net>
+    <net code="21" name="/Colour Organ/LEVEL_RED">
+      <node ref="C22" pin="2"/>
+      <node ref="D2" pin="2"/>
+      <node ref="IC1" pin="23"/>
+      <node ref="R21" pin="2"/>
+    </net>
+    <net code="22" name="/Colour Organ/LEVEL_GREEN">
+      <node ref="IC1" pin="24"/>
+      <node ref="R15" pin="2"/>
+      <node ref="D1" pin="2"/>
+      <node ref="C18" pin="2"/>
+    </net>
+    <net code="23" name="+12V">
+      <node ref="R17" pin="2"/>
+      <node ref="J4" pin="5"/>
+      <node ref="J4" pin="6"/>
+      <node ref="SW2" pin="2"/>
+      <node ref="R10" pin="2"/>
+      <node ref="U5" pin="8"/>
+      <node ref="U4" pin="8"/>
+      <node ref="R24" pin="2"/>
+      <node ref="U1" pin="1"/>
+      <node ref="C8" pin="2"/>
+      <node ref="C9" pin="1"/>
+      <node ref="J4" pin="4"/>
+      <node ref="U2" pin="8"/>
+      <node ref="U3" pin="8"/>
+      <node ref="R7" pin="1"/>
+    </net>
+    <net code="24" name="Net-(J1-Pad3)">
+      <node ref="RV1" pin="2"/>
+      <node ref="J1" pin="3"/>
+    </net>
+    <net code="25" name="Net-(C7-Pad1)">
+      <node ref="IC1" pin="1"/>
+      <node ref="SW1" pin="1"/>
+      <node ref="C7" pin="1"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="26" name="Net-(J4-Pad3)">
+      <node ref="J4" pin="3"/>
+      <node ref="Q3" pin="2"/>
+    </net>
+    <net code="27" name="Net-(J4-Pad1)">
+      <node ref="Q1" pin="2"/>
+      <node ref="J4" pin="1"/>
+    </net>
+    <net code="28" name="Net-(J4-Pad2)">
+      <node ref="Q2" pin="2"/>
+      <node ref="J4" pin="2"/>
+    </net>
+    <net code="29" name="Net-(J5-Pad3)">
+      <node ref="SW2" pin="1"/>
+      <node ref="J5" pin="4"/>
+      <node ref="J5" pin="3"/>
+    </net>
+    <net code="30" name="Net-(C5-Pad1)">
+      <node ref="IC1" pin="10"/>
+      <node ref="C5" pin="1"/>
+      <node ref="X1" pin="2"/>
+    </net>
+    <net code="31" name="Net-(C6-Pad1)">
+      <node ref="C6" pin="1"/>
+      <node ref="RV2" pin="2"/>
+      <node ref="IC1" pin="21"/>
+    </net>
+    <net code="32" name="/G_BLUE">
+      <node ref="IC1" pin="6"/>
+      <node ref="Q3" pin="1"/>
+    </net>
+    <net code="33" name="/G_GREEN">
+      <node ref="IC1" pin="5"/>
+      <node ref="Q2" pin="1"/>
+    </net>
+    <net code="34" name="/G_RED">
+      <node ref="Q1" pin="1"/>
+      <node ref="IC1" pin="4"/>
+    </net>
+    <net code="35" name="Net-(J2-Pad6)">
+      <node ref="J2" pin="6"/>
+    </net>
+    <net code="36" name="Net-(IC1-Pad2)">
+      <node ref="IC1" pin="2"/>
+      <node ref="J3" pin="3"/>
+    </net>
+    <net code="37" name="Net-(R2-Pad1)">
+      <node ref="U2" pin="6"/>
+      <node ref="R2" pin="1"/>
+      <node ref="R5" pin="2"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="38" name="Net-(R3-Pad1)">
+      <node ref="R3" pin="1"/>
+      <node ref="U2" pin="1"/>
+      <node ref="U2" pin="2"/>
+    </net>
+    <net code="39" name="Net-(R5-Pad1)">
+      <node ref="U3" pin="2"/>
+      <node ref="R5" pin="1"/>
+      <node ref="U3" pin="1"/>
+    </net>
+    <net code="40" name="Net-(R7-Pad2)">
+      <node ref="U3" pin="5"/>
+      <node ref="R7" pin="2"/>
+      <node ref="R8" pin="1"/>
+    </net>
+    <net code="41" name="Net-(C12-Pad1)">
+      <node ref="J6" pin="3"/>
+      <node ref="C12" pin="1"/>
+      <node ref="J7" pin="3"/>
+    </net>
+    <net code="42" name="Net-(C12-Pad2)">
+      <node ref="R4" pin="1"/>
+      <node ref="C12" pin="2"/>
+      <node ref="U2" pin="3"/>
+    </net>
+    <net code="43" name="Net-(C13-Pad2)">
+      <node ref="C13" pin="2"/>
+      <node ref="R6" pin="1"/>
+      <node ref="U3" pin="3"/>
+    </net>
+    <net code="44" name="Net-(C13-Pad1)">
+      <node ref="C13" pin="1"/>
+      <node ref="J6" pin="2"/>
+      <node ref="J7" pin="2"/>
+    </net>
+    <net code="45" name="Net-(C14-Pad1)">
+      <node ref="U4" pin="1"/>
+      <node ref="C14" pin="1"/>
+      <node ref="U4" pin="2"/>
+      <node ref="C15" pin="2"/>
+    </net>
+    <net code="46" name="Net-(C14-Pad2)">
+      <node ref="R12" pin="2"/>
+      <node ref="R13" pin="1"/>
+      <node ref="C14" pin="2"/>
+    </net>
+    <net code="47" name="Net-(C19-Pad1)">
+      <node ref="R13" pin="2"/>
+      <node ref="C19" pin="1"/>
+      <node ref="U4" pin="3"/>
+    </net>
+    <net code="48" name="Net-(R12-Pad1)">
+      <node ref="R12" pin="1"/>
+      <node ref="U4" pin="6"/>
+      <node ref="U4" pin="7"/>
+      <node ref="R9" pin="2"/>
+    </net>
+    <net code="49" name="Net-(C17-Pad1)">
+      <node ref="U4" pin="5"/>
+      <node ref="C17" pin="1"/>
+      <node ref="R16" pin="2"/>
+    </net>
+    <net code="50" name="Net-(R10-Pad1)">
+      <node ref="R10" pin="1"/>
+      <node ref="R11" pin="1"/>
+      <node ref="R14" pin="2"/>
+    </net>
+    <net code="51" name="Net-(C15-Pad1)">
+      <node ref="R11" pin="2"/>
+      <node ref="C15" pin="1"/>
+      <node ref="D1" pin="1"/>
+    </net>
+    <net code="52" name="Net-(C24-Pad1)">
+      <node ref="D3" pin="1"/>
+      <node ref="R25" pin="2"/>
+      <node ref="C24" pin="1"/>
+    </net>
+    <net code="53" name="Net-(C20-Pad1)">
+      <node ref="C21" pin="2"/>
+      <node ref="C20" pin="1"/>
+      <node ref="U5" pin="2"/>
+      <node ref="U5" pin="1"/>
+    </net>
+    <net code="54" name="Net-(C24-Pad2)">
+      <node ref="C24" pin="2"/>
+      <node ref="U5" pin="6"/>
+      <node ref="R23" pin="2"/>
+      <node ref="U5" pin="7"/>
+    </net>
+    <net code="55" name="Net-(R17-Pad1)">
+      <node ref="R22" pin="2"/>
+      <node ref="R18" pin="1"/>
+      <node ref="R17" pin="1"/>
+    </net>
+    <net code="56" name="Net-(R24-Pad1)">
+      <node ref="R25" pin="1"/>
+      <node ref="R24" pin="1"/>
+      <node ref="R26" pin="2"/>
+    </net>
+    <net code="57" name="Net-(C26-Pad1)">
+      <node ref="R28" pin="2"/>
+      <node ref="C26" pin="1"/>
+      <node ref="U5" pin="5"/>
+    </net>
+    <net code="58" name="Net-(C25-Pad1)">
+      <node ref="C26" pin="2"/>
+      <node ref="R23" pin="1"/>
+      <node ref="C25" pin="1"/>
+    </net>
+    <net code="59" name="Net-(C23-Pad1)">
+      <node ref="C23" pin="1"/>
+      <node ref="U5" pin="3"/>
+      <node ref="R20" pin="2"/>
+    </net>
+    <net code="60" name="Net-(C20-Pad2)">
+      <node ref="R19" pin="2"/>
+      <node ref="R20" pin="1"/>
+      <node ref="C20" pin="2"/>
+    </net>
+    <net code="61" name="Net-(C21-Pad1)">
+      <node ref="C21" pin="1"/>
+      <node ref="D2" pin="1"/>
+      <node ref="R18" pin="2"/>
+    </net>
+    <net code="62" name="Net-(C16-Pad1)">
+      <node ref="C17" pin="2"/>
+      <node ref="C16" pin="1"/>
+      <node ref="R9" pin="1"/>
+    </net>
+  </nets>
+</export>

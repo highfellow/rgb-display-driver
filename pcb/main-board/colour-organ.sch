@@ -1,0 +1,998 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:rgb-components
+LIBS:rgb-controller-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date "28 apr 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 9200 6000 0    60   UnSpc ~ 0
+AGND
+Text HLabel 9150 6350 0    60   Input ~ 0
+AUDIO
+Text HLabel 6500 4300 2    60   Output ~ 0
+LEVEL_RED
+Text HLabel 9700 1750 2    60   Output ~ 0
+LEVEL_GREEN
+Text HLabel 6250 6600 2    60   Output ~ 0
+LEVEL_BLUE
+Text HLabel 10250 6000 0    60   UnSpc ~ 0
+VCC
+Text HLabel 10250 6300 0    60   UnSpc ~ 0
+GND
+$Comp
+L +12V #PWR033
+U 1 1 552024FF
+P 10450 6000
+F 0 "#PWR033" H 10450 5950 20  0001 C CNN
+F 1 "+12V" H 10450 6100 30  0000 C CNN
+F 2 "" H 10450 6000 60  0000 C CNN
+F 3 "" H 10450 6000 60  0000 C CNN
+	1    10450 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-rgb #PWR034
+U 1 1 5520250E
+P 10450 6350
+F 0 "#PWR034" H 10450 6350 30  0001 C CNN
+F 1 "GND-rgb" H 10450 6280 30  0001 C CNN
+F 2 "" H 10450 6350 60  0000 C CNN
+F 3 "" H 10450 6350 60  0000 C CNN
+	1    10450 6350
+	1    0    0    -1  
+$EndComp
+Text Label 9350 6000 0    60   ~ 0
+AGND
+Text Label 9350 6350 0    60   ~ 0
+AUDIO
+$Comp
+L R-rgb R20
+U 1 1 55202980
+P 2300 4500
+F 0 "R20" V 2380 4500 40  0000 C CNN
+F 1 "15k" V 2307 4501 40  0000 C CNN
+F 2 "~" V 2230 4500 30  0000 C CNN
+F 3 "~" H 2300 4500 30  0000 C CNN
+	1    2300 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R-rgb R19
+U 1 1 552029B0
+P 1600 4500
+F 0 "R19" V 1680 4500 40  0000 C CNN
+F 1 "15k" V 1607 4501 40  0000 C CNN
+F 2 "~" V 1530 4500 30  0000 C CNN
+F 3 "~" H 1600 4500 30  0000 C CNN
+	1    1600 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C-rgb C23
+U 1 1 552029B8
+P 2650 4800
+F 0 "C23" H 2650 4900 40  0000 L CNN
+F 1 "47nF" H 2656 4715 40  0000 L CNN
+F 2 "~" H 2688 4650 30  0000 C CNN
+F 3 "~" H 2650 4800 60  0000 C CNN
+F 4 "10%" H 2650 4800 60  0001 C CNN "Tolerance"
+F 5 "Ceramic" H 2650 4800 60  0001 C CNN "Type"
+F 6 "Multicomp" H 2650 4800 60  0001 C CNN "Manufacturer"
+F 7 "Multilayer Ceramic Capacitor, MCRR Series, 0.047 µF, ± 10%, X7R, 50 V, Radial Leaded" H 2650 4800 60  0001 C CNN "Product description"
+F 8 "MCRR25473X7RK0050" H 2650 4800 60  0001 C CNN "Product code"
+F 9 "Farnell" H 2650 4800 60  0001 C CNN "Supplier"
+F 10 "1216437" H 2650 4800 60  0001 C CNN "Supplier code"
+	1    2650 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-rgb C20
+U 1 1 552029D5
+P 2150 3350
+F 0 "C20" H 2150 3450 40  0000 L CNN
+F 1 "100nF" H 2156 3265 40  0000 L CNN
+F 2 "~" H 2188 3200 30  0000 C CNN
+F 3 "~" H 2150 3350 60  0000 C CNN
+F 4 "10%" H 2150 3350 60  0001 C CNN "Tolerance"
+F 5 "Ceramic" H 2150 3350 60  0001 C CNN "Type"
+F 6 "Multicomp" H 2150 3350 60  0001 C CNN "Manufacturer"
+F 7 "Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 10%, X7R, 50 V, Radial Leaded" H 2150 3350 60  0001 C CNN "Product description"
+F 8 "MC0805B104K500A2.54MM" H 2150 3350 60  0001 C CNN "Product code"
+F 9 "Farnell" H 2150 3350 60  0001 C CNN "Supplier"
+F 10 "2309020" H 2150 3350 60  0001 C CNN "Supplier code"
+	1    2150 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L GND-rgb #PWR035
+U 1 1 552029E1
+P 3400 5200
+F 0 "#PWR035" H 3400 5200 30  0001 C CNN
+F 1 "GND-rgb" H 3400 5130 30  0001 C CNN
+F 2 "" H 3400 5200 60  0000 C CNN
+F 3 "" H 3400 5200 60  0000 C CNN
+	1    3400 5200
+	1    0    0    -1  
+$EndComp
+Text Label 2650 5200 0    60   ~ 0
+AGND
+Text Label 1050 4500 0    60   ~ 0
+AUDIO
+$Comp
+L C-rgb C21
+U 1 1 55202D6A
+P 4450 4300
+F 0 "C21" H 4450 4400 40  0000 L CNN
+F 1 "1uF" H 4456 4215 40  0000 L CNN
+F 2 "~" H 4488 4150 30  0000 C CNN
+F 3 "~" H 4450 4300 60  0000 C CNN
+F 4 "10%" H 4450 4300 60  0001 C CNN "Tolerance"
+F 5 "Ceramic" H 4450 4300 60  0001 C CNN "Type"
+F 6 "Multicomp" H 4450 4300 60  0001 C CNN "Manufacturer"
+F 7 "Multilayer Ceramic Capacitor, MLR Series, 1 µF, ± 10%, X7R, 50 V, Radial Leaded" H 4450 4300 60  0001 C CNN "Product description"
+F 8 "MCMLR50V105KX7R" H 4450 4300 60  0001 C CNN "Product code"
+F 9 "Farnell" H 4450 4300 60  0001 C CNN "Supplier"
+F 10 "2112947" H 4450 4300 60  0001 C CNN "Supplier code"
+F 11 "5.08mm spacing" H 4450 4300 60  0001 C CNN "Notes"
+	1    4450 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L R-rgb R22
+U 1 1 55202D7A
+P 4750 4750
+F 0 "R22" V 4830 4750 40  0000 C CNN
+F 1 "680R" V 4757 4751 40  0000 C CNN
+F 2 "~" V 4680 4750 30  0000 C CNN
+F 3 "~" H 4750 4750 30  0000 C CNN
+	1    4750 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L R-rgb R17
+U 1 1 55202D80
+P 4750 3800
+F 0 "R17" V 4830 3800 40  0000 C CNN
+F 1 "10k" V 4757 3801 40  0000 C CNN
+F 2 "~" V 4680 3800 30  0000 C CNN
+F 3 "~" H 4750 3800 30  0000 C CNN
+	1    4750 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L +12V #PWR036
+U 1 1 55202DC1
+P 4750 3450
+F 0 "#PWR036" H 4750 3400 20  0001 C CNN
+F 1 "+12V" H 4750 3550 30  0000 C CNN
+F 2 "" H 4750 3450 60  0000 C CNN
+F 3 "" H 4750 3450 60  0000 C CNN
+	1    4750 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-rgb R21
+U 1 1 55202DDC
+P 6300 4700
+F 0 "R21" V 6380 4700 40  0000 C CNN
+F 1 "330k" V 6307 4701 40  0000 C CNN
+F 2 "~" V 6230 4700 30  0000 C CNN
+F 3 "~" H 6300 4700 30  0000 C CNN
+	1    6300 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L R-rgb R23
+U 1 1 5520DC86
+P 1900 5650
+F 0 "R23" V 1980 5650 40  0000 C CNN
+F 1 "3.9k" V 1907 5651 40  0000 C CNN
+F 2 "~" V 1830 5650 30  0000 C CNN
+F 3 "~" H 1900 5650 30  0000 C CNN
+	1    1900 5650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R-rgb R28
+U 1 1 5520DC8C
+P 2350 7150
+F 0 "R28" V 2430 7150 40  0000 C CNN
+F 1 "8.2k" V 2357 7151 40  0000 C CNN
+F 2 "~" V 2280 7150 30  0000 C CNN
+F 3 "~" H 2350 7150 30  0000 C CNN
+	1    2350 7150
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND-rgb #PWR037
+U 1 1 5520DCA4
+P 3100 7500
+F 0 "#PWR037" H 3100 7500 30  0001 C CNN
+F 1 "GND-rgb" H 3100 7430 30  0001 C CNN
+F 2 "" H 3100 7500 60  0000 C CNN
+F 3 "" H 3100 7500 60  0000 C CNN
+	1    3100 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR038
+U 1 1 5520DCAA
+P 3100 5900
+F 0 "#PWR038" H 3100 5850 20  0001 C CNN
+F 1 "+12V" H 3100 6000 30  0000 C CNN
+F 2 "" H 3100 5900 60  0000 C CNN
+F 3 "" H 3100 5900 60  0000 C CNN
+	1    3100 5900
+	1    0    0    -1  
+$EndComp
+Text Label 2350 7550 0    60   ~ 0
+AGND
+Text Label 750  6800 0    60   ~ 0
+AUDIO
+$Comp
+L R-rgb R26
+U 1 1 5520DCD6
+P 4450 7050
+F 0 "R26" V 4530 7050 40  0000 C CNN
+F 1 "680R" V 4457 7051 40  0000 C CNN
+F 2 "~" V 4380 7050 30  0000 C CNN
+F 3 "~" H 4450 7050 30  0000 C CNN
+	1    4450 7050
+	-1   0    0    1   
+$EndComp
+$Comp
+L R-rgb R24
+U 1 1 5520DCDC
+P 4450 6100
+F 0 "R24" V 4530 6100 40  0000 C CNN
+F 1 "10k" V 4457 6101 40  0000 C CNN
+F 2 "~" V 4380 6100 30  0000 C CNN
+F 3 "~" H 4450 6100 30  0000 C CNN
+	1    4450 6100
+	-1   0    0    1   
+$EndComp
+$Comp
+L +12V #PWR039
+U 1 1 5520DCE2
+P 4450 5750
+F 0 "#PWR039" H 4450 5700 20  0001 C CNN
+F 1 "+12V" H 4450 5850 30  0000 C CNN
+F 2 "" H 4450 5750 60  0000 C CNN
+F 3 "" H 4450 5750 60  0000 C CNN
+	1    4450 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-rgb R27
+U 1 1 5520DCF4
+P 6050 7050
+F 0 "R27" V 6130 7050 40  0000 C CNN
+F 1 "330k" V 6057 7051 40  0000 C CNN
+F 2 "~" V 5980 7050 30  0000 C CNN
+F 3 "~" H 6050 7050 30  0000 C CNN
+	1    6050 7050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10450 6000 10250 6000
+Wire Wire Line
+	10450 6350 10450 6300
+Wire Wire Line
+	10450 6300 10250 6300
+Wire Wire Line
+	9350 6000 9200 6000
+Wire Wire Line
+	9350 6350 9150 6350
+Wire Wire Line
+	2550 4500 2750 4500
+Wire Wire Line
+	2650 4600 2650 4500
+Connection ~ 2650 4500
+Wire Wire Line
+	1850 4500 2050 4500
+Wire Wire Line
+	1950 3350 1950 4500
+Connection ~ 1950 4500
+Wire Wire Line
+	2350 3350 4150 3350
+Wire Wire Line
+	4150 3350 4150 4300
+Wire Wire Line
+	2750 4100 2750 3350
+Connection ~ 2750 3350
+Wire Wire Line
+	3400 5150 6300 5150
+Wire Wire Line
+	3400 4800 3400 5200
+Connection ~ 3400 5150
+Wire Wire Line
+	2650 5000 2650 5200
+Wire Wire Line
+	1350 4500 1050 4500
+Wire Wire Line
+	4150 4300 4250 4300
+Wire Wire Line
+	4650 4300 5400 4300
+Wire Wire Line
+	4750 3550 4750 3450
+Wire Wire Line
+	5800 4300 6500 4300
+Wire Wire Line
+	6300 4300 6300 4450
+Wire Wire Line
+	5900 4500 5900 4300
+Connection ~ 5900 4300
+Wire Wire Line
+	5900 5150 5900 4900
+Wire Wire Line
+	6300 5150 6300 4950
+Connection ~ 5900 5150
+Connection ~ 6300 4300
+Wire Wire Line
+	2250 6800 2450 6800
+Connection ~ 2350 6800
+Wire Wire Line
+	1550 6800 1850 6800
+Wire Wire Line
+	1650 5650 1650 6800
+Connection ~ 1650 6800
+Wire Wire Line
+	3850 5650 3850 6600
+Wire Wire Line
+	2450 6400 2450 5650
+Connection ~ 2450 5650
+Wire Wire Line
+	3100 7450 6050 7450
+Wire Wire Line
+	3100 7100 3100 7500
+Connection ~ 3100 7450
+Wire Wire Line
+	750  6800 1150 6800
+Wire Wire Line
+	3100 6100 3100 5900
+Wire Wire Line
+	3850 6600 3950 6600
+Wire Wire Line
+	4350 6600 5150 6600
+Wire Wire Line
+	4450 6350 4450 6800
+Wire Wire Line
+	4450 5850 4450 5750
+Wire Wire Line
+	5550 6600 6250 6600
+Wire Wire Line
+	6050 6600 6050 6800
+Wire Wire Line
+	5650 6850 5650 6600
+Connection ~ 5650 6600
+Wire Wire Line
+	4450 7450 4450 7300
+Wire Wire Line
+	5650 7450 5650 7250
+Connection ~ 4450 7450
+Wire Wire Line
+	6050 7450 6050 7300
+Connection ~ 5650 7450
+Connection ~ 6050 6600
+Wire Wire Line
+	2150 5650 3850 5650
+Wire Wire Line
+	2350 6900 2350 6800
+Wire Wire Line
+	2350 7400 2350 7550
+$Comp
+L R-rgb R9
+U 1 1 55215897
+P 2450 1000
+F 0 "R9" V 2530 1000 40  0000 C CNN
+F 1 "3.9k" V 2457 1001 40  0000 C CNN
+F 2 "~" V 2380 1000 30  0000 C CNN
+F 3 "~" H 2450 1000 30  0000 C CNN
+	1    2450 1000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R-rgb R16
+U 1 1 5521589D
+P 2900 2500
+F 0 "R16" V 2980 2500 40  0000 C CNN
+F 1 "8.2k" V 2907 2501 40  0000 C CNN
+F 2 "~" V 2830 2500 30  0000 C CNN
+F 3 "~" H 2900 2500 30  0000 C CNN
+	1    2900 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND-rgb #PWR040
+U 1 1 552158AF
+P 3650 2850
+F 0 "#PWR040" H 3650 2850 30  0001 C CNN
+F 1 "GND-rgb" H 3650 2780 30  0001 C CNN
+F 2 "" H 3650 2850 60  0000 C CNN
+F 3 "" H 3650 2850 60  0000 C CNN
+	1    3650 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR041
+U 1 1 552158B5
+P 3650 1250
+F 0 "#PWR041" H 3650 1200 20  0001 C CNN
+F 1 "+12V" H 3650 1350 30  0000 C CNN
+F 2 "" H 3650 1250 60  0000 C CNN
+F 3 "" H 3650 1250 60  0000 C CNN
+	1    3650 1250
+	1    0    0    -1  
+$EndComp
+Text Label 2900 2900 0    60   ~ 0
+AGND
+Text Label 1300 2150 0    60   ~ 0
+AUDIO
+Wire Wire Line
+	2800 2150 3000 2150
+Connection ~ 2900 2150
+Wire Wire Line
+	2100 2150 2400 2150
+Wire Wire Line
+	2200 1000 2200 2150
+Connection ~ 2200 2150
+Wire Wire Line
+	4400 1000 4400 1950
+Wire Wire Line
+	3000 1750 3000 1000
+Connection ~ 3000 1000
+Wire Wire Line
+	3650 2450 3650 2850
+Wire Wire Line
+	1300 2150 1700 2150
+Wire Wire Line
+	3650 1450 3650 1250
+Wire Wire Line
+	4400 1950 4500 1950
+Wire Wire Line
+	2700 1000 4400 1000
+Wire Wire Line
+	2900 2250 2900 2150
+Wire Wire Line
+	2900 2750 2900 2900
+$Comp
+L R-rgb R13
+U 1 1 552158E3
+P 5450 1950
+F 0 "R13" V 5530 1950 40  0000 C CNN
+F 1 "15k" V 5457 1951 40  0000 C CNN
+F 2 "~" V 5380 1950 30  0000 C CNN
+F 3 "~" H 5450 1950 30  0000 C CNN
+	1    5450 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R-rgb R12
+U 1 1 552158E9
+P 4750 1950
+F 0 "R12" V 4830 1950 40  0000 C CNN
+F 1 "15k" V 4757 1951 40  0000 C CNN
+F 2 "~" V 4680 1950 30  0000 C CNN
+F 3 "~" H 4750 1950 30  0000 C CNN
+	1    4750 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C-rgb C19
+U 1 1 552158EF
+P 5800 2250
+F 0 "C19" H 5800 2350 40  0000 L CNN
+F 1 "4.7nF" H 5806 2165 40  0000 L CNN
+F 2 "~" H 5838 2100 30  0000 C CNN
+F 3 "~" H 5800 2250 60  0000 C CNN
+F 4 "10%" H 5800 2250 60  0001 C CNN "Tolerance"
+F 5 "Ceramic" H 5800 2250 60  0001 C CNN "Type"
+F 6 "Kemet" H 5800 2250 60  0001 C CNN "Manufacturer"
+F 7 "Multilayer Ceramic Capacitor, Gold Max, C315 Series, 4700 pF, ± 10%, X7R, 100 V, Radial Leaded" H 5800 2250 60  0001 C CNN "Product description"
+F 8 "C315C472K1R5TA" H 5800 2250 60  0001 C CNN "Product code"
+F 9 "Farnell" H 5800 2250 60  0001 C CNN "Supplier"
+F 10 "1457649" H 5800 2250 60  0001 C CNN "Supplier code"
+	1    5800 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-rgb C14
+U 1 1 552158F5
+P 5300 800
+F 0 "C14" H 5300 900 40  0000 L CNN
+F 1 "10nF" H 5306 715 40  0000 L CNN
+F 2 "~" H 5338 650 30  0000 C CNN
+F 3 "~" H 5300 800 60  0000 C CNN
+F 4 "10%" H 5300 800 60  0001 C CNN "Tolerance"
+F 5 "Ceramic" H 5300 800 60  0001 C CNN "Type"
+F 6 "Multicomp" H 5300 800 60  0001 C CNN "Manufacturer"
+F 7 "Multilayer Ceramic Capacitor, MCRR Series, 0.01 µF, ± 10%, X7R, 50 V, Radial Leaded" H 5300 800 60  0001 C CNN "Product description"
+F 8 "MCRR25103X7RK0050" H 5300 800 60  0001 C CNN "Product code"
+F 9 "Farnell" H 5300 800 60  0001 C CNN "Supplier"
+F 10 "1216435" H 5300 800 60  0001 C CNN "Supplier code"
+	1    5300 800 
+	0    1    1    0   
+$EndComp
+$Comp
+L GND-rgb #PWR042
+U 1 1 55215901
+P 6550 2650
+F 0 "#PWR042" H 6550 2650 30  0001 C CNN
+F 1 "GND-rgb" H 6550 2580 30  0001 C CNN
+F 2 "" H 6550 2650 60  0000 C CNN
+F 3 "" H 6550 2650 60  0000 C CNN
+	1    6550 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR043
+U 1 1 55215907
+P 6550 1050
+F 0 "#PWR043" H 6550 1000 20  0001 C CNN
+F 1 "+12V" H 6550 1150 30  0000 C CNN
+F 2 "" H 6550 1050 60  0000 C CNN
+F 3 "" H 6550 1050 60  0000 C CNN
+	1    6550 1050
+	1    0    0    -1  
+$EndComp
+Text Label 5800 2650 0    60   ~ 0
+AGND
+$Comp
+L R-rgb R14
+U 1 1 5521591B
+P 7900 2150
+F 0 "R14" V 7980 2150 40  0000 C CNN
+F 1 "680R" V 7907 2151 40  0000 C CNN
+F 2 "~" V 7830 2150 30  0000 C CNN
+F 3 "~" H 7900 2150 30  0000 C CNN
+	1    7900 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L R-rgb R10
+U 1 1 55215921
+P 7900 1250
+F 0 "R10" V 7980 1250 40  0000 C CNN
+F 1 "10k" V 7907 1251 40  0000 C CNN
+F 2 "~" V 7830 1250 30  0000 C CNN
+F 3 "~" H 7900 1250 30  0000 C CNN
+	1    7900 1250
+	-1   0    0    1   
+$EndComp
+$Comp
+L +12V #PWR044
+U 1 1 55215927
+P 7900 900
+F 0 "#PWR044" H 7900 850 20  0001 C CNN
+F 1 "+12V" H 7900 1000 30  0000 C CNN
+F 2 "" H 7900 900 60  0000 C CNN
+F 3 "" H 7900 900 60  0000 C CNN
+	1    7900 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODE-rgb D1
+U 1 1 55215933
+P 8800 1750
+F 0 "D1" H 8800 1850 40  0000 C CNN
+F 1 "DIODE" H 8800 1650 40  0000 C CNN
+F 2 "~" H 8800 1750 60  0000 C CNN
+F 3 "~" H 8800 1750 60  0000 C CNN
+F 4 "Multicomp" H 8800 1750 60  0001 C CNN "Manufacturer"
+F 5 "Small Signal Diode, Single, 100 V, 150 mA, 1 V, 4 ns, 500 mA" H 8800 1750 60  0001 C CNN "Product description"
+F 6 "1N4148" H 8800 1750 60  0001 C CNN "Product code"
+F 7 "Farnell" H 8800 1750 60  0001 C CNN "Supplier"
+F 8 "9565124" H 8800 1750 60  0001 C CNN "Supplier code"
+	1    8800 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-rgb R15
+U 1 1 55215939
+P 9500 2200
+F 0 "R15" V 9580 2200 40  0000 C CNN
+F 1 "330k" V 9507 2201 40  0000 C CNN
+F 2 "~" V 9430 2200 30  0000 C CNN
+F 3 "~" H 9500 2200 30  0000 C CNN
+	1    9500 2200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5700 1950 5900 1950
+Wire Wire Line
+	5800 2050 5800 1950
+Connection ~ 5800 1950
+Wire Wire Line
+	5000 1950 5200 1950
+Wire Wire Line
+	5100 800  5100 1950
+Connection ~ 5100 1950
+Wire Wire Line
+	5500 800  7300 800 
+Wire Wire Line
+	7300 800  7300 1750
+Wire Wire Line
+	5900 1550 5900 800 
+Connection ~ 5900 800 
+Wire Wire Line
+	6550 2600 9500 2600
+Wire Wire Line
+	6550 2250 6550 2650
+Connection ~ 6550 2600
+Wire Wire Line
+	5800 2450 5800 2650
+Wire Wire Line
+	6550 1250 6550 1050
+Wire Wire Line
+	7300 1750 7400 1750
+Wire Wire Line
+	7800 1750 8600 1750
+Wire Wire Line
+	7900 1500 7900 1900
+Wire Wire Line
+	7900 1000 7900 900 
+Wire Wire Line
+	9000 1750 9700 1750
+Wire Wire Line
+	9500 1750 9500 1950
+Wire Wire Line
+	9100 1950 9100 1750
+Connection ~ 9100 1750
+Wire Wire Line
+	7900 2600 7900 2400
+Wire Wire Line
+	9100 2600 9100 2350
+Connection ~ 7900 2600
+Wire Wire Line
+	9500 2600 9500 2450
+Connection ~ 9100 2600
+Connection ~ 9500 1750
+$Comp
+L +12V #PWR045
+U 1 1 5532D600
+P 3400 3600
+F 0 "#PWR045" H 3400 3550 20  0001 C CNN
+F 1 "+12V" H 3400 3700 30  0000 C CNN
+F 2 "" H 3400 3600 60  0000 C CNN
+F 3 "" H 3400 3600 60  0000 C CNN
+	1    3400 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3800 3400 3600
+$Comp
+L LM358_BIG U5
+U 1 1 553FD13A
+P 3300 4300
+F 0 "U5" H 3200 3750 60  0000 C CNN
+F 1 "LM358_BIG" H 3200 4850 60  0000 C CNN
+F 2 "~" H 3300 4300 60  0000 C CNN
+F 3 "~" H 3300 4300 60  0000 C CNN
+	1    3300 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM358_BIG U4
+U 2 1 553FD153
+P 3550 1950
+F 0 "U4" H 3450 1400 60  0000 C CNN
+F 1 "LM358_BIG" H 3450 2500 60  0000 C CNN
+F 2 "~" H 3550 1950 60  0000 C CNN
+F 3 "~" H 3550 1950 60  0000 C CNN
+	2    3550 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM358_BIG U5
+U 2 1 553FD16C
+P 3000 6600
+F 0 "U5" H 2900 6050 60  0000 C CNN
+F 1 "LM358_BIG" H 2900 7150 60  0000 C CNN
+F 2 "~" H 3000 6600 60  0000 C CNN
+F 3 "~" H 3000 6600 60  0000 C CNN
+	2    3000 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM358_BIG U4
+U 1 1 553FD185
+P 6450 1750
+F 0 "U4" H 6350 1200 60  0000 C CNN
+F 1 "LM358_BIG" H 6350 2300 60  0000 C CNN
+F 2 "~" H 6450 1750 60  0000 C CNN
+F 3 "~" H 6450 1750 60  0000 C CNN
+	1    6450 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 4050 4750 4500
+Wire Wire Line
+	4750 5000 4750 5150
+Connection ~ 4750 5150
+$Comp
+L R-rgb R18
+U 1 1 56EDA1FB
+P 5050 4100
+F 0 "R18" V 5130 4100 40  0000 C CNN
+F 1 "100k" V 5057 4101 40  0000 C CNN
+F 2 "~" V 4980 4100 30  0000 C CNN
+F 3 "~" H 5050 4100 30  0000 C CNN
+	1    5050 4100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4800 4100 4750 4100
+Connection ~ 4750 4100
+Wire Wire Line
+	5300 4100 5300 4300
+Connection ~ 5300 4300
+$Comp
+L R-rgb R11
+U 1 1 56EDAAFF
+P 8250 1550
+F 0 "R11" V 8330 1550 40  0000 C CNN
+F 1 "100k" V 8257 1551 40  0000 C CNN
+F 2 "~" V 8180 1550 30  0000 C CNN
+F 3 "~" H 8250 1550 30  0000 C CNN
+	1    8250 1550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7900 1550 8000 1550
+Connection ~ 7900 1550
+Wire Wire Line
+	8500 1550 8500 1750
+Connection ~ 8500 1750
+$Comp
+L R-rgb R25
+U 1 1 56EDB60F
+P 4800 6400
+F 0 "R25" V 4880 6400 40  0000 C CNN
+F 1 "100k" V 4807 6401 40  0000 C CNN
+F 2 "~" V 4730 6400 30  0000 C CNN
+F 3 "~" H 4800 6400 30  0000 C CNN
+	1    4800 6400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4550 6400 4450 6400
+Connection ~ 4450 6400
+Wire Wire Line
+	5050 6400 5050 6600
+Connection ~ 5050 6600
+$Comp
+L C-rgb C16
+U 1 1 56F796C5
+P 1900 2150
+F 0 "C16" H 1900 2250 40  0000 L CNN
+F 1 "100nF" H 1906 2065 40  0000 L CNN
+F 2 "~" H 1938 2000 30  0000 C CNN
+F 3 "~" H 1900 2150 60  0000 C CNN
+F 4 "10%" H 1900 2150 60  0001 C CNN "Tolerance"
+F 5 "Ceramic" H 1900 2150 60  0001 C CNN "Type"
+F 6 "Multicomp" H 1900 2150 60  0001 C CNN "Manufacturer"
+F 7 "Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 10%, X7R, 50 V, Radial Leaded" H 1900 2150 60  0001 C CNN "Product description"
+F 8 "MC0805B104K500A2.54MM" H 1900 2150 60  0001 C CNN "Product code"
+F 9 "Farnell" H 1900 2150 60  0001 C CNN "Supplier"
+F 10 "2309020" H 1900 2150 60  0001 C CNN "Supplier code"
+	1    1900 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L C-rgb C17
+U 1 1 56F79836
+P 2600 2150
+F 0 "C17" H 2600 2250 40  0000 L CNN
+F 1 "100nF" H 2606 2065 40  0000 L CNN
+F 2 "~" H 2638 2000 30  0000 C CNN
+F 3 "~" H 2600 2150 60  0000 C CNN
+F 4 "10%" H 2600 2150 60  0001 C CNN "Tolerance"
+F 5 "Ceramic" H 2600 2150 60  0001 C CNN "Type"
+F 6 "Multicomp" H 2600 2150 60  0001 C CNN "Manufacturer"
+F 7 "Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 10%, X7R, 50 V, Radial Leaded" H 2600 2150 60  0001 C CNN "Product description"
+F 8 "MC0805B104K500A2.54MM" H 2600 2150 60  0001 C CNN "Product code"
+F 9 "Farnell" H 2600 2150 60  0001 C CNN "Supplier"
+F 10 "2309020" H 2600 2150 60  0001 C CNN "Supplier code"
+	1    2600 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L C-rgb C22
+U 1 1 56F7993C
+P 5900 4700
+F 0 "C22" H 5900 4800 40  0000 L CNN
+F 1 "100nF" H 5906 4615 40  0000 L CNN
+F 2 "~" H 5938 4550 30  0000 C CNN
+F 3 "~" H 5900 4700 60  0000 C CNN
+F 4 "10%" H 5900 4700 60  0001 C CNN "Tolerance"
+F 5 "Ceramic" H 5900 4700 60  0001 C CNN "Type"
+F 6 "Multicomp" H 5900 4700 60  0001 C CNN "Manufacturer"
+F 7 "Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 10%, X7R, 50 V, Radial Leaded" H 5900 4700 60  0001 C CNN "Product description"
+F 8 "MC0805B104K500A2.54MM" H 5900 4700 60  0001 C CNN "Product code"
+F 9 "Farnell" H 5900 4700 60  0001 C CNN "Supplier"
+F 10 "2309020" H 5900 4700 60  0001 C CNN "Supplier code"
+	1    5900 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L C-rgb C18
+U 1 1 56F79D38
+P 9100 2150
+F 0 "C18" H 9100 2250 40  0000 L CNN
+F 1 "100nF" H 9106 2065 40  0000 L CNN
+F 2 "~" H 9138 2000 30  0000 C CNN
+F 3 "~" H 9100 2150 60  0000 C CNN
+F 4 "10%" H 9100 2150 60  0001 C CNN "Tolerance"
+F 5 "Ceramic" H 9100 2150 60  0001 C CNN "Type"
+F 6 "Multicomp" H 9100 2150 60  0001 C CNN "Manufacturer"
+F 7 "Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 10%, X7R, 50 V, Radial Leaded" H 9100 2150 60  0001 C CNN "Product description"
+F 8 "MC0805B104K500A2.54MM" H 9100 2150 60  0001 C CNN "Product code"
+F 9 "Farnell" H 9100 2150 60  0001 C CNN "Supplier"
+F 10 "2309020" H 9100 2150 60  0001 C CNN "Supplier code"
+	1    9100 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L C-rgb C27
+U 1 1 56F79E72
+P 5650 7050
+F 0 "C27" H 5650 7150 40  0000 L CNN
+F 1 "100nF" H 5656 6965 40  0000 L CNN
+F 2 "~" H 5688 6900 30  0000 C CNN
+F 3 "~" H 5650 7050 60  0000 C CNN
+F 4 "10%" H 5650 7050 60  0001 C CNN "Tolerance"
+F 5 "Ceramic" H 5650 7050 60  0001 C CNN "Type"
+F 6 "Multicomp" H 5650 7050 60  0001 C CNN "Manufacturer"
+F 7 "Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 10%, X7R, 50 V, Radial Leaded" H 5650 7050 60  0001 C CNN "Product description"
+F 8 "MC0805B104K500A2.54MM" H 5650 7050 60  0001 C CNN "Product code"
+F 9 "Farnell" H 5650 7050 60  0001 C CNN "Supplier"
+F 10 "2309020" H 5650 7050 60  0001 C CNN "Supplier code"
+	1    5650 7050
+	-1   0    0    1   
+$EndComp
+$Comp
+L C-rgb C15
+U 1 1 56F7A1C3
+P 7600 1750
+F 0 "C15" H 7600 1850 40  0000 L CNN
+F 1 "1uF" H 7606 1665 40  0000 L CNN
+F 2 "~" H 7638 1600 30  0000 C CNN
+F 3 "~" H 7600 1750 60  0000 C CNN
+F 4 "10%" H 7600 1750 60  0001 C CNN "Tolerance"
+F 5 "Ceramic" H 7600 1750 60  0001 C CNN "Type"
+F 6 "Multicomp" H 7600 1750 60  0001 C CNN "Manufacturer"
+F 7 "Multilayer Ceramic Capacitor, MLR Series, 1 µF, ± 10%, X7R, 50 V, Radial Leaded" H 7600 1750 60  0001 C CNN "Product description"
+F 8 "MCMLR50V105KX7R" H 7600 1750 60  0001 C CNN "Product code"
+F 9 "Farnell" H 7600 1750 60  0001 C CNN "Supplier"
+F 10 "2112947" H 7600 1750 60  0001 C CNN "Supplier code"
+F 11 "5.08mm spacing" H 7600 1750 60  0001 C CNN "Notes"
+	1    7600 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L C-rgb C24
+U 1 1 56F7A2CB
+P 4150 6600
+F 0 "C24" H 4150 6700 40  0000 L CNN
+F 1 "1uF" H 4156 6515 40  0000 L CNN
+F 2 "~" H 4188 6450 30  0000 C CNN
+F 3 "~" H 4150 6600 60  0000 C CNN
+F 4 "10%" H 4150 6600 60  0001 C CNN "Tolerance"
+F 5 "Ceramic" H 4150 6600 60  0001 C CNN "Type"
+F 6 "Multicomp" H 4150 6600 60  0001 C CNN "Manufacturer"
+F 7 "Multilayer Ceramic Capacitor, MLR Series, 1 µF, ± 10%, X7R, 50 V, Radial Leaded" H 4150 6600 60  0001 C CNN "Product description"
+F 8 "MCMLR50V105KX7R" H 4150 6600 60  0001 C CNN "Product code"
+F 9 "Farnell" H 4150 6600 60  0001 C CNN "Supplier"
+F 10 "2112947" H 4150 6600 60  0001 C CNN "Supplier code"
+F 11 "5.08mm spacing" H 4150 6600 60  0001 C CNN "Notes"
+	1    4150 6600
+	0    1    1    0   
+$EndComp
+$Comp
+L C-rgb C25
+U 1 1 56F7A59B
+P 1350 6800
+F 0 "C25" H 1350 6900 40  0000 L CNN
+F 1 "10nF" H 1356 6715 40  0000 L CNN
+F 2 "~" H 1388 6650 30  0000 C CNN
+F 3 "~" H 1350 6800 60  0000 C CNN
+F 4 "10%" H 1350 6800 60  0001 C CNN "Tolerance"
+F 5 "Ceramic" H 1350 6800 60  0001 C CNN "Type"
+F 6 "Multicomp" H 1350 6800 60  0001 C CNN "Manufacturer"
+F 7 "Multilayer Ceramic Capacitor, MCRR Series, 0.01 µF, ± 10%, X7R, 50 V, Radial Leaded" H 1350 6800 60  0001 C CNN "Product description"
+F 8 "MCRR25103X7RK0050" H 1350 6800 60  0001 C CNN "Product code"
+F 9 "Farnell" H 1350 6800 60  0001 C CNN "Supplier"
+F 10 "1216435" H 1350 6800 60  0001 C CNN "Supplier code"
+	1    1350 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L C-rgb C26
+U 1 1 56F7A6B9
+P 2050 6800
+F 0 "C26" H 2050 6900 40  0000 L CNN
+F 1 "10nF" H 2056 6715 40  0000 L CNN
+F 2 "~" H 2088 6650 30  0000 C CNN
+F 3 "~" H 2050 6800 60  0000 C CNN
+F 4 "10%" H 2050 6800 60  0001 C CNN "Tolerance"
+F 5 "Ceramic" H 2050 6800 60  0001 C CNN "Type"
+F 6 "Multicomp" H 2050 6800 60  0001 C CNN "Manufacturer"
+F 7 "Multilayer Ceramic Capacitor, MCRR Series, 0.01 µF, ± 10%, X7R, 50 V, Radial Leaded" H 2050 6800 60  0001 C CNN "Product description"
+F 8 "MCRR25103X7RK0050" H 2050 6800 60  0001 C CNN "Product code"
+F 9 "Farnell" H 2050 6800 60  0001 C CNN "Supplier"
+F 10 "1216435" H 2050 6800 60  0001 C CNN "Supplier code"
+	1    2050 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L DIODE-rgb D2
+U 1 1 56F84D81
+P 5600 4300
+F 0 "D2" H 5600 4400 40  0000 C CNN
+F 1 "DIODE" H 5600 4200 40  0000 C CNN
+F 2 "~" H 5600 4300 60  0000 C CNN
+F 3 "~" H 5600 4300 60  0000 C CNN
+F 4 "Multicomp" H 5600 4300 60  0001 C CNN "Manufacturer"
+F 5 "Small Signal Diode, Single, 100 V, 150 mA, 1 V, 4 ns, 500 mA" H 5600 4300 60  0001 C CNN "Product description"
+F 6 "1N4148" H 5600 4300 60  0001 C CNN "Product code"
+F 7 "Farnell" H 5600 4300 60  0001 C CNN "Supplier"
+F 8 "9565124" H 5600 4300 60  0001 C CNN "Supplier code"
+	1    5600 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODE-rgb D3
+U 1 1 56F84E79
+P 5350 6600
+F 0 "D3" H 5350 6700 40  0000 C CNN
+F 1 "DIODE" H 5350 6500 40  0000 C CNN
+F 2 "~" H 5350 6600 60  0000 C CNN
+F 3 "~" H 5350 6600 60  0000 C CNN
+F 4 "Multicomp" H 5350 6600 60  0001 C CNN "Manufacturer"
+F 5 "Small Signal Diode, Single, 100 V, 150 mA, 1 V, 4 ns, 500 mA" H 5350 6600 60  0001 C CNN "Product description"
+F 6 "1N4148" H 5350 6600 60  0001 C CNN "Product code"
+F 7 "Farnell" H 5350 6600 60  0001 C CNN "Supplier"
+F 8 "9565124" H 5350 6600 60  0001 C CNN "Supplier code"
+	1    5350 6600
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
