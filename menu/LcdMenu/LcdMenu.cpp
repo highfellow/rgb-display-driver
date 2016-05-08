@@ -65,11 +65,11 @@ void MenuParamValueOption::print(LiquidCrystal *lcd) {
   lcd->print(options[value]);
 }
 
-void MenuParamValueOption::setOption(char index, const char *string) {
+void MenuParamValueOption::setOption(char index, const __FlashStringHelper *string) {
   options[index] = string;
 }
 
-MenuParam::MenuParam(const char *nameArg, MenuParamValue *valueArg) {
+MenuParam::MenuParam(const __FlashStringHelper *nameArg, MenuParamValue *valueArg) {
   name = nameArg;
   value = valueArg;
 }
@@ -104,7 +104,7 @@ MenuParam *MenuParamList::getCurrent() {
   return items[current];
 }
 
-MenuMode::MenuMode(const char* nameArg, MenuParamList *paramsArg, void (*cbArg)(MenuMode *)) {
+MenuMode::MenuMode(const __FlashStringHelper* nameArg, MenuParamList *paramsArg, void (*cbArg)(MenuMode *)) {
   name = nameArg;
   params = paramsArg;
   callback = cbArg;

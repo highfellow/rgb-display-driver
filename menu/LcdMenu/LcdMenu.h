@@ -13,7 +13,7 @@ class MenuParamValue
   public:
     virtual void step(char, unsigned int) {}; // process encoder steps.
     virtual void print(LiquidCrystal *) {}; // print to display.
-    virtual void setOption(char, const char*) {}; // set text of option value.
+    virtual void setOption(char, const __FlashStringHelper*) {}; // set text of option value.
     void set(unsigned int); // set current value.
     unsigned int get(); // read current value.
  protected:
@@ -34,21 +34,21 @@ class MenuParamValueOption : public MenuParamValue {
     MenuParamValueOption(unsigned int, char); // constructor.
     void step(char, unsigned int); // process encoder steps.
     void print(LiquidCrystal *); // print to display.
-    void setOption(char, const char*); // set text of option value.
+    void setOption(char, const __FlashStringHelper*); // set text of option value.
   private:
 /*    unsigned int value; // current option value.*/
-    std::vector<const char *> options; // vector of option strings.
+    std::vector<const __FlashStringHelper *> options; // vector of option strings.
     unsigned char length; // length of option list.
 };
 
 class MenuParam {
   public:
-    MenuParam(const char*, MenuParamValue *); // constructor
+    MenuParam(const __FlashStringHelper*, MenuParamValue *); // constructor
     void print(LiquidCrystal *); // print to lcd
     MenuParamValue *getValue(); // get parameter value.
   private:
     MenuParamValue *value; // value of parameter.
-    const char *name; // name of parameter
+    const __FlashStringHelper *name; // name of parameter
 };
 
 class MenuParamList {
@@ -67,12 +67,12 @@ class MenuParamList {
 class MenuMode
 {
   public:
-    MenuMode(const char *, MenuParamList *, void (*)(MenuMode *)); // constructor.
+    MenuMode(const __FlashStringHelper *, MenuParamList *, void (*)(MenuMode *)); // constructor.
     void print(LiquidCrystal *); // print to lcd
     void runMode(); // run the mode callback.
     MenuParamList *getParams(); // get parameter list.
   private:
-    const char *name; // name of mode
+    const __FlashStringHelper *name; // name of mode
     MenuParamList *params; // list of parameters.
     void (*callback)(MenuMode *); // function callback to run mode.
 };

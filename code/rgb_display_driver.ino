@@ -4,11 +4,12 @@
 // Uses clock in normal mode (no PWM)
 
 // include the library code:
+#include <avr/interrupt.h>
+#include <avr/pgmspace.h>
+#include <math.h>
 #include <LiquidCrystal.h>
 #include <Rotary.h>
 #include <LcdMenu.h>
-#include <avr/interrupt.h>
-#include <math.h>
 
 #define UNITY 4096 // fixed point unity value.
 #define UNITY_BITS 12 // same expressed as a power of 2.
@@ -328,18 +329,18 @@ void addFlickerModes(MenuParamList *params, unsigned char parmBase) {
   MenuParam *param;
   MenuParamValue *value;
   value = new MenuParamValueOption(0, 2);
-  value->setOption(0, "off  ");
-  value->setOption(1, "on   ");
-  param = new MenuParam("Flicker    ", value);
+  value->setOption(0, F("off  "));
+  value->setOption(1, F("on   "));
+  param = new MenuParam(F("Flicker    "), value);
   params->set(parmBase, param);
   value = new MenuParamValuePercent(500);
-  param = new MenuParam("Fl. speed  ", value);
+  param = new MenuParam(F("Fl. speed  "), value);
   params->set(parmBase + 1, param);
   value = new MenuParamValuePercent(500);
-  param = new MenuParam("Fl. fade   ", value);
+  param = new MenuParam(F("Fl. fade   "), value);
   params->set(parmBase + 2, param);
   value = new MenuParamValuePercent(500);
-  param = new MenuParam("Fl. depth  ", value);
+  param = new MenuParam(F("Fl. depth  "), value);
   params->set(parmBase + 3, param);
 }
 
@@ -370,48 +371,48 @@ void setup() {
   modes = new MenuModeList(3);
   params = new MenuParamList(7);
   value = new MenuParamValuePercent(1000);
-  param = new MenuParam("Brightness", value);
+  param = new MenuParam(F("Brightness"), value);
   params->set(0, param);
   value = new MenuParamValuePercent(0);
-  param = new MenuParam("Saturation", value);
+  param = new MenuParam(F("Saturation"), value);
   params->set(1, param);
   value = new MenuParamValuePercent(0);
-  param = new MenuParam("Hue       ", value);
+  param = new MenuParam(F("Hue       "), value);
   params->set(2, param);
   addFlickerModes(params, FLICKER_BASE_SINGLE);
   value = new MenuParamValuePercent(0);
-  mode = new MenuMode("Single Colour", params, &setHSV);
+  mode = new MenuMode(F("Single Colour"), params, &setHSV);
   modes->set(0, mode);
   params = new MenuParamList(6);
   value = new MenuParamValuePercent(1000);
-  param = new MenuParam("Brightness", value);
+  param = new MenuParam(F("Brightness"), value);
   params->set(0, param);
   value = new MenuParamValuePercent(500);
-  param = new MenuParam("Speed     ", value);
+  param = new MenuParam(F("Speed     "), value);
   params->set(1, param);
   addFlickerModes(params, FLICKER_BASE_FADE);
-  mode = new MenuMode("Colour Fade  ", params, &colourCycle);
+  mode = new MenuMode(F("Colour Fade  "), params, &colourCycle);
   modes->set(1, mode);
   params = new MenuParamList(4);
   value = new MenuParamValuePercent(1000);
-  param = new MenuParam("Brightness", value);
+  param = new MenuParam(F("Brightness"), value);
   params->set(0, param);
   value = new MenuParamValuePercent(0);
-  param = new MenuParam("Smoothing ", value);
+  param = new MenuParam(F("Smoothing "), value);
   params->set(1, param);
   value = new MenuParamValuePercent(0);
-  param = new MenuParam("Peakiness ", value);
+  param = new MenuParam(F("Peakiness "), value);
   params->set(2, param);
   value = new MenuParamValueOption(0, 6);
-  value->setOption(0, "rgb  ");
-  value->setOption(1, "rbg  ");
-  value->setOption(2, "grb  ");
-  value->setOption(3, "gbr  ");
-  value->setOption(4, "brg  ");
-  value->setOption(5, "bgr  ");
-  param = new MenuParam("Mapping   ", value);
+  value->setOption(0, F("rgb  "));
+  value->setOption(1, F("rbg  "));
+  value->setOption(2, F("grb  "));
+  value->setOption(3, F("gbr  "));
+  value->setOption(4, F("brg  "));
+  value->setOption(5, F("bgr  "));
+  param = new MenuParam(F("Mapping   "), value);
   params->set(3, param);
-  mode = new MenuMode("Colour Organ ", params, &colourOrgan);
+  mode = new MenuMode(F("Colour Organ "), params, &colourOrgan);
   modes->set(2, mode);
   // initialize the LCD library with the numbers of the pins
   lcd = new LiquidCrystal(7, 8, 9, 10, 11, 12);
