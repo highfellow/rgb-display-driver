@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:rgb-components
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -28,7 +29,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:rgb-components
 LIBS:rgb-controller-cache
 EELAYER 25 0
 EELAYER END
@@ -71,17 +71,6 @@ F 3 "" H 2050 1050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AUDIO_HEADER J7
-U 1 1 551ECAF3
-P 1700 3850
-F 0 "J7" H 1700 3450 60  0000 C CNN
-F 1 "AUDIO_HEADER_IN" H 1800 4200 60  0000 C CNN
-F 2 "" H 1700 3600 60  0000 C CNN
-F 3 "" H 1700 3600 60  0000 C CNN
-	1    1700 3850
-	-1   0    0    1   
-$EndComp
-$Comp
 L +12V #PWR024
 U 1 1 551ECB9F
 P 7350 4250
@@ -104,10 +93,10 @@ F 3 "" H 7350 6000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R-rgb R7
+L R-rgb R10
 U 1 1 551ECBDD
 P 6200 4800
-F 0 "R7" V 6280 4800 40  0000 C CNN
+F 0 "R10" V 6280 4800 40  0000 C CNN
 F 1 "10k" V 6207 4801 40  0000 C CNN
 F 2 "~" V 6130 4800 30  0000 C CNN
 F 3 "~" H 6200 4800 30  0000 C CNN
@@ -115,10 +104,10 @@ F 3 "~" H 6200 4800 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R-rgb R8
+L R-rgb R11
 U 1 1 551ECBEA
 P 6200 5600
-F 0 "R8" V 6280 5600 40  0000 C CNN
+F 0 "R11" V 6280 5600 40  0000 C CNN
 F 1 "10k" V 6207 5601 40  0000 C CNN
 F 2 "~" V 6130 5600 30  0000 C CNN
 F 3 "~" H 6200 5600 30  0000 C CNN
@@ -126,49 +115,20 @@ F 3 "~" H 6200 5600 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C-rgb C10
-U 1 1 551ECC7E
-P 2800 1900
-F 0 "C10" H 2800 2000 40  0000 L CNN
-F 1 "100nF" H 2806 1815 40  0000 L CNN
-F 2 "~" H 2838 1750 30  0000 C CNN
-F 3 "~" H 2800 1900 60  0000 C CNN
-F 4 "20%" H 2800 1900 60  0001 C CNN "Tolerance"
-F 5 "Ceramic" H 2800 1900 60  0001 C CNN "Type"
-F 6 "Multicomp" H 2800 1900 60  0001 C CNN "Manufacturer"
-F 7 "Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 20%, Y5V, 50 V, Radial Leaded" H 2800 1900 60  0001 C CNN "Product description"
-F 8 "MC0805Y104M500A2.54MM" H 2800 1900 60  0001 C CNN "Product code"
-F 9 "Farnell" H 2800 1900 60  0001 C CNN "Supplier"
-F 10 "2112751" H 2800 1900 60  0001 C CNN "Supplier code"
-	1    2800 1900
-	-1   0    0    1   
-$EndComp
-$Comp
-L CP C11
-U 1 1 551ECCF9
-P 3100 1900
-F 0 "C11" H 3100 2000 40  0000 L CNN
-F 1 "10uF" H 3106 1815 40  0000 L CNN
-F 2 "~" H 3138 1750 30  0000 C CNN
-F 3 "~" H 3100 1900 60  0000 C CNN
-F 4 "20%" H 3100 1900 60  0001 C CNN "Tolerance"
-F 5 "Tantalum" H 3100 1900 60  0001 C CNN "Type"
-F 6 "Vishay" H 3100 1900 60  0001 C CNN "Manufacturer"
-F 7 "Tantalum Capacitor, Resin Coated, 489D Series, 10 µF, ± 20%, 16 V, Radial Leaded, 2.5 mm" H 3100 1900 60  0001 C CNN "Product description"
-F 8 "489D106X0016C1VE3" H 3100 1900 60  0001 C CNN "Product code"
-F 9 "Farnell" H 3100 1900 60  0001 C CNN "Supplier"
-F 10 "1753975" H 3100 1900 60  0001 C CNN "Supplier code"
-	1    3100 1900
-	1    0    0    -1  
-$EndComp
-$Comp
 L AUDIO_HEADER J6
 U 1 1 551ED003
 P 1700 2900
 F 0 "J6" H 1700 2500 60  0000 C CNN
-F 1 "AUDIO_HEADER_OUT" H 1800 3250 60  0000 C CNN
+F 1 "INPUT_JACK" H 1800 3250 60  0000 C CNN
 F 2 "" H 1700 2650 60  0000 C CNN
 F 3 "" H 1700 2650 60  0000 C CNN
+F 4 "CUI Inc" H 1700 2900 60  0001 C CNN "Manufacturer"
+F 5 "3.50mm (0.141\", 1/8\", Mini Plug) - Headphone Phone Jack Stereo Connector Solder" H 1700 2900 60  0001 C CNN "Product description"
+F 6 "SJ1-3523NG" H 1700 2900 60  0001 C CNN "Product code"
+F 7 "Digikey" H 1700 2900 60  0001 C CNN "Supplier"
+F 8 "CP1-3523NG-ND" H 1700 2900 60  0001 C CNN "Supplier code"
+F 9 "No" H 1700 2900 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-detail/en/cui-inc/SJ1-3523NG/CP1-3523NG-ND/738692" H 1700 2900 60  0001 C CNN "Supplier URL"
 	1    1700 2900
 	-1   0    0    1   
 $EndComp
@@ -206,10 +166,10 @@ F 3 "" H 4700 2950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C-rgb C12
+L C-rgb C11
 U 1 1 551EDD6E
 P 2800 2750
-F 0 "C12" H 2800 2850 40  0000 L CNN
+F 0 "C11" H 2800 2850 40  0000 L CNN
 F 1 "100nF" H 2806 2665 40  0000 L CNN
 F 2 "~" H 2838 2600 30  0000 C CNN
 F 3 "~" H 2800 2750 60  0000 C CNN
@@ -224,10 +184,10 @@ F 10 "2112751" H 2800 2750 60  0001 C CNN "Supplier code"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C-rgb C13
+L C-rgb C12
 U 1 1 551EDD9D
 P 2800 3850
-F 0 "C13" H 2800 3950 40  0000 L CNN
+F 0 "C12" H 2800 3950 40  0000 L CNN
 F 1 "100nF" H 2806 3765 40  0000 L CNN
 F 2 "~" H 2838 3700 30  0000 C CNN
 F 3 "~" H 2800 3850 60  0000 C CNN
@@ -242,10 +202,10 @@ F 10 "2112751" H 2800 3850 60  0001 C CNN "Supplier code"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R-rgb R4
+L R-rgb R6
 U 1 1 551EDDA5
 P 3200 3000
-F 0 "R4" V 3280 3000 40  0000 C CNN
+F 0 "R6" V 3280 3000 40  0000 C CNN
 F 1 "1M" V 3207 3001 40  0000 C CNN
 F 2 "~" V 3130 3000 30  0000 C CNN
 F 3 "~" H 3200 3000 30  0000 C CNN
@@ -253,10 +213,10 @@ F 3 "~" H 3200 3000 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R-rgb R6
+L R-rgb R7
 U 1 1 551EDDCE
 P 3200 4100
-F 0 "R6" V 3280 4100 40  0000 C CNN
+F 0 "R7" V 3280 4100 40  0000 C CNN
 F 1 "1M" V 3207 4101 40  0000 C CNN
 F 2 "~" V 3130 4100 30  0000 C CNN
 F 3 "~" H 3200 4100 30  0000 C CNN
@@ -264,10 +224,10 @@ F 3 "~" H 3200 4100 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R-rgb R3
+L R-rgb R8
 U 1 1 551EE118
 P 5950 2300
-F 0 "R3" V 6030 2300 40  0000 C CNN
+F 0 "R8" V 6030 2300 40  0000 C CNN
 F 1 "10k" V 5957 2301 40  0000 C CNN
 F 2 "~" V 5880 2300 30  0000 C CNN
 F 3 "~" H 5950 2300 30  0000 C CNN
@@ -275,10 +235,10 @@ F 3 "~" H 5950 2300 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R-rgb R5
+L R-rgb R9
 U 1 1 551EE14A
 P 5950 3250
-F 0 "R5" V 6030 3250 40  0000 C CNN
+F 0 "R9" V 6030 3250 40  0000 C CNN
 F 1 "10k" V 5957 3251 40  0000 C CNN
 F 2 "~" V 5880 3250 30  0000 C CNN
 F 3 "~" H 5950 3250 30  0000 C CNN
@@ -286,10 +246,10 @@ F 3 "~" H 5950 3250 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R-rgb R2
+L R-rgb R12
 U 1 1 551EE150
 P 7350 1400
-F 0 "R2" V 7430 1400 40  0000 C CNN
+F 0 "R12" V 7430 1400 40  0000 C CNN
 F 1 "33k" V 7357 1401 40  0000 C CNN
 F 2 "~" V 7280 1400 30  0000 C CNN
 F 3 "~" H 7350 1400 30  0000 C CNN
@@ -485,25 +445,25 @@ F 3 "~" H 4600 2300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LM358_BIG U2
-U 2 1 553FD0A6
+L LM358_BIG U3
+U 1 1 553FD0A6
 P 7250 2500
-F 0 "U2" H 7150 1950 60  0000 C CNN
+F 0 "U3" H 7150 1950 60  0000 C CNN
 F 1 "LM358_BIG" H 7150 3050 60  0000 C CNN
 F 2 "~" H 7250 2500 60  0000 C CNN
 F 3 "~" H 7250 2500 60  0000 C CNN
-	2    7250 2500
+	1    7250 2500
 	1    0    0    -1  
 $EndComp
 $Comp
-L LM358_BIG U3
-U 1 1 553FD0BF
+L LM358_BIG U2
+U 2 1 553FD0BF
 P 4600 4200
-F 0 "U3" H 4500 3650 60  0000 C CNN
+F 0 "U2" H 4500 3650 60  0000 C CNN
 F 1 "LM358_BIG" H 4500 4750 60  0000 C CNN
 F 2 "~" H 4600 4200 60  0000 C CNN
 F 3 "~" H 4600 4200 60  0000 C CNN
-	1    4600 4200
+	2    4600 4200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -515,42 +475,6 @@ F 1 "LM358_BIG" H 7150 5550 60  0000 C CNN
 F 2 "~" H 7250 5000 60  0000 C CNN
 F 3 "~" H 7250 5000 60  0000 C CNN
 	2    7250 5000
-	1    0    0    -1  
-$EndComp
-$Comp
-L C-rgb C8
-U 1 1 56EEEAF3
-P 1650 1700
-F 0 "C8" H 1650 1800 40  0000 L CNN
-F 1 "100nF" H 1656 1615 40  0000 L CNN
-F 2 "~" H 1688 1550 30  0000 C CNN
-F 3 "~" H 1650 1700 60  0000 C CNN
-F 4 "20%" H 1650 1700 60  0001 C CNN "Tolerance"
-F 5 "Ceramic" H 1650 1700 60  0001 C CNN "Type"
-F 6 "Multicomp" H 1650 1700 60  0001 C CNN "Manufacturer"
-F 7 "Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 20%, Y5V, 50 V, Radial Leaded" H 1650 1700 60  0001 C CNN "Product description"
-F 8 "MC0805Y104M500A2.54MM" H 1650 1700 60  0001 C CNN "Product code"
-F 9 "Farnell" H 1650 1700 60  0001 C CNN "Supplier"
-F 10 "2112751" H 1650 1700 60  0001 C CNN "Supplier code"
-	1    1650 1700
-	-1   0    0    1   
-$EndComp
-$Comp
-L CP C9
-U 1 1 56EEEB6E
-P 1950 1700
-F 0 "C9" H 1950 1800 40  0000 L CNN
-F 1 "10uF" H 1956 1615 40  0000 L CNN
-F 2 "~" H 1988 1550 30  0000 C CNN
-F 3 "~" H 1950 1700 60  0000 C CNN
-F 4 "20%" H 1950 1700 60  0001 C CNN "Tolerance"
-F 5 "Tantalum" H 1950 1700 60  0001 C CNN "Type"
-F 6 "Vishay" H 1950 1700 60  0001 C CNN "Manufacturer"
-F 7 "Tantalum Capacitor, Resin Coated, 489D Series, 10 µF, ± 20%, 16 V, Radial Leaded, 2.5 mm" H 1950 1700 60  0001 C CNN "Product description"
-F 8 "489D106X0016C1VE3" H 1950 1700 60  0001 C CNN "Product code"
-F 9 "Farnell" H 1950 1700 60  0001 C CNN "Supplier"
-F 10 "1753975" H 1950 1700 60  0001 C CNN "Supplier code"
-	1    1950 1700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -577,4 +501,102 @@ Connection ~ 2800 1400
 Wire Wire Line
 	3100 1400 3100 1750
 Connection ~ 3100 1400
+$Comp
+L AUDIO_HEADER J7
+U 1 1 5808E0D8
+P 1700 3850
+F 0 "J7" H 1700 3450 60  0000 C CNN
+F 1 "OUTPUT_JACK" H 1800 4200 60  0000 C CNN
+F 2 "" H 1700 3600 60  0000 C CNN
+F 3 "" H 1700 3600 60  0000 C CNN
+F 4 "CUI Inc" H 1700 3850 60  0001 C CNN "Manufacturer"
+F 5 "3.50mm (0.141\", 1/8\", Mini Plug) - Headphone Phone Jack Stereo Connector Solder" H 1700 3850 60  0001 C CNN "Product description"
+F 6 "SJ1-3523NG" H 1700 3850 60  0001 C CNN "Product code"
+F 7 "Digikey" H 1700 3850 60  0001 C CNN "Supplier"
+F 8 "CP1-3523NG-ND" H 1700 3850 60  0001 C CNN "Supplier code"
+F 9 "No" H 1700 3850 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-detail/en/cui-inc/SJ1-3523NG/CP1-3523NG-ND/738692" H 1700 3850 60  0001 C CNN "Supplier URL"
+	1    1700 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L CP-rgb C?
+U 1 1 580BEA17
+P 1950 1700
+F 0 "C?" H 1950 1800 40  0000 L CNN
+F 1 "10uF" H 1956 1615 40  0000 L CNN
+F 2 "~" H 1988 1550 30  0000 C CNN
+F 3 "~" H 1950 1700 60  0000 C CNN
+F 4 "20%" H 1950 1700 60  0001 C CNN "Tolerance"
+F 5 "Tantalum" H 1950 1700 60  0001 C CNN "Type"
+F 6 "Kemet" H 1950 1700 60  0001 C CNN "Manufacturer"
+F 7 "10µF Conformal Coated Tantalum Capacitors 25V Radial 2.5 Ohm 0.217\" Dia (5.50mm)" H 1950 1700 60  0001 C CNN "Product description"
+F 8 "T350E106M025AT" H 1950 1700 60  0001 C CNN "Product code"
+F 9 "Digikey" H 1950 1700 60  0001 C CNN "Supplier"
+F 10 "399-9907-ND" H 1950 1700 60  0001 C CNN "Supplier code"
+F 11 "No" H 1950 1700 60  0001 C CNN "Order"
+F 12 "http://www.digikey.co.uk/product-detail/en/kemet/T350E106M025AT/399-9907-ND/3726214" H 1950 1700 60  0001 C CNN "Supplier URL"
+	1    1950 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP-rgb C?
+U 1 1 580BEAA5
+P 3100 1900
+F 0 "C?" H 3100 2000 40  0000 L CNN
+F 1 "10uF" H 3106 1815 40  0000 L CNN
+F 2 "~" H 3138 1750 30  0000 C CNN
+F 3 "~" H 3100 1900 60  0000 C CNN
+F 4 "20%" H 3100 1900 60  0001 C CNN "Tolerance"
+F 5 "Tantalum" H 3100 1900 60  0001 C CNN "Type"
+F 6 "Kemet" H 3100 1900 60  0001 C CNN "Manufacturer"
+F 7 "10µF Conformal Coated Tantalum Capacitors 25V Radial 2.5 Ohm 0.217\" Dia (5.50mm)" H 3100 1900 60  0001 C CNN "Product description"
+F 8 "T350E106M025AT" H 3100 1900 60  0001 C CNN "Product code"
+F 9 "Digikey" H 3100 1900 60  0001 C CNN "Supplier"
+F 10 "399-9907-ND" H 3100 1900 60  0001 C CNN "Supplier code"
+F 11 "No" H 3100 1900 60  0001 C CNN "Order"
+F 12 "http://www.digikey.co.uk/product-detail/en/kemet/T350E106M025AT/399-9907-ND/3726214" H 3100 1900 60  0001 C CNN "Supplier URL"
+	1    3100 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-rgb C?
+U 1 1 580BEE4C
+P 1650 1700
+F 0 "C?" H 1650 1800 40  0000 L CNN
+F 1 "100nF" H 1656 1615 40  0000 L CNN
+F 2 "~" H 1688 1550 30  0000 C CNN
+F 3 "~" H 1650 1700 60  0000 C CNN
+F 4 "20%" H 1650 1700 60  0001 C CNN "Tolerance"
+F 5 "Ceramic" H 1650 1700 60  0001 C CNN "Type"
+F 6 "Kemet" H 1650 1700 60  0001 C CNN "Manufacturer"
+F 7 "0.10µF 50V Ceramic Capacitor Z5U Radial 0.150\" L x 0.100\" W (3.81mm x 2.54mm)" H 1650 1700 60  0001 C CNN "Product description"
+F 8 "C315C104M5U5TA" H 1650 1700 60  0001 C CNN "Product code"
+F 9 "Digikey" H 1650 1700 60  0001 C CNN "Supplier"
+F 10 "399-4151-ND" H 1650 1700 60  0001 C CNN "Supplier code"
+F 11 "No" H 1650 1700 60  0001 C CNN "Order"
+F 12 "http://www.digikey.co.uk/product-detail/en/kemet/C315C104M5U5TA/399-4151-ND/817927" H 1650 1700 60  0001 C CNN "Supplier URL"
+	1    1650 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-rgb C?
+U 1 1 580BEF40
+P 2800 1900
+F 0 "C?" H 2800 2000 40  0000 L CNN
+F 1 "100nF" H 2806 1815 40  0000 L CNN
+F 2 "~" H 2838 1750 30  0000 C CNN
+F 3 "~" H 2800 1900 60  0000 C CNN
+F 4 "20%" H 2800 1900 60  0001 C CNN "Tolerance"
+F 5 "Ceramic" H 2800 1900 60  0001 C CNN "Type"
+F 6 "Kemet" H 2800 1900 60  0001 C CNN "Manufacturer"
+F 7 "0.10µF 50V Ceramic Capacitor Z5U Radial 0.150\" L x 0.100\" W (3.81mm x 2.54mm)" H 2800 1900 60  0001 C CNN "Product description"
+F 8 "C315C104M5U5TA" H 2800 1900 60  0001 C CNN "Product code"
+F 9 "Digikey" H 2800 1900 60  0001 C CNN "Supplier"
+F 10 "399-4151-ND" H 2800 1900 60  0001 C CNN "Supplier code"
+F 11 "No" H 2800 1900 60  0001 C CNN "Order"
+F 12 "http://www.digikey.co.uk/product-detail/en/kemet/C315C104M5U5TA/399-4151-ND/817927" H 2800 1900 60  0001 C CNN "Supplier URL"
+	1    2800 1900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

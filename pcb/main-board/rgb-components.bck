@@ -6,6 +6,10 @@ K POWER REGUL
 F regulator\lm78xx.pdf
 $ENDCMP
 #
+$CMP CP-rgb
+D Polarised capacitor
+$ENDCMP
+#
 $CMP SW_POWER
 D Interrupteur simple
 K switch

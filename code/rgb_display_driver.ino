@@ -29,7 +29,7 @@
 #define DECAY_MIN 2048 // in units of UNITY
 #define CHAN_MIN 100 // min values of channels decay towards this
                      // value over approx 5 mins
-#define CHAN_SEP 50 // minimum separation between min and max
+#define CHAN_SEP 200 // minimum separation between min and max
                     // channel values
 #define MINMAX_DECAY 4086 // decay ratio with 5 min half life when done every second.
 #define RAN_SMOOTH 256 // used when smoothing colour fade to stop flicker.
@@ -232,7 +232,7 @@ void colourOrgan(MenuMode *mode) {
               ((int64_t) chanBases[chan] * (int64_t) decay)) >> UNITY_BITS;
     chanBases[chan] = baseVal;
     val = (((int64_t) peakVal + (int64_t) baseVal) * ((int64_t) bright)) >> UNITY_BITS;
-    parms[chan] = intExp((uint32_t) val * 5) >> 5;
+    parms[chan] = intExp((uint32_t) val * 6) >> 6;
   }
   setOutput(parms);
 }
