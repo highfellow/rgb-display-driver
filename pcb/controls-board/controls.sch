@@ -138,6 +138,13 @@ F 0 "D?" H 6175 4700 50  0000 C CNN
 F 1 "LED_RABG" H 6125 4000 50  0000 C CNN
 F 2 "" H 6050 4300 50  0000 C CNN
 F 3 "" H 6050 4300 50  0000 C CNN
+F 4 "Adafruit Industries LLC" H 6100 4350 60  0001 C CNN "Manufacturer"
+F 5 "Red, Green, Blue (RGB) LED Indication - Discrete 2.1V Red, 3.8V Green, 2.7V Blue 4-DIP (0.200\", 5.08mm)" H 6100 4350 60  0001 C CNN "Product description"
+F 6 "314" H 6100 4350 60  0001 C CNN "Product code"
+F 7 "Digikey" H 6100 4350 60  0001 C CNN "Supplier"
+F 8 "1528-1127-ND" H 6100 4350 60  0001 C CNN "Supplier code"
+F 9 "No" H 6100 4350 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-detail/en/adafruit-industries-llc/314/1528-1127-ND/5353587" H 6100 4350 60  0001 C CNN "Supplier URL"
 	1    6100 4350
 	1    0    0    -1  
 $EndComp

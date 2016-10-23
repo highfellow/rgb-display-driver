@@ -52,14 +52,21 @@ F 0 "J3" H 6500 3850 60  0000 C CNN
 F 1 "UART_HEADER" H 6500 2850 60  0000 C CNN
 F 2 "~" H 6400 3200 60  0000 C CNN
 F 3 "~" H 6400 3200 60  0000 C CNN
+F 4 "Phoenix Contact" H 6500 3450 60  0001 C CNN "Manufacturer"
+F 5 "5 Position Terminal Block Header, Male Pins, Unshrouded 0.138\" (3.50mm) Vertical Through Hole" H 6500 3450 60  0001 C CNN "Product description"
+F 6 "1945122" H 6500 3450 60  0001 C CNN "Product code"
+F 7 "Digikey" H 6500 3450 60  0001 C CNN "Supplier"
+F 8 "277-1752-ND" H 6500 3450 60  0001 C CNN "Supplier code"
+F 9 "No" H 6500 3450 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-detail/en/phoenix-contact/1945122/277-1752-ND/950880" H 6500 3450 60  0001 C CNN "Supplier URL"
 	1    6500 3450
 	-1   0    0    1   
 $EndComp
 $Comp
-L +12V #PWR01
+L +12V #PWR1
 U 1 1 5518B6D2
 P 900 4350
-F 0 "#PWR01" H 900 4300 20  0001 C CNN
+F 0 "#PWR1" H 900 4300 20  0001 C CNN
 F 1 "+12V" H 900 4450 30  0000 C CNN
 F 2 "" H 900 4350 60  0000 C CNN
 F 3 "" H 900 4350 60  0000 C CNN
@@ -67,10 +74,10 @@ F 3 "" H 900 4350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-rgb #PWR02
+L GND-rgb #PWR3
 U 1 1 5518B6E1
 P 2050 7350
-F 0 "#PWR02" H 2050 7350 30  0001 C CNN
+F 0 "#PWR3" H 2050 7350 30  0001 C CNN
 F 1 "GND-rgb" H 2050 7280 30  0001 C CNN
 F 2 "" H 2050 7350 60  0000 C CNN
 F 3 "" H 2050 7350 60  0000 C CNN
@@ -78,10 +85,10 @@ F 3 "" H 2050 7350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-rgb #PWR03
+L GND-rgb #PWR5
 U 1 1 5518B77B
 P 2100 3600
-F 0 "#PWR03" H 2100 3600 30  0001 C CNN
+F 0 "#PWR5" H 2100 3600 30  0001 C CNN
 F 1 "GND-rgb" H 2100 3530 30  0001 C CNN
 F 2 "" H 2100 3600 60  0000 C CNN
 F 3 "" H 2100 3600 60  0000 C CNN
@@ -89,10 +96,10 @@ F 3 "" H 2100 3600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR04
+L +5V #PWR4
 U 1 1 5518B7A3
 P 2100 800
-F 0 "#PWR04" H 2100 890 20  0001 C CNN
+F 0 "#PWR4" H 2100 890 20  0001 C CNN
 F 1 "+5V" H 2100 890 30  0000 C CNN
 F 2 "" H 2100 800 60  0000 C CNN
 F 3 "" H 2100 800 60  0000 C CNN
@@ -100,10 +107,10 @@ F 3 "" H 2100 800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR05
+L +5V #PWR2
 U 1 1 5518BAA6
 P 2050 4650
-F 0 "#PWR05" H 2050 4740 20  0001 C CNN
+F 0 "#PWR2" H 2050 4740 20  0001 C CNN
 F 1 "+5V" H 2050 4740 30  0000 C CNN
 F 2 "" H 2050 4650 60  0000 C CNN
 F 3 "" H 2050 4650 60  0000 C CNN
@@ -129,10 +136,10 @@ F 10 "http://www.digikey.co.uk/product-detail/en/bourns-inc/3362P-1-103LF/3362P-
 	0    1    -1   0   
 $EndComp
 $Comp
-L GND-rgb #PWR06
+L GND-rgb #PWR10
 U 1 1 5518BC47
 P 5800 3800
-F 0 "#PWR06" H 5800 3800 30  0001 C CNN
+F 0 "#PWR10" H 5800 3800 30  0001 C CNN
 F 1 "GND-rgb" H 5800 3730 30  0001 C CNN
 F 2 "" H 5800 3800 60  0000 C CNN
 F 3 "" H 5800 3800 60  0000 C CNN
@@ -140,10 +147,10 @@ F 3 "" H 5800 3800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR07
+L +5V #PWR8
 U 1 1 5518BC4D
 P 5600 3800
-F 0 "#PWR07" H 5600 3890 20  0001 C CNN
+F 0 "#PWR8" H 5600 3890 20  0001 C CNN
 F 1 "+5V" H 5600 3890 30  0000 C CNN
 F 2 "" H 5600 3800 60  0000 C CNN
 F 3 "" H 5600 3800 60  0000 C CNN
@@ -198,6 +205,13 @@ F 0 "X1" H 5650 1600 60  0000 C CNN
 F 1 "16MHz" H 5650 1300 60  0000 C CNN
 F 2 "~" H 5650 1450 60  0000 C CNN
 F 3 "~" H 5650 1450 60  0000 C CNN
+F 4 "TXC CORPORATION" H 5650 1450 60  0001 C CNN "Manufacturer"
+F 5 "16MHz ±10ppm Crystal 18pF 30 Ohm -20°C ~ 70°C Through Hole HC49/US" H 5650 1450 60  0001 C CNN "Product description"
+F 6 "9B-16.000MEEJ-B" H 5650 1450 60  0001 C CNN "Product code"
+F 7 "Digikey" H 5650 1450 60  0001 C CNN "Supplier"
+F 8 "887-1244-ND" H 5650 1450 60  0001 C CNN "Supplier code"
+F 9 "No" H 5650 1450 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-detail/en/txc-corporation/9B-16.000MEEJ-B/887-1244-ND/2207664" H 5650 1450 60  0001 C CNN "Supplier URL"
 	1    5650 1450
 	0    1    1    0   
 $EndComp
@@ -222,17 +236,6 @@ F 12 "http://www.digikey.co.uk/product-detail/en/kemet/C315C220J5G5TA/399-9721-N
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND-RESCUE-rgb-controller #PWR08
-U 1 1 551CD2CB
-P 6200 2600
-F 0 "#PWR08" H 6200 2600 30  0001 C CNN
-F 1 "GND" H 6200 2530 30  0001 C CNN
-F 2 "" H 6200 2600 60  0000 C CNN
-F 3 "" H 6200 2600 60  0000 C CNN
-	1    6200 2600
-	1    0    0    -1  
-$EndComp
-$Comp
 L R-rgb R1
 U 1 1 551CD37C
 P 5250 2250
@@ -251,10 +254,10 @@ F 10 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18J
 	-1   0    0    1   
 $EndComp
 $Comp
-L +5V #PWR09
+L +5V #PWR6
 U 1 1 551CD394
 P 5250 1950
-F 0 "#PWR09" H 5250 2040 20  0001 C CNN
+F 0 "#PWR6" H 5250 2040 20  0001 C CNN
 F 1 "+5V" H 5250 2040 30  0000 C CNN
 F 2 "" H 5250 1950 60  0000 C CNN
 F 3 "" H 5250 1950 60  0000 C CNN
@@ -262,10 +265,10 @@ F 3 "" H 5250 1950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-rgb-controller #PWR010
+L GND-RESCUE-rgb-controller #PWR11
 U 1 1 551CD490
 P 6500 1850
-F 0 "#PWR010" H 6500 1850 30  0001 C CNN
+F 0 "#PWR11" H 6500 1850 30  0001 C CNN
 F 1 "GND" H 6500 1780 30  0001 C CNN
 F 2 "" H 6500 1850 60  0000 C CNN
 F 3 "" H 6500 1850 60  0000 C CNN
@@ -362,13 +365,6 @@ Wire Wire Line
 Wire Wire Line
 	5250 2500 5400 2500
 Wire Wire Line
-	5400 2500 5500 2500
-Connection ~ 5400 2500
-Wire Wire Line
-	6100 2500 6200 2500
-Wire Wire Line
-	6200 2500 6200 2600
-Wire Wire Line
 	5250 2000 5250 1950
 Wire Wire Line
 	4300 1750 5650 1750
@@ -418,10 +414,10 @@ Wire Wire Line
 Connection ~ 4650 6550
 Connection ~ 3050 6550
 $Comp
-L +12V #PWR011
+L +12V #PWR7
 U 1 1 551D98BB
 P 5250 5400
-F 0 "#PWR011" H 5250 5350 20  0001 C CNN
+F 0 "#PWR7" H 5250 5350 20  0001 C CNN
 F 1 "+12V" H 5250 5500 30  0000 C CNN
 F 2 "" H 5250 5400 60  0000 C CNN
 F 3 "" H 5250 5400 60  0000 C CNN
@@ -430,11 +426,11 @@ F 3 "" H 5250 5400 60  0000 C CNN
 $EndComp
 Connection ~ 5100 5150
 Connection ~ 5250 5150
-Text Label 4450 1150 0    60   ~ 0
+Text Label 4500 1150 0    60   ~ 0
 G_RED
-Text Label 4450 1250 0    60   ~ 0
+Text Label 4500 1250 0    60   ~ 0
 G_GREEN
-Text Label 4450 1350 0    60   ~ 0
+Text Label 4500 1350 0    60   ~ 0
 G_BLUE
 Wire Wire Line
 	4500 2850 4300 2850
@@ -467,18 +463,25 @@ $Comp
 L LCD_HEADER J5
 U 1 1 551E0FC8
 P 10650 1350
-F 0 "J5" H 10700 0   60  0000 C CNN
+F 0 "J5" H 10650 -350 60  0000 C CNN
 F 1 "LCD_HEADER" H 10750 2100 60  0000 C CNN
 F 2 "" H 10650 1350 60  0000 C CNN
 F 3 "" H 10650 1350 60  0000 C CNN
+F 4 "On Shore Technology Inc." H 10650 1350 60  0001 C CNN "Manufacturer"
+F 5 "14 Positions Header, Shrouded Connector 0.100\" (2.54mm) Through Hole Gold" H 10650 1350 60  0001 C CNN "Product description"
+F 6 "302-S141" H 10650 1350 60  0001 C CNN "Product code"
+F 7 "Digikey" H 10650 1350 60  0001 C CNN "Supplier"
+F 8 "ED10522-ND" H 10650 1350 60  0001 C CNN "Supplier code"
+F 9 "No" H 10650 1350 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-detail/en/on-shore-technology-inc/302-S141/ED10522-ND/2794233" H 10650 1350 60  0001 C CNN "Supplier URL"
 	1    10650 1350
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR012
+L +5V #PWR19
 U 1 1 551E0FE4
 P 10100 850
-F 0 "#PWR012" H 10100 940 20  0001 C CNN
+F 0 "#PWR19" H 10100 940 20  0001 C CNN
 F 1 "+5V" H 10100 940 30  0000 C CNN
 F 2 "" H 10100 850 60  0000 C CNN
 F 3 "" H 10100 850 60  0000 C CNN
@@ -486,10 +489,10 @@ F 3 "" H 10100 850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-rgb #PWR013
+L GND-rgb #PWR20
 U 1 1 551E0FEB
 P 10100 1050
-F 0 "#PWR013" H 10100 1050 30  0001 C CNN
+F 0 "#PWR20" H 10100 1050 30  0001 C CNN
 F 1 "GND-rgb" H 10100 980 30  0001 C CNN
 F 2 "" H 10100 1050 60  0000 C CNN
 F 3 "" H 10100 1050 60  0000 C CNN
@@ -497,10 +500,10 @@ F 3 "" H 10100 1050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-rgb #PWR014
+L GND-rgb #PWR18
 U 1 1 551E1185
 P 9600 1500
-F 0 "#PWR014" H 9600 1500 30  0001 C CNN
+F 0 "#PWR18" H 9600 1500 30  0001 C CNN
 F 1 "GND-rgb" H 9600 1430 30  0001 C CNN
 F 2 "" H 9600 1500 60  0000 C CNN
 F 3 "" H 9600 1500 60  0000 C CNN
@@ -560,7 +563,7 @@ F 10 "http://www.digikey.co.uk/product-search/en/integrated-circuits-ics/embedde
 	1    3300 2150
 	1    0    0    -1  
 $EndComp
-Text Label 4450 1050 0    60   ~ 0
+Text Label 4500 1050 0    60   ~ 0
 RS
 Text Label 4500 2850 0    60   ~ 0
 DB0
@@ -571,20 +574,20 @@ DB2
 Text Label 4500 3150 0    60   ~ 0
 DB3
 Wire Wire Line
-	4300 1050 4450 1050
+	4300 1050 4500 1050
 Wire Wire Line
-	4450 1150 4300 1150
+	4500 1150 4300 1150
 Wire Wire Line
-	4300 1250 4450 1250
+	4300 1250 4500 1250
 Wire Wire Line
-	4450 1350 4300 1350
+	4500 1350 4300 1350
 Wire Wire Line
-	4450 1450 4300 1450
+	4500 1450 4300 1450
 $Comp
-L GND-rgb #PWR015
+L GND-rgb #PWR16
 U 1 1 551E1894
 P 8250 900
-F 0 "#PWR015" H 8250 900 30  0001 C CNN
+F 0 "#PWR16" H 8250 900 30  0001 C CNN
 F 1 "GND-rgb" H 8250 830 30  0001 C CNN
 F 2 "" H 8250 900 60  0000 C CNN
 F 3 "" H 8250 900 60  0000 C CNN
@@ -609,12 +612,12 @@ Text Label 4500 3250 0    60   ~ 0
 ENC_CW
 Text Label 4500 3350 0    60   ~ 0
 ENC_CCW
-Text Label 4450 1450 0    60   ~ 0
+Text Label 4500 1450 0    60   ~ 0
 MODE
-Text Label 4450 1550 0    60   ~ 0
+Text Label 4500 1550 0    60   ~ 0
 PARAM
 Wire Wire Line
-	4450 1550 4300 1550
+	4500 1550 4300 1550
 Wire Wire Line
 	4500 3150 4300 3150
 Wire Wire Line
@@ -644,10 +647,10 @@ Wire Wire Line
 Wire Wire Line
 	4500 2100 4300 2100
 $Comp
-L GND-rgb #PWR016
+L GND-rgb #PWR13
 U 1 1 551EB8A4
 P 7750 4250
-F 0 "#PWR016" H 7750 4250 30  0001 C CNN
+F 0 "#PWR13" H 7750 4250 30  0001 C CNN
 F 1 "GND-rgb" H 7750 4180 30  0001 C CNN
 F 2 "" H 7750 4250 60  0000 C CNN
 F 3 "" H 7750 4250 60  0000 C CNN
@@ -685,10 +688,10 @@ Wire Wire Line
 Wire Wire Line
 	10400 5900 10150 5900
 $Comp
-L GND-rgb #PWR017
+L GND-rgb #PWR15
 U 1 1 551F1C53
 P 7750 6350
-F 0 "#PWR017" H 7750 6350 30  0001 C CNN
+F 0 "#PWR15" H 7750 6350 30  0001 C CNN
 F 1 "GND-rgb" H 7750 6280 30  0001 C CNN
 F 2 "" H 7750 6350 60  0000 C CNN
 F 3 "" H 7750 6350 60  0000 C CNN
@@ -696,10 +699,10 @@ F 3 "" H 7750 6350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12V #PWR018
+L +12V #PWR12
 U 1 1 551F1D25
 P 7500 3900
-F 0 "#PWR018" H 7500 3850 20  0001 C CNN
+F 0 "#PWR12" H 7500 3850 20  0001 C CNN
 F 1 "+12V" H 7500 4000 30  0000 C CNN
 F 2 "" H 7500 3900 60  0000 C CNN
 F 3 "" H 7500 3900 60  0000 C CNN
@@ -707,10 +710,10 @@ F 3 "" H 7500 3900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12V #PWR019
+L +12V #PWR14
 U 1 1 551F1D4C
 P 7750 5900
-F 0 "#PWR019" H 7750 5850 20  0001 C CNN
+F 0 "#PWR14" H 7750 5850 20  0001 C CNN
 F 1 "+12V" H 7750 6000 30  0000 C CNN
 F 2 "" H 7750 5900 60  0000 C CNN
 F 3 "" H 7750 5900 60  0000 C CNN
@@ -725,8 +728,6 @@ Wire Wire Line
 	8500 6200 7750 6200
 Wire Wire Line
 	7750 6200 7750 6350
-Wire Wire Line
-	5400 2500 5250 2500
 Connection ~ 5250 2500
 Wire Wire Line
 	9750 1100 9750 1150
@@ -743,29 +744,14 @@ Wire Wire Line
 	9950 1600 9950 850 
 Connection ~ 9950 850 
 $Comp
-L GND-rgb #PWR020
+L GND-rgb #PWR21
 U 1 1 55226CD3
-P 9200 3450
-F 0 "#PWR020" H 9200 3450 30  0001 C CNN
-F 1 "GND-rgb" H 9200 3380 30  0001 C CNN
-F 2 "" H 9200 3450 60  0000 C CNN
-F 3 "" H 9200 3450 60  0000 C CNN
-	1    9200 3450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8100 2500 9200 2500
-Wire Wire Line
-	9200 2500 10350 2500
-$Comp
-L SW_PUSH SW2
-U 1 1 552A646F
-P 5800 2500
-F 0 "SW2" H 5950 2610 50  0000 C CNN
-F 1 "SW_PUSH" H 5800 2420 50  0000 C CNN
-F 2 "~" H 5800 2500 60  0000 C CNN
-F 3 "~" H 5800 2500 60  0000 C CNN
-	1    5800 2500
+P 10200 2750
+F 0 "#PWR21" H 10200 2750 30  0001 C CNN
+F 1 "GND-rgb" H 10200 2680 30  0001 C CNN
+F 2 "" H 10200 2750 60  0000 C CNN
+F 3 "" H 10200 2750 60  0000 C CNN
+	1    10200 2750
 	1    0    0    -1  
 $EndComp
 $Sheet
@@ -867,11 +853,17 @@ L R-rgb R2
 U 1 1 58040332
 P 7150 2550
 F 0 "R2" V 7230 2550 40  0000 C CNN
-F 1 "152R" V 7157 2551 40  0000 C CNN
+F 1 "135R" V 7157 2551 40  0000 C CNN
 F 2 "" V 7080 2550 30  0000 C CNN
 F 3 "" H 7150 2550 30  0000 C CNN
-F 4 "1%" H 7150 2550 60  0001 C CNN "Tolerance"
-F 5 "No" H 7150 2550 60  0001 C CNN "Order"
+F 4 "5%" H 7150 2550 60  0001 C CNN "Tolerance"
+F 5 "Stackpole Electronics Inc." H 7150 2550 60  0001 C CNN "Manufacturer"
+F 6 "METAL FILM 0.125W 5% 130 OHM" H 7150 2550 60  0001 C CNN "Product description"
+F 7 "RNF18JBD130R" H 7150 2550 60  0001 C CNN "Product code"
+F 8 "Digikey" H 7150 2550 60  0001 C CNN "Supplier"
+F 9 "1263-RNF18JBD130R-CHP" H 7150 2550 60  0001 C CNN "Supplier code"
+F 10 "No" H 7150 2550 60  0001 C CNN "Order"
+F 11 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/RNF18JBD130R/1263-RNF18JBD130R-CHP/5227247" H 7150 2550 60  0001 C CNN "Supplier URL"
 	1    7150 2550
 	-1   0    0    1   
 $EndComp
@@ -887,6 +879,13 @@ F 0 "J4" H 8750 400 60  0000 C CNN
 F 1 "CONTROL_HEADER" H 8800 2150 60  0000 C CNN
 F 2 "" H 8300 1350 60  0000 C CNN
 F 3 "" H 8300 1350 60  0000 C CNN
+F 4 "On Shore Technology Inc." H 8750 1400 60  0001 C CNN "Manufacturer"
+F 5 "10 Positions Header, Shrouded Connector 0.100\" (2.54mm) Through Hole Gold" H 8750 1400 60  0001 C CNN "Product description"
+F 6 "302-S101" H 8750 1400 60  0001 C CNN "Product code"
+F 7 "Digikey" H 8750 1400 60  0001 C CNN "Supplier"
+F 8 "ED1543-ND" H 8750 1400 60  0001 C CNN "Supplier code"
+F 9 "No" H 8750 1400 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-detail/en/on-shore-technology-inc/302-S101/ED1543-ND/2178422" H 8750 1400 60  0001 C CNN "Supplier URL"
 	1    8750 1400
 	1    0    0    -1  
 $EndComp
@@ -894,62 +893,38 @@ Text Label 4500 2400 0    60   ~ 0
 LIGHT
 Wire Wire Line
 	4500 2400 4300 2400
-Text Label 8550 3100 2    60   ~ 0
+Text Label 8550 2550 2    60   ~ 0
 LIGHT
-Wire Wire Line
-	8250 2050 8100 2050
 $Comp
-L BS170 Q4
-U 1 1 580429C2
-P 9100 2900
-F 0 "Q4" H 9100 2350 60  0000 C CNN
-F 1 "BS170" H 9650 2900 60  0000 C CNN
-F 2 "" H 9100 2900 60  0000 C CNN
-F 3 "" H 9100 2900 60  0000 C CNN
-	1    9100 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8750 3100 8550 3100
-Wire Wire Line
-	9200 3300 9200 3450
-Wire Wire Line
-	8100 2050 8100 2500
-Connection ~ 9200 2500
-$Comp
-L +5V #PWR021
+L +5V #PWR17
 U 1 1 5804312B
-P 9600 1750
-F 0 "#PWR021" H 9600 1840 20  0001 C CNN
-F 1 "+5V" H 9600 1840 30  0000 C CNN
-F 2 "" H 9600 1750 60  0000 C CNN
-F 3 "" H 9600 1750 60  0000 C CNN
-	1    9600 1750
+P 9100 2350
+F 0 "#PWR17" H 9100 2440 20  0001 C CNN
+F 1 "+5V" H 9100 2440 30  0000 C CNN
+F 2 "" H 9100 2350 60  0000 C CNN
+F 3 "" H 9100 2350 60  0000 C CNN
+	1    9100 2350
 	1    0    0    -1  
 $EndComp
 $Comp
 L R-rgb R5
 U 1 1 5804E943
-P 9600 2100
-F 0 "R5" V 9680 2100 40  0000 C CNN
-F 1 "20R" V 9607 2101 40  0000 C CNN
-F 2 "" V 9530 2100 30  0000 C CNN
-F 3 "" H 9600 2100 30  0000 C CNN
-F 4 "5%" H 9600 2100 60  0001 C CNN "Tolerance"
-F 5 "Stackpole Electronics Inc." H 9600 2100 60  0001 C CNN "Manufacturer"
-F 6 "RES 20 OHM 1/2W 5% CARBON FILM" H 9600 2100 60  0001 C CNN "Product description"
-F 7 "CF12JT20R0" H 9600 2100 60  0001 C CNN "Product code"
-F 8 "Digikey" H 9600 2100 60  0001 C CNN "Supplier"
-F 9 "CF12JT20R0CT-ND" H 9600 2100 60  0001 C CNN "Supplier code"
-F 10 "No" H 9600 2100 60  0001 C CNN "Order"
-F 11 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF12JT20R0/CF12JT20R0CT-ND/1830451" H 9600 2100 60  0001 C CNN "Supplier URL"
-	1    9600 2100
+P 9950 2750
+F 0 "R5" V 10030 2750 40  0000 C CNN
+F 1 "20R" V 9957 2751 40  0000 C CNN
+F 2 "" V 9880 2750 30  0000 C CNN
+F 3 "" H 9950 2750 30  0000 C CNN
+F 4 "5%" H 9950 2750 60  0001 C CNN "Tolerance"
+F 5 "Stackpole Electronics Inc." H 9950 2750 60  0001 C CNN "Manufacturer"
+F 6 "RES 20 OHM 1/2W 5% CARBON FILM" H 9950 2750 60  0001 C CNN "Product description"
+F 7 "CF12JT20R0" H 9950 2750 60  0001 C CNN "Product code"
+F 8 "Digikey" H 9950 2750 60  0001 C CNN "Supplier"
+F 9 "CF12JT20R0CT-ND" H 9950 2750 60  0001 C CNN "Supplier code"
+F 10 "No" H 9950 2750 60  0001 C CNN "Order"
+F 11 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF12JT20R0/CF12JT20R0CT-ND/1830451" H 9950 2750 60  0001 C CNN "Supplier URL"
+	1    9950 2750
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	9600 1750 9600 1850
-Wire Wire Line
-	9600 2350 10350 2350
 $Comp
 L PWR_IN J1
 U 1 1 58066783
@@ -984,42 +959,35 @@ Wire Wire Line
 Wire Wire Line
 	2600 6350 2500 6350
 $Comp
-L R-rgb R3
-U 1 1 580401DA
-P 7500 2300
-F 0 "R3" V 7580 2300 40  0000 C CNN
-F 1 "85R" V 7507 2301 40  0000 C CNN
-F 2 "" V 7430 2300 30  0000 C CNN
-F 3 "" H 7500 2300 30  0000 C CNN
-F 4 "1%" H 7500 2300 60  0001 C CNN "Tolerance"
-F 5 "No" H 7500 2300 60  0001 C CNN "Order"
-	1    7500 2300
-	-1   0    0    1   
-$EndComp
-$Comp
 L R-rgb R4
 U 1 1 5803FD55
 P 7850 2300
 F 0 "R4" V 7930 2300 40  0000 C CNN
-F 1 "85R" V 7857 2301 40  0000 C CNN
+F 1 "20R" V 7857 2301 40  0000 C CNN
 F 2 "" V 7780 2300 30  0000 C CNN
 F 3 "" H 7850 2300 30  0000 C CNN
 F 4 "1%" H 7850 2300 60  0001 C CNN "Tolerance"
-F 5 "No" H 7850 2300 60  0001 C CNN "Order"
+F 5 "Stackpole Electronics Inc." H 7850 2300 60  0001 C CNN "Manufacturer"
+F 6 "METAL FILM 0.125W 5% 22 OHM" H 7850 2300 60  0001 C CNN "Product description"
+F 7 "RNF18JBD22R0" H 7850 2300 60  0001 C CNN "Product code"
+F 8 "Digikey" H 7850 2300 60  0001 C CNN "Supplier"
+F 9 "1263-RNF18JBD22R0-CHP" H 7850 2300 60  0001 C CNN "Supplier code"
+F 10 "No" H 7850 2300 60  0001 C CNN "Order"
+F 11 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/RNF18JBD22R0/1263-RNF18JBD22R0-CHP/5227254" H 7850 2300 60  0001 C CNN "Supplier URL"
 	1    7850 2300
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5250 5400 5250 5150
+	5250 5150 5250 5400
 Wire Wire Line
-	5250 5150 5100 5150
+	4950 5150 5100 5150
 Wire Wire Line
-	5100 5150 4950 5150
+	5100 5150 5250 5150
 $Comp
-L GND-rgb #PWR?
+L GND-rgb #PWR9
 U 1 1 580BA40F
 P 5600 5300
-F 0 "#PWR?" H 5600 5300 30  0001 C CNN
+F 0 "#PWR9" H 5600 5300 30  0001 C CNN
 F 1 "GND-rgb" H 5600 5230 30  0001 C CNN
 F 2 "" H 5600 5300 60  0000 C CNN
 F 3 "" H 5600 5300 60  0000 C CNN
@@ -1031,10 +999,10 @@ Wire Wire Line
 Wire Wire Line
 	5600 5150 5600 5300
 $Comp
-L IRL510PBF Q?
+L IRL510PBF Q1
 U 1 1 580BADB0
 P 2950 6150
-F 0 "Q?" H 2950 5600 60  0000 C CNN
+F 0 "Q1" H 2950 5600 60  0000 C CNN
 F 1 "IRL510PBF" H 3500 6150 60  0000 C CNN
 F 2 "" H 2950 6150 60  0000 C CNN
 F 3 "" H 2950 6150 60  0000 C CNN
@@ -1049,10 +1017,10 @@ F 10 "http://www.digikey.co.uk/product-detail/en/vishay-siliconix/IRL510PBF/IRL5
 	1    0    0    -1  
 $EndComp
 $Comp
-L IRL510PBF Q?
+L IRL510PBF Q2
 U 1 1 580BB222
 P 4550 6150
-F 0 "Q?" H 4550 5600 60  0000 C CNN
+F 0 "Q2" H 4550 5600 60  0000 C CNN
 F 1 "IRL510PBF" H 5100 6150 60  0000 C CNN
 F 2 "" H 4550 6150 60  0000 C CNN
 F 3 "" H 4550 6150 60  0000 C CNN
@@ -1067,10 +1035,10 @@ F 10 "http://www.digikey.co.uk/product-detail/en/vishay-siliconix/IRL510PBF/IRL5
 	1    0    0    -1  
 $EndComp
 $Comp
-L IRL510PBF Q?
+L IRL510PBF Q3
 U 1 1 580BB332
 P 6100 6150
-F 0 "Q?" H 6100 5600 60  0000 C CNN
+F 0 "Q3" H 6100 5600 60  0000 C CNN
 F 1 "IRL510PBF" H 6650 6150 60  0000 C CNN
 F 2 "" H 6100 6150 60  0000 C CNN
 F 3 "" H 6100 6150 60  0000 C CNN
@@ -1083,24 +1051,6 @@ F 9 "No" H 6100 6150 60  0001 C CNN "Order"
 F 10 "http://www.digikey.co.uk/product-detail/en/vishay-siliconix/IRL510PBF/IRL510PBF-ND/811698" H 6100 6150 60  0001 C CNN "Supplier URL"
 	1    6100 6150
 	1    0    0    -1  
-$EndComp
-$Comp
-L POT-rgb RV?
-U 1 1 580BBF99
-P 7500 2850
-F 0 "RV?" H 7500 2750 50  0000 C CNN
-F 1 "20R" H 7500 2850 50  0000 C CNN
-F 2 "~" H 7500 2850 60  0000 C CNN
-F 3 "~" H 7500 2850 60  0000 C CNN
-F 4 "Bourns Inc." H 7500 2850 60  0001 C CNN "Manufacturer"
-F 5 "20 Ohm 0.5W, 1/2W PC Pins Through Hole Trimmer Potentiometer Cermet 1 Turn Top Adjustment" H 7500 2850 60  0001 C CNN "Product description"
-F 6 "3362P-1-200LF" H 7500 2850 60  0001 C CNN "Product code"
-F 7 "Digikey" H 7500 2850 60  0001 C CNN "Supplier"
-F 8 "3362P-1-200LF-ND" H 7500 2850 60  0001 C CNN "Supplier code"
-F 9 "No" H 7500 2850 60  0001 C CNN "Order"
-F 10 "http://www.digikey.co.uk/product-detail/en/bourns-inc/3362P-1-200LF/3362P-1-200LF-ND/2536615" H 7500 2850 60  0001 C CNN "Supplier URL"
-	1    7500 2850
-	0    1    -1   0   
 $EndComp
 Wire Wire Line
 	7150 2800 7150 3250
@@ -1129,10 +1079,10 @@ Wire Wire Line
 Wire Wire Line
 	7500 3100 7500 3250
 $Comp
-L C-rgb C?
+L C-rgb C3
 U 1 1 580BF0C2
 P 1500 1550
-F 0 "C?" H 1500 1650 40  0000 L CNN
+F 0 "C3" H 1500 1650 40  0000 L CNN
 F 1 "100nF" H 1506 1465 40  0000 L CNN
 F 2 "~" H 1538 1400 30  0000 C CNN
 F 3 "~" H 1500 1550 60  0000 C CNN
@@ -1149,10 +1099,10 @@ F 12 "http://www.digikey.co.uk/product-detail/en/kemet/C315C104M5U5TA/399-4151-N
 	1    0    0    -1  
 $EndComp
 $Comp
-L C-rgb C?
+L C-rgb C4
 U 1 1 580BF151
 P 2300 1850
-F 0 "C?" H 2300 1950 40  0000 L CNN
+F 0 "C4" H 2300 1950 40  0000 L CNN
 F 1 "100nF" H 2306 1765 40  0000 L CNN
 F 2 "~" H 2338 1700 30  0000 C CNN
 F 3 "~" H 2300 1850 60  0000 C CNN
@@ -1169,10 +1119,10 @@ F 12 "http://www.digikey.co.uk/product-detail/en/kemet/C315C104M5U5TA/399-4151-N
 	1    0    0    -1  
 $EndComp
 $Comp
-L C-rgb C?
+L C-rgb C5
 U 1 1 580BF318
 P 5600 3050
-F 0 "C?" H 5600 3150 40  0000 L CNN
+F 0 "C5" H 5600 3150 40  0000 L CNN
 F 1 "100nF" H 5606 2965 40  0000 L CNN
 F 2 "~" H 5638 2900 30  0000 C CNN
 F 3 "~" H 5600 3050 60  0000 C CNN
@@ -1189,10 +1139,10 @@ F 12 "http://www.digikey.co.uk/product-detail/en/kemet/C315C104M5U5TA/399-4151-N
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C-RESCUE-rgb-controller C?
+L C-RESCUE-rgb-controller C7
 U 1 1 580BF672
 P 6150 1750
-F 0 "C?" H 6150 1850 40  0000 L CNN
+F 0 "C7" H 6150 1850 40  0000 L CNN
 F 1 "22pF" H 6156 1665 40  0000 L CNN
 F 2 "~" H 6188 1600 30  0000 C CNN
 F 3 "~" H 6150 1750 60  0000 C CNN
@@ -1209,10 +1159,10 @@ F 12 "http://www.digikey.co.uk/product-detail/en/kemet/C315C220J5G5TA/399-9721-N
 	0    -1   -1   0   
 $EndComp
 $Comp
-L POT-rgb RV?
+L POT-rgb RV4
 U 1 1 580BFA91
 P 9600 1100
-F 0 "RV?" H 9600 1000 50  0000 C CNN
+F 0 "RV4" H 9600 1000 50  0000 C CNN
 F 1 "10k" H 9600 1100 50  0000 C CNN
 F 2 "~" H 9600 1100 60  0000 C CNN
 F 3 "~" H 9600 1100 60  0000 C CNN
@@ -1227,21 +1177,99 @@ F 10 "http://www.digikey.co.uk/product-detail/en/bourns-inc/3362P-1-103LF/3362P-
 	0    1    -1   0   
 $EndComp
 $Comp
-L POT-rgb RV?
+L POT-rgb RV3
 U 1 1 580BFCE9
 P 7850 2850
-F 0 "RV?" H 7850 2750 50  0000 C CNN
-F 1 "20R" H 7850 2850 50  0000 C CNN
+F 0 "RV3" H 7850 2750 50  0000 C CNN
+F 1 "50R" H 7850 2850 50  0000 C CNN
 F 2 "~" H 7850 2850 60  0000 C CNN
 F 3 "~" H 7850 2850 60  0000 C CNN
 F 4 "Bourns Inc." H 7850 2850 60  0001 C CNN "Manufacturer"
-F 5 "20 Ohm 0.5W, 1/2W PC Pins Through Hole Trimmer Potentiometer Cermet 1 Turn Top Adjustment" H 7850 2850 60  0001 C CNN "Product description"
-F 6 "3362P-1-200LF" H 7850 2850 60  0001 C CNN "Product code"
+F 5 "50 Ohm 0.5W, 1/2W PC Pins Through Hole Trimmer Potentiometer Cermet 1 Turn Top Adjustment" H 7850 2850 60  0001 C CNN "Product description"
+F 6 "3362P-1-500LF" H 7850 2850 60  0001 C CNN "Product code"
 F 7 "Digikey" H 7850 2850 60  0001 C CNN "Supplier"
-F 8 "3362P-1-200LF-ND" H 7850 2850 60  0001 C CNN "Supplier code"
+F 8 "3362P-1-500LF-ND" H 7850 2850 60  0001 C CNN "Supplier code"
 F 9 "No" H 7850 2850 60  0001 C CNN "Order"
-F 10 "http://www.digikey.co.uk/product-detail/en/bourns-inc/3362P-1-200LF/3362P-1-200LF-ND/2536615" H 7850 2850 60  0001 C CNN "Supplier URL"
+F 10 "http://www.digikey.co.uk/product-detail/en/bourns-inc/3362P-1-500LF/3362P-1-500LF-ND/2536639" H 7850 2850 60  0001 C CNN "Supplier URL"
 	1    7850 2850
 	0    1    -1   0   
 $EndComp
+$Comp
+L TP0606 Q4
+U 1 1 580C9859
+P 9000 2750
+F 0 "Q4" H 9000 2200 60  0000 C CNN
+F 1 "TP0606" H 9500 2750 60  0000 C CNN
+F 2 "" H 9000 2750 60  0000 C CNN
+F 3 "" H 9000 2750 60  0000 C CNN
+F 4 "Microchip Technology" H 9000 2750 60  0001 C CNN "Manufacturer"
+F 5 "MOSFET P-CH 60V 320MA TO92-3" H 9000 2750 60  0001 C CNN "Product description"
+F 6 "TP0606N3-G" H 9000 2750 60  0001 C CNN "Product code"
+F 7 "Digikey" H 9000 2750 60  0001 C CNN "Supplier"
+F 8 "TP0606N3-G-ND" H 9000 2750 60  0001 C CNN "Supplier code"
+F 9 "No" H 9000 2750 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-detail/en/microchip-technology/TP0606N3-G/TP0606N3-G-ND/4902382" H 9000 2750 60  0001 C CNN "Supplier URL"
+	1    9000 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 2050 8150 2050
+Wire Wire Line
+	8150 2050 8150 3200
+Wire Wire Line
+	8150 3200 9100 3200
+Wire Wire Line
+	9100 3200 9950 3200
+Wire Wire Line
+	9100 3200 9100 3150
+Wire Wire Line
+	9950 2350 10350 2350
+Wire Wire Line
+	9950 2350 9950 2500
+Wire Wire Line
+	9950 3200 9950 3000
+Connection ~ 9100 3200
+Wire Wire Line
+	8700 2550 8550 2550
+$Comp
+L POT-rgb RV2
+U 1 1 580CBFE8
+P 7500 2850
+F 0 "RV2" H 7500 2750 50  0000 C CNN
+F 1 "50R" H 7500 2850 50  0000 C CNN
+F 2 "~" H 7500 2850 60  0000 C CNN
+F 3 "~" H 7500 2850 60  0000 C CNN
+F 4 "Bourns Inc." H 7500 2850 60  0001 C CNN "Manufacturer"
+F 5 "50 Ohm 0.5W, 1/2W PC Pins Through Hole Trimmer Potentiometer Cermet 1 Turn Top Adjustment" H 7500 2850 60  0001 C CNN "Product description"
+F 6 "3362P-1-500LF" H 7500 2850 60  0001 C CNN "Product code"
+F 7 "Digikey" H 7500 2850 60  0001 C CNN "Supplier"
+F 8 "3362P-1-500LF-ND" H 7500 2850 60  0001 C CNN "Supplier code"
+F 9 "No" H 7500 2850 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-detail/en/bourns-inc/3362P-1-500LF/3362P-1-500LF-ND/2536639" H 7500 2850 60  0001 C CNN "Supplier URL"
+	1    7500 2850
+	0    1    -1   0   
+$EndComp
+$Comp
+L R-rgb R3
+U 1 1 580CC281
+P 7500 2300
+F 0 "R3" V 7580 2300 40  0000 C CNN
+F 1 "20R" V 7507 2301 40  0000 C CNN
+F 2 "" V 7430 2300 30  0000 C CNN
+F 3 "" H 7500 2300 30  0000 C CNN
+F 4 "1%" H 7500 2300 60  0001 C CNN "Tolerance"
+F 5 "Stackpole Electronics Inc." H 7500 2300 60  0001 C CNN "Manufacturer"
+F 6 "METAL FILM 0.125W 5% 22 OHM" H 7500 2300 60  0001 C CNN "Product description"
+F 7 "RNF18JBD22R0" H 7500 2300 60  0001 C CNN "Product code"
+F 8 "Digikey" H 7500 2300 60  0001 C CNN "Supplier"
+F 9 "1263-RNF18JBD22R0-CHP" H 7500 2300 60  0001 C CNN "Supplier code"
+F 10 "No" H 7500 2300 60  0001 C CNN "Order"
+F 11 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/RNF18JBD22R0/1263-RNF18JBD22R0-CHP/5227254" H 7500 2300 60  0001 C CNN "Supplier URL"
+	1    7500 2300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10350 2500 10200 2500
+Wire Wire Line
+	10200 2500 10200 2750
 $EndSCHEMATC

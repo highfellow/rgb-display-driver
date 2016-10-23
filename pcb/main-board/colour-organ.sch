@@ -59,10 +59,10 @@ VCC
 Text HLabel 10250 6300 0    60   UnSpc ~ 0
 GND
 $Comp
-L +12V #PWR033
+L +12V #PWR44
 U 1 1 552024FF
 P 10450 6000
-F 0 "#PWR033" H 10450 5950 20  0001 C CNN
+F 0 "#PWR44" H 10450 5950 20  0001 C CNN
 F 1 "+12V" H 10450 6100 30  0000 C CNN
 F 2 "" H 10450 6000 60  0000 C CNN
 F 3 "" H 10450 6000 60  0000 C CNN
@@ -70,10 +70,10 @@ F 3 "" H 10450 6000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-rgb #PWR034
+L GND-rgb #PWR45
 U 1 1 5520250E
 P 10450 6350
-F 0 "#PWR034" H 10450 6350 30  0001 C CNN
+F 0 "#PWR45" H 10450 6350 30  0001 C CNN
 F 1 "GND-rgb" H 10450 6280 30  0001 C CNN
 F 2 "" H 10450 6350 60  0000 C CNN
 F 3 "" H 10450 6350 60  0000 C CNN
@@ -85,28 +85,6 @@ AGND
 Text Label 9350 6350 0    60   ~ 0
 AUDIO
 $Comp
-L R-rgb R15
-U 1 1 55202980
-P 2300 4500
-F 0 "R15" V 2380 4500 40  0000 C CNN
-F 1 "18k" V 2307 4501 40  0000 C CNN
-F 2 "~" V 2230 4500 30  0000 C CNN
-F 3 "~" H 2300 4500 30  0000 C CNN
-	1    2300 4500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L R-rgb R13
-U 1 1 552029B0
-P 1600 4500
-F 0 "R13" V 1680 4500 40  0000 C CNN
-F 1 "18k" V 1607 4501 40  0000 C CNN
-F 2 "~" V 1530 4500 30  0000 C CNN
-F 3 "~" H 1600 4500 30  0000 C CNN
-	1    1600 4500
-	0    -1   -1   0   
-$EndComp
-$Comp
 L C-rgb C19
 U 1 1 552029B8
 P 2650 4800
@@ -116,37 +94,21 @@ F 2 "~" H 2688 4650 30  0000 C CNN
 F 3 "~" H 2650 4800 60  0000 C CNN
 F 4 "10%" H 2650 4800 60  0001 C CNN "Tolerance"
 F 5 "Ceramic" H 2650 4800 60  0001 C CNN "Type"
-F 6 "Multicomp" H 2650 4800 60  0001 C CNN "Manufacturer"
-F 7 "Multilayer Ceramic Capacitor, MCRR Series, 0.047 µF, ± 10%, X7R, 50 V, Radial Leaded" H 2650 4800 60  0001 C CNN "Product description"
-F 8 "MCRR25473X7RK0050" H 2650 4800 60  0001 C CNN "Product code"
-F 9 "Farnell" H 2650 4800 60  0001 C CNN "Supplier"
-F 10 "1216437" H 2650 4800 60  0001 C CNN "Supplier code"
+F 6 "Kemet" H 2650 4800 60  0001 C CNN "Manufacturer"
+F 7 "0.047µF 50V Ceramic Capacitor X7R Radial 0.200\" L x 0.125\" W (5.08mm x 3.18mm)" H 2650 4800 60  0001 C CNN "Product description"
+F 8 "C320C473K5R5TA" H 2650 4800 60  0001 C CNN "Product code"
+F 9 "Digikey" H 2650 4800 60  0001 C CNN "Supplier"
+F 10 "399-4306-ND" H 2650 4800 60  0001 C CNN "Supplier code"
+F 11 "No" H 2650 4800 60  0001 C CNN "Order"
+F 12 "http://www.digikey.co.uk/product-detail/en/kemet/C320C473K5R5TA/399-4306-ND/818082" H 2650 4800 60  0001 C CNN "Supplier URL"
 	1    2650 4800
 	1    0    0    -1  
 $EndComp
 $Comp
-L C-rgb C17
-U 1 1 552029D5
-P 2150 3350
-F 0 "C17" H 2150 3450 40  0000 L CNN
-F 1 "100nF" H 2156 3265 40  0000 L CNN
-F 2 "~" H 2188 3200 30  0000 C CNN
-F 3 "~" H 2150 3350 60  0000 C CNN
-F 4 "10%" H 2150 3350 60  0001 C CNN "Tolerance"
-F 5 "Ceramic" H 2150 3350 60  0001 C CNN "Type"
-F 6 "Multicomp" H 2150 3350 60  0001 C CNN "Manufacturer"
-F 7 "Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 10%, X7R, 50 V, Radial Leaded" H 2150 3350 60  0001 C CNN "Product description"
-F 8 "MC0805B104K500A2.54MM" H 2150 3350 60  0001 C CNN "Product code"
-F 9 "Farnell" H 2150 3350 60  0001 C CNN "Supplier"
-F 10 "2309020" H 2150 3350 60  0001 C CNN "Supplier code"
-	1    2150 3350
-	0    1    1    0   
-$EndComp
-$Comp
-L GND-rgb #PWR035
+L GND-rgb #PWR36
 U 1 1 552029E1
 P 3400 5200
-F 0 "#PWR035" H 3400 5200 30  0001 C CNN
+F 0 "#PWR36" H 3400 5200 30  0001 C CNN
 F 1 "GND-rgb" H 3400 5130 30  0001 C CNN
 F 2 "" H 3400 5200 60  0000 C CNN
 F 3 "" H 3400 5200 60  0000 C CNN
@@ -158,51 +120,10 @@ AGND
 Text Label 1050 4500 0    60   ~ 0
 AUDIO
 $Comp
-L C-rgb C21
-U 1 1 55202D6A
-P 4450 4300
-F 0 "C21" H 4450 4400 40  0000 L CNN
-F 1 "1uF" H 4456 4215 40  0000 L CNN
-F 2 "~" H 4488 4150 30  0000 C CNN
-F 3 "~" H 4450 4300 60  0000 C CNN
-F 4 "10%" H 4450 4300 60  0001 C CNN "Tolerance"
-F 5 "Ceramic" H 4450 4300 60  0001 C CNN "Type"
-F 6 "Multicomp" H 4450 4300 60  0001 C CNN "Manufacturer"
-F 7 "Multilayer Ceramic Capacitor, MLR Series, 1 µF, ± 10%, X7R, 50 V, Radial Leaded" H 4450 4300 60  0001 C CNN "Product description"
-F 8 "MCMLR50V105KX7R" H 4450 4300 60  0001 C CNN "Product code"
-F 9 "Farnell" H 4450 4300 60  0001 C CNN "Supplier"
-F 10 "2112947" H 4450 4300 60  0001 C CNN "Supplier code"
-F 11 "5.08mm spacing" H 4450 4300 60  0001 C CNN "Notes"
-	1    4450 4300
-	0    1    1    0   
-$EndComp
-$Comp
-L R-rgb R23
-U 1 1 55202D7A
-P 4750 4750
-F 0 "R23" V 4830 4750 40  0000 C CNN
-F 1 "180R" V 4757 4751 40  0000 C CNN
-F 2 "~" V 4680 4750 30  0000 C CNN
-F 3 "~" H 4750 4750 30  0000 C CNN
-	1    4750 4750
-	-1   0    0    1   
-$EndComp
-$Comp
-L R-rgb R22
-U 1 1 55202D80
-P 4750 3800
-F 0 "R22" V 4830 3800 40  0000 C CNN
-F 1 "2.2k" V 4757 3801 40  0000 C CNN
-F 2 "~" V 4680 3800 30  0000 C CNN
-F 3 "~" H 4750 3800 30  0000 C CNN
-	1    4750 3800
-	-1   0    0    1   
-$EndComp
-$Comp
-L +12V #PWR036
+L +12V #PWR40
 U 1 1 55202DC1
 P 4750 3450
-F 0 "#PWR036" H 4750 3400 20  0001 C CNN
+F 0 "#PWR40" H 4750 3400 20  0001 C CNN
 F 1 "+12V" H 4750 3550 30  0000 C CNN
 F 2 "" H 4750 3450 60  0000 C CNN
 F 3 "" H 4750 3450 60  0000 C CNN
@@ -210,43 +131,10 @@ F 3 "" H 4750 3450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R-rgb R28
-U 1 1 55202DDC
-P 6300 4700
-F 0 "R28" V 6380 4700 40  0000 C CNN
-F 1 "330k" V 6307 4701 40  0000 C CNN
-F 2 "~" V 6230 4700 30  0000 C CNN
-F 3 "~" H 6300 4700 30  0000 C CNN
-	1    6300 4700
-	-1   0    0    1   
-$EndComp
-$Comp
-L R-rgb R14
-U 1 1 5520DC86
-P 1900 5650
-F 0 "R14" V 1980 5650 40  0000 C CNN
-F 1 "8.2k" V 1907 5651 40  0000 C CNN
-F 2 "~" V 1830 5650 30  0000 C CNN
-F 3 "~" H 1900 5650 30  0000 C CNN
-	1    1900 5650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L R-rgb R16
-U 1 1 5520DC8C
-P 2350 7150
-F 0 "R16" V 2430 7150 40  0000 C CNN
-F 1 "18k" V 2357 7151 40  0000 C CNN
-F 2 "~" V 2280 7150 30  0000 C CNN
-F 3 "~" H 2350 7150 30  0000 C CNN
-	1    2350 7150
-	-1   0    0    1   
-$EndComp
-$Comp
-L GND-rgb #PWR037
+L GND-rgb #PWR34
 U 1 1 5520DCA4
 P 3100 7500
-F 0 "#PWR037" H 3100 7500 30  0001 C CNN
+F 0 "#PWR34" H 3100 7500 30  0001 C CNN
 F 1 "GND-rgb" H 3100 7430 30  0001 C CNN
 F 2 "" H 3100 7500 60  0000 C CNN
 F 3 "" H 3100 7500 60  0000 C CNN
@@ -254,10 +142,10 @@ F 3 "" H 3100 7500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12V #PWR038
+L +12V #PWR33
 U 1 1 5520DCAA
 P 3100 5900
-F 0 "#PWR038" H 3100 5850 20  0001 C CNN
+F 0 "#PWR33" H 3100 5850 20  0001 C CNN
 F 1 "+12V" H 3100 6000 30  0000 C CNN
 F 2 "" H 3100 5900 60  0000 C CNN
 F 3 "" H 3100 5900 60  0000 C CNN
@@ -269,48 +157,15 @@ AGND
 Text Label 750  6800 0    60   ~ 0
 AUDIO
 $Comp
-L R-rgb R20
-U 1 1 5520DCD6
-P 4450 7050
-F 0 "R20" V 4530 7050 40  0000 C CNN
-F 1 "180R" V 4457 7051 40  0000 C CNN
-F 2 "~" V 4380 7050 30  0000 C CNN
-F 3 "~" H 4450 7050 30  0000 C CNN
-	1    4450 7050
-	-1   0    0    1   
-$EndComp
-$Comp
-L R-rgb R19
-U 1 1 5520DCDC
-P 4450 6100
-F 0 "R19" V 4530 6100 40  0000 C CNN
-F 1 "2.2k" V 4457 6101 40  0000 C CNN
-F 2 "~" V 4380 6100 30  0000 C CNN
-F 3 "~" H 4450 6100 30  0000 C CNN
-	1    4450 6100
-	-1   0    0    1   
-$EndComp
-$Comp
-L +12V #PWR039
+L +12V #PWR39
 U 1 1 5520DCE2
 P 4450 5750
-F 0 "#PWR039" H 4450 5700 20  0001 C CNN
+F 0 "#PWR39" H 4450 5700 20  0001 C CNN
 F 1 "+12V" H 4450 5850 30  0000 C CNN
 F 2 "" H 4450 5750 60  0000 C CNN
 F 3 "" H 4450 5750 60  0000 C CNN
 	1    4450 5750
 	1    0    0    -1  
-$EndComp
-$Comp
-L R-rgb R27
-U 1 1 5520DCF4
-P 6050 7050
-F 0 "R27" V 6130 7050 40  0000 C CNN
-F 1 "330k" V 6057 7051 40  0000 C CNN
-F 2 "~" V 5980 7050 30  0000 C CNN
-F 3 "~" H 6050 7050 30  0000 C CNN
-	1    6050 7050
-	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	10450 6000 10250 6000
@@ -427,6 +282,13 @@ F 0 "R17" V 2530 1000 40  0000 C CNN
 F 1 "3.9k" V 2457 1001 40  0000 C CNN
 F 2 "~" V 2380 1000 30  0000 C CNN
 F 3 "~" H 2450 1000 30  0000 C CNN
+F 4 "Stackpole Electronics Inc." H 2450 1000 60  0001 C CNN "Manufacturer"
+F 5 "RES 3.9K OHM 1/8W 5% CARBON FILM" H 2450 1000 60  0001 C CNN "Product description"
+F 6 "CF18JT3K90" H 2450 1000 60  0001 C CNN "Product code"
+F 7 "Digikey" H 2450 1000 60  0001 C CNN "Supplier"
+F 8 "CF18JT3K90CT-ND" H 2450 1000 60  0001 C CNN "Supplier code"
+F 9 "No" H 2450 1000 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT3K90/CF18JT3K90CT-ND/2022756" H 2450 1000 60  0001 C CNN "Supplier URL"
 	1    2450 1000
 	0    -1   -1   0   
 $EndComp
@@ -438,14 +300,21 @@ F 0 "R18" V 2980 2500 40  0000 C CNN
 F 1 "8.2k" V 2907 2501 40  0000 C CNN
 F 2 "~" V 2830 2500 30  0000 C CNN
 F 3 "~" H 2900 2500 30  0000 C CNN
+F 4 "Stackpole Electronics Inc." H 2900 2500 60  0001 C CNN "Manufacturer"
+F 5 "RES 8.2K OHM 1/8W 5% CF AXIAL" H 2900 2500 60  0001 C CNN "Product description"
+F 6 "CF18JT8K20" H 2900 2500 60  0001 C CNN "Product code"
+F 7 "Digikey" H 2900 2500 60  0001 C CNN "Supplier"
+F 8 "CF18JT8K20CT-ND" H 2900 2500 60  0001 C CNN "Supplier code"
+F 9 "No" H 2900 2500 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT8K20/CF18JT8K20CT-ND/2022764" H 2900 2500 60  0001 C CNN "Supplier URL"
 	1    2900 2500
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND-rgb #PWR040
+L GND-rgb #PWR38
 U 1 1 552158AF
 P 3650 2850
-F 0 "#PWR040" H 3650 2850 30  0001 C CNN
+F 0 "#PWR38" H 3650 2850 30  0001 C CNN
 F 1 "GND-rgb" H 3650 2780 30  0001 C CNN
 F 2 "" H 3650 2850 60  0000 C CNN
 F 3 "" H 3650 2850 60  0000 C CNN
@@ -453,10 +322,10 @@ F 3 "" H 3650 2850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12V #PWR041
+L +12V #PWR37
 U 1 1 552158B5
 P 3650 1250
-F 0 "#PWR041" H 3650 1200 20  0001 C CNN
+F 0 "#PWR37" H 3650 1200 20  0001 C CNN
 F 1 "+12V" H 3650 1350 30  0000 C CNN
 F 2 "" H 3650 1250 60  0000 C CNN
 F 3 "" H 3650 1250 60  0000 C CNN
@@ -495,17 +364,6 @@ Wire Wire Line
 Wire Wire Line
 	2900 2750 2900 2900
 $Comp
-L R-rgb R26
-U 1 1 552158E3
-P 5450 1950
-F 0 "R26" V 5530 1950 40  0000 C CNN
-F 1 "18k" V 5457 1951 40  0000 C CNN
-F 2 "~" V 5380 1950 30  0000 C CNN
-F 3 "~" H 5450 1950 30  0000 C CNN
-	1    5450 1950
-	0    -1   -1   0   
-$EndComp
-$Comp
 L R-rgb R21
 U 1 1 552158E9
 P 4750 1950
@@ -513,6 +371,13 @@ F 0 "R21" V 4830 1950 40  0000 C CNN
 F 1 "18k" V 4757 1951 40  0000 C CNN
 F 2 "~" V 4680 1950 30  0000 C CNN
 F 3 "~" H 4750 1950 30  0000 C CNN
+F 4 "Stackpole Electronics Inc." H 4750 1950 60  0001 C CNN "Manufacturer"
+F 5 "RES 18K OHM 1/8W 5% CF AXIAL" H 4750 1950 60  0001 C CNN "Product description"
+F 6 "CF18JT18K0" H 4750 1950 60  0001 C CNN "Product code"
+F 7 "Digikey" H 4750 1950 60  0001 C CNN "Supplier"
+F 8 "CF18JT18K0CT-ND" H 4750 1950 60  0001 C CNN "Supplier code"
+F 9 "No" H 4750 1950 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-search/en/resistors/through-hole-resistors/66690" H 4750 1950 60  0001 C CNN "Supplier URL"
 	1    4750 1950
 	0    -1   -1   0   
 $EndComp
@@ -524,13 +389,15 @@ F 0 "C24" H 5800 2350 40  0000 L CNN
 F 1 "4.7nF" H 5806 2165 40  0000 L CNN
 F 2 "~" H 5838 2100 30  0000 C CNN
 F 3 "~" H 5800 2250 60  0000 C CNN
-F 4 "10%" H 5800 2250 60  0001 C CNN "Tolerance"
+F 4 "5%" H 5800 2250 60  0001 C CNN "Tolerance"
 F 5 "Ceramic" H 5800 2250 60  0001 C CNN "Type"
 F 6 "Kemet" H 5800 2250 60  0001 C CNN "Manufacturer"
-F 7 "Multilayer Ceramic Capacitor, Gold Max, C315 Series, 4700 pF, ± 10%, X7R, 100 V, Radial Leaded" H 5800 2250 60  0001 C CNN "Product description"
-F 8 "C315C472K1R5TA" H 5800 2250 60  0001 C CNN "Product code"
-F 9 "Farnell" H 5800 2250 60  0001 C CNN "Supplier"
-F 10 "1457649" H 5800 2250 60  0001 C CNN "Supplier code"
+F 7 "4700pF 100V Ceramic Capacitor C0G, NP0 Radial 0.200\" L x 0.125\" W (5.08mm x 3.18mm)" H 5800 2250 60  0001 C CNN "Product description"
+F 8 "C320C472J1G5TA" H 5800 2250 60  0001 C CNN "Product code"
+F 9 "Digikey" H 5800 2250 60  0001 C CNN "Supplier"
+F 10 "399-4302-ND" H 5800 2250 60  0001 C CNN "Supplier code"
+F 11 "No" H 5800 2250 60  0001 C CNN "Order"
+F 12 "http://www.digikey.co.uk/product-search/en/capacitors/ceramic-capacitors/131083" H 5800 2250 60  0001 C CNN "Supplier URL"
 	1    5800 2250
 	1    0    0    -1  
 $EndComp
@@ -542,21 +409,23 @@ F 0 "C22" H 5300 900 40  0000 L CNN
 F 1 "10nF" H 5306 715 40  0000 L CNN
 F 2 "~" H 5338 650 30  0000 C CNN
 F 3 "~" H 5300 800 60  0000 C CNN
-F 4 "10%" H 5300 800 60  0001 C CNN "Tolerance"
+F 4 "5%" H 5300 800 60  0001 C CNN "Tolerance"
 F 5 "Ceramic" H 5300 800 60  0001 C CNN "Type"
-F 6 "Multicomp" H 5300 800 60  0001 C CNN "Manufacturer"
-F 7 "Multilayer Ceramic Capacitor, MCRR Series, 0.01 µF, ± 10%, X7R, 50 V, Radial Leaded" H 5300 800 60  0001 C CNN "Product description"
-F 8 "MCRR25103X7RK0050" H 5300 800 60  0001 C CNN "Product code"
-F 9 "Farnell" H 5300 800 60  0001 C CNN "Supplier"
-F 10 "1216435" H 5300 800 60  0001 C CNN "Supplier code"
+F 6 "Kemet" H 5300 800 60  0001 C CNN "Manufacturer"
+F 7 "10000pF 50V Ceramic Capacitor X7R Radial 0.150\" L x 0.100\" W (3.81mm x 2.54mm)" H 5300 800 60  0001 C CNN "Product description"
+F 8 "C315C103J5R5TA" H 5300 800 60  0001 C CNN "Product code"
+F 9 "Digikey" H 5300 800 60  0001 C CNN "Supplier"
+F 10 "399-9712-ND" H 5300 800 60  0001 C CNN "Supplier code"
+F 11 "No" H 5300 800 60  0001 C CNN "Order"
+F 12 "http://www.digikey.co.uk/product-detail/en/kemet/C315C103J5R5TA/399-9712-ND/3725975" H 5300 800 60  0001 C CNN "Supplier URL"
 	1    5300 800 
 	0    1    1    0   
 $EndComp
 $Comp
-L GND-rgb #PWR042
+L GND-rgb #PWR42
 U 1 1 55215901
 P 6550 2650
-F 0 "#PWR042" H 6550 2650 30  0001 C CNN
+F 0 "#PWR42" H 6550 2650 30  0001 C CNN
 F 1 "GND-rgb" H 6550 2580 30  0001 C CNN
 F 2 "" H 6550 2650 60  0000 C CNN
 F 3 "" H 6550 2650 60  0000 C CNN
@@ -564,10 +433,10 @@ F 3 "" H 6550 2650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12V #PWR043
+L +12V #PWR41
 U 1 1 55215907
 P 6550 1050
-F 0 "#PWR043" H 6550 1000 20  0001 C CNN
+F 0 "#PWR41" H 6550 1000 20  0001 C CNN
 F 1 "+12V" H 6550 1150 30  0000 C CNN
 F 2 "" H 6550 1050 60  0000 C CNN
 F 3 "" H 6550 1050 60  0000 C CNN
@@ -584,6 +453,13 @@ F 0 "R30" V 7980 2150 40  0000 C CNN
 F 1 "180R" V 7907 2151 40  0000 C CNN
 F 2 "~" V 7830 2150 30  0000 C CNN
 F 3 "~" H 7900 2150 30  0000 C CNN
+F 4 "Stackpole Electronics Inc." H 7900 2150 60  0001 C CNN "Manufacturer"
+F 5 "RES 180 OHM 1/8W 5% CF AXIAL" H 7900 2150 60  0001 C CNN "Product description"
+F 6 "CF18JT180R" H 7900 2150 60  0001 C CNN "Product code"
+F 7 "Digikey" H 7900 2150 60  0001 C CNN "Supplier"
+F 8 "CF18JT180RCT-ND" H 7900 2150 60  0001 C CNN "Supplier code"
+F 9 "No" H 7900 2150 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT180R/CF18JT180RCT-ND/2022724" H 7900 2150 60  0001 C CNN "Supplier URL"
 	1    7900 2150
 	-1   0    0    1   
 $EndComp
@@ -595,14 +471,21 @@ F 0 "R29" V 7980 1250 40  0000 C CNN
 F 1 "2.2k" V 7907 1251 40  0000 C CNN
 F 2 "~" V 7830 1250 30  0000 C CNN
 F 3 "~" H 7900 1250 30  0000 C CNN
+F 4 "Stackpole Electronics Inc." H 7900 1250 60  0001 C CNN "Manufacturer"
+F 5 "RES 2.2K OHM 1/8W 5% CF AXIAL" H 7900 1250 60  0001 C CNN "Product description"
+F 6 "CF18JT2K20" H 7900 1250 60  0001 C CNN "Product code"
+F 7 "Digikey" H 7900 1250 60  0001 C CNN "Supplier"
+F 8 "CF18JT2K20CT-ND" H 7900 1250 60  0001 C CNN "Supplier code"
+F 9 "No" H 7900 1250 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT2K20/CF18JT2K20CT-ND/2022750" H 7900 1250 60  0001 C CNN "Supplier URL"
 	1    7900 1250
 	-1   0    0    1   
 $EndComp
 $Comp
-L +12V #PWR044
+L +12V #PWR43
 U 1 1 55215927
 P 7900 900
-F 0 "#PWR044" H 7900 850 20  0001 C CNN
+F 0 "#PWR43" H 7900 850 20  0001 C CNN
 F 1 "+12V" H 7900 1000 30  0000 C CNN
 F 2 "" H 7900 900 60  0000 C CNN
 F 3 "" H 7900 900 60  0000 C CNN
@@ -633,6 +516,13 @@ F 0 "R32" V 9580 2200 40  0000 C CNN
 F 1 "330k" V 9507 2201 40  0000 C CNN
 F 2 "~" V 9430 2200 30  0000 C CNN
 F 3 "~" H 9500 2200 30  0000 C CNN
+F 4 "Stackpole Electronics Inc." H 9500 2200 60  0001 C CNN "Manufacturer"
+F 5 "RES 330K OHM 1/8W 5% CF AXIAL" H 9500 2200 60  0001 C CNN "Product description"
+F 6 "CF18JT330K" H 9500 2200 60  0001 C CNN "Product code"
+F 7 "Digikey" H 9500 2200 60  0001 C CNN "Supplier"
+F 8 "CF18JT330KCT-ND" H 9500 2200 60  0001 C CNN "Supplier code"
+F 9 "No" H 9500 2200 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT330K/CF18JT330KCT-ND/2022802" H 9500 2200 60  0001 C CNN "Supplier URL"
 	1    9500 2200
 	-1   0    0    1   
 $EndComp
@@ -687,10 +577,10 @@ Wire Wire Line
 Connection ~ 9100 2600
 Connection ~ 9500 1750
 $Comp
-L +12V #PWR045
+L +12V #PWR35
 U 1 1 5532D600
 P 3400 3600
-F 0 "#PWR045" H 3400 3550 20  0001 C CNN
+F 0 "#PWR35" H 3400 3550 20  0001 C CNN
 F 1 "+12V" H 3400 3700 30  0000 C CNN
 F 2 "" H 3400 3600 60  0000 C CNN
 F 3 "" H 3400 3600 60  0000 C CNN
@@ -748,17 +638,6 @@ Wire Wire Line
 Wire Wire Line
 	4750 5000 4750 5150
 Connection ~ 4750 5150
-$Comp
-L R-rgb R25
-U 1 1 56EDA1FB
-P 5050 4100
-F 0 "R25" V 5130 4100 40  0000 C CNN
-F 1 "22k" V 5057 4101 40  0000 C CNN
-F 2 "~" V 4980 4100 30  0000 C CNN
-F 3 "~" H 5050 4100 30  0000 C CNN
-	1    5050 4100
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	4800 4100 4750 4100
 Connection ~ 4750 4100
@@ -773,6 +652,13 @@ F 0 "R31" V 8330 1550 40  0000 C CNN
 F 1 "22k" V 8257 1551 40  0000 C CNN
 F 2 "~" V 8180 1550 30  0000 C CNN
 F 3 "~" H 8250 1550 30  0000 C CNN
+F 4 "Stackpole Electronics Inc." H 8250 1550 60  0001 C CNN "Manufacturer"
+F 5 "RES 22K OHM 1/8W 5% CF AXIAL" H 8250 1550 60  0001 C CNN "Product description"
+F 6 "CF18JT22K0" H 8250 1550 60  0001 C CNN "Product code"
+F 7 "Digikey" H 8250 1550 60  0001 C CNN "Supplier"
+F 8 "CF18JT22K0CT-ND" H 8250 1550 60  0001 C CNN "Supplier code"
+F 9 "No" H 8250 1550 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT22K0/CF18JT22K0CT-ND/2022774" H 8250 1550 60  0001 C CNN "Supplier URL"
 	1    8250 1550
 	0    -1   -1   0   
 $EndComp
@@ -782,17 +668,6 @@ Connection ~ 7900 1550
 Wire Wire Line
 	8500 1550 8500 1750
 Connection ~ 8500 1750
-$Comp
-L R-rgb R24
-U 1 1 56EDB60F
-P 4800 6400
-F 0 "R24" V 4880 6400 40  0000 C CNN
-F 1 "22k" V 4807 6401 40  0000 C CNN
-F 2 "~" V 4730 6400 30  0000 C CNN
-F 3 "~" H 4800 6400 30  0000 C CNN
-	1    4800 6400
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	4550 6400 4450 6400
 Connection ~ 4450 6400
@@ -809,85 +684,15 @@ F 2 "~" H 1938 2000 30  0000 C CNN
 F 3 "~" H 1900 2150 60  0000 C CNN
 F 4 "10%" H 1900 2150 60  0001 C CNN "Tolerance"
 F 5 "Ceramic" H 1900 2150 60  0001 C CNN "Type"
-F 6 "Multicomp" H 1900 2150 60  0001 C CNN "Manufacturer"
-F 7 "Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 10%, X7R, 50 V, Radial Leaded" H 1900 2150 60  0001 C CNN "Product description"
-F 8 "MC0805B104K500A2.54MM" H 1900 2150 60  0001 C CNN "Product code"
-F 9 "Farnell" H 1900 2150 60  0001 C CNN "Supplier"
-F 10 "2309020" H 1900 2150 60  0001 C CNN "Supplier code"
+F 6 "Kemet" H 1900 2150 60  0001 C CNN "Manufacturer"
+F 7 "0.10µF 50V Ceramic Capacitor X7R Radial 0.200\" L x 0.125\" W (5.08mm x 3.18mm)" H 1900 2150 60  0001 C CNN "Product description"
+F 8 "C320C104J5R5TA" H 1900 2150 60  0001 C CNN "Product code"
+F 9 "Digikey" H 1900 2150 60  0001 C CNN "Supplier"
+F 10 "399-9775-ND" H 1900 2150 60  0001 C CNN "Supplier code"
+F 11 "No" H 1900 2150 60  0001 C CNN "Order"
+F 12 "http://www.digikey.co.uk/product-detail/en/kemet/C320C104J5R5TA/399-9775-ND/3726074" H 1900 2150 60  0001 C CNN "Supplier URL"
 	1    1900 2150
 	0    1    1    0   
-$EndComp
-$Comp
-L C-rgb C18
-U 1 1 56F79836
-P 2600 2150
-F 0 "C18" H 2600 2250 40  0000 L CNN
-F 1 "100nF" H 2606 2065 40  0000 L CNN
-F 2 "~" H 2638 2000 30  0000 C CNN
-F 3 "~" H 2600 2150 60  0000 C CNN
-F 4 "10%" H 2600 2150 60  0001 C CNN "Tolerance"
-F 5 "Ceramic" H 2600 2150 60  0001 C CNN "Type"
-F 6 "Multicomp" H 2600 2150 60  0001 C CNN "Manufacturer"
-F 7 "Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 10%, X7R, 50 V, Radial Leaded" H 2600 2150 60  0001 C CNN "Product description"
-F 8 "MC0805B104K500A2.54MM" H 2600 2150 60  0001 C CNN "Product code"
-F 9 "Farnell" H 2600 2150 60  0001 C CNN "Supplier"
-F 10 "2309020" H 2600 2150 60  0001 C CNN "Supplier code"
-	1    2600 2150
-	0    1    1    0   
-$EndComp
-$Comp
-L C-rgb C25
-U 1 1 56F7993C
-P 5900 4700
-F 0 "C25" H 5900 4800 40  0000 L CNN
-F 1 "100nF" H 5906 4615 40  0000 L CNN
-F 2 "~" H 5938 4550 30  0000 C CNN
-F 3 "~" H 5900 4700 60  0000 C CNN
-F 4 "10%" H 5900 4700 60  0001 C CNN "Tolerance"
-F 5 "Ceramic" H 5900 4700 60  0001 C CNN "Type"
-F 6 "Multicomp" H 5900 4700 60  0001 C CNN "Manufacturer"
-F 7 "Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 10%, X7R, 50 V, Radial Leaded" H 5900 4700 60  0001 C CNN "Product description"
-F 8 "MC0805B104K500A2.54MM" H 5900 4700 60  0001 C CNN "Product code"
-F 9 "Farnell" H 5900 4700 60  0001 C CNN "Supplier"
-F 10 "2309020" H 5900 4700 60  0001 C CNN "Supplier code"
-	1    5900 4700
-	-1   0    0    1   
-$EndComp
-$Comp
-L C-rgb C27
-U 1 1 56F79D38
-P 9100 2150
-F 0 "C27" H 9100 2250 40  0000 L CNN
-F 1 "100nF" H 9106 2065 40  0000 L CNN
-F 2 "~" H 9138 2000 30  0000 C CNN
-F 3 "~" H 9100 2150 60  0000 C CNN
-F 4 "10%" H 9100 2150 60  0001 C CNN "Tolerance"
-F 5 "Ceramic" H 9100 2150 60  0001 C CNN "Type"
-F 6 "Multicomp" H 9100 2150 60  0001 C CNN "Manufacturer"
-F 7 "Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 10%, X7R, 50 V, Radial Leaded" H 9100 2150 60  0001 C CNN "Product description"
-F 8 "MC0805B104K500A2.54MM" H 9100 2150 60  0001 C CNN "Product code"
-F 9 "Farnell" H 9100 2150 60  0001 C CNN "Supplier"
-F 10 "2309020" H 9100 2150 60  0001 C CNN "Supplier code"
-	1    9100 2150
-	-1   0    0    1   
-$EndComp
-$Comp
-L C-rgb C23
-U 1 1 56F79E72
-P 5650 7050
-F 0 "C23" H 5650 7150 40  0000 L CNN
-F 1 "100nF" H 5656 6965 40  0000 L CNN
-F 2 "~" H 5688 6900 30  0000 C CNN
-F 3 "~" H 5650 7050 60  0000 C CNN
-F 4 "10%" H 5650 7050 60  0001 C CNN "Tolerance"
-F 5 "Ceramic" H 5650 7050 60  0001 C CNN "Type"
-F 6 "Multicomp" H 5650 7050 60  0001 C CNN "Manufacturer"
-F 7 "Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 10%, X7R, 50 V, Radial Leaded" H 5650 7050 60  0001 C CNN "Product description"
-F 8 "MC0805B104K500A2.54MM" H 5650 7050 60  0001 C CNN "Product code"
-F 9 "Farnell" H 5650 7050 60  0001 C CNN "Supplier"
-F 10 "2309020" H 5650 7050 60  0001 C CNN "Supplier code"
-	1    5650 7050
-	-1   0    0    1   
 $EndComp
 $Comp
 L C-rgb C26
@@ -899,68 +704,14 @@ F 2 "~" H 7638 1600 30  0000 C CNN
 F 3 "~" H 7600 1750 60  0000 C CNN
 F 4 "10%" H 7600 1750 60  0001 C CNN "Tolerance"
 F 5 "Ceramic" H 7600 1750 60  0001 C CNN "Type"
-F 6 "Multicomp" H 7600 1750 60  0001 C CNN "Manufacturer"
-F 7 "Multilayer Ceramic Capacitor, MLR Series, 1 µF, ± 10%, X7R, 50 V, Radial Leaded" H 7600 1750 60  0001 C CNN "Product description"
-F 8 "MCMLR50V105KX7R" H 7600 1750 60  0001 C CNN "Product code"
-F 9 "Farnell" H 7600 1750 60  0001 C CNN "Supplier"
-F 10 "2112947" H 7600 1750 60  0001 C CNN "Supplier code"
-F 11 "5.08mm spacing" H 7600 1750 60  0001 C CNN "Notes"
+F 6 "Kemet" H 7600 1750 60  0001 C CNN "Manufacturer"
+F 7 "1µF 25V Ceramic Capacitor X7R Radial 0.150\" L x 0.100\" W (3.81mm x 2.54mm)" H 7600 1750 60  0001 C CNN "Product description"
+F 8 "C315C105K3R5TA" H 7600 1750 60  0001 C CNN "Product code"
+F 9 "Digikey" H 7600 1750 60  0001 C CNN "Supplier"
+F 10 "399-9714-ND" H 7600 1750 60  0001 C CNN "Supplier code"
+F 11 "No" H 7600 1750 60  0001 C CNN "Order"
+F 12 "http://www.digikey.co.uk/product-search/en/capacitors/ceramic-capacitors/131083" H 7600 1750 60  0001 C CNN "Supplier URL"
 	1    7600 1750
-	0    1    1    0   
-$EndComp
-$Comp
-L C-rgb C20
-U 1 1 56F7A2CB
-P 4150 6600
-F 0 "C20" H 4150 6700 40  0000 L CNN
-F 1 "1uF" H 4156 6515 40  0000 L CNN
-F 2 "~" H 4188 6450 30  0000 C CNN
-F 3 "~" H 4150 6600 60  0000 C CNN
-F 4 "10%" H 4150 6600 60  0001 C CNN "Tolerance"
-F 5 "Ceramic" H 4150 6600 60  0001 C CNN "Type"
-F 6 "Multicomp" H 4150 6600 60  0001 C CNN "Manufacturer"
-F 7 "Multilayer Ceramic Capacitor, MLR Series, 1 µF, ± 10%, X7R, 50 V, Radial Leaded" H 4150 6600 60  0001 C CNN "Product description"
-F 8 "MCMLR50V105KX7R" H 4150 6600 60  0001 C CNN "Product code"
-F 9 "Farnell" H 4150 6600 60  0001 C CNN "Supplier"
-F 10 "2112947" H 4150 6600 60  0001 C CNN "Supplier code"
-F 11 "5.08mm spacing" H 4150 6600 60  0001 C CNN "Notes"
-	1    4150 6600
-	0    1    1    0   
-$EndComp
-$Comp
-L C-rgb C14
-U 1 1 56F7A59B
-P 1350 6800
-F 0 "C14" H 1350 6900 40  0000 L CNN
-F 1 "10nF" H 1356 6715 40  0000 L CNN
-F 2 "~" H 1388 6650 30  0000 C CNN
-F 3 "~" H 1350 6800 60  0000 C CNN
-F 4 "10%" H 1350 6800 60  0001 C CNN "Tolerance"
-F 5 "Ceramic" H 1350 6800 60  0001 C CNN "Type"
-F 6 "Multicomp" H 1350 6800 60  0001 C CNN "Manufacturer"
-F 7 "Multilayer Ceramic Capacitor, MCRR Series, 0.01 µF, ± 10%, X7R, 50 V, Radial Leaded" H 1350 6800 60  0001 C CNN "Product description"
-F 8 "MCRR25103X7RK0050" H 1350 6800 60  0001 C CNN "Product code"
-F 9 "Farnell" H 1350 6800 60  0001 C CNN "Supplier"
-F 10 "1216435" H 1350 6800 60  0001 C CNN "Supplier code"
-	1    1350 6800
-	0    1    1    0   
-$EndComp
-$Comp
-L C-rgb C16
-U 1 1 56F7A6B9
-P 2050 6800
-F 0 "C16" H 2050 6900 40  0000 L CNN
-F 1 "10nF" H 2056 6715 40  0000 L CNN
-F 2 "~" H 2088 6650 30  0000 C CNN
-F 3 "~" H 2050 6800 60  0000 C CNN
-F 4 "10%" H 2050 6800 60  0001 C CNN "Tolerance"
-F 5 "Ceramic" H 2050 6800 60  0001 C CNN "Type"
-F 6 "Multicomp" H 2050 6800 60  0001 C CNN "Manufacturer"
-F 7 "Multilayer Ceramic Capacitor, MCRR Series, 0.01 µF, ± 10%, X7R, 50 V, Radial Leaded" H 2050 6800 60  0001 C CNN "Product description"
-F 8 "MCRR25103X7RK0050" H 2050 6800 60  0001 C CNN "Product code"
-F 9 "Farnell" H 2050 6800 60  0001 C CNN "Supplier"
-F 10 "1216435" H 2050 6800 60  0001 C CNN "Supplier code"
-	1    2050 6800
 	0    1    1    0   
 $EndComp
 $Comp
@@ -994,5 +745,419 @@ F 7 "Farnell" H 5350 6600 60  0001 C CNN "Supplier"
 F 8 "9565124" H 5350 6600 60  0001 C CNN "Supplier code"
 	1    5350 6600
 	1    0    0    -1  
+$EndComp
+$Comp
+L C-rgb C?
+U 1 1 580CF949
+P 2600 2150
+F 0 "C?" H 2600 2250 40  0000 L CNN
+F 1 "100nF" H 2606 2065 40  0000 L CNN
+F 2 "~" H 2638 2000 30  0000 C CNN
+F 3 "~" H 2600 2150 60  0000 C CNN
+F 4 "10%" H 2600 2150 60  0001 C CNN "Tolerance"
+F 5 "Ceramic" H 2600 2150 60  0001 C CNN "Type"
+F 6 "Kemet" H 2600 2150 60  0001 C CNN "Manufacturer"
+F 7 "0.10µF 50V Ceramic Capacitor X7R Radial 0.200\" L x 0.125\" W (5.08mm x 3.18mm)" H 2600 2150 60  0001 C CNN "Product description"
+F 8 "C320C104J5R5TA" H 2600 2150 60  0001 C CNN "Product code"
+F 9 "Digikey" H 2600 2150 60  0001 C CNN "Supplier"
+F 10 "399-9775-ND" H 2600 2150 60  0001 C CNN "Supplier code"
+F 11 "No" H 2600 2150 60  0001 C CNN "Order"
+F 12 "http://www.digikey.co.uk/product-detail/en/kemet/C320C104J5R5TA/399-9775-ND/3726074" H 2600 2150 60  0001 C CNN "Supplier URL"
+	1    2600 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L C-rgb C?
+U 1 1 580CFB1B
+P 2150 3350
+F 0 "C?" H 2150 3450 40  0000 L CNN
+F 1 "100nF" H 2156 3265 40  0000 L CNN
+F 2 "~" H 2188 3200 30  0000 C CNN
+F 3 "~" H 2150 3350 60  0000 C CNN
+F 4 "10%" H 2150 3350 60  0001 C CNN "Tolerance"
+F 5 "Ceramic" H 2150 3350 60  0001 C CNN "Type"
+F 6 "Kemet" H 2150 3350 60  0001 C CNN "Manufacturer"
+F 7 "0.10µF 50V Ceramic Capacitor X7R Radial 0.200\" L x 0.125\" W (5.08mm x 3.18mm)" H 2150 3350 60  0001 C CNN "Product description"
+F 8 "C320C104J5R5TA" H 2150 3350 60  0001 C CNN "Product code"
+F 9 "Digikey" H 2150 3350 60  0001 C CNN "Supplier"
+F 10 "399-9775-ND" H 2150 3350 60  0001 C CNN "Supplier code"
+F 11 "No" H 2150 3350 60  0001 C CNN "Order"
+F 12 "http://www.digikey.co.uk/product-detail/en/kemet/C320C104J5R5TA/399-9775-ND/3726074" H 2150 3350 60  0001 C CNN "Supplier URL"
+	1    2150 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L C-rgb C?
+U 1 1 580CFCE5
+P 2050 6800
+F 0 "C?" H 2050 6900 40  0000 L CNN
+F 1 "10nF" H 2056 6715 40  0000 L CNN
+F 2 "~" H 2088 6650 30  0000 C CNN
+F 3 "~" H 2050 6800 60  0000 C CNN
+F 4 "5%" H 2050 6800 60  0001 C CNN "Tolerance"
+F 5 "Ceramic" H 2050 6800 60  0001 C CNN "Type"
+F 6 "Kemet" H 2050 6800 60  0001 C CNN "Manufacturer"
+F 7 "10000pF 50V Ceramic Capacitor X7R Radial 0.150\" L x 0.100\" W (3.81mm x 2.54mm)" H 2050 6800 60  0001 C CNN "Product description"
+F 8 "C315C103J5R5TA" H 2050 6800 60  0001 C CNN "Product code"
+F 9 "Digikey" H 2050 6800 60  0001 C CNN "Supplier"
+F 10 "399-9712-ND" H 2050 6800 60  0001 C CNN "Supplier code"
+F 11 "No" H 2050 6800 60  0001 C CNN "Order"
+F 12 "http://www.digikey.co.uk/product-detail/en/kemet/C315C103J5R5TA/399-9712-ND/3725975" H 2050 6800 60  0001 C CNN "Supplier URL"
+	1    2050 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L C-rgb C?
+U 1 1 580CFE19
+P 1350 6800
+F 0 "C?" H 1350 6900 40  0000 L CNN
+F 1 "10nF" H 1356 6715 40  0000 L CNN
+F 2 "~" H 1388 6650 30  0000 C CNN
+F 3 "~" H 1350 6800 60  0000 C CNN
+F 4 "5%" H 1350 6800 60  0001 C CNN "Tolerance"
+F 5 "Ceramic" H 1350 6800 60  0001 C CNN "Type"
+F 6 "Kemet" H 1350 6800 60  0001 C CNN "Manufacturer"
+F 7 "10000pF 50V Ceramic Capacitor X7R Radial 0.150\" L x 0.100\" W (3.81mm x 2.54mm)" H 1350 6800 60  0001 C CNN "Product description"
+F 8 "C315C103J5R5TA" H 1350 6800 60  0001 C CNN "Product code"
+F 9 "Digikey" H 1350 6800 60  0001 C CNN "Supplier"
+F 10 "399-9712-ND" H 1350 6800 60  0001 C CNN "Supplier code"
+F 11 "No" H 1350 6800 60  0001 C CNN "Order"
+F 12 "http://www.digikey.co.uk/product-detail/en/kemet/C315C103J5R5TA/399-9712-ND/3725975" H 1350 6800 60  0001 C CNN "Supplier URL"
+	1    1350 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L C-rgb C?
+U 1 1 580D01E9
+P 9100 2150
+F 0 "C?" H 9100 2250 40  0000 L CNN
+F 1 "100nF" H 9106 2065 40  0000 L CNN
+F 2 "~" H 9138 2000 30  0000 C CNN
+F 3 "~" H 9100 2150 60  0000 C CNN
+F 4 "10%" H 9100 2150 60  0001 C CNN "Tolerance"
+F 5 "Ceramic" H 9100 2150 60  0001 C CNN "Type"
+F 6 "Kemet" H 9100 2150 60  0001 C CNN "Manufacturer"
+F 7 "0.10µF 50V Ceramic Capacitor X7R Radial 0.200\" L x 0.125\" W (5.08mm x 3.18mm)" H 9100 2150 60  0001 C CNN "Product description"
+F 8 "C320C104J5R5TA" H 9100 2150 60  0001 C CNN "Product code"
+F 9 "Digikey" H 9100 2150 60  0001 C CNN "Supplier"
+F 10 "399-9775-ND" H 9100 2150 60  0001 C CNN "Supplier code"
+F 11 "No" H 9100 2150 60  0001 C CNN "Order"
+F 12 "http://www.digikey.co.uk/product-detail/en/kemet/C320C104J5R5TA/399-9775-ND/3726074" H 9100 2150 60  0001 C CNN "Supplier URL"
+	1    9100 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L C-rgb C?
+U 1 1 580D0328
+P 5900 4700
+F 0 "C?" H 5900 4800 40  0000 L CNN
+F 1 "100nF" H 5906 4615 40  0000 L CNN
+F 2 "~" H 5938 4550 30  0000 C CNN
+F 3 "~" H 5900 4700 60  0000 C CNN
+F 4 "10%" H 5900 4700 60  0001 C CNN "Tolerance"
+F 5 "Ceramic" H 5900 4700 60  0001 C CNN "Type"
+F 6 "Kemet" H 5900 4700 60  0001 C CNN "Manufacturer"
+F 7 "0.10µF 50V Ceramic Capacitor X7R Radial 0.200\" L x 0.125\" W (5.08mm x 3.18mm)" H 5900 4700 60  0001 C CNN "Product description"
+F 8 "C320C104J5R5TA" H 5900 4700 60  0001 C CNN "Product code"
+F 9 "Digikey" H 5900 4700 60  0001 C CNN "Supplier"
+F 10 "399-9775-ND" H 5900 4700 60  0001 C CNN "Supplier code"
+F 11 "No" H 5900 4700 60  0001 C CNN "Order"
+F 12 "http://www.digikey.co.uk/product-detail/en/kemet/C320C104J5R5TA/399-9775-ND/3726074" H 5900 4700 60  0001 C CNN "Supplier URL"
+	1    5900 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L C-rgb C?
+U 1 1 580D04EC
+P 5650 7050
+F 0 "C?" H 5650 7150 40  0000 L CNN
+F 1 "100nF" H 5656 6965 40  0000 L CNN
+F 2 "~" H 5688 6900 30  0000 C CNN
+F 3 "~" H 5650 7050 60  0000 C CNN
+F 4 "10%" H 5650 7050 60  0001 C CNN "Tolerance"
+F 5 "Ceramic" H 5650 7050 60  0001 C CNN "Type"
+F 6 "Kemet" H 5650 7050 60  0001 C CNN "Manufacturer"
+F 7 "0.10µF 50V Ceramic Capacitor X7R Radial 0.200\" L x 0.125\" W (5.08mm x 3.18mm)" H 5650 7050 60  0001 C CNN "Product description"
+F 8 "C320C104J5R5TA" H 5650 7050 60  0001 C CNN "Product code"
+F 9 "Digikey" H 5650 7050 60  0001 C CNN "Supplier"
+F 10 "399-9775-ND" H 5650 7050 60  0001 C CNN "Supplier code"
+F 11 "No" H 5650 7050 60  0001 C CNN "Order"
+F 12 "http://www.digikey.co.uk/product-detail/en/kemet/C320C104J5R5TA/399-9775-ND/3726074" H 5650 7050 60  0001 C CNN "Supplier URL"
+	1    5650 7050
+	-1   0    0    1   
+$EndComp
+$Comp
+L C-rgb C?
+U 1 1 580D06D8
+P 4150 6600
+F 0 "C?" H 4150 6700 40  0000 L CNN
+F 1 "1uF" H 4156 6515 40  0000 L CNN
+F 2 "~" H 4188 6450 30  0000 C CNN
+F 3 "~" H 4150 6600 60  0000 C CNN
+F 4 "10%" H 4150 6600 60  0001 C CNN "Tolerance"
+F 5 "Ceramic" H 4150 6600 60  0001 C CNN "Type"
+F 6 "Kemet" H 4150 6600 60  0001 C CNN "Manufacturer"
+F 7 "1µF 25V Ceramic Capacitor X7R Radial 0.150\" L x 0.100\" W (3.81mm x 2.54mm)" H 4150 6600 60  0001 C CNN "Product description"
+F 8 "C315C105K3R5TA" H 4150 6600 60  0001 C CNN "Product code"
+F 9 "Digikey" H 4150 6600 60  0001 C CNN "Supplier"
+F 10 "399-9714-ND" H 4150 6600 60  0001 C CNN "Supplier code"
+F 11 "No" H 4150 6600 60  0001 C CNN "Order"
+F 12 "http://www.digikey.co.uk/product-search/en/capacitors/ceramic-capacitors/131083" H 4150 6600 60  0001 C CNN "Supplier URL"
+	1    4150 6600
+	0    1    1    0   
+$EndComp
+$Comp
+L C-rgb C?
+U 1 1 580D09EE
+P 4450 4300
+F 0 "C?" H 4450 4400 40  0000 L CNN
+F 1 "1uF" H 4456 4215 40  0000 L CNN
+F 2 "~" H 4488 4150 30  0000 C CNN
+F 3 "~" H 4450 4300 60  0000 C CNN
+F 4 "10%" H 4450 4300 60  0001 C CNN "Tolerance"
+F 5 "Ceramic" H 4450 4300 60  0001 C CNN "Type"
+F 6 "Kemet" H 4450 4300 60  0001 C CNN "Manufacturer"
+F 7 "1µF 25V Ceramic Capacitor X7R Radial 0.150\" L x 0.100\" W (3.81mm x 2.54mm)" H 4450 4300 60  0001 C CNN "Product description"
+F 8 "C315C105K3R5TA" H 4450 4300 60  0001 C CNN "Product code"
+F 9 "Digikey" H 4450 4300 60  0001 C CNN "Supplier"
+F 10 "399-9714-ND" H 4450 4300 60  0001 C CNN "Supplier code"
+F 11 "No" H 4450 4300 60  0001 C CNN "Order"
+F 12 "http://www.digikey.co.uk/product-search/en/capacitors/ceramic-capacitors/131083" H 4450 4300 60  0001 C CNN "Supplier URL"
+	1    4450 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L R-rgb R?
+U 1 1 580D10CE
+P 1900 5650
+F 0 "R?" V 1980 5650 40  0000 C CNN
+F 1 "8.2k" V 1907 5651 40  0000 C CNN
+F 2 "~" V 1830 5650 30  0000 C CNN
+F 3 "~" H 1900 5650 30  0000 C CNN
+F 4 "Stackpole Electronics Inc." H 1900 5650 60  0001 C CNN "Manufacturer"
+F 5 "RES 8.2K OHM 1/8W 5% CF AXIAL" H 1900 5650 60  0001 C CNN "Product description"
+F 6 "CF18JT8K20" H 1900 5650 60  0001 C CNN "Product code"
+F 7 "Digikey" H 1900 5650 60  0001 C CNN "Supplier"
+F 8 "CF18JT8K20CT-ND" H 1900 5650 60  0001 C CNN "Supplier code"
+F 9 "No" H 1900 5650 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT8K20/CF18JT8K20CT-ND/2022764" H 1900 5650 60  0001 C CNN "Supplier URL"
+	1    1900 5650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R-rgb R?
+U 1 1 580D1313
+P 5450 1950
+F 0 "R?" V 5530 1950 40  0000 C CNN
+F 1 "18k" V 5457 1951 40  0000 C CNN
+F 2 "~" V 5380 1950 30  0000 C CNN
+F 3 "~" H 5450 1950 30  0000 C CNN
+F 4 "Stackpole Electronics Inc." H 5450 1950 60  0001 C CNN "Manufacturer"
+F 5 "RES 18K OHM 1/8W 5% CF AXIAL" H 5450 1950 60  0001 C CNN "Product description"
+F 6 "CF18JT18K0" H 5450 1950 60  0001 C CNN "Product code"
+F 7 "Digikey" H 5450 1950 60  0001 C CNN "Supplier"
+F 8 "CF18JT18K0CT-ND" H 5450 1950 60  0001 C CNN "Supplier code"
+F 9 "No" H 5450 1950 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-search/en/resistors/through-hole-resistors/66690" H 5450 1950 60  0001 C CNN "Supplier URL"
+	1    5450 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R-rgb R?
+U 1 1 580D151B
+P 2300 4500
+F 0 "R?" V 2380 4500 40  0000 C CNN
+F 1 "18k" V 2307 4501 40  0000 C CNN
+F 2 "~" V 2230 4500 30  0000 C CNN
+F 3 "~" H 2300 4500 30  0000 C CNN
+F 4 "Stackpole Electronics Inc." H 2300 4500 60  0001 C CNN "Manufacturer"
+F 5 "RES 18K OHM 1/8W 5% CF AXIAL" H 2300 4500 60  0001 C CNN "Product description"
+F 6 "CF18JT18K0" H 2300 4500 60  0001 C CNN "Product code"
+F 7 "Digikey" H 2300 4500 60  0001 C CNN "Supplier"
+F 8 "CF18JT18K0CT-ND" H 2300 4500 60  0001 C CNN "Supplier code"
+F 9 "No" H 2300 4500 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-search/en/resistors/through-hole-resistors/66690" H 2300 4500 60  0001 C CNN "Supplier URL"
+	1    2300 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R-rgb R?
+U 1 1 580D16B5
+P 1600 4500
+F 0 "R?" V 1680 4500 40  0000 C CNN
+F 1 "18k" V 1607 4501 40  0000 C CNN
+F 2 "~" V 1530 4500 30  0000 C CNN
+F 3 "~" H 1600 4500 30  0000 C CNN
+F 4 "Stackpole Electronics Inc." H 1600 4500 60  0001 C CNN "Manufacturer"
+F 5 "RES 18K OHM 1/8W 5% CF AXIAL" H 1600 4500 60  0001 C CNN "Product description"
+F 6 "CF18JT18K0" H 1600 4500 60  0001 C CNN "Product code"
+F 7 "Digikey" H 1600 4500 60  0001 C CNN "Supplier"
+F 8 "CF18JT18K0CT-ND" H 1600 4500 60  0001 C CNN "Supplier code"
+F 9 "No" H 1600 4500 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-search/en/resistors/through-hole-resistors/66690" H 1600 4500 60  0001 C CNN "Supplier URL"
+	1    1600 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R-rgb R?
+U 1 1 580D18B7
+P 2350 7150
+F 0 "R?" V 2430 7150 40  0000 C CNN
+F 1 "18k" V 2357 7151 40  0000 C CNN
+F 2 "~" V 2280 7150 30  0000 C CNN
+F 3 "~" H 2350 7150 30  0000 C CNN
+F 4 "Stackpole Electronics Inc." H 2350 7150 60  0001 C CNN "Manufacturer"
+F 5 "RES 18K OHM 1/8W 5% CF AXIAL" H 2350 7150 60  0001 C CNN "Product description"
+F 6 "CF18JT18K0" H 2350 7150 60  0001 C CNN "Product code"
+F 7 "Digikey" H 2350 7150 60  0001 C CNN "Supplier"
+F 8 "CF18JT18K0CT-ND" H 2350 7150 60  0001 C CNN "Supplier code"
+F 9 "No" H 2350 7150 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-search/en/resistors/through-hole-resistors/66690" H 2350 7150 60  0001 C CNN "Supplier URL"
+	1    2350 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-rgb R?
+U 1 1 580D1E8A
+P 4750 3800
+F 0 "R?" V 4830 3800 40  0000 C CNN
+F 1 "2.2k" V 4757 3801 40  0000 C CNN
+F 2 "~" V 4680 3800 30  0000 C CNN
+F 3 "~" H 4750 3800 30  0000 C CNN
+F 4 "Stackpole Electronics Inc." H 4750 3800 60  0001 C CNN "Manufacturer"
+F 5 "RES 2.2K OHM 1/8W 5% CF AXIAL" H 4750 3800 60  0001 C CNN "Product description"
+F 6 "CF18JT2K20" H 4750 3800 60  0001 C CNN "Product code"
+F 7 "Digikey" H 4750 3800 60  0001 C CNN "Supplier"
+F 8 "CF18JT2K20CT-ND" H 4750 3800 60  0001 C CNN "Supplier code"
+F 9 "No" H 4750 3800 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT2K20/CF18JT2K20CT-ND/2022750" H 4750 3800 60  0001 C CNN "Supplier URL"
+	1    4750 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L R-rgb R?
+U 1 1 580D1FFE
+P 4750 4750
+F 0 "R?" V 4830 4750 40  0000 C CNN
+F 1 "180R" V 4757 4751 40  0000 C CNN
+F 2 "~" V 4680 4750 30  0000 C CNN
+F 3 "~" H 4750 4750 30  0000 C CNN
+F 4 "Stackpole Electronics Inc." H 4750 4750 60  0001 C CNN "Manufacturer"
+F 5 "RES 180 OHM 1/8W 5% CF AXIAL" H 4750 4750 60  0001 C CNN "Product description"
+F 6 "CF18JT180R" H 4750 4750 60  0001 C CNN "Product code"
+F 7 "Digikey" H 4750 4750 60  0001 C CNN "Supplier"
+F 8 "CF18JT180RCT-ND" H 4750 4750 60  0001 C CNN "Supplier code"
+F 9 "No" H 4750 4750 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT180R/CF18JT180RCT-ND/2022724" H 4750 4750 60  0001 C CNN "Supplier URL"
+	1    4750 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L R-rgb R?
+U 1 1 580D20FD
+P 6300 4700
+F 0 "R?" V 6380 4700 40  0000 C CNN
+F 1 "330k" V 6307 4701 40  0000 C CNN
+F 2 "~" V 6230 4700 30  0000 C CNN
+F 3 "~" H 6300 4700 30  0000 C CNN
+F 4 "Stackpole Electronics Inc." H 6300 4700 60  0001 C CNN "Manufacturer"
+F 5 "RES 330K OHM 1/8W 5% CF AXIAL" H 6300 4700 60  0001 C CNN "Product description"
+F 6 "CF18JT330K" H 6300 4700 60  0001 C CNN "Product code"
+F 7 "Digikey" H 6300 4700 60  0001 C CNN "Supplier"
+F 8 "CF18JT330KCT-ND" H 6300 4700 60  0001 C CNN "Supplier code"
+F 9 "No" H 6300 4700 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT330K/CF18JT330KCT-ND/2022802" H 6300 4700 60  0001 C CNN "Supplier URL"
+	1    6300 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L R-rgb R?
+U 1 1 580D22DF
+P 4450 6100
+F 0 "R?" V 4530 6100 40  0000 C CNN
+F 1 "2.2k" V 4457 6101 40  0000 C CNN
+F 2 "~" V 4380 6100 30  0000 C CNN
+F 3 "~" H 4450 6100 30  0000 C CNN
+F 4 "Stackpole Electronics Inc." H 4450 6100 60  0001 C CNN "Manufacturer"
+F 5 "RES 2.2K OHM 1/8W 5% CF AXIAL" H 4450 6100 60  0001 C CNN "Product description"
+F 6 "CF18JT2K20" H 4450 6100 60  0001 C CNN "Product code"
+F 7 "Digikey" H 4450 6100 60  0001 C CNN "Supplier"
+F 8 "CF18JT2K20CT-ND" H 4450 6100 60  0001 C CNN "Supplier code"
+F 9 "No" H 4450 6100 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT2K20/CF18JT2K20CT-ND/2022750" H 4450 6100 60  0001 C CNN "Supplier URL"
+	1    4450 6100
+	-1   0    0    1   
+$EndComp
+$Comp
+L R-rgb R?
+U 1 1 580D242C
+P 5050 4100
+F 0 "R?" V 5130 4100 40  0000 C CNN
+F 1 "22k" V 5057 4101 40  0000 C CNN
+F 2 "~" V 4980 4100 30  0000 C CNN
+F 3 "~" H 5050 4100 30  0000 C CNN
+F 4 "Stackpole Electronics Inc." H 5050 4100 60  0001 C CNN "Manufacturer"
+F 5 "RES 22K OHM 1/8W 5% CF AXIAL" H 5050 4100 60  0001 C CNN "Product description"
+F 6 "CF18JT22K0" H 5050 4100 60  0001 C CNN "Product code"
+F 7 "Digikey" H 5050 4100 60  0001 C CNN "Supplier"
+F 8 "CF18JT22K0CT-ND" H 5050 4100 60  0001 C CNN "Supplier code"
+F 9 "No" H 5050 4100 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT22K0/CF18JT22K0CT-ND/2022774" H 5050 4100 60  0001 C CNN "Supplier URL"
+	1    5050 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R-rgb R?
+U 1 1 580D25D4
+P 4450 7050
+F 0 "R?" V 4530 7050 40  0000 C CNN
+F 1 "180R" V 4457 7051 40  0000 C CNN
+F 2 "~" V 4380 7050 30  0000 C CNN
+F 3 "~" H 4450 7050 30  0000 C CNN
+F 4 "Stackpole Electronics Inc." H 4450 7050 60  0001 C CNN "Manufacturer"
+F 5 "RES 180 OHM 1/8W 5% CF AXIAL" H 4450 7050 60  0001 C CNN "Product description"
+F 6 "CF18JT180R" H 4450 7050 60  0001 C CNN "Product code"
+F 7 "Digikey" H 4450 7050 60  0001 C CNN "Supplier"
+F 8 "CF18JT180RCT-ND" H 4450 7050 60  0001 C CNN "Supplier code"
+F 9 "No" H 4450 7050 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT180R/CF18JT180RCT-ND/2022724" H 4450 7050 60  0001 C CNN "Supplier URL"
+	1    4450 7050
+	-1   0    0    1   
+$EndComp
+$Comp
+L R-rgb R?
+U 1 1 580D2707
+P 4800 6400
+F 0 "R?" V 4880 6400 40  0000 C CNN
+F 1 "22k" V 4807 6401 40  0000 C CNN
+F 2 "~" V 4730 6400 30  0000 C CNN
+F 3 "~" H 4800 6400 30  0000 C CNN
+F 4 "Stackpole Electronics Inc." H 4800 6400 60  0001 C CNN "Manufacturer"
+F 5 "RES 22K OHM 1/8W 5% CF AXIAL" H 4800 6400 60  0001 C CNN "Product description"
+F 6 "CF18JT22K0" H 4800 6400 60  0001 C CNN "Product code"
+F 7 "Digikey" H 4800 6400 60  0001 C CNN "Supplier"
+F 8 "CF18JT22K0CT-ND" H 4800 6400 60  0001 C CNN "Supplier code"
+F 9 "No" H 4800 6400 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT22K0/CF18JT22K0CT-ND/2022774" H 4800 6400 60  0001 C CNN "Supplier URL"
+	1    4800 6400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R-rgb R?
+U 1 1 580D2825
+P 6050 7050
+F 0 "R?" V 6130 7050 40  0000 C CNN
+F 1 "330k" V 6057 7051 40  0000 C CNN
+F 2 "~" V 5980 7050 30  0000 C CNN
+F 3 "~" H 6050 7050 30  0000 C CNN
+F 4 "Stackpole Electronics Inc." H 6050 7050 60  0001 C CNN "Manufacturer"
+F 5 "RES 330K OHM 1/8W 5% CF AXIAL" H 6050 7050 60  0001 C CNN "Product description"
+F 6 "CF18JT330K" H 6050 7050 60  0001 C CNN "Product code"
+F 7 "Digikey" H 6050 7050 60  0001 C CNN "Supplier"
+F 8 "CF18JT330KCT-ND" H 6050 7050 60  0001 C CNN "Supplier code"
+F 9 "No" H 6050 7050 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT330K/CF18JT330KCT-ND/2022802" H 6050 7050 60  0001 C CNN "Supplier URL"
+	1    6050 7050
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC
