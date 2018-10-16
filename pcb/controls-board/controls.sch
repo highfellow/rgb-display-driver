@@ -70,10 +70,10 @@ Wire Wire Line
 Wire Wire Line
 	6100 3550 5200 3550
 $Comp
-L CONTROLS_HEADER J?
+L CONTROLS_HEADER J1
 U 1 1 58046964
 P 4700 3850
-F 0 "J?" H 4700 2750 60  0000 C CNN
+F 0 "J1" H 4700 2750 60  0000 C CNN
 F 1 "CONTROLS_HEADER" H 4700 4500 60  0000 C CNN
 F 2 "" H 4500 3850 60  0000 C CNN
 F 3 "" H 4500 3850 60  0000 C CNN
@@ -123,15 +123,15 @@ Wire Wire Line
 Wire Wire Line
 	5500 4550 5800 4550
 $Comp
-L LED_RABG D?
+L LED_RABG D1
 U 1 1 580C0207
 P 6100 4350
-F 0 "D?" H 6175 4700 50  0000 C CNN
+F 0 "D1" H 6175 4700 50  0000 C CNN
 F 1 "LED_RABG" H 6125 4000 50  0000 C CNN
 F 2 "" H 6050 4300 50  0000 C CNN
 F 3 "" H 6050 4300 50  0000 C CNN
 F 4 "Adafruit Industries LLC" H 6100 4350 60  0001 C CNN "Manufacturer"
-F 5 "Red, Green, Blue (RGB) LED Indication - Discrete 2.1V Red, 3.8V Green, 2.7V Blue 4-DIP (0.200\", 5.08mm)" H 6100 4350 60  0001 C CNN "Product description"
+F 5 "Red, Green, Blue (RGB) LED Indication - Discrete 2.1V Red, 3.8V Green, 2.7V Blue 4-DIP (0.200\" 5.08mm)" H 6100 4350 60  0001 C CNN "Product description"
 F 6 "314" H 6100 4350 60  0001 C CNN "Product code"
 F 7 "Digikey" H 6100 4350 60  0001 C CNN "Supplier"
 F 8 "1528-1127-ND" H 6100 4350 60  0001 C CNN "Supplier code"
@@ -141,10 +141,10 @@ F 10 "http://www.digikey.co.uk/product-detail/en/adafruit-industries-llc/314/152
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L SW_PUSH SW1
 U 1 1 580D518A
 P 5600 3000
-F 0 "SW?" H 5750 3110 50  0000 C CNN
+F 0 "SW1" H 5750 3110 50  0000 C CNN
 F 1 "PARAM BUTTON" H 5600 2920 50  0000 C CNN
 F 2 "~" H 5600 3000 60  0000 C CNN
 F 3 "~" H 5600 3000 60  0000 C CNN
@@ -167,7 +167,7 @@ F 1 "MODE BUTTON" H 5950 2920 50  0000 C CNN
 F 2 "~" H 5950 3000 60  0000 C CNN
 F 3 "~" H 5950 3000 60  0000 C CNN
 F 4 "C&K Components" H 5950 3000 60  0001 C CNN "Manufacturer"
-F 5 "Pushbutton SwPushbutton Switch SPST-NO Keyswitch Through Holeitch SPST-NO Keyswitch Through Hole" H 5950 3000 60  0001 C CNN "Product description"
+F 5 "Pushbutton Switch SPST-NO Keyswitch Through Hole" H 5950 3000 60  0001 C CNN "Product description"
 F 6 "D6R40 F1 LFS" H 5950 3000 60  0001 C CNN "Product code"
 F 7 "Digikey" H 5950 3000 60  0001 C CNN "Supplier"
 F 8 "401-1975-ND" H 5950 3000 60  0001 C CNN "Supplier code"

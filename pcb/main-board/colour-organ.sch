@@ -59,10 +59,10 @@ VCC
 Text HLabel 10250 6300 0    60   UnSpc ~ 0
 GND
 $Comp
-L +12V #PWR44
+L +12V #PWR033
 U 1 1 552024FF
 P 10450 6000
-F 0 "#PWR44" H 10450 5950 20  0001 C CNN
+F 0 "#PWR033" H 10450 5950 20  0001 C CNN
 F 1 "+12V" H 10450 6100 30  0000 C CNN
 F 2 "" H 10450 6000 60  0000 C CNN
 F 3 "" H 10450 6000 60  0000 C CNN
@@ -70,10 +70,10 @@ F 3 "" H 10450 6000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-rgb #PWR45
+L GND-rgb #PWR034
 U 1 1 5520250E
 P 10450 6350
-F 0 "#PWR45" H 10450 6350 30  0001 C CNN
+F 0 "#PWR034" H 10450 6350 30  0001 C CNN
 F 1 "GND-rgb" H 10450 6280 30  0001 C CNN
 F 2 "" H 10450 6350 60  0000 C CNN
 F 3 "" H 10450 6350 60  0000 C CNN
@@ -105,10 +105,10 @@ F 12 "http://www.digikey.co.uk/product-detail/en/kemet/C320C473K5R5TA/399-4306-N
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-rgb #PWR36
+L GND-rgb #PWR035
 U 1 1 552029E1
 P 3400 5200
-F 0 "#PWR36" H 3400 5200 30  0001 C CNN
+F 0 "#PWR035" H 3400 5200 30  0001 C CNN
 F 1 "GND-rgb" H 3400 5130 30  0001 C CNN
 F 2 "" H 3400 5200 60  0000 C CNN
 F 3 "" H 3400 5200 60  0000 C CNN
@@ -120,10 +120,10 @@ AGND
 Text Label 1050 4500 0    60   ~ 0
 AUDIO
 $Comp
-L +12V #PWR40
+L +12V #PWR036
 U 1 1 55202DC1
 P 4750 3450
-F 0 "#PWR40" H 4750 3400 20  0001 C CNN
+F 0 "#PWR036" H 4750 3400 20  0001 C CNN
 F 1 "+12V" H 4750 3550 30  0000 C CNN
 F 2 "" H 4750 3450 60  0000 C CNN
 F 3 "" H 4750 3450 60  0000 C CNN
@@ -131,10 +131,10 @@ F 3 "" H 4750 3450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-rgb #PWR34
+L GND-rgb #PWR037
 U 1 1 5520DCA4
 P 3100 7500
-F 0 "#PWR34" H 3100 7500 30  0001 C CNN
+F 0 "#PWR037" H 3100 7500 30  0001 C CNN
 F 1 "GND-rgb" H 3100 7430 30  0001 C CNN
 F 2 "" H 3100 7500 60  0000 C CNN
 F 3 "" H 3100 7500 60  0000 C CNN
@@ -142,10 +142,10 @@ F 3 "" H 3100 7500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12V #PWR33
+L +12V #PWR038
 U 1 1 5520DCAA
 P 3100 5900
-F 0 "#PWR33" H 3100 5850 20  0001 C CNN
+F 0 "#PWR038" H 3100 5850 20  0001 C CNN
 F 1 "+12V" H 3100 6000 30  0000 C CNN
 F 2 "" H 3100 5900 60  0000 C CNN
 F 3 "" H 3100 5900 60  0000 C CNN
@@ -157,10 +157,10 @@ AGND
 Text Label 750  6800 0    60   ~ 0
 AUDIO
 $Comp
-L +12V #PWR39
+L +12V #PWR039
 U 1 1 5520DCE2
 P 4450 5750
-F 0 "#PWR39" H 4450 5700 20  0001 C CNN
+F 0 "#PWR039" H 4450 5700 20  0001 C CNN
 F 1 "+12V" H 4450 5850 30  0000 C CNN
 F 2 "" H 4450 5750 60  0000 C CNN
 F 3 "" H 4450 5750 60  0000 C CNN
@@ -311,10 +311,10 @@ F 10 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18J
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND-rgb #PWR38
+L GND-rgb #PWR040
 U 1 1 552158AF
 P 3650 2850
-F 0 "#PWR38" H 3650 2850 30  0001 C CNN
+F 0 "#PWR040" H 3650 2850 30  0001 C CNN
 F 1 "GND-rgb" H 3650 2780 30  0001 C CNN
 F 2 "" H 3650 2850 60  0000 C CNN
 F 3 "" H 3650 2850 60  0000 C CNN
@@ -322,10 +322,10 @@ F 3 "" H 3650 2850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12V #PWR37
+L +12V #PWR041
 U 1 1 552158B5
 P 3650 1250
-F 0 "#PWR37" H 3650 1200 20  0001 C CNN
+F 0 "#PWR041" H 3650 1200 20  0001 C CNN
 F 1 "+12V" H 3650 1350 30  0000 C CNN
 F 2 "" H 3650 1250 60  0000 C CNN
 F 3 "" H 3650 1250 60  0000 C CNN
@@ -422,10 +422,10 @@ F 12 "http://www.digikey.co.uk/product-detail/en/kemet/C315C103J5R5TA/399-9712-N
 	0    1    1    0   
 $EndComp
 $Comp
-L GND-rgb #PWR42
+L GND-rgb #PWR042
 U 1 1 55215901
 P 6550 2650
-F 0 "#PWR42" H 6550 2650 30  0001 C CNN
+F 0 "#PWR042" H 6550 2650 30  0001 C CNN
 F 1 "GND-rgb" H 6550 2580 30  0001 C CNN
 F 2 "" H 6550 2650 60  0000 C CNN
 F 3 "" H 6550 2650 60  0000 C CNN
@@ -433,10 +433,10 @@ F 3 "" H 6550 2650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12V #PWR41
+L +12V #PWR043
 U 1 1 55215907
 P 6550 1050
-F 0 "#PWR41" H 6550 1000 20  0001 C CNN
+F 0 "#PWR043" H 6550 1000 20  0001 C CNN
 F 1 "+12V" H 6550 1150 30  0000 C CNN
 F 2 "" H 6550 1050 60  0000 C CNN
 F 3 "" H 6550 1050 60  0000 C CNN
@@ -482,30 +482,14 @@ F 10 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18J
 	-1   0    0    1   
 $EndComp
 $Comp
-L +12V #PWR43
+L +12V #PWR044
 U 1 1 55215927
 P 7900 900
-F 0 "#PWR43" H 7900 850 20  0001 C CNN
+F 0 "#PWR044" H 7900 850 20  0001 C CNN
 F 1 "+12V" H 7900 1000 30  0000 C CNN
 F 2 "" H 7900 900 60  0000 C CNN
 F 3 "" H 7900 900 60  0000 C CNN
 	1    7900 900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L DIODE-rgb D3
-U 1 1 55215933
-P 8800 1750
-F 0 "D3" H 8800 1850 40  0000 C CNN
-F 1 "DIODE" H 8800 1650 40  0000 C CNN
-F 2 "~" H 8800 1750 60  0000 C CNN
-F 3 "~" H 8800 1750 60  0000 C CNN
-F 4 "Multicomp" H 8800 1750 60  0001 C CNN "Manufacturer"
-F 5 "Small Signal Diode, Single, 100 V, 150 mA, 1 V, 4 ns, 500 mA" H 8800 1750 60  0001 C CNN "Product description"
-F 6 "1N4148" H 8800 1750 60  0001 C CNN "Product code"
-F 7 "Farnell" H 8800 1750 60  0001 C CNN "Supplier"
-F 8 "9565124" H 8800 1750 60  0001 C CNN "Supplier code"
-	1    8800 1750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -577,10 +561,10 @@ Wire Wire Line
 Connection ~ 9100 2600
 Connection ~ 9500 1750
 $Comp
-L +12V #PWR35
+L +12V #PWR045
 U 1 1 5532D600
 P 3400 3600
-F 0 "#PWR35" H 3400 3550 20  0001 C CNN
+F 0 "#PWR045" H 3400 3550 20  0001 C CNN
 F 1 "+12V" H 3400 3700 30  0000 C CNN
 F 2 "" H 3400 3600 60  0000 C CNN
 F 3 "" H 3400 3600 60  0000 C CNN
@@ -589,50 +573,6 @@ F 3 "" H 3400 3600 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	3400 3800 3400 3600
-$Comp
-L LM358_BIG U4
-U 2 1 553FD13A
-P 3300 4300
-F 0 "U4" H 3200 3750 60  0000 C CNN
-F 1 "LM358_BIG" H 3200 4850 60  0000 C CNN
-F 2 "~" H 3300 4300 60  0000 C CNN
-F 3 "~" H 3300 4300 60  0000 C CNN
-	2    3300 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L LM358_BIG U5
-U 1 1 553FD153
-P 3550 1950
-F 0 "U5" H 3450 1400 60  0000 C CNN
-F 1 "LM358_BIG" H 3450 2500 60  0000 C CNN
-F 2 "~" H 3550 1950 60  0000 C CNN
-F 3 "~" H 3550 1950 60  0000 C CNN
-	1    3550 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L LM358_BIG U4
-U 1 1 553FD16C
-P 3000 6600
-F 0 "U4" H 2900 6050 60  0000 C CNN
-F 1 "LM358_BIG" H 2900 7150 60  0000 C CNN
-F 2 "~" H 3000 6600 60  0000 C CNN
-F 3 "~" H 3000 6600 60  0000 C CNN
-	1    3000 6600
-	1    0    0    -1  
-$EndComp
-$Comp
-L LM358_BIG U5
-U 2 1 553FD185
-P 6450 1750
-F 0 "U5" H 6350 1200 60  0000 C CNN
-F 1 "LM358_BIG" H 6350 2300 60  0000 C CNN
-F 2 "~" H 6450 1750 60  0000 C CNN
-F 3 "~" H 6450 1750 60  0000 C CNN
-	2    6450 1750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4750 4050 4750 4500
 Wire Wire Line
@@ -715,42 +655,10 @@ F 12 "http://www.digikey.co.uk/product-search/en/capacitors/ceramic-capacitors/1
 	0    1    1    0   
 $EndComp
 $Comp
-L DIODE-rgb D2
-U 1 1 56F84D81
-P 5600 4300
-F 0 "D2" H 5600 4400 40  0000 C CNN
-F 1 "DIODE" H 5600 4200 40  0000 C CNN
-F 2 "~" H 5600 4300 60  0000 C CNN
-F 3 "~" H 5600 4300 60  0000 C CNN
-F 4 "Multicomp" H 5600 4300 60  0001 C CNN "Manufacturer"
-F 5 "Small Signal Diode, Single, 100 V, 150 mA, 1 V, 4 ns, 500 mA" H 5600 4300 60  0001 C CNN "Product description"
-F 6 "1N4148" H 5600 4300 60  0001 C CNN "Product code"
-F 7 "Farnell" H 5600 4300 60  0001 C CNN "Supplier"
-F 8 "9565124" H 5600 4300 60  0001 C CNN "Supplier code"
-	1    5600 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L DIODE-rgb D1
-U 1 1 56F84E79
-P 5350 6600
-F 0 "D1" H 5350 6700 40  0000 C CNN
-F 1 "DIODE" H 5350 6500 40  0000 C CNN
-F 2 "~" H 5350 6600 60  0000 C CNN
-F 3 "~" H 5350 6600 60  0000 C CNN
-F 4 "Multicomp" H 5350 6600 60  0001 C CNN "Manufacturer"
-F 5 "Small Signal Diode, Single, 100 V, 150 mA, 1 V, 4 ns, 500 mA" H 5350 6600 60  0001 C CNN "Product description"
-F 6 "1N4148" H 5350 6600 60  0001 C CNN "Product code"
-F 7 "Farnell" H 5350 6600 60  0001 C CNN "Supplier"
-F 8 "9565124" H 5350 6600 60  0001 C CNN "Supplier code"
-	1    5350 6600
-	1    0    0    -1  
-$EndComp
-$Comp
-L C-rgb C?
+L C-rgb C18
 U 1 1 580CF949
 P 2600 2150
-F 0 "C?" H 2600 2250 40  0000 L CNN
+F 0 "C18" H 2600 2250 40  0000 L CNN
 F 1 "100nF" H 2606 2065 40  0000 L CNN
 F 2 "~" H 2638 2000 30  0000 C CNN
 F 3 "~" H 2600 2150 60  0000 C CNN
@@ -767,10 +675,10 @@ F 12 "http://www.digikey.co.uk/product-detail/en/kemet/C320C104J5R5TA/399-9775-N
 	0    1    1    0   
 $EndComp
 $Comp
-L C-rgb C?
+L C-rgb C17
 U 1 1 580CFB1B
 P 2150 3350
-F 0 "C?" H 2150 3450 40  0000 L CNN
+F 0 "C17" H 2150 3450 40  0000 L CNN
 F 1 "100nF" H 2156 3265 40  0000 L CNN
 F 2 "~" H 2188 3200 30  0000 C CNN
 F 3 "~" H 2150 3350 60  0000 C CNN
@@ -787,10 +695,10 @@ F 12 "http://www.digikey.co.uk/product-detail/en/kemet/C320C104J5R5TA/399-9775-N
 	0    1    1    0   
 $EndComp
 $Comp
-L C-rgb C?
+L C-rgb C16
 U 1 1 580CFCE5
 P 2050 6800
-F 0 "C?" H 2050 6900 40  0000 L CNN
+F 0 "C16" H 2050 6900 40  0000 L CNN
 F 1 "10nF" H 2056 6715 40  0000 L CNN
 F 2 "~" H 2088 6650 30  0000 C CNN
 F 3 "~" H 2050 6800 60  0000 C CNN
@@ -807,10 +715,10 @@ F 12 "http://www.digikey.co.uk/product-detail/en/kemet/C315C103J5R5TA/399-9712-N
 	0    1    1    0   
 $EndComp
 $Comp
-L C-rgb C?
+L C-rgb C14
 U 1 1 580CFE19
 P 1350 6800
-F 0 "C?" H 1350 6900 40  0000 L CNN
+F 0 "C14" H 1350 6900 40  0000 L CNN
 F 1 "10nF" H 1356 6715 40  0000 L CNN
 F 2 "~" H 1388 6650 30  0000 C CNN
 F 3 "~" H 1350 6800 60  0000 C CNN
@@ -827,10 +735,10 @@ F 12 "http://www.digikey.co.uk/product-detail/en/kemet/C315C103J5R5TA/399-9712-N
 	0    1    1    0   
 $EndComp
 $Comp
-L C-rgb C?
+L C-rgb C27
 U 1 1 580D01E9
 P 9100 2150
-F 0 "C?" H 9100 2250 40  0000 L CNN
+F 0 "C27" H 9100 2250 40  0000 L CNN
 F 1 "100nF" H 9106 2065 40  0000 L CNN
 F 2 "~" H 9138 2000 30  0000 C CNN
 F 3 "~" H 9100 2150 60  0000 C CNN
@@ -847,10 +755,10 @@ F 12 "http://www.digikey.co.uk/product-detail/en/kemet/C320C104J5R5TA/399-9775-N
 	-1   0    0    1   
 $EndComp
 $Comp
-L C-rgb C?
+L C-rgb C25
 U 1 1 580D0328
 P 5900 4700
-F 0 "C?" H 5900 4800 40  0000 L CNN
+F 0 "C25" H 5900 4800 40  0000 L CNN
 F 1 "100nF" H 5906 4615 40  0000 L CNN
 F 2 "~" H 5938 4550 30  0000 C CNN
 F 3 "~" H 5900 4700 60  0000 C CNN
@@ -867,10 +775,10 @@ F 12 "http://www.digikey.co.uk/product-detail/en/kemet/C320C104J5R5TA/399-9775-N
 	-1   0    0    1   
 $EndComp
 $Comp
-L C-rgb C?
+L C-rgb C23
 U 1 1 580D04EC
 P 5650 7050
-F 0 "C?" H 5650 7150 40  0000 L CNN
+F 0 "C23" H 5650 7150 40  0000 L CNN
 F 1 "100nF" H 5656 6965 40  0000 L CNN
 F 2 "~" H 5688 6900 30  0000 C CNN
 F 3 "~" H 5650 7050 60  0000 C CNN
@@ -887,10 +795,10 @@ F 12 "http://www.digikey.co.uk/product-detail/en/kemet/C320C104J5R5TA/399-9775-N
 	-1   0    0    1   
 $EndComp
 $Comp
-L C-rgb C?
+L C-rgb C20
 U 1 1 580D06D8
 P 4150 6600
-F 0 "C?" H 4150 6700 40  0000 L CNN
+F 0 "C20" H 4150 6700 40  0000 L CNN
 F 1 "1uF" H 4156 6515 40  0000 L CNN
 F 2 "~" H 4188 6450 30  0000 C CNN
 F 3 "~" H 4150 6600 60  0000 C CNN
@@ -907,10 +815,10 @@ F 12 "http://www.digikey.co.uk/product-search/en/capacitors/ceramic-capacitors/1
 	0    1    1    0   
 $EndComp
 $Comp
-L C-rgb C?
+L C-rgb C21
 U 1 1 580D09EE
 P 4450 4300
-F 0 "C?" H 4450 4400 40  0000 L CNN
+F 0 "C21" H 4450 4400 40  0000 L CNN
 F 1 "1uF" H 4456 4215 40  0000 L CNN
 F 2 "~" H 4488 4150 30  0000 C CNN
 F 3 "~" H 4450 4300 60  0000 C CNN
@@ -927,10 +835,10 @@ F 12 "http://www.digikey.co.uk/product-search/en/capacitors/ceramic-capacitors/1
 	0    1    1    0   
 $EndComp
 $Comp
-L R-rgb R?
+L R-rgb R14
 U 1 1 580D10CE
 P 1900 5650
-F 0 "R?" V 1980 5650 40  0000 C CNN
+F 0 "R14" V 1980 5650 40  0000 C CNN
 F 1 "8.2k" V 1907 5651 40  0000 C CNN
 F 2 "~" V 1830 5650 30  0000 C CNN
 F 3 "~" H 1900 5650 30  0000 C CNN
@@ -945,10 +853,10 @@ F 10 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18J
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R-rgb R?
+L R-rgb R26
 U 1 1 580D1313
 P 5450 1950
-F 0 "R?" V 5530 1950 40  0000 C CNN
+F 0 "R26" V 5530 1950 40  0000 C CNN
 F 1 "18k" V 5457 1951 40  0000 C CNN
 F 2 "~" V 5380 1950 30  0000 C CNN
 F 3 "~" H 5450 1950 30  0000 C CNN
@@ -963,10 +871,10 @@ F 10 "http://www.digikey.co.uk/product-search/en/resistors/through-hole-resistor
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R-rgb R?
+L R-rgb R15
 U 1 1 580D151B
 P 2300 4500
-F 0 "R?" V 2380 4500 40  0000 C CNN
+F 0 "R15" V 2380 4500 40  0000 C CNN
 F 1 "18k" V 2307 4501 40  0000 C CNN
 F 2 "~" V 2230 4500 30  0000 C CNN
 F 3 "~" H 2300 4500 30  0000 C CNN
@@ -981,10 +889,10 @@ F 10 "http://www.digikey.co.uk/product-search/en/resistors/through-hole-resistor
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R-rgb R?
+L R-rgb R13
 U 1 1 580D16B5
 P 1600 4500
-F 0 "R?" V 1680 4500 40  0000 C CNN
+F 0 "R13" V 1680 4500 40  0000 C CNN
 F 1 "18k" V 1607 4501 40  0000 C CNN
 F 2 "~" V 1530 4500 30  0000 C CNN
 F 3 "~" H 1600 4500 30  0000 C CNN
@@ -999,10 +907,10 @@ F 10 "http://www.digikey.co.uk/product-search/en/resistors/through-hole-resistor
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R-rgb R?
+L R-rgb R16
 U 1 1 580D18B7
 P 2350 7150
-F 0 "R?" V 2430 7150 40  0000 C CNN
+F 0 "R16" V 2430 7150 40  0000 C CNN
 F 1 "18k" V 2357 7151 40  0000 C CNN
 F 2 "~" V 2280 7150 30  0000 C CNN
 F 3 "~" H 2350 7150 30  0000 C CNN
@@ -1017,10 +925,10 @@ F 10 "http://www.digikey.co.uk/product-search/en/resistors/through-hole-resistor
 	1    0    0    -1  
 $EndComp
 $Comp
-L R-rgb R?
+L R-rgb R22
 U 1 1 580D1E8A
 P 4750 3800
-F 0 "R?" V 4830 3800 40  0000 C CNN
+F 0 "R22" V 4830 3800 40  0000 C CNN
 F 1 "2.2k" V 4757 3801 40  0000 C CNN
 F 2 "~" V 4680 3800 30  0000 C CNN
 F 3 "~" H 4750 3800 30  0000 C CNN
@@ -1035,10 +943,10 @@ F 10 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18J
 	-1   0    0    1   
 $EndComp
 $Comp
-L R-rgb R?
+L R-rgb R23
 U 1 1 580D1FFE
 P 4750 4750
-F 0 "R?" V 4830 4750 40  0000 C CNN
+F 0 "R23" V 4830 4750 40  0000 C CNN
 F 1 "180R" V 4757 4751 40  0000 C CNN
 F 2 "~" V 4680 4750 30  0000 C CNN
 F 3 "~" H 4750 4750 30  0000 C CNN
@@ -1053,10 +961,10 @@ F 10 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18J
 	-1   0    0    1   
 $EndComp
 $Comp
-L R-rgb R?
+L R-rgb R28
 U 1 1 580D20FD
 P 6300 4700
-F 0 "R?" V 6380 4700 40  0000 C CNN
+F 0 "R28" V 6380 4700 40  0000 C CNN
 F 1 "330k" V 6307 4701 40  0000 C CNN
 F 2 "~" V 6230 4700 30  0000 C CNN
 F 3 "~" H 6300 4700 30  0000 C CNN
@@ -1071,10 +979,10 @@ F 10 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18J
 	-1   0    0    1   
 $EndComp
 $Comp
-L R-rgb R?
+L R-rgb R19
 U 1 1 580D22DF
 P 4450 6100
-F 0 "R?" V 4530 6100 40  0000 C CNN
+F 0 "R19" V 4530 6100 40  0000 C CNN
 F 1 "2.2k" V 4457 6101 40  0000 C CNN
 F 2 "~" V 4380 6100 30  0000 C CNN
 F 3 "~" H 4450 6100 30  0000 C CNN
@@ -1089,10 +997,10 @@ F 10 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18J
 	-1   0    0    1   
 $EndComp
 $Comp
-L R-rgb R?
+L R-rgb R25
 U 1 1 580D242C
 P 5050 4100
-F 0 "R?" V 5130 4100 40  0000 C CNN
+F 0 "R25" V 5130 4100 40  0000 C CNN
 F 1 "22k" V 5057 4101 40  0000 C CNN
 F 2 "~" V 4980 4100 30  0000 C CNN
 F 3 "~" H 5050 4100 30  0000 C CNN
@@ -1107,10 +1015,10 @@ F 10 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18J
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R-rgb R?
+L R-rgb R20
 U 1 1 580D25D4
 P 4450 7050
-F 0 "R?" V 4530 7050 40  0000 C CNN
+F 0 "R20" V 4530 7050 40  0000 C CNN
 F 1 "180R" V 4457 7051 40  0000 C CNN
 F 2 "~" V 4380 7050 30  0000 C CNN
 F 3 "~" H 4450 7050 30  0000 C CNN
@@ -1125,10 +1033,10 @@ F 10 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18J
 	-1   0    0    1   
 $EndComp
 $Comp
-L R-rgb R?
+L R-rgb R24
 U 1 1 580D2707
 P 4800 6400
-F 0 "R?" V 4880 6400 40  0000 C CNN
+F 0 "R24" V 4880 6400 40  0000 C CNN
 F 1 "22k" V 4807 6401 40  0000 C CNN
 F 2 "~" V 4730 6400 30  0000 C CNN
 F 3 "~" H 4800 6400 30  0000 C CNN
@@ -1143,10 +1051,10 @@ F 10 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18J
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R-rgb R?
+L R-rgb R27
 U 1 1 580D2825
 P 6050 7050
-F 0 "R?" V 6130 7050 40  0000 C CNN
+F 0 "R27" V 6130 7050 40  0000 C CNN
 F 1 "330k" V 6057 7051 40  0000 C CNN
 F 2 "~" V 5980 7050 30  0000 C CNN
 F 3 "~" H 6050 7050 30  0000 C CNN
@@ -1159,5 +1067,131 @@ F 9 "No" H 6050 7050 60  0001 C CNN "Order"
 F 10 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT330K/CF18JT330KCT-ND/2022802" H 6050 7050 60  0001 C CNN "Supplier URL"
 	1    6050 7050
 	-1   0    0    1   
+$EndComp
+$Comp
+L LM358_BIG U5
+U 2 1 5813FBA3
+P 6450 1750
+F 0 "U5" H 6350 1200 60  0000 C CNN
+F 1 "LM358_BIG" H 6350 2300 60  0000 C CNN
+F 2 "~" H 6450 1750 60  0000 C CNN
+F 3 "~" H 6450 1750 60  0000 C CNN
+F 4 "Texas Instruments" H 6450 1750 60  0001 C CNN "Manufacturer"
+F 5 "General Purpose Amplifier 2 Circuit 8-PDIP" H 6450 1750 60  0001 C CNN "Product description"
+F 6 "LM358P" H 6450 1750 60  0001 C CNN "Product code"
+F 7 "Digikey" H 6450 1750 60  0001 C CNN "Supplier"
+F 8 "296-1395-5-ND" H 6450 1750 60  0001 C CNN "Supplier code"
+F 9 "No" H 6450 1750 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-detail/en/texas-instruments/LM358P/296-1395-5-ND/277042" H 6450 1750 60  0001 C CNN "Supplier URL"
+	2    6450 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM358_BIG U5
+U 1 1 5813FCDA
+P 3550 1950
+F 0 "U5" H 3450 1400 60  0000 C CNN
+F 1 "LM358_BIG" H 3450 2500 60  0000 C CNN
+F 2 "~" H 3550 1950 60  0000 C CNN
+F 3 "~" H 3550 1950 60  0000 C CNN
+F 4 "Texas Instruments" H 3550 1950 60  0001 C CNN "Manufacturer"
+F 5 "General Purpose Amplifier 2 Circuit 8-PDIP" H 3550 1950 60  0001 C CNN "Product description"
+F 6 "LM358P" H 3550 1950 60  0001 C CNN "Product code"
+F 7 "Digikey" H 3550 1950 60  0001 C CNN "Supplier"
+F 8 "296-1395-5-ND" H 3550 1950 60  0001 C CNN "Supplier code"
+F 9 "No" H 3550 1950 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-detail/en/texas-instruments/LM358P/296-1395-5-ND/277042" H 3550 1950 60  0001 C CNN "Supplier URL"
+	1    3550 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM358_BIG U4
+U 2 1 5813FDF2
+P 3300 4300
+F 0 "U4" H 3200 3750 60  0000 C CNN
+F 1 "LM358_BIG" H 3200 4850 60  0000 C CNN
+F 2 "~" H 3300 4300 60  0000 C CNN
+F 3 "~" H 3300 4300 60  0000 C CNN
+F 4 "Texas Instruments" H 3300 4300 60  0001 C CNN "Manufacturer"
+F 5 "General Purpose Amplifier 2 Circuit 8-PDIP" H 3300 4300 60  0001 C CNN "Product description"
+F 6 "LM358P" H 3300 4300 60  0001 C CNN "Product code"
+F 7 "Digikey" H 3300 4300 60  0001 C CNN "Supplier"
+F 8 "296-1395-5-ND" H 3300 4300 60  0001 C CNN "Supplier code"
+F 9 "No" H 3300 4300 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-detail/en/texas-instruments/LM358P/296-1395-5-ND/277042" H 3300 4300 60  0001 C CNN "Supplier URL"
+	2    3300 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM358_BIG U4
+U 1 1 5813FEE7
+P 3000 6600
+F 0 "U4" H 2900 6050 60  0000 C CNN
+F 1 "LM358_BIG" H 2900 7150 60  0000 C CNN
+F 2 "~" H 3000 6600 60  0000 C CNN
+F 3 "~" H 3000 6600 60  0000 C CNN
+F 4 "Texas Instruments" H 3000 6600 60  0001 C CNN "Manufacturer"
+F 5 "General Purpose Amplifier 2 Circuit 8-PDIP" H 3000 6600 60  0001 C CNN "Product description"
+F 6 "LM358P" H 3000 6600 60  0001 C CNN "Product code"
+F 7 "Digikey" H 3000 6600 60  0001 C CNN "Supplier"
+F 8 "296-1395-5-ND" H 3000 6600 60  0001 C CNN "Supplier code"
+F 9 "No" H 3000 6600 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-detail/en/texas-instruments/LM358P/296-1395-5-ND/277042" H 3000 6600 60  0001 C CNN "Supplier URL"
+	1    3000 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODE-rgb D3
+U 1 1 5814076D
+P 8800 1750
+F 0 "D3" H 8800 1850 40  0000 C CNN
+F 1 "DIODE-rgb" H 8800 1650 40  0000 C CNN
+F 2 "" H 8800 1750 60  0000 C CNN
+F 3 "" H 8800 1750 60  0000 C CNN
+F 4 "Fairchild Semiconductor" H 8800 1750 60  0001 C CNN "Manufacturer"
+F 5 "Diode Standard 100V 200mA Through Hole DO-35" H 8800 1750 60  0001 C CNN "Product description"
+F 6 "1N4148" H 8800 1750 60  0001 C CNN "Product code"
+F 7 "Digikey" H 8800 1750 60  0001 C CNN "Supplier"
+F 8 "1N4148FS-ND" H 8800 1750 60  0001 C CNN "Supplier code"
+F 9 "No" H 8800 1750 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-detail/en/fairchild-semiconductor/1N4148/1N4148FS-ND/458603" H 8800 1750 60  0001 C CNN "Supplier URL"
+	1    8800 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODE-rgb D2
+U 1 1 581408BE
+P 5600 4300
+F 0 "D2" H 5600 4400 40  0000 C CNN
+F 1 "DIODE-rgb" H 5600 4200 40  0000 C CNN
+F 2 "" H 5600 4300 60  0000 C CNN
+F 3 "" H 5600 4300 60  0000 C CNN
+F 4 "Fairchild Semiconductor" H 5600 4300 60  0001 C CNN "Manufacturer"
+F 5 "Diode Standard 100V 200mA Through Hole DO-35" H 5600 4300 60  0001 C CNN "Product description"
+F 6 "1N4148" H 5600 4300 60  0001 C CNN "Product code"
+F 7 "Digikey" H 5600 4300 60  0001 C CNN "Supplier"
+F 8 "1N4148FS-ND" H 5600 4300 60  0001 C CNN "Supplier code"
+F 9 "No" H 5600 4300 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-detail/en/fairchild-semiconductor/1N4148/1N4148FS-ND/458603" H 5600 4300 60  0001 C CNN "Supplier URL"
+	1    5600 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODE-rgb D1
+U 1 1 581409CA
+P 5350 6600
+F 0 "D1" H 5350 6700 40  0000 C CNN
+F 1 "DIODE-rgb" H 5350 6500 40  0000 C CNN
+F 2 "" H 5350 6600 60  0000 C CNN
+F 3 "" H 5350 6600 60  0000 C CNN
+F 4 "Fairchild Semiconductor" H 5350 6600 60  0001 C CNN "Manufacturer"
+F 5 "Diode Standard 100V 200mA Through Hole DO-35" H 5350 6600 60  0001 C CNN "Product description"
+F 6 "1N4148" H 5350 6600 60  0001 C CNN "Product code"
+F 7 "Digikey" H 5350 6600 60  0001 C CNN "Supplier"
+F 8 "1N4148FS-ND" H 5350 6600 60  0001 C CNN "Supplier code"
+F 9 "No" H 5350 6600 60  0001 C CNN "Order"
+F 10 "http://www.digikey.co.uk/product-detail/en/fairchild-semiconductor/1N4148/1N4148FS-ND/458603" H 5350 6600 60  0001 C CNN "Supplier URL"
+	1    5350 6600
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

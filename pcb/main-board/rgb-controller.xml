@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>/home/andy/Desktop/projects/light-panel/pcb/main-board/rgb-controller.sch</source>
-    <date>Sun 03 Apr 2016 01:55:49 BST</date>
-    <tool>Eeschema 4.0.2-4+6225~38~ubuntu15.10.1-stable</tool>
+    <source>/home/andy/Desktop/projects/light-panel/rgb_display_driver/pcb/main-board/rgb-controller.sch</source>
+    <date>Sat 29 Oct 2016 01:44:49 BST</date>
+    <tool>Eeschema 4.0.2+e4-6225~38~ubuntu15.10.1-stable</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>RGB LED Controller</title>
@@ -45,79 +45,65 @@
     </sheet>
   </design>
   <components>
-    <comp ref="J5">
-      <value>PWR_IN</value>
-      <libsource lib="rgb-components" part="PWR_IN"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5516EFA7</tstamp>
-    </comp>
     <comp ref="J3">
       <value>UART_HEADER</value>
+      <fields>
+        <field name="Manufacturer">Phoenix Contact</field>
+        <field name="Product description">5 Position Terminal Block Header, Male Pins, Unshrouded 0.138" (3.50mm) Vertical Through Hole</field>
+        <field name="Product code">1945122</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">277-1752-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/phoenix-contact/1945122/277-1752-ND/950880</field>
+      </fields>
       <libsource lib="rgb-components" part="UART_HEADER"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5516EFB6</tstamp>
     </comp>
-    <comp ref="RV2">
+    <comp ref="RV1">
       <value>10k</value>
+      <fields>
+        <field name="Manufacturer">Bourns Inc.</field>
+        <field name="Product description">10k Ohm 0.5W, 1/2W PC Pins Through Hole Trimmer Potentiometer Cermet 1 Turn Top Adjustment</field>
+        <field name="Product code">3362P-1-103LF</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">3362P-103LF-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/bourns-inc/3362P-1-103LF/3362P-103LF-ND/1088412</field>
+      </fields>
       <libsource lib="rgb-components" part="POT-rgb"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5518BBC5</tstamp>
     </comp>
-    <comp ref="C6">
+    <comp ref="C2">
       <value>100nF</value>
       <fields>
         <field name="Tolerance">20%</field>
         <field name="Type">Ceramic</field>
-        <field name="Manufacturer">Multicomp</field>
-        <field name="Product description">Ceramic Capacitor, MC Series, 0.1 µF, ± 20%, Y5V, 50 V, Radial Leaded</field>
-        <field name="Product code">MC0805Y104M500A2.54MM</field>
-        <field name="Supplier">Farnell</field>
-        <field name="Supplier code">2112751</field>
-      </fields>
-      <libsource lib="rgb-components" part="C-rgb"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>551CCF75</tstamp>
-    </comp>
-    <comp ref="C4">
-      <value>100nF</value>
-      <fields>
-        <field name="Tolerance">20%</field>
-        <field name="Type">Ceramic</field>
-        <field name="Manufacturer">Multicomp</field>
-        <field name="Product description">Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 20%, Y5V, 50 V, Radial Leaded</field>
-        <field name="Product code">MC0805Y104M500A2.54MM</field>
-        <field name="Supplier">Farnell</field>
-        <field name="Supplier code">2112751</field>
-      </fields>
-      <libsource lib="rgb-components" part="C-rgb"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>551CCFB6</tstamp>
-    </comp>
-    <comp ref="C3">
-      <value>100nF</value>
-      <fields>
-        <field name="Tolerance">20%</field>
-        <field name="Type">Ceramic</field>
-        <field name="Manufacturer">Multicomp</field>
-        <field name="Product description">Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 20%, Y5V, 50 V, Radial Leaded</field>
-        <field name="Product code">MC0805Y104M500A2.54MM</field>
-        <field name="Supplier">Farnell</field>
-        <field name="Supplier code">2112751</field>
+        <field name="Manufacturer">Kemet</field>
+        <field name="Product description">0.10µF 50V Ceramic Capacitor Z5U Radial 0.150" L x 0.100" W (3.81mm x 2.54mm)</field>
+        <field name="Product code">C315C104M5U5TA</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">399-4151-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/kemet/C315C104M5U5TA/399-4151-ND/817927</field>
       </fields>
       <libsource lib="rgb-components" part="C-rgb"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>551CCFC2</tstamp>
     </comp>
-    <comp ref="C2">
+    <comp ref="C1">
       <value>10uF</value>
       <fields>
         <field name="Tolerance">20%</field>
         <field name="Type">Tantalum</field>
-        <field name="Manufacturer">Vishay</field>
-        <field name="Product description">Tantalum Capacitor, Resin Coated, 489D Series, 10 µF, ± 20%, 16 V, Radial Leaded, 2.5 mm</field>
-        <field name="Product code">489D106X0016C1VE3</field>
-        <field name="Supplier">Farnell</field>
-        <field name="Supplier code">1753975</field>
+        <field name="Manufacturer">Kemet</field>
+        <field name="Product description">10µF Conformal Coated Tantalum Capacitors 25V Radial 2.5 Ohm 0.217" Dia (5.50mm)</field>
+        <field name="Product code">T350E106M025AT</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">399-9907-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/kemet/T350E106M025AT/399-9907-ND/3726214</field>
       </fields>
       <libsource lib="rgb-components" part="CP-rgb"/>
       <sheetpath names="/" tstamps="/"/>
@@ -125,665 +111,1287 @@
     </comp>
     <comp ref="X1">
       <value>16MHz</value>
+      <fields>
+        <field name="Manufacturer">TXC CORPORATION</field>
+        <field name="Product description">16MHz ±10ppm Crystal 18pF 30 Ohm -20°C ~ 70°C Through Hole HC49/US</field>
+        <field name="Product code">9B-16.000MEEJ-B</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">887-1244-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/txc-corporation/9B-16.000MEEJ-B/887-1244-ND/2207664</field>
+      </fields>
       <libsource lib="rgb-components" part="CRYSTAL-rgb"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>551CD177</tstamp>
     </comp>
-    <comp ref="C1">
+    <comp ref="C6">
       <value>22pF</value>
       <fields>
         <field name="Tolerance">20%</field>
         <field name="Type">Ceramic</field>
-        <field name="Supplier">Have</field>
+        <field name="Manufacturer">Kemet</field>
+        <field name="Product description">22pF 50V Ceramic Capacitor C0G, NP0 Radial 0.150" L x 0.100" W (3.81mm x 2.54mm)</field>
+        <field name="Product code">C315C220J5G5TA</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">399-9721-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/kemet/C315C220J5G5TA/399-9721-ND/3726111</field>
       </fields>
       <libsource lib="rgb-controller-cache" part="C-RESCUE-rgb-controller"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>551CD1F6</tstamp>
     </comp>
-    <comp ref="C5">
-      <value>22pF</value>
-      <fields>
-        <field name="Tolerance">20%</field>
-        <field name="Type">Ceramic</field>
-        <field name="Supplier">Have</field>
-      </fields>
-      <libsource lib="rgb-controller-cache" part="C-RESCUE-rgb-controller"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>551CD214</tstamp>
-    </comp>
     <comp ref="R1">
       <value>10k</value>
+      <fields>
+        <field name="Manufacturer">Stackpole Electronics Inc.</field>
+        <field name="Product description">RES 10K OHM 1/8W 5% CF AXIAL</field>
+        <field name="Product code">CF18JT10K0</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CF18JT10K0CT-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT10K0/CF18JT10K0CT-ND/2022766</field>
+      </fields>
       <libsource lib="rgb-components" part="R-rgb"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>551CD37C</tstamp>
     </comp>
-    <comp ref="Q1">
-      <value>STP35NF10</value>
-      <libsource lib="rgb-components" part="STP35NF10"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>551D9315</tstamp>
-    </comp>
-    <comp ref="Q2">
-      <value>STP35NF10</value>
-      <libsource lib="rgb-components" part="STP35NF10"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>551D9322</tstamp>
-    </comp>
-    <comp ref="Q3">
-      <value>STP35NF10</value>
-      <libsource lib="rgb-components" part="STP35NF10"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>551D9328</tstamp>
-    </comp>
-    <comp ref="J4">
-      <value>LED_HEADER</value>
+    <comp ref="J2">
+      <value>LED_CONNECTOR</value>
+      <fields>
+        <field name="Manufacturer">CUI Inc.</field>
+        <field name="Product description">6 Position Circular Connector Receptacle, Female Sockets Solder Silver</field>
+        <field name="Product code">MD-60S</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CP-2460-ND</field>
+        <field name="Notes">Rated to 2A per conductor at 12V DC</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/cui-inc/MD-60S/CP-2460-ND/145311</field>
+      </fields>
       <libsource lib="rgb-components" part="LED_HEADER"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>551D9585</tstamp>
     </comp>
-    <comp ref="J1">
+    <comp ref="J5">
       <value>LCD_HEADER</value>
+      <fields>
+        <field name="Manufacturer">On Shore Technology Inc.</field>
+        <field name="Product description">14 Positions Header, Shrouded Connector 0.100" (2.54mm) Through Hole Gold</field>
+        <field name="Product code">302-S141</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">ED10522-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/on-shore-technology-inc/302-S141/ED10522-ND/2794233</field>
+      </fields>
       <libsource lib="rgb-components" part="LCD_HEADER"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>551E0FC8</tstamp>
-    </comp>
-    <comp ref="J2">
-      <value>CONTROL_HEADER</value>
-      <libsource lib="rgb-components" part="CONTROL_HEADER"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>551E0FD7</tstamp>
-    </comp>
-    <comp ref="RV1">
-      <value>10k</value>
-      <libsource lib="rgb-components" part="POT-rgb"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>551E1005</tstamp>
     </comp>
     <comp ref="IC1">
       <value>ATMEGA328-P</value>
       <footprint>DIL28</footprint>
       <fields>
-        <field name="Manufacturer">Atmel</field>
+        <field name="Manufacturer">Arduino</field>
         <field name="Product description">AT-MEGA 328-P microcontroller</field>
-        <field name="Product code">AT-MEGA328-P</field>
-        <field name="Supplier">Have</field>
+        <field name="Product code">A000048</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">1050-1019-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-search/en/integrated-circuits-ics/embedded-microcontrollers/2556109</field>
       </fields>
       <libsource lib="rgb-components" part="ATMEGA328-P-rgb"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5516EFC5</tstamp>
     </comp>
     <comp ref="SW1">
-      <value>SW_PUSH</value>
-      <libsource lib="device" part="SW_PUSH"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>552A646F</tstamp>
-    </comp>
-    <comp ref="SW2">
       <value>SW_POWER</value>
+      <fields>
+        <field name="Manufacturer">C&amp;K Components</field>
+        <field name="Product description">Rocker Switch SPDT 7.5A (AC/DC) 125V Through Hole, Right Angle</field>
+        <field name="Product code">E101J1AQE2</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CKN2070-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/c-k-components/E101J1AQE2/CKN2070-ND/484024</field>
+      </fields>
       <libsource lib="rgb-components" part="SW_POWER"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5532D291</tstamp>
     </comp>
     <comp ref="U1">
       <value>7805_NUM</value>
+      <fields>
+        <field name="Manufacturer">ON Semiconductor</field>
+        <field name="Product description">Linear Voltage Regulator IC Positive Fixed 1 Output 5V 1A TO-220AB</field>
+        <field name="Product code">NCP7805TG</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">NCP7805TGOS-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/on-semiconductor/NCP7805TG/NCP7805TGOS-ND/2271529</field>
+      </fields>
       <libsource lib="rgb-components" part="7805_NUM"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>553FC751</tstamp>
     </comp>
-    <comp ref="C7">
+    <comp ref="F1">
+      <value>FUSE</value>
+      <fields>
+        <field name="Manufacturer">Littelfuse Inc.</field>
+        <field name="Product description">Fuse Block 15A 600V 1 Circuit Cartridge PCB</field>
+        <field name="Product code">03540101ZXGY</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">F1498-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/littelfuse-inc/03540101ZXGY/F1498-ND/553974</field>
+      </fields>
+      <libsource lib="rgb-components" part="FUSE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57FFF622</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>135R</value>
+      <fields>
+        <field name="Tolerance">5%</field>
+        <field name="Manufacturer">Stackpole Electronics Inc.</field>
+        <field name="Product description">METAL FILM 0.125W 5% 130 OHM</field>
+        <field name="Product code">RNF18JBD130R</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">1263-RNF18JBD130R-CHP</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/RNF18JBD130R/1263-RNF18JBD130R-CHP/5227247</field>
+      </fields>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58040332</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>CONTROL_HEADER</value>
+      <fields>
+        <field name="Manufacturer">On Shore Technology Inc.</field>
+        <field name="Product description">10 Positions Header, Shrouded Connector 0.100" (2.54mm) Through Hole Gold</field>
+        <field name="Product code">302-S101</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">ED1543-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/on-shore-technology-inc/302-S101/ED1543-ND/2178422</field>
+      </fields>
+      <libsource lib="rgb-components" part="CONTROL_HEADER"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5804152F</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>20R</value>
+      <fields>
+        <field name="Tolerance">5%</field>
+        <field name="Manufacturer">Stackpole Electronics Inc.</field>
+        <field name="Product description">RES 20 OHM 1/2W 5% CARBON FILM</field>
+        <field name="Product code">CF12JT20R0</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CF12JT20R0CT-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF12JT20R0/CF12JT20R0CT-ND/1830451</field>
+      </fields>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5804E943</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>PWR_IN</value>
+      <fields>
+        <field name="Manufacturer">CUI Inc.</field>
+        <field name="Product description">Power Barrel Connector Jack 2.50mm ID (0.098"), 5.50mm OD (0.217") Through Hole, Right Angle</field>
+        <field name="Product code">PJ-082BH</field>
+        <field name="Supplier">Digikey UK</field>
+        <field name="Supplier code">CP-082BHCT-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/cui-inc/PJ-082BH/CP-082BHCT-ND/3102547</field>
+      </fields>
+      <libsource lib="rgb-components" part="PWR_IN"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58066783</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>20R</value>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Manufacturer">Stackpole Electronics Inc.</field>
+        <field name="Product description">METAL FILM 0.125W 5% 22 OHM</field>
+        <field name="Product code">RNF18JBD22R0</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">1263-RNF18JBD22R0-CHP</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/RNF18JBD22R0/1263-RNF18JBD22R0-CHP/5227254</field>
+      </fields>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5803FD55</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>IRL510PBF</value>
+      <fields>
+        <field name="Manufacturer">Vishay Siliconix</field>
+        <field name="Product description">MOSFET N-CH 100V 5.6A TO-220AB</field>
+        <field name="Product code">IRL510PBF</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">IRL510PBF-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/vishay-siliconix/IRL510PBF/IRL510PBF-ND/811698</field>
+      </fields>
+      <libsource lib="rgb-components" part="IRL510PBF"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>580BADB0</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>IRL510PBF</value>
+      <fields>
+        <field name="Manufacturer">Vishay Siliconix</field>
+        <field name="Product description">MOSFET N-CH 100V 5.6A TO-220AB</field>
+        <field name="Product code">IRL510PBF</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">IRL510PBF-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/vishay-siliconix/IRL510PBF/IRL510PBF-ND/811698</field>
+      </fields>
+      <libsource lib="rgb-components" part="IRL510PBF"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>580BB222</tstamp>
+    </comp>
+    <comp ref="Q3">
+      <value>IRL510PBF</value>
+      <fields>
+        <field name="Manufacturer">Vishay Siliconix</field>
+        <field name="Product description">MOSFET N-CH 100V 5.6A TO-220AB</field>
+        <field name="Product code">IRL510PBF</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">IRL510PBF-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/vishay-siliconix/IRL510PBF/IRL510PBF-ND/811698</field>
+      </fields>
+      <libsource lib="rgb-components" part="IRL510PBF"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>580BB332</tstamp>
+    </comp>
+    <comp ref="C3">
       <value>100nF</value>
       <fields>
         <field name="Tolerance">20%</field>
         <field name="Type">Ceramic</field>
-        <field name="Manufacturer">Multicomp</field>
-        <field name="Product description">Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 20%, Y5V, 50 V, Radial Leaded</field>
-        <field name="Product code">MC0805Y104M500A2.54MM</field>
-        <field name="Supplier">Farnell</field>
-        <field name="Supplier code">2112751</field>
+        <field name="Manufacturer">Kemet</field>
+        <field name="Product description">0.10µF 50V Ceramic Capacitor Z5U Radial 0.150" L x 0.100" W (3.81mm x 2.54mm)</field>
+        <field name="Product code">C315C104M5U5TA</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">399-4151-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/kemet/C315C104M5U5TA/399-4151-ND/817927</field>
       </fields>
       <libsource lib="rgb-components" part="C-rgb"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>551CD4A5</tstamp>
+      <tstamp>580BF0C2</tstamp>
     </comp>
-    <comp ref="J7">
-      <value>AUDIO_HEADER_IN</value>
-      <libsource lib="rgb-components" part="AUDIO_HEADER"/>
-      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
-      <tstamp>551ECAF3</tstamp>
-    </comp>
-    <comp ref="R7">
-      <value>10k</value>
-      <libsource lib="rgb-components" part="R-rgb"/>
-      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
-      <tstamp>551ECBDD</tstamp>
-    </comp>
-    <comp ref="R8">
-      <value>10k</value>
-      <libsource lib="rgb-components" part="R-rgb"/>
-      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
-      <tstamp>551ECBEA</tstamp>
-    </comp>
-    <comp ref="C10">
+    <comp ref="C4">
       <value>100nF</value>
       <fields>
         <field name="Tolerance">20%</field>
         <field name="Type">Ceramic</field>
-        <field name="Manufacturer">Multicomp</field>
-        <field name="Product description">Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 20%, Y5V, 50 V, Radial Leaded</field>
-        <field name="Product code">MC0805Y104M500A2.54MM</field>
-        <field name="Supplier">Farnell</field>
-        <field name="Supplier code">2112751</field>
+        <field name="Manufacturer">Kemet</field>
+        <field name="Product description">0.10µF 50V Ceramic Capacitor Z5U Radial 0.150" L x 0.100" W (3.81mm x 2.54mm)</field>
+        <field name="Product code">C315C104M5U5TA</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">399-4151-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/kemet/C315C104M5U5TA/399-4151-ND/817927</field>
       </fields>
       <libsource lib="rgb-components" part="C-rgb"/>
-      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
-      <tstamp>551ECC7E</tstamp>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>580BF151</tstamp>
     </comp>
-    <comp ref="C11">
-      <value>10uF</value>
+    <comp ref="C5">
+      <value>100nF</value>
       <fields>
         <field name="Tolerance">20%</field>
-        <field name="Type">Tantalum</field>
-        <field name="Manufacturer">Vishay</field>
-        <field name="Product description">Tantalum Capacitor, Resin Coated, 489D Series, 10 µF, ± 20%, 16 V, Radial Leaded, 2.5 mm</field>
-        <field name="Product code">489D106X0016C1VE3</field>
-        <field name="Supplier">Farnell</field>
-        <field name="Supplier code">1753975</field>
+        <field name="Type">Ceramic</field>
+        <field name="Manufacturer">Kemet</field>
+        <field name="Product description">0.10µF 50V Ceramic Capacitor Z5U Radial 0.150" L x 0.100" W (3.81mm x 2.54mm)</field>
+        <field name="Product code">C315C104M5U5TA</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">399-4151-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/kemet/C315C104M5U5TA/399-4151-ND/817927</field>
       </fields>
-      <libsource lib="device" part="CP"/>
-      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
-      <tstamp>551ECCF9</tstamp>
+      <libsource lib="rgb-components" part="C-rgb"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>580BF318</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>22pF</value>
+      <fields>
+        <field name="Tolerance">20%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Manufacturer">Kemet</field>
+        <field name="Product description">22pF 50V Ceramic Capacitor C0G, NP0 Radial 0.150" L x 0.100" W (3.81mm x 2.54mm)</field>
+        <field name="Product code">C315C220J5G5TA</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">399-9721-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/kemet/C315C220J5G5TA/399-9721-ND/3726111</field>
+      </fields>
+      <libsource lib="rgb-controller-cache" part="C-RESCUE-rgb-controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>580BF672</tstamp>
+    </comp>
+    <comp ref="RV4">
+      <value>10k</value>
+      <fields>
+        <field name="Manufacturer">Bourns Inc.</field>
+        <field name="Product description">10k Ohm 0.5W, 1/2W PC Pins Through Hole Trimmer Potentiometer Cermet 1 Turn Top Adjustment</field>
+        <field name="Product code">3362P-1-103LF</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">3362P-103LF-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/bourns-inc/3362P-1-103LF/3362P-103LF-ND/1088412</field>
+      </fields>
+      <libsource lib="rgb-components" part="POT-rgb"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>580BFA91</tstamp>
+    </comp>
+    <comp ref="RV3">
+      <value>50R</value>
+      <fields>
+        <field name="Manufacturer">Bourns Inc.</field>
+        <field name="Product description">50 Ohm 0.5W, 1/2W PC Pins Through Hole Trimmer Potentiometer Cermet 1 Turn Top Adjustment</field>
+        <field name="Product code">3362P-1-500LF</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">3362P-1-500LF-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/bourns-inc/3362P-1-500LF/3362P-1-500LF-ND/2536639</field>
+      </fields>
+      <libsource lib="rgb-components" part="POT-rgb"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>580BFCE9</tstamp>
+    </comp>
+    <comp ref="Q4">
+      <value>TP0606</value>
+      <fields>
+        <field name="Manufacturer">Microchip Technology</field>
+        <field name="Product description">MOSFET P-CH 60V 320MA TO92-3</field>
+        <field name="Product code">TP0606N3-G</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">TP0606N3-G-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/microchip-technology/TP0606N3-G/TP0606N3-G-ND/4902382</field>
+      </fields>
+      <libsource lib="rgb-components" part="TP0606"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>580C9859</tstamp>
+    </comp>
+    <comp ref="RV2">
+      <value>50R</value>
+      <fields>
+        <field name="Manufacturer">Bourns Inc.</field>
+        <field name="Product description">50 Ohm 0.5W, 1/2W PC Pins Through Hole Trimmer Potentiometer Cermet 1 Turn Top Adjustment</field>
+        <field name="Product code">3362P-1-500LF</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">3362P-1-500LF-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/bourns-inc/3362P-1-500LF/3362P-1-500LF-ND/2536639</field>
+      </fields>
+      <libsource lib="rgb-components" part="POT-rgb"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>580CBFE8</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>20R</value>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Manufacturer">Stackpole Electronics Inc.</field>
+        <field name="Product description">METAL FILM 0.125W 5% 22 OHM</field>
+        <field name="Product code">RNF18JBD22R0</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">1263-RNF18JBD22R0-CHP</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/RNF18JBD22R0/1263-RNF18JBD22R0-CHP/5227254</field>
+      </fields>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>580CC281</tstamp>
     </comp>
     <comp ref="J6">
-      <value>AUDIO_HEADER_OUT</value>
+      <value>AUDIO_JACK</value>
+      <fields>
+        <field name="Manufacturer">CUI Inc</field>
+        <field name="Product description">3.50mm (0.141" 1/8" Mini Plug) - Headphone Phone Jack Stereo Connector Solder</field>
+        <field name="Product code">SJ1-3523NG</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CP1-3523NG-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/cui-inc/SJ1-3523NG/CP1-3523NG-ND/738692</field>
+      </fields>
       <libsource lib="rgb-components" part="AUDIO_HEADER"/>
       <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
       <tstamp>551ED003</tstamp>
     </comp>
-    <comp ref="C12">
+    <comp ref="C11">
       <value>100nF</value>
       <fields>
         <field name="Tolerance">20%</field>
         <field name="Type">Ceramic</field>
-        <field name="Manufacturer">Multicomp</field>
-        <field name="Product description">Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 20%, Y5V, 50 V, Radial Leaded</field>
-        <field name="Product code">MC0805Y104M500A2.54MM</field>
-        <field name="Supplier">Farnell</field>
-        <field name="Supplier code">2112751</field>
+        <field name="Manufacturer">Kemet</field>
+        <field name="Product description">0.10µF 50V Ceramic Capacitor Z5U Radial 0.150" L x 0.100" W (3.81mm x 2.54mm)</field>
+        <field name="Product code">C315C104M5U5TA</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">399-4151-ND</field>
+        <field name="Order">No</field>
       </fields>
       <libsource lib="rgb-components" part="C-rgb"/>
       <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
       <tstamp>551EDD6E</tstamp>
     </comp>
-    <comp ref="C13">
-      <value>100nF</value>
-      <fields>
-        <field name="Tolerance">20%</field>
-        <field name="Type">Ceramic</field>
-        <field name="Manufacturer">Multicomp</field>
-        <field name="Product description">Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 20%, Y5V, 50 V, Radial Leaded</field>
-        <field name="Product code">MC0805Y104M500A2.54MM</field>
-        <field name="Supplier">Farnell</field>
-        <field name="Supplier code">2112751</field>
-      </fields>
-      <libsource lib="rgb-components" part="C-rgb"/>
-      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
-      <tstamp>551EDD9D</tstamp>
-    </comp>
-    <comp ref="R4">
+    <comp ref="R6">
       <value>1M</value>
+      <fields>
+        <field name="Manufacturer">Stackpole Electronics Inc.</field>
+        <field name="Product description">RES 1M OHM 1/8W 5% CARBON FILM</field>
+        <field name="Product code">CF18JT1M00</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CF18JT1M00TR-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT1M00/CF18JT1M00TR-ND/1741614</field>
+      </fields>
       <libsource lib="rgb-components" part="R-rgb"/>
       <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
       <tstamp>551EDDA5</tstamp>
     </comp>
-    <comp ref="R6">
-      <value>1M</value>
-      <libsource lib="rgb-components" part="R-rgb"/>
-      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
-      <tstamp>551EDDCE</tstamp>
-    </comp>
-    <comp ref="R3">
+    <comp ref="R8">
       <value>10k</value>
+      <fields>
+        <field name="Manufacturer">Stackpole Electronics Inc.</field>
+        <field name="Product description">RES 10K OHM 1/8W 5% CF AXIAL</field>
+        <field name="Product code">CF18JT10K0</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CF18JT10K0CT-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT10K0/CF18JT10K0CT-ND/2022766</field>
+      </fields>
       <libsource lib="rgb-components" part="R-rgb"/>
       <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
       <tstamp>551EE118</tstamp>
     </comp>
-    <comp ref="R5">
-      <value>10k</value>
-      <libsource lib="rgb-components" part="R-rgb"/>
-      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
-      <tstamp>551EE14A</tstamp>
-    </comp>
-    <comp ref="R2">
+    <comp ref="R12">
       <value>33k</value>
+      <fields>
+        <field name="Manufacturer">Stackpole Electronics Inc.</field>
+        <field name="Product description">RES 33K OHM 1/8W 5% CF AXIAL</field>
+        <field name="Product code">CF18JT33K0</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CF18JT33K0CT-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT33K0/CF18JT33K0CT-ND/2022778</field>
+      </fields>
       <libsource lib="rgb-components" part="R-rgb"/>
       <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
       <tstamp>551EE150</tstamp>
     </comp>
     <comp ref="U2">
       <value>LM358_BIG</value>
+      <fields>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="Product description">General Purpose Amplifier 2 Circuit 8-PDIP</field>
+        <field name="Product code">LM358P</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">296-1395-5-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/texas-instruments/LM358P/296-1395-5-ND/277042</field>
+      </fields>
       <libsource lib="rgb-components" part="LM358_BIG"/>
       <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
       <tstamp>553FD08D</tstamp>
-    </comp>
-    <comp ref="U3">
-      <value>LM358_BIG</value>
-      <libsource lib="rgb-components" part="LM358_BIG"/>
-      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
-      <tstamp>553FD0BF</tstamp>
-    </comp>
-    <comp ref="C8">
-      <value>100nF</value>
-      <fields>
-        <field name="Tolerance">20%</field>
-        <field name="Type">Ceramic</field>
-        <field name="Manufacturer">Multicomp</field>
-        <field name="Product description">Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 20%, Y5V, 50 V, Radial Leaded</field>
-        <field name="Product code">MC0805Y104M500A2.54MM</field>
-        <field name="Supplier">Farnell</field>
-        <field name="Supplier code">2112751</field>
-      </fields>
-      <libsource lib="rgb-components" part="C-rgb"/>
-      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
-      <tstamp>56EEEAF3</tstamp>
     </comp>
     <comp ref="C9">
       <value>10uF</value>
       <fields>
         <field name="Tolerance">20%</field>
         <field name="Type">Tantalum</field>
-        <field name="Manufacturer">Vishay</field>
-        <field name="Product description">Tantalum Capacitor, Resin Coated, 489D Series, 10 µF, ± 20%, 16 V, Radial Leaded, 2.5 mm</field>
-        <field name="Product code">489D106X0016C1VE3</field>
-        <field name="Supplier">Farnell</field>
-        <field name="Supplier code">1753975</field>
+        <field name="Manufacturer">Kemet</field>
+        <field name="Product description">10µF Conformal Coated Tantalum Capacitors 25V Radial 2.5 Ohm 0.217" Dia (5.50mm)</field>
+        <field name="Product code">T350E106M025AT</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">399-9907-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/kemet/T350E106M025AT/399-9907-ND/3726214</field>
       </fields>
-      <libsource lib="device" part="CP"/>
+      <libsource lib="rgb-components" part="CP-rgb"/>
       <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
-      <tstamp>56EEEB6E</tstamp>
+      <tstamp>580BEA17</tstamp>
     </comp>
-    <comp ref="R20">
-      <value>15k</value>
+    <comp ref="C13">
+      <value>10uF</value>
+      <fields>
+        <field name="Tolerance">20%</field>
+        <field name="Type">Tantalum</field>
+        <field name="Manufacturer">Kemet</field>
+        <field name="Product description">10µF Conformal Coated Tantalum Capacitors 25V Radial 2.5 Ohm 0.217" Dia (5.50mm)</field>
+        <field name="Product code">T350E106M025AT</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">399-9907-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/kemet/T350E106M025AT/399-9907-ND/3726214</field>
+      </fields>
+      <libsource lib="rgb-components" part="CP-rgb"/>
+      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
+      <tstamp>580BEAA5</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>100nF</value>
+      <fields>
+        <field name="Tolerance">20%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Manufacturer">Kemet</field>
+        <field name="Product description">0.10µF 50V Ceramic Capacitor Z5U Radial 0.150" L x 0.100" W (3.81mm x 2.54mm)</field>
+        <field name="Product code">C315C104M5U5TA</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">399-4151-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/kemet/C315C104M5U5TA/399-4151-ND/817927</field>
+      </fields>
+      <libsource lib="rgb-components" part="C-rgb"/>
+      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
+      <tstamp>580BEE4C</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>100nF</value>
+      <fields>
+        <field name="Tolerance">20%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Manufacturer">Kemet</field>
+        <field name="Product description">0.10µF 50V Ceramic Capacitor Z5U Radial 0.150" L x 0.100" W (3.81mm x 2.54mm)</field>
+        <field name="Product code">C315C104M5U5TA</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">399-4151-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/kemet/C315C104M5U5TA/399-4151-ND/817927</field>
+      </fields>
+      <libsource lib="rgb-components" part="C-rgb"/>
+      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
+      <tstamp>580BEF40</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>100nF</value>
+      <fields>
+        <field name="Tolerance">20%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Manufacturer">Kemet</field>
+        <field name="Product description">0.10µF 50V Ceramic Capacitor Z5U Radial 0.150" L x 0.100" W (3.81mm x 2.54mm)</field>
+        <field name="Product code">C315C104M5U5TA</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">399-4151-ND</field>
+        <field name="Order">No</field>
+      </fields>
+      <libsource lib="rgb-components" part="C-rgb"/>
+      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
+      <tstamp>580CE07F</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>1M</value>
+      <fields>
+        <field name="Manufacturer">Stackpole Electronics Inc.</field>
+        <field name="Product description">RES 1M OHM 1/8W 5% CARBON FILM</field>
+        <field name="Product code">CF18JT1M00</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CF18JT1M00TR-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT1M00/CF18JT1M00TR-ND/1741614</field>
+      </fields>
       <libsource lib="rgb-components" part="R-rgb"/>
-      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
-      <tstamp>55202980</tstamp>
+      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
+      <tstamp>580CE1B7</tstamp>
     </comp>
-    <comp ref="R19">
-      <value>15k</value>
+    <comp ref="R9">
+      <value>10k</value>
+      <fields>
+        <field name="Manufacturer">Stackpole Electronics Inc.</field>
+        <field name="Product description">RES 10K OHM 1/8W 5% CF AXIAL</field>
+        <field name="Product code">CF18JT10K0</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CF18JT10K0CT-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT10K0/CF18JT10K0CT-ND/2022766</field>
+      </fields>
       <libsource lib="rgb-components" part="R-rgb"/>
-      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
-      <tstamp>552029B0</tstamp>
+      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
+      <tstamp>580CE2B0</tstamp>
     </comp>
-    <comp ref="C23">
+    <comp ref="R10">
+      <value>10k</value>
+      <fields>
+        <field name="Manufacturer">Stackpole Electronics Inc.</field>
+        <field name="Product description">RES 10K OHM 1/8W 5% CF AXIAL</field>
+        <field name="Product code">CF18JT10K0</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CF18JT10K0CT-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT10K0/CF18JT10K0CT-ND/2022766</field>
+      </fields>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
+      <tstamp>580CE352</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>10k</value>
+      <fields>
+        <field name="Manufacturer">Stackpole Electronics Inc.</field>
+        <field name="Product description">RES 10K OHM 1/8W 5% CF AXIAL</field>
+        <field name="Product code">CF18JT10K0</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CF18JT10K0CT-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT10K0/CF18JT10K0CT-ND/2022766</field>
+      </fields>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
+      <tstamp>580CE406</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>LM358_BIG</value>
+      <fields>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="Product description">General Purpose Amplifier 2 Circuit 8-PDIP</field>
+        <field name="Product code">LM358P</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">296-1395-5-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/texas-instruments/LM358P/296-1395-5-ND/277042</field>
+      </fields>
+      <libsource lib="rgb-components" part="LM358_BIG"/>
+      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
+      <tstamp>580CE604</tstamp>
+    </comp>
+    <comp ref="J7">
+      <value>AUDIO_JACK</value>
+      <fields>
+        <field name="Manufacturer">CUI Inc</field>
+        <field name="Product description">3.50mm (0.141" 1/8" Mini Plug) - Headphone Phone Jack Stereo Connector Solder</field>
+        <field name="Product code">SJ1-3523NG</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CP1-3523NG-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/cui-inc/SJ1-3523NG/CP1-3523NG-ND/738692</field>
+      </fields>
+      <libsource lib="rgb-components" part="AUDIO_HEADER"/>
+      <sheetpath names="/Audio processing/" tstamps="/551EAE66/"/>
+      <tstamp>5814040E</tstamp>
+    </comp>
+    <comp ref="C19">
       <value>47nF</value>
       <fields>
         <field name="Tolerance">10%</field>
         <field name="Type">Ceramic</field>
-        <field name="Manufacturer">Multicomp</field>
-        <field name="Product description">Multilayer Ceramic Capacitor, MCRR Series, 0.047 µF, ± 10%, X7R, 50 V, Radial Leaded</field>
-        <field name="Product code">MCRR25473X7RK0050</field>
-        <field name="Supplier">Farnell</field>
-        <field name="Supplier code">1216437</field>
+        <field name="Manufacturer">Kemet</field>
+        <field name="Product description">0.047µF 50V Ceramic Capacitor X7R Radial 0.200" L x 0.125" W (5.08mm x 3.18mm)</field>
+        <field name="Product code">C320C473K5R5TA</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">399-4306-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/kemet/C320C473K5R5TA/399-4306-ND/818082</field>
       </fields>
       <libsource lib="rgb-components" part="C-rgb"/>
       <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
       <tstamp>552029B8</tstamp>
     </comp>
-    <comp ref="C20">
-      <value>100nF</value>
-      <fields>
-        <field name="Tolerance">10%</field>
-        <field name="Type">Ceramic</field>
-        <field name="Manufacturer">Multicomp</field>
-        <field name="Product description">Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 10%, X7R, 50 V, Radial Leaded</field>
-        <field name="Product code">MC0805B104K500A2.54MM</field>
-        <field name="Supplier">Farnell</field>
-        <field name="Supplier code">2309020</field>
-      </fields>
-      <libsource lib="rgb-components" part="C-rgb"/>
-      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
-      <tstamp>552029D5</tstamp>
-    </comp>
-    <comp ref="C21">
-      <value>1uF</value>
-      <fields>
-        <field name="Tolerance">10%</field>
-        <field name="Type">Ceramic</field>
-        <field name="Manufacturer">Multicomp</field>
-        <field name="Product description">Multilayer Ceramic Capacitor, MLR Series, 1 µF, ± 10%, X7R, 50 V, Radial Leaded</field>
-        <field name="Product code">MCMLR50V105KX7R</field>
-        <field name="Supplier">Farnell</field>
-        <field name="Supplier code">2112947</field>
-        <field name="Notes">5.08mm spacing</field>
-      </fields>
-      <libsource lib="rgb-components" part="C-rgb"/>
-      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
-      <tstamp>55202D6A</tstamp>
-    </comp>
-    <comp ref="R22">
-      <value>680R</value>
-      <libsource lib="rgb-components" part="R-rgb"/>
-      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
-      <tstamp>55202D7A</tstamp>
-    </comp>
     <comp ref="R17">
-      <value>10k</value>
-      <libsource lib="rgb-components" part="R-rgb"/>
-      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
-      <tstamp>55202D80</tstamp>
-    </comp>
-    <comp ref="R21">
-      <value>330k</value>
-      <libsource lib="rgb-components" part="R-rgb"/>
-      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
-      <tstamp>55202DDC</tstamp>
-    </comp>
-    <comp ref="R23">
       <value>3.9k</value>
-      <libsource lib="rgb-components" part="R-rgb"/>
-      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
-      <tstamp>5520DC86</tstamp>
-    </comp>
-    <comp ref="R28">
-      <value>8.2k</value>
-      <libsource lib="rgb-components" part="R-rgb"/>
-      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
-      <tstamp>5520DC8C</tstamp>
-    </comp>
-    <comp ref="R26">
-      <value>680R</value>
-      <libsource lib="rgb-components" part="R-rgb"/>
-      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
-      <tstamp>5520DCD6</tstamp>
-    </comp>
-    <comp ref="R24">
-      <value>10k</value>
-      <libsource lib="rgb-components" part="R-rgb"/>
-      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
-      <tstamp>5520DCDC</tstamp>
-    </comp>
-    <comp ref="R27">
-      <value>330k</value>
-      <libsource lib="rgb-components" part="R-rgb"/>
-      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
-      <tstamp>5520DCF4</tstamp>
-    </comp>
-    <comp ref="R9">
-      <value>3.9k</value>
+      <fields>
+        <field name="Manufacturer">Stackpole Electronics Inc.</field>
+        <field name="Product description">RES 3.9K OHM 1/8W 5% CARBON FILM</field>
+        <field name="Product code">CF18JT3K90</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CF18JT3K90CT-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT3K90/CF18JT3K90CT-ND/2022756</field>
+      </fields>
       <libsource lib="rgb-components" part="R-rgb"/>
       <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
       <tstamp>55215897</tstamp>
     </comp>
-    <comp ref="R16">
+    <comp ref="R18">
       <value>8.2k</value>
+      <fields>
+        <field name="Manufacturer">Stackpole Electronics Inc.</field>
+        <field name="Product description">RES 8.2K OHM 1/8W 5% CF AXIAL</field>
+        <field name="Product code">CF18JT8K20</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CF18JT8K20CT-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT8K20/CF18JT8K20CT-ND/2022764</field>
+      </fields>
       <libsource lib="rgb-components" part="R-rgb"/>
       <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
       <tstamp>5521589D</tstamp>
     </comp>
-    <comp ref="R13">
-      <value>15k</value>
-      <libsource lib="rgb-components" part="R-rgb"/>
-      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
-      <tstamp>552158E3</tstamp>
-    </comp>
-    <comp ref="R12">
-      <value>15k</value>
+    <comp ref="R21">
+      <value>18k</value>
+      <fields>
+        <field name="Manufacturer">Stackpole Electronics Inc.</field>
+        <field name="Product description">RES 18K OHM 1/8W 5% CF AXIAL</field>
+        <field name="Product code">CF18JT18K0</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CF18JT18K0CT-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-search/en/resistors/through-hole-resistors/66690</field>
+      </fields>
       <libsource lib="rgb-components" part="R-rgb"/>
       <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
       <tstamp>552158E9</tstamp>
     </comp>
-    <comp ref="C19">
+    <comp ref="C24">
       <value>4.7nF</value>
       <fields>
-        <field name="Tolerance">10%</field>
+        <field name="Tolerance">5%</field>
         <field name="Type">Ceramic</field>
         <field name="Manufacturer">Kemet</field>
-        <field name="Product description">Multilayer Ceramic Capacitor, Gold Max, C315 Series, 4700 pF, ± 10%, X7R, 100 V, Radial Leaded</field>
-        <field name="Product code">C315C472K1R5TA</field>
-        <field name="Supplier">Farnell</field>
-        <field name="Supplier code">1457649</field>
+        <field name="Product description">4700pF 100V Ceramic Capacitor C0G, NP0 Radial 0.200" L x 0.125" W (5.08mm x 3.18mm)</field>
+        <field name="Product code">C320C472J1G5TA</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">399-4302-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-search/en/capacitors/ceramic-capacitors/131083</field>
       </fields>
       <libsource lib="rgb-components" part="C-rgb"/>
       <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
       <tstamp>552158EF</tstamp>
     </comp>
-    <comp ref="C14">
+    <comp ref="C22">
       <value>10nF</value>
       <fields>
-        <field name="Tolerance">10%</field>
+        <field name="Tolerance">5%</field>
         <field name="Type">Ceramic</field>
-        <field name="Manufacturer">Multicomp</field>
-        <field name="Product description">Multilayer Ceramic Capacitor, MCRR Series, 0.01 µF, ± 10%, X7R, 50 V, Radial Leaded</field>
-        <field name="Product code">MCRR25103X7RK0050</field>
-        <field name="Supplier">Farnell</field>
-        <field name="Supplier code">1216435</field>
+        <field name="Manufacturer">Kemet</field>
+        <field name="Product description">10000pF 50V Ceramic Capacitor X7R Radial 0.150" L x 0.100" W (3.81mm x 2.54mm)</field>
+        <field name="Product code">C315C103J5R5TA</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">399-9712-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/kemet/C315C103J5R5TA/399-9712-ND/3725975</field>
       </fields>
       <libsource lib="rgb-components" part="C-rgb"/>
       <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
       <tstamp>552158F5</tstamp>
     </comp>
-    <comp ref="R14">
-      <value>680R</value>
+    <comp ref="R30">
+      <value>180R</value>
+      <fields>
+        <field name="Manufacturer">Stackpole Electronics Inc.</field>
+        <field name="Product description">RES 180 OHM 1/8W 5% CF AXIAL</field>
+        <field name="Product code">CF18JT180R</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CF18JT180RCT-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT180R/CF18JT180RCT-ND/2022724</field>
+      </fields>
       <libsource lib="rgb-components" part="R-rgb"/>
       <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
       <tstamp>5521591B</tstamp>
     </comp>
-    <comp ref="R10">
-      <value>10k</value>
+    <comp ref="R29">
+      <value>2.2k</value>
+      <fields>
+        <field name="Manufacturer">Stackpole Electronics Inc.</field>
+        <field name="Product description">RES 2.2K OHM 1/8W 5% CF AXIAL</field>
+        <field name="Product code">CF18JT2K20</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CF18JT2K20CT-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT2K20/CF18JT2K20CT-ND/2022750</field>
+      </fields>
       <libsource lib="rgb-components" part="R-rgb"/>
       <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
       <tstamp>55215921</tstamp>
     </comp>
-    <comp ref="D1">
-      <value>DIODE</value>
-      <fields>
-        <field name="Manufacturer">Multicomp</field>
-        <field name="Product description">Small Signal Diode, Single, 100 V, 150 mA, 1 V, 4 ns, 500 mA</field>
-        <field name="Product code">1N4148</field>
-        <field name="Supplier">Farnell</field>
-        <field name="Supplier code">9565124</field>
-      </fields>
-      <libsource lib="rgb-components" part="DIODE-rgb"/>
-      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
-      <tstamp>55215933</tstamp>
-    </comp>
-    <comp ref="R15">
+    <comp ref="R32">
       <value>330k</value>
+      <fields>
+        <field name="Manufacturer">Stackpole Electronics Inc.</field>
+        <field name="Product description">RES 330K OHM 1/8W 5% CF AXIAL</field>
+        <field name="Product code">CF18JT330K</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CF18JT330KCT-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT330K/CF18JT330KCT-ND/2022802</field>
+      </fields>
       <libsource lib="rgb-components" part="R-rgb"/>
       <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
       <tstamp>55215939</tstamp>
     </comp>
-    <comp ref="U5">
-      <value>LM358_BIG</value>
-      <libsource lib="rgb-components" part="LM358_BIG"/>
-      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
-      <tstamp>553FD13A</tstamp>
-    </comp>
-    <comp ref="U4">
-      <value>LM358_BIG</value>
-      <libsource lib="rgb-components" part="LM358_BIG"/>
-      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
-      <tstamp>553FD153</tstamp>
-    </comp>
-    <comp ref="R18">
-      <value>100k</value>
-      <libsource lib="rgb-components" part="R-rgb"/>
-      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
-      <tstamp>56EDA1FB</tstamp>
-    </comp>
-    <comp ref="R11">
-      <value>100k</value>
+    <comp ref="R31">
+      <value>22k</value>
+      <fields>
+        <field name="Manufacturer">Stackpole Electronics Inc.</field>
+        <field name="Product description">RES 22K OHM 1/8W 5% CF AXIAL</field>
+        <field name="Product code">CF18JT22K0</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CF18JT22K0CT-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT22K0/CF18JT22K0CT-ND/2022774</field>
+      </fields>
       <libsource lib="rgb-components" part="R-rgb"/>
       <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
       <tstamp>56EDAAFF</tstamp>
     </comp>
-    <comp ref="R25">
-      <value>100k</value>
-      <libsource lib="rgb-components" part="R-rgb"/>
-      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
-      <tstamp>56EDB60F</tstamp>
-    </comp>
-    <comp ref="C16">
+    <comp ref="C15">
       <value>100nF</value>
       <fields>
         <field name="Tolerance">10%</field>
         <field name="Type">Ceramic</field>
-        <field name="Manufacturer">Multicomp</field>
-        <field name="Product description">Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 10%, X7R, 50 V, Radial Leaded</field>
-        <field name="Product code">MC0805B104K500A2.54MM</field>
-        <field name="Supplier">Farnell</field>
-        <field name="Supplier code">2309020</field>
+        <field name="Manufacturer">Kemet</field>
+        <field name="Product description">0.10µF 50V Ceramic Capacitor X7R Radial 0.200" L x 0.125" W (5.08mm x 3.18mm)</field>
+        <field name="Product code">C320C104J5R5TA</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">399-9775-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/kemet/C320C104J5R5TA/399-9775-ND/3726074</field>
       </fields>
       <libsource lib="rgb-components" part="C-rgb"/>
       <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
       <tstamp>56F796C5</tstamp>
     </comp>
-    <comp ref="C17">
-      <value>100nF</value>
+    <comp ref="C26">
+      <value>1uF</value>
       <fields>
         <field name="Tolerance">10%</field>
         <field name="Type">Ceramic</field>
-        <field name="Manufacturer">Multicomp</field>
-        <field name="Product description">Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 10%, X7R, 50 V, Radial Leaded</field>
-        <field name="Product code">MC0805B104K500A2.54MM</field>
-        <field name="Supplier">Farnell</field>
-        <field name="Supplier code">2309020</field>
+        <field name="Manufacturer">Kemet</field>
+        <field name="Product description">1µF 25V Ceramic Capacitor X7R Radial 0.150" L x 0.100" W (3.81mm x 2.54mm)</field>
+        <field name="Product code">C315C105K3R5TA</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">399-9714-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-search/en/capacitors/ceramic-capacitors/131083</field>
       </fields>
       <libsource lib="rgb-components" part="C-rgb"/>
       <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
-      <tstamp>56F79836</tstamp>
-    </comp>
-    <comp ref="C22">
-      <value>100nF</value>
-      <fields>
-        <field name="Tolerance">10%</field>
-        <field name="Type">Ceramic</field>
-        <field name="Manufacturer">Multicomp</field>
-        <field name="Product description">Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 10%, X7R, 50 V, Radial Leaded</field>
-        <field name="Product code">MC0805B104K500A2.54MM</field>
-        <field name="Supplier">Farnell</field>
-        <field name="Supplier code">2309020</field>
-      </fields>
-      <libsource lib="rgb-components" part="C-rgb"/>
-      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
-      <tstamp>56F7993C</tstamp>
+      <tstamp>56F7A1C3</tstamp>
     </comp>
     <comp ref="C18">
       <value>100nF</value>
       <fields>
         <field name="Tolerance">10%</field>
         <field name="Type">Ceramic</field>
-        <field name="Manufacturer">Multicomp</field>
-        <field name="Product description">Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 10%, X7R, 50 V, Radial Leaded</field>
-        <field name="Product code">MC0805B104K500A2.54MM</field>
-        <field name="Supplier">Farnell</field>
-        <field name="Supplier code">2309020</field>
+        <field name="Manufacturer">Kemet</field>
+        <field name="Product description">0.10µF 50V Ceramic Capacitor X7R Radial 0.200" L x 0.125" W (5.08mm x 3.18mm)</field>
+        <field name="Product code">C320C104J5R5TA</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">399-9775-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/kemet/C320C104J5R5TA/399-9775-ND/3726074</field>
       </fields>
       <libsource lib="rgb-components" part="C-rgb"/>
       <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
-      <tstamp>56F79D38</tstamp>
+      <tstamp>580CF949</tstamp>
+    </comp>
+    <comp ref="C17">
+      <value>100nF</value>
+      <fields>
+        <field name="Tolerance">10%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Manufacturer">Kemet</field>
+        <field name="Product description">0.10µF 50V Ceramic Capacitor X7R Radial 0.200" L x 0.125" W (5.08mm x 3.18mm)</field>
+        <field name="Product code">C320C104J5R5TA</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">399-9775-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/kemet/C320C104J5R5TA/399-9775-ND/3726074</field>
+      </fields>
+      <libsource lib="rgb-components" part="C-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>580CFB1B</tstamp>
+    </comp>
+    <comp ref="C16">
+      <value>10nF</value>
+      <fields>
+        <field name="Tolerance">5%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Manufacturer">Kemet</field>
+        <field name="Product description">10000pF 50V Ceramic Capacitor X7R Radial 0.150" L x 0.100" W (3.81mm x 2.54mm)</field>
+        <field name="Product code">C315C103J5R5TA</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">399-9712-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/kemet/C315C103J5R5TA/399-9712-ND/3725975</field>
+      </fields>
+      <libsource lib="rgb-components" part="C-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>580CFCE5</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>10nF</value>
+      <fields>
+        <field name="Tolerance">5%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Manufacturer">Kemet</field>
+        <field name="Product description">10000pF 50V Ceramic Capacitor X7R Radial 0.150" L x 0.100" W (3.81mm x 2.54mm)</field>
+        <field name="Product code">C315C103J5R5TA</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">399-9712-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/kemet/C315C103J5R5TA/399-9712-ND/3725975</field>
+      </fields>
+      <libsource lib="rgb-components" part="C-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>580CFE19</tstamp>
     </comp>
     <comp ref="C27">
       <value>100nF</value>
       <fields>
         <field name="Tolerance">10%</field>
         <field name="Type">Ceramic</field>
-        <field name="Manufacturer">Multicomp</field>
-        <field name="Product description">Multilayer Ceramic Capacitor, MC Series, 0.1 µF, ± 10%, X7R, 50 V, Radial Leaded</field>
-        <field name="Product code">MC0805B104K500A2.54MM</field>
-        <field name="Supplier">Farnell</field>
-        <field name="Supplier code">2309020</field>
+        <field name="Manufacturer">Kemet</field>
+        <field name="Product description">0.10µF 50V Ceramic Capacitor X7R Radial 0.200" L x 0.125" W (5.08mm x 3.18mm)</field>
+        <field name="Product code">C320C104J5R5TA</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">399-9775-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/kemet/C320C104J5R5TA/399-9775-ND/3726074</field>
       </fields>
       <libsource lib="rgb-components" part="C-rgb"/>
       <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
-      <tstamp>56F79E72</tstamp>
-    </comp>
-    <comp ref="C15">
-      <value>1uF</value>
-      <fields>
-        <field name="Tolerance">10%</field>
-        <field name="Type">Ceramic</field>
-        <field name="Manufacturer">Multicomp</field>
-        <field name="Product description">Multilayer Ceramic Capacitor, MLR Series, 1 µF, ± 10%, X7R, 50 V, Radial Leaded</field>
-        <field name="Product code">MCMLR50V105KX7R</field>
-        <field name="Supplier">Farnell</field>
-        <field name="Supplier code">2112947</field>
-        <field name="Notes">5.08mm spacing</field>
-      </fields>
-      <libsource lib="rgb-components" part="C-rgb"/>
-      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
-      <tstamp>56F7A1C3</tstamp>
-    </comp>
-    <comp ref="C24">
-      <value>1uF</value>
-      <fields>
-        <field name="Tolerance">10%</field>
-        <field name="Type">Ceramic</field>
-        <field name="Manufacturer">Multicomp</field>
-        <field name="Product description">Multilayer Ceramic Capacitor, MLR Series, 1 µF, ± 10%, X7R, 50 V, Radial Leaded</field>
-        <field name="Product code">MCMLR50V105KX7R</field>
-        <field name="Supplier">Farnell</field>
-        <field name="Supplier code">2112947</field>
-        <field name="Notes">5.08mm spacing</field>
-      </fields>
-      <libsource lib="rgb-components" part="C-rgb"/>
-      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
-      <tstamp>56F7A2CB</tstamp>
+      <tstamp>580D01E9</tstamp>
     </comp>
     <comp ref="C25">
-      <value>10nF</value>
+      <value>100nF</value>
       <fields>
         <field name="Tolerance">10%</field>
         <field name="Type">Ceramic</field>
-        <field name="Manufacturer">Multicomp</field>
-        <field name="Product description">Multilayer Ceramic Capacitor, MCRR Series, 0.01 µF, ± 10%, X7R, 50 V, Radial Leaded</field>
-        <field name="Product code">MCRR25103X7RK0050</field>
-        <field name="Supplier">Farnell</field>
-        <field name="Supplier code">1216435</field>
+        <field name="Manufacturer">Kemet</field>
+        <field name="Product description">0.10µF 50V Ceramic Capacitor X7R Radial 0.200" L x 0.125" W (5.08mm x 3.18mm)</field>
+        <field name="Product code">C320C104J5R5TA</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">399-9775-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/kemet/C320C104J5R5TA/399-9775-ND/3726074</field>
       </fields>
       <libsource lib="rgb-components" part="C-rgb"/>
       <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
-      <tstamp>56F7A59B</tstamp>
+      <tstamp>580D0328</tstamp>
     </comp>
-    <comp ref="C26">
-      <value>10nF</value>
+    <comp ref="C23">
+      <value>100nF</value>
       <fields>
         <field name="Tolerance">10%</field>
         <field name="Type">Ceramic</field>
-        <field name="Manufacturer">Multicomp</field>
-        <field name="Product description">Multilayer Ceramic Capacitor, MCRR Series, 0.01 µF, ± 10%, X7R, 50 V, Radial Leaded</field>
-        <field name="Product code">MCRR25103X7RK0050</field>
-        <field name="Supplier">Farnell</field>
-        <field name="Supplier code">1216435</field>
+        <field name="Manufacturer">Kemet</field>
+        <field name="Product description">0.10µF 50V Ceramic Capacitor X7R Radial 0.200" L x 0.125" W (5.08mm x 3.18mm)</field>
+        <field name="Product code">C320C104J5R5TA</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">399-9775-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/kemet/C320C104J5R5TA/399-9775-ND/3726074</field>
       </fields>
       <libsource lib="rgb-components" part="C-rgb"/>
       <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
-      <tstamp>56F7A6B9</tstamp>
+      <tstamp>580D04EC</tstamp>
     </comp>
-    <comp ref="D2">
-      <value>DIODE</value>
+    <comp ref="C20">
+      <value>1uF</value>
       <fields>
-        <field name="Manufacturer">Multicomp</field>
-        <field name="Product description">Small Signal Diode, Single, 100 V, 150 mA, 1 V, 4 ns, 500 mA</field>
-        <field name="Product code">1N4148</field>
-        <field name="Supplier">Farnell</field>
-        <field name="Supplier code">9565124</field>
+        <field name="Tolerance">10%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Manufacturer">Kemet</field>
+        <field name="Product description">1µF 25V Ceramic Capacitor X7R Radial 0.150" L x 0.100" W (3.81mm x 2.54mm)</field>
+        <field name="Product code">C315C105K3R5TA</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">399-9714-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-search/en/capacitors/ceramic-capacitors/131083</field>
       </fields>
-      <libsource lib="rgb-components" part="DIODE-rgb"/>
+      <libsource lib="rgb-components" part="C-rgb"/>
       <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
-      <tstamp>56F84D81</tstamp>
+      <tstamp>580D06D8</tstamp>
+    </comp>
+    <comp ref="C21">
+      <value>1uF</value>
+      <fields>
+        <field name="Tolerance">10%</field>
+        <field name="Type">Ceramic</field>
+        <field name="Manufacturer">Kemet</field>
+        <field name="Product description">1µF 25V Ceramic Capacitor X7R Radial 0.150" L x 0.100" W (3.81mm x 2.54mm)</field>
+        <field name="Product code">C315C105K3R5TA</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">399-9714-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-search/en/capacitors/ceramic-capacitors/131083</field>
+      </fields>
+      <libsource lib="rgb-components" part="C-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>580D09EE</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>8.2k</value>
+      <fields>
+        <field name="Manufacturer">Stackpole Electronics Inc.</field>
+        <field name="Product description">RES 8.2K OHM 1/8W 5% CF AXIAL</field>
+        <field name="Product code">CF18JT8K20</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CF18JT8K20CT-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT8K20/CF18JT8K20CT-ND/2022764</field>
+      </fields>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>580D10CE</tstamp>
+    </comp>
+    <comp ref="R26">
+      <value>18k</value>
+      <fields>
+        <field name="Manufacturer">Stackpole Electronics Inc.</field>
+        <field name="Product description">RES 18K OHM 1/8W 5% CF AXIAL</field>
+        <field name="Product code">CF18JT18K0</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CF18JT18K0CT-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-search/en/resistors/through-hole-resistors/66690</field>
+      </fields>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>580D1313</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>18k</value>
+      <fields>
+        <field name="Manufacturer">Stackpole Electronics Inc.</field>
+        <field name="Product description">RES 18K OHM 1/8W 5% CF AXIAL</field>
+        <field name="Product code">CF18JT18K0</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CF18JT18K0CT-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-search/en/resistors/through-hole-resistors/66690</field>
+      </fields>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>580D151B</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>18k</value>
+      <fields>
+        <field name="Manufacturer">Stackpole Electronics Inc.</field>
+        <field name="Product description">RES 18K OHM 1/8W 5% CF AXIAL</field>
+        <field name="Product code">CF18JT18K0</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CF18JT18K0CT-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-search/en/resistors/through-hole-resistors/66690</field>
+      </fields>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>580D16B5</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>18k</value>
+      <fields>
+        <field name="Manufacturer">Stackpole Electronics Inc.</field>
+        <field name="Product description">RES 18K OHM 1/8W 5% CF AXIAL</field>
+        <field name="Product code">CF18JT18K0</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CF18JT18K0CT-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-search/en/resistors/through-hole-resistors/66690</field>
+      </fields>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>580D18B7</tstamp>
+    </comp>
+    <comp ref="R22">
+      <value>2.2k</value>
+      <fields>
+        <field name="Manufacturer">Stackpole Electronics Inc.</field>
+        <field name="Product description">RES 2.2K OHM 1/8W 5% CF AXIAL</field>
+        <field name="Product code">CF18JT2K20</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CF18JT2K20CT-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT2K20/CF18JT2K20CT-ND/2022750</field>
+      </fields>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>580D1E8A</tstamp>
+    </comp>
+    <comp ref="R23">
+      <value>180R</value>
+      <fields>
+        <field name="Manufacturer">Stackpole Electronics Inc.</field>
+        <field name="Product description">RES 180 OHM 1/8W 5% CF AXIAL</field>
+        <field name="Product code">CF18JT180R</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CF18JT180RCT-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT180R/CF18JT180RCT-ND/2022724</field>
+      </fields>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>580D1FFE</tstamp>
+    </comp>
+    <comp ref="R28">
+      <value>330k</value>
+      <fields>
+        <field name="Manufacturer">Stackpole Electronics Inc.</field>
+        <field name="Product description">RES 330K OHM 1/8W 5% CF AXIAL</field>
+        <field name="Product code">CF18JT330K</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CF18JT330KCT-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT330K/CF18JT330KCT-ND/2022802</field>
+      </fields>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>580D20FD</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>2.2k</value>
+      <fields>
+        <field name="Manufacturer">Stackpole Electronics Inc.</field>
+        <field name="Product description">RES 2.2K OHM 1/8W 5% CF AXIAL</field>
+        <field name="Product code">CF18JT2K20</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CF18JT2K20CT-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT2K20/CF18JT2K20CT-ND/2022750</field>
+      </fields>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>580D22DF</tstamp>
+    </comp>
+    <comp ref="R25">
+      <value>22k</value>
+      <fields>
+        <field name="Manufacturer">Stackpole Electronics Inc.</field>
+        <field name="Product description">RES 22K OHM 1/8W 5% CF AXIAL</field>
+        <field name="Product code">CF18JT22K0</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CF18JT22K0CT-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT22K0/CF18JT22K0CT-ND/2022774</field>
+      </fields>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>580D242C</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>180R</value>
+      <fields>
+        <field name="Manufacturer">Stackpole Electronics Inc.</field>
+        <field name="Product description">RES 180 OHM 1/8W 5% CF AXIAL</field>
+        <field name="Product code">CF18JT180R</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CF18JT180RCT-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT180R/CF18JT180RCT-ND/2022724</field>
+      </fields>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>580D25D4</tstamp>
+    </comp>
+    <comp ref="R24">
+      <value>22k</value>
+      <fields>
+        <field name="Manufacturer">Stackpole Electronics Inc.</field>
+        <field name="Product description">RES 22K OHM 1/8W 5% CF AXIAL</field>
+        <field name="Product code">CF18JT22K0</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CF18JT22K0CT-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT22K0/CF18JT22K0CT-ND/2022774</field>
+      </fields>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>580D2707</tstamp>
+    </comp>
+    <comp ref="R27">
+      <value>330k</value>
+      <fields>
+        <field name="Manufacturer">Stackpole Electronics Inc.</field>
+        <field name="Product description">RES 330K OHM 1/8W 5% CF AXIAL</field>
+        <field name="Product code">CF18JT330K</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">CF18JT330KCT-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT330K/CF18JT330KCT-ND/2022802</field>
+      </fields>
+      <libsource lib="rgb-components" part="R-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>580D2825</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>LM358_BIG</value>
+      <fields>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="Product description">General Purpose Amplifier 2 Circuit 8-PDIP</field>
+        <field name="Product code">LM358P</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">296-1395-5-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/texas-instruments/LM358P/296-1395-5-ND/277042</field>
+      </fields>
+      <libsource lib="rgb-components" part="LM358_BIG"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>5813FBA3</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>LM358_BIG</value>
+      <fields>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="Product description">General Purpose Amplifier 2 Circuit 8-PDIP</field>
+        <field name="Product code">LM358P</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">296-1395-5-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/texas-instruments/LM358P/296-1395-5-ND/277042</field>
+      </fields>
+      <libsource lib="rgb-components" part="LM358_BIG"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>5813FDF2</tstamp>
     </comp>
     <comp ref="D3">
-      <value>DIODE</value>
+      <value>DIODE-rgb</value>
       <fields>
-        <field name="Manufacturer">Multicomp</field>
-        <field name="Product description">Small Signal Diode, Single, 100 V, 150 mA, 1 V, 4 ns, 500 mA</field>
+        <field name="Manufacturer">Fairchild Semiconductor</field>
+        <field name="Product description">Diode Standard 100V 200mA Through Hole DO-35</field>
         <field name="Product code">1N4148</field>
-        <field name="Supplier">Farnell</field>
-        <field name="Supplier code">9565124</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">1N4148FS-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/fairchild-semiconductor/1N4148/1N4148FS-ND/458603</field>
       </fields>
       <libsource lib="rgb-components" part="DIODE-rgb"/>
       <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
-      <tstamp>56F84E79</tstamp>
+      <tstamp>5814076D</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>DIODE-rgb</value>
+      <fields>
+        <field name="Manufacturer">Fairchild Semiconductor</field>
+        <field name="Product description">Diode Standard 100V 200mA Through Hole DO-35</field>
+        <field name="Product code">1N4148</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">1N4148FS-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/fairchild-semiconductor/1N4148/1N4148FS-ND/458603</field>
+      </fields>
+      <libsource lib="rgb-components" part="DIODE-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>581408BE</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>DIODE-rgb</value>
+      <fields>
+        <field name="Manufacturer">Fairchild Semiconductor</field>
+        <field name="Product description">Diode Standard 100V 200mA Through Hole DO-35</field>
+        <field name="Product code">1N4148</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier code">1N4148FS-ND</field>
+        <field name="Order">No</field>
+        <field name="Supplier URL">http://www.digikey.co.uk/product-detail/en/fairchild-semiconductor/1N4148/1N4148FS-ND/458603</field>
+      </fields>
+      <libsource lib="rgb-components" part="DIODE-rgb"/>
+      <sheetpath names="/Colour Organ/" tstamps="/551F0BF2/"/>
+      <tstamp>581409CA</tstamp>
     </comp>
   </components>
   <libparts>
@@ -893,26 +1501,11 @@
         <pin num="3" name="ENC_CCW" type="output"/>
         <pin num="4" name="MODE" type="output"/>
         <pin num="5" name="PARAM" type="output"/>
-        <pin num="6" name="NC" type="NotConnected"/>
-      </pins>
-    </libpart>
-    <libpart lib="device" part="CP">
-      <description>Polarised capacitor</description>
-      <footprints>
-        <fp>CP*</fp>
-        <fp>Elko*</fp>
-        <fp>TantalC*</fp>
-        <fp>C*elec</fp>
-        <fp>c_elec*</fp>
-        <fp>SMD*_Pol</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">C</field>
-        <field name="Value">CP</field>
-      </fields>
-      <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
+        <pin num="6" name="LED_R" type="passive"/>
+        <pin num="7" name="LED_G" type="passive"/>
+        <pin num="8" name="LED_B" type="passive"/>
+        <pin num="9" name="LED_5V" type="passive"/>
+        <pin num="10" name="NC" type="NotConnected"/>
       </pins>
     </libpart>
     <libpart lib="rgb-components" part="CP-rgb">
@@ -958,6 +1551,27 @@
         <pin num="2" name="K" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="rgb-components" part="FUSE">
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">FUSE</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="power_in"/>
+        <pin num="2" name="~" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="rgb-components" part="IRL510PBF">
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">IRL510PBF</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="passive"/>
+        <pin num="2" name="D" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="rgb-components" part="LCD_HEADER">
       <fields>
         <field name="Reference">J</field>
@@ -974,8 +1588,10 @@
         <pin num="8" name="DB1" type="input"/>
         <pin num="9" name="DB2" type="input"/>
         <pin num="10" name="DB3" type="input"/>
-        <pin num="11" name="A" type="power_in"/>
-        <pin num="12" name="K" type="power_in"/>
+        <pin num="11" name="A" type="passive"/>
+        <pin num="12" name="K" type="passive"/>
+        <pin num="13" name="NC" type="NotConnected"/>
+        <pin num="14" name="NC" type="NotConnected"/>
       </pins>
     </libpart>
     <libpart lib="rgb-components" part="LED_HEADER">
@@ -990,6 +1606,7 @@
         <pin num="4" name="VCC1" type="passive"/>
         <pin num="5" name="VCC2" type="passive"/>
         <pin num="6" name="VCC3" type="passive"/>
+        <pin num="7" name="GND" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="rgb-components" part="LM358_BIG">
@@ -1025,10 +1642,8 @@
         <field name="Value">PWR_IN</field>
       </fields>
       <pins>
-        <pin num="1" name="GND1" type="power_out"/>
-        <pin num="2" name="GND2" type="passive"/>
-        <pin num="3" name="VCC1" type="power_out"/>
-        <pin num="4" name="VCC2" type="passive"/>
+        <pin num="1" name="GND" type="power_out"/>
+        <pin num="2" name="VCC" type="power_out"/>
       </pins>
     </libpart>
     <libpart lib="rgb-components" part="R-rgb">
@@ -1048,17 +1663,6 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="rgb-components" part="STP35NF10">
-      <fields>
-        <field name="Reference">Q</field>
-        <field name="Value">STP35NF10</field>
-      </fields>
-      <pins>
-        <pin num="1" name="G" type="passive"/>
-        <pin num="2" name="D" type="passive"/>
-        <pin num="3" name="S" type="passive"/>
-      </pins>
-    </libpart>
     <libpart lib="rgb-components" part="SW_POWER">
       <description>Interrupteur simple</description>
       <fields>
@@ -1070,15 +1674,15 @@
         <pin num="2" name="2" type="power_out"/>
       </pins>
     </libpart>
-    <libpart lib="device" part="SW_PUSH">
-      <description>Button</description>
+    <libpart lib="rgb-components" part="TP0606">
       <fields>
-        <field name="Reference">SW</field>
-        <field name="Value">SW_PUSH</field>
+        <field name="Reference">Q</field>
+        <field name="Value">TP0606</field>
       </fields>
       <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
+        <pin num="1" name="S" type="passive"/>
+        <pin num="2" name="G" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="rgb-components" part="UART_HEADER">
@@ -1096,379 +1700,418 @@
     </libpart>
   </libparts>
   <libraries>
-    <library logical="rgb-controller-cache">
-      <uri>/home/andy/Desktop/projects/light-panel/pcb/main-board/rgb-controller-cache.lib</uri>
-    </library>
     <library logical="rgb-components">
-      <uri>/home/andy/Desktop/projects/light-panel/pcb/main-board/rgb-components.lib</uri>
+      <uri>/home/andy/Desktop/projects/light-panel/rgb_display_driver/pcb/main-board/rgb-components.lib</uri>
     </library>
-    <library logical="device">
-      <uri>/usr/share/kicad/library/device.lib</uri>
+    <library logical="rgb-controller-cache">
+      <uri>/home/andy/Desktop/projects/light-panel/rgb_display_driver/pcb/main-board/rgb-controller-cache.lib</uri>
     </library>
   </libraries>
   <nets>
-    <net code="1" name="Net-(IC1-Pad28)">
-      <node ref="IC1" pin="28"/>
-    </net>
-    <net code="2" name="/DB2">
-      <node ref="J1" pin="9"/>
-      <node ref="IC1" pin="17"/>
-    </net>
-    <net code="3" name="/DB1">
-      <node ref="J1" pin="8"/>
-      <node ref="IC1" pin="16"/>
-    </net>
-    <net code="4" name="/DB0">
-      <node ref="J1" pin="7"/>
-      <node ref="IC1" pin="15"/>
-    </net>
-    <net code="5" name="/RS">
-      <node ref="J1" pin="4"/>
-      <node ref="IC1" pin="14"/>
-    </net>
-    <net code="6" name="/DB3">
-      <node ref="IC1" pin="18"/>
-      <node ref="J1" pin="10"/>
-    </net>
-    <net code="7" name="/PARAM">
-      <node ref="J2" pin="5"/>
-      <node ref="IC1" pin="19"/>
-    </net>
-    <net code="8" name="Net-(IC1-Pad27)">
-      <node ref="IC1" pin="27"/>
-    </net>
-    <net code="9" name="Net-(IC1-Pad26)">
-      <node ref="IC1" pin="26"/>
-    </net>
-    <net code="10" name="/Colour Organ/LEVEL_BLUE">
-      <node ref="R27" pin="2"/>
-      <node ref="IC1" pin="25"/>
-      <node ref="C27" pin="2"/>
-      <node ref="D3" pin="2"/>
-    </net>
-    <net code="11" name="/MODE">
-      <node ref="J2" pin="4"/>
-      <node ref="IC1" pin="13"/>
-    </net>
-    <net code="12" name="/ENC_CCW">
-      <node ref="J2" pin="3"/>
-      <node ref="IC1" pin="12"/>
-    </net>
-    <net code="13" name="/ENC_CW">
-      <node ref="IC1" pin="11"/>
-      <node ref="J2" pin="2"/>
-    </net>
-    <net code="14" name="GND">
-      <node ref="C11" pin="2"/>
-      <node ref="U3" pin="4"/>
-      <node ref="U2" pin="4"/>
-      <node ref="J6" pin="1"/>
-      <node ref="C8" pin="1"/>
+    <net code="1" name="GND">
       <node ref="C4" pin="2"/>
-      <node ref="C9" pin="2"/>
-      <node ref="RV2" pin="1"/>
-      <node ref="J3" pin="1"/>
-      <node ref="C5" pin="2"/>
-      <node ref="C1" pin="2"/>
-      <node ref="C2" pin="2"/>
       <node ref="C3" pin="2"/>
-      <node ref="C6" pin="2"/>
-      <node ref="J2" pin="1"/>
-      <node ref="J1" pin="12"/>
-      <node ref="J1" pin="5"/>
-      <node ref="J1" pin="2"/>
-      <node ref="R26" pin="1"/>
-      <node ref="R27" pin="1"/>
-      <node ref="R21" pin="1"/>
-      <node ref="U4" pin="4"/>
-      <node ref="U5" pin="4"/>
-      <node ref="C27" pin="1"/>
-      <node ref="C18" pin="1"/>
-      <node ref="R22" pin="1"/>
-      <node ref="C10" pin="1"/>
-      <node ref="R8" pin="2"/>
+      <node ref="J3" pin="1"/>
+      <node ref="U2" pin="4"/>
+      <node ref="J5" pin="12"/>
+      <node ref="J5" pin="2"/>
+      <node ref="J5" pin="5"/>
+      <node ref="C10" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="C13" pin="2"/>
+      <node ref="C9" pin="2"/>
       <node ref="J7" pin="1"/>
-      <node ref="C22" pin="1"/>
-      <node ref="R14" pin="1"/>
-      <node ref="R15" pin="1"/>
-      <node ref="U1" pin="2"/>
-      <node ref="J5" pin="1"/>
-      <node ref="SW1" pin="2"/>
+      <node ref="U3" pin="4"/>
+      <node ref="R11" pin="2"/>
+      <node ref="RV4" pin="1"/>
+      <node ref="C7" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="Q3" pin="3"/>
       <node ref="Q1" pin="3"/>
       <node ref="Q2" pin="3"/>
-      <node ref="J5" pin="2"/>
-      <node ref="Q3" pin="3"/>
-      <node ref="IC1" pin="22"/>
-      <node ref="RV1" pin="1"/>
       <node ref="IC1" pin="8"/>
-    </net>
-    <net code="15" name="Net-(C1-Pad1)">
-      <node ref="IC1" pin="9"/>
-      <node ref="X1" pin="1"/>
-      <node ref="C1" pin="1"/>
-    </net>
-    <net code="16" name="Net-(IC1-Pad3)">
-      <node ref="IC1" pin="3"/>
-      <node ref="J3" pin="4"/>
-    </net>
-    <net code="17" name="/Audio processing/AUDIO">
-      <node ref="R19" pin="1"/>
-      <node ref="C25" pin="2"/>
-      <node ref="C16" pin="2"/>
-      <node ref="R2" pin="2"/>
-      <node ref="U2" pin="7"/>
-    </net>
-    <net code="18" name="/Audio processing/AGND">
-      <node ref="C10" pin="2"/>
-      <node ref="U3" pin="7"/>
-      <node ref="R6" pin="2"/>
-      <node ref="R16" pin="1"/>
-      <node ref="R28" pin="1"/>
-      <node ref="C23" pin="2"/>
-      <node ref="C11" pin="1"/>
-      <node ref="U3" pin="6"/>
-      <node ref="U2" pin="5"/>
-      <node ref="C19" pin="2"/>
-      <node ref="R4" pin="2"/>
-    </net>
-    <net code="19" name="+5V">
-      <node ref="R1" pin="2"/>
-      <node ref="J1" pin="11"/>
-      <node ref="C3" pin="1"/>
-      <node ref="C4" pin="1"/>
+      <node ref="IC1" pin="22"/>
+      <node ref="C6" pin="2"/>
+      <node ref="J2" pin="7"/>
       <node ref="J1" pin="1"/>
-      <node ref="IC1" pin="20"/>
-      <node ref="RV2" pin="3"/>
-      <node ref="U1" pin="3"/>
-      <node ref="J1" pin="6"/>
-      <node ref="IC1" pin="7"/>
-      <node ref="J3" pin="2"/>
-      <node ref="RV1" pin="3"/>
-      <node ref="C2" pin="1"/>
-    </net>
-    <net code="20" name="Net-(C7-Pad2)">
-      <node ref="J3" pin="5"/>
-      <node ref="C7" pin="2"/>
-    </net>
-    <net code="21" name="/Colour Organ/LEVEL_RED">
-      <node ref="C22" pin="2"/>
-      <node ref="D2" pin="2"/>
-      <node ref="IC1" pin="23"/>
-      <node ref="R21" pin="2"/>
-    </net>
-    <net code="22" name="/Colour Organ/LEVEL_GREEN">
-      <node ref="IC1" pin="24"/>
-      <node ref="R15" pin="2"/>
-      <node ref="D1" pin="2"/>
-      <node ref="C18" pin="2"/>
-    </net>
-    <net code="23" name="+12V">
-      <node ref="R17" pin="2"/>
-      <node ref="J4" pin="5"/>
-      <node ref="J4" pin="6"/>
-      <node ref="SW2" pin="2"/>
-      <node ref="R10" pin="2"/>
-      <node ref="U5" pin="8"/>
-      <node ref="U4" pin="8"/>
-      <node ref="R24" pin="2"/>
-      <node ref="U1" pin="1"/>
-      <node ref="C8" pin="2"/>
-      <node ref="C9" pin="1"/>
-      <node ref="J4" pin="4"/>
-      <node ref="U2" pin="8"/>
-      <node ref="U3" pin="8"/>
-      <node ref="R7" pin="1"/>
-    </net>
-    <net code="24" name="Net-(J1-Pad3)">
-      <node ref="RV1" pin="2"/>
-      <node ref="J1" pin="3"/>
-    </net>
-    <net code="25" name="Net-(C7-Pad1)">
-      <node ref="IC1" pin="1"/>
-      <node ref="SW1" pin="1"/>
-      <node ref="C7" pin="1"/>
-      <node ref="R1" pin="1"/>
-    </net>
-    <net code="26" name="Net-(J4-Pad3)">
-      <node ref="J4" pin="3"/>
-      <node ref="Q3" pin="2"/>
-    </net>
-    <net code="27" name="Net-(J4-Pad1)">
-      <node ref="Q1" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="RV1" pin="1"/>
       <node ref="J4" pin="1"/>
+      <node ref="R28" pin="1"/>
+      <node ref="R23" pin="1"/>
+      <node ref="C23" pin="1"/>
+      <node ref="C25" pin="1"/>
+      <node ref="U1" pin="2"/>
+      <node ref="R30" pin="1"/>
+      <node ref="J6" pin="1"/>
+      <node ref="C27" pin="1"/>
+      <node ref="U4" pin="4"/>
+      <node ref="U5" pin="4"/>
+      <node ref="R27" pin="1"/>
+      <node ref="R20" pin="1"/>
+      <node ref="R32" pin="1"/>
     </net>
-    <net code="28" name="Net-(J4-Pad2)">
-      <node ref="Q2" pin="2"/>
-      <node ref="J4" pin="2"/>
+    <net code="2" name="Net-(J1-Pad2)">
+      <node ref="SW1" pin="1"/>
+      <node ref="J1" pin="2"/>
     </net>
-    <net code="29" name="Net-(J5-Pad3)">
-      <node ref="SW2" pin="1"/>
-      <node ref="J5" pin="4"/>
+    <net code="3" name="/Audio processing/AUDIO">
+      <node ref="U3" pin="1"/>
+      <node ref="R13" pin="1"/>
+      <node ref="R12" pin="2"/>
+      <node ref="C14" pin="2"/>
+      <node ref="C15" pin="2"/>
+    </net>
+    <net code="4" name="/Audio processing/AGND">
+      <node ref="C13" pin="1"/>
+      <node ref="C10" pin="1"/>
+      <node ref="U3" pin="7"/>
+      <node ref="R7" pin="2"/>
+      <node ref="R6" pin="2"/>
+      <node ref="R16" pin="2"/>
+      <node ref="R18" pin="1"/>
+      <node ref="C24" pin="2"/>
+      <node ref="C19" pin="2"/>
+      <node ref="U3" pin="6"/>
+      <node ref="U3" pin="3"/>
+    </net>
+    <net code="5" name="Net-(F1-Pad1)">
+      <node ref="SW1" pin="2"/>
+      <node ref="F1" pin="1"/>
+    </net>
+    <net code="6" name="Net-(J5-Pad3)">
+      <node ref="RV4" pin="2"/>
       <node ref="J5" pin="3"/>
     </net>
-    <net code="30" name="Net-(C5-Pad1)">
-      <node ref="IC1" pin="10"/>
-      <node ref="C5" pin="1"/>
-      <node ref="X1" pin="2"/>
+    <net code="7" name="Net-(J4-Pad6)">
+      <node ref="J4" pin="6"/>
+      <node ref="R2" pin="2"/>
     </net>
-    <net code="31" name="Net-(C6-Pad1)">
-      <node ref="C6" pin="1"/>
-      <node ref="RV2" pin="2"/>
-      <node ref="IC1" pin="21"/>
+    <net code="8" name="Net-(C5-Pad2)">
+      <node ref="J3" pin="5"/>
+      <node ref="C5" pin="2"/>
     </net>
-    <net code="32" name="/G_BLUE">
-      <node ref="IC1" pin="6"/>
-      <node ref="Q3" pin="1"/>
+    <net code="9" name="/Colour Organ/LEVEL_BLUE">
+      <node ref="R27" pin="2"/>
+      <node ref="IC1" pin="25"/>
+      <node ref="D1" pin="2"/>
+      <node ref="C23" pin="2"/>
     </net>
-    <net code="33" name="/G_GREEN">
-      <node ref="IC1" pin="5"/>
-      <node ref="Q2" pin="1"/>
+    <net code="10" name="/Colour Organ/LEVEL_GREEN">
+      <node ref="R32" pin="2"/>
+      <node ref="D3" pin="2"/>
+      <node ref="C27" pin="2"/>
+      <node ref="IC1" pin="24"/>
     </net>
-    <net code="34" name="/G_RED">
-      <node ref="Q1" pin="1"/>
-      <node ref="IC1" pin="4"/>
+    <net code="11" name="/Colour Organ/LEVEL_RED">
+      <node ref="D2" pin="2"/>
+      <node ref="C25" pin="2"/>
+      <node ref="R28" pin="2"/>
+      <node ref="IC1" pin="23"/>
     </net>
-    <net code="35" name="Net-(J2-Pad6)">
+    <net code="12" name="/ENC_CCW">
+      <node ref="J4" pin="3"/>
+      <node ref="IC1" pin="13"/>
+    </net>
+    <net code="13" name="/ENC_CW">
+      <node ref="J4" pin="2"/>
+      <node ref="IC1" pin="12"/>
+    </net>
+    <net code="14" name="/DB3">
+      <node ref="IC1" pin="11"/>
+      <node ref="J5" pin="10"/>
+    </net>
+    <net code="15" name="/PARAM">
+      <node ref="J4" pin="5"/>
+      <node ref="IC1" pin="19"/>
+    </net>
+    <net code="16" name="/MODE">
+      <node ref="J4" pin="4"/>
+      <node ref="IC1" pin="18"/>
+    </net>
+    <net code="17" name="+12V">
+      <node ref="U5" pin="8"/>
+      <node ref="R10" pin="1"/>
+      <node ref="C9" pin="1"/>
+      <node ref="C8" pin="1"/>
+      <node ref="U3" pin="8"/>
+      <node ref="U1" pin="1"/>
+      <node ref="R22" pin="2"/>
+      <node ref="R29" pin="2"/>
+      <node ref="U4" pin="8"/>
+      <node ref="F1" pin="2"/>
+      <node ref="R19" pin="2"/>
       <node ref="J2" pin="6"/>
+      <node ref="J2" pin="5"/>
+      <node ref="J2" pin="4"/>
+      <node ref="U2" pin="8"/>
     </net>
-    <net code="36" name="Net-(IC1-Pad2)">
-      <node ref="IC1" pin="2"/>
-      <node ref="J3" pin="3"/>
+    <net code="18" name="Net-(J4-Pad8)">
+      <node ref="R4" pin="2"/>
+      <node ref="J4" pin="8"/>
     </net>
-    <net code="37" name="Net-(R2-Pad1)">
-      <node ref="U2" pin="6"/>
-      <node ref="R2" pin="1"/>
+    <net code="19" name="Net-(J5-Pad11)">
       <node ref="R5" pin="2"/>
+      <node ref="J5" pin="11"/>
+    </net>
+    <net code="20" name="Net-(J4-Pad9)">
+      <node ref="Q4" pin="1"/>
+      <node ref="R5" pin="1"/>
+      <node ref="J4" pin="9"/>
+    </net>
+    <net code="21" name="+5V">
+      <node ref="IC1" pin="20"/>
+      <node ref="RV1" pin="3"/>
+      <node ref="C2" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="U1" pin="3"/>
+      <node ref="R1" pin="2"/>
+      <node ref="Q4" pin="3"/>
+      <node ref="RV4" pin="3"/>
+      <node ref="C3" pin="1"/>
+      <node ref="J5" pin="1"/>
+      <node ref="J5" pin="6"/>
+      <node ref="J3" pin="2"/>
+      <node ref="IC1" pin="7"/>
+    </net>
+    <net code="22" name="/LIGHT">
+      <node ref="Q4" pin="2"/>
+      <node ref="IC1" pin="28"/>
+    </net>
+    <net code="23" name="Net-(C4-Pad1)">
+      <node ref="IC1" pin="21"/>
+      <node ref="C4" pin="1"/>
+      <node ref="RV1" pin="2"/>
+    </net>
+    <net code="24" name="/LED_R">
+      <node ref="Q1" pin="2"/>
+      <node ref="J2" pin="1"/>
+      <node ref="R2" pin="1"/>
+    </net>
+    <net code="25" name="/LED_G">
+      <node ref="J2" pin="2"/>
+      <node ref="RV2" pin="1"/>
+      <node ref="RV2" pin="2"/>
+      <node ref="Q2" pin="2"/>
+    </net>
+    <net code="26" name="/LED_B">
+      <node ref="J2" pin="3"/>
+      <node ref="Q3" pin="2"/>
+      <node ref="RV3" pin="1"/>
+      <node ref="RV3" pin="2"/>
+    </net>
+    <net code="27" name="Net-(J4-Pad7)">
+      <node ref="J4" pin="7"/>
       <node ref="R3" pin="2"/>
     </net>
-    <net code="38" name="Net-(R3-Pad1)">
+    <net code="28" name="Net-(R3-Pad1)">
+      <node ref="RV2" pin="3"/>
       <node ref="R3" pin="1"/>
+    </net>
+    <net code="29" name="Net-(R4-Pad1)">
+      <node ref="RV3" pin="3"/>
+      <node ref="R4" pin="1"/>
+    </net>
+    <net code="30" name="/G_RED">
+      <node ref="IC1" pin="15"/>
+      <node ref="Q1" pin="1"/>
+    </net>
+    <net code="31" name="/G_GREEN">
+      <node ref="IC1" pin="16"/>
+      <node ref="Q2" pin="1"/>
+    </net>
+    <net code="32" name="/G_BLUE">
+      <node ref="IC1" pin="17"/>
+      <node ref="Q3" pin="1"/>
+    </net>
+    <net code="33" name="Net-(J4-Pad10)">
+      <node ref="J4" pin="10"/>
+    </net>
+    <net code="34" name="Net-(IC1-Pad2)">
+      <node ref="J3" pin="3"/>
+      <node ref="IC1" pin="2"/>
+    </net>
+    <net code="35" name="Net-(IC1-Pad3)">
+      <node ref="J3" pin="4"/>
+      <node ref="IC1" pin="3"/>
+    </net>
+    <net code="36" name="Net-(IC1-Pad26)">
+      <node ref="IC1" pin="26"/>
+    </net>
+    <net code="37" name="Net-(IC1-Pad27)">
+      <node ref="IC1" pin="27"/>
+    </net>
+    <net code="38" name="Net-(C5-Pad1)">
+      <node ref="R1" pin="1"/>
+      <node ref="IC1" pin="1"/>
+      <node ref="C5" pin="1"/>
+    </net>
+    <net code="39" name="Net-(C7-Pad1)">
+      <node ref="X1" pin="2"/>
+      <node ref="C7" pin="1"/>
+      <node ref="IC1" pin="10"/>
+    </net>
+    <net code="40" name="Net-(C6-Pad1)">
+      <node ref="X1" pin="1"/>
+      <node ref="IC1" pin="9"/>
+      <node ref="C6" pin="1"/>
+    </net>
+    <net code="41" name="/RS">
+      <node ref="IC1" pin="14"/>
+      <node ref="J5" pin="4"/>
+    </net>
+    <net code="42" name="/DB2">
+      <node ref="IC1" pin="6"/>
+      <node ref="J5" pin="9"/>
+    </net>
+    <net code="43" name="/DB1">
+      <node ref="IC1" pin="5"/>
+      <node ref="J5" pin="8"/>
+    </net>
+    <net code="44" name="/DB0">
+      <node ref="IC1" pin="4"/>
+      <node ref="J5" pin="7"/>
+    </net>
+    <net code="45" name="Net-(J5-Pad13)">
+      <node ref="J5" pin="13"/>
+    </net>
+    <net code="46" name="Net-(J5-Pad14)">
+      <node ref="J5" pin="14"/>
+    </net>
+    <net code="47" name="Net-(R8-Pad1)">
+      <node ref="R8" pin="1"/>
       <node ref="U2" pin="1"/>
       <node ref="U2" pin="2"/>
     </net>
-    <net code="39" name="Net-(R5-Pad1)">
-      <node ref="U3" pin="2"/>
-      <node ref="R5" pin="1"/>
-      <node ref="U3" pin="1"/>
-    </net>
-    <net code="40" name="Net-(R7-Pad2)">
+    <net code="48" name="Net-(R10-Pad2)">
+      <node ref="R10" pin="2"/>
+      <node ref="R11" pin="1"/>
       <node ref="U3" pin="5"/>
-      <node ref="R7" pin="2"/>
-      <node ref="R8" pin="1"/>
     </net>
-    <net code="41" name="Net-(C12-Pad1)">
-      <node ref="J6" pin="3"/>
-      <node ref="C12" pin="1"/>
+    <net code="49" name="Net-(C11-Pad1)">
       <node ref="J7" pin="3"/>
+      <node ref="C11" pin="1"/>
+      <node ref="J6" pin="3"/>
     </net>
-    <net code="42" name="Net-(C12-Pad2)">
-      <node ref="R4" pin="1"/>
+    <net code="50" name="Net-(C12-Pad2)">
+      <node ref="U2" pin="5"/>
       <node ref="C12" pin="2"/>
+      <node ref="R7" pin="1"/>
+    </net>
+    <net code="51" name="Net-(C11-Pad2)">
       <node ref="U2" pin="3"/>
-    </net>
-    <net code="43" name="Net-(C13-Pad2)">
-      <node ref="C13" pin="2"/>
+      <node ref="C11" pin="2"/>
       <node ref="R6" pin="1"/>
-      <node ref="U3" pin="3"/>
     </net>
-    <net code="44" name="Net-(C13-Pad1)">
-      <node ref="C13" pin="1"/>
+    <net code="52" name="Net-(R12-Pad1)">
+      <node ref="R9" pin="2"/>
+      <node ref="U3" pin="2"/>
+      <node ref="R8" pin="2"/>
+      <node ref="R12" pin="1"/>
+    </net>
+    <net code="53" name="Net-(C12-Pad1)">
       <node ref="J6" pin="2"/>
+      <node ref="C12" pin="1"/>
       <node ref="J7" pin="2"/>
     </net>
-    <net code="45" name="Net-(C14-Pad1)">
-      <node ref="U4" pin="1"/>
-      <node ref="C14" pin="1"/>
-      <node ref="U4" pin="2"/>
-      <node ref="C15" pin="2"/>
+    <net code="54" name="Net-(R9-Pad1)">
+      <node ref="U2" pin="6"/>
+      <node ref="R9" pin="1"/>
+      <node ref="U2" pin="7"/>
     </net>
-    <net code="46" name="Net-(C14-Pad2)">
-      <node ref="R12" pin="2"/>
-      <node ref="R13" pin="1"/>
-      <node ref="C14" pin="2"/>
+    <net code="55" name="Net-(R29-Pad1)">
+      <node ref="R31" pin="1"/>
+      <node ref="R30" pin="2"/>
+      <node ref="R29" pin="1"/>
     </net>
-    <net code="47" name="Net-(C19-Pad1)">
-      <node ref="R13" pin="2"/>
-      <node ref="C19" pin="1"/>
-      <node ref="U4" pin="3"/>
+    <net code="56" name="Net-(R22-Pad1)">
+      <node ref="R22" pin="1"/>
+      <node ref="R23" pin="2"/>
+      <node ref="R25" pin="1"/>
     </net>
-    <net code="48" name="Net-(R12-Pad1)">
-      <node ref="R12" pin="1"/>
-      <node ref="U4" pin="6"/>
-      <node ref="U4" pin="7"/>
-      <node ref="R9" pin="2"/>
-    </net>
-    <net code="49" name="Net-(C17-Pad1)">
-      <node ref="U4" pin="5"/>
-      <node ref="C17" pin="1"/>
-      <node ref="R16" pin="2"/>
-    </net>
-    <net code="50" name="Net-(R10-Pad1)">
-      <node ref="R10" pin="1"/>
-      <node ref="R11" pin="1"/>
-      <node ref="R14" pin="2"/>
-    </net>
-    <net code="51" name="Net-(C15-Pad1)">
-      <node ref="R11" pin="2"/>
-      <node ref="C15" pin="1"/>
-      <node ref="D1" pin="1"/>
-    </net>
-    <net code="52" name="Net-(C24-Pad1)">
+    <net code="57" name="Net-(C26-Pad1)">
       <node ref="D3" pin="1"/>
-      <node ref="R25" pin="2"/>
+      <node ref="R31" pin="2"/>
+      <node ref="C26" pin="1"/>
+    </net>
+    <net code="58" name="Net-(C22-Pad1)">
+      <node ref="C26" pin="2"/>
+      <node ref="C22" pin="1"/>
+      <node ref="U5" pin="6"/>
+      <node ref="U5" pin="7"/>
+    </net>
+    <net code="59" name="Net-(C24-Pad1)">
+      <node ref="R26" pin="2"/>
+      <node ref="U5" pin="5"/>
       <node ref="C24" pin="1"/>
     </net>
-    <net code="53" name="Net-(C20-Pad1)">
-      <node ref="C21" pin="2"/>
-      <node ref="C20" pin="1"/>
+    <net code="60" name="Net-(C22-Pad2)">
+      <node ref="R21" pin="2"/>
+      <node ref="C22" pin="2"/>
+      <node ref="R26" pin="1"/>
+    </net>
+    <net code="61" name="Net-(R17-Pad2)">
+      <node ref="R17" pin="2"/>
+      <node ref="R21" pin="1"/>
       <node ref="U5" pin="2"/>
       <node ref="U5" pin="1"/>
     </net>
-    <net code="54" name="Net-(C24-Pad2)">
-      <node ref="C24" pin="2"/>
-      <node ref="U5" pin="6"/>
-      <node ref="R23" pin="2"/>
-      <node ref="U5" pin="7"/>
-    </net>
-    <net code="55" name="Net-(R17-Pad1)">
-      <node ref="R22" pin="2"/>
-      <node ref="R18" pin="1"/>
-      <node ref="R17" pin="1"/>
-    </net>
-    <net code="56" name="Net-(R24-Pad1)">
-      <node ref="R25" pin="1"/>
-      <node ref="R24" pin="1"/>
-      <node ref="R26" pin="2"/>
-    </net>
-    <net code="57" name="Net-(C26-Pad1)">
-      <node ref="R28" pin="2"/>
-      <node ref="C26" pin="1"/>
-      <node ref="U5" pin="5"/>
-    </net>
-    <net code="58" name="Net-(C25-Pad1)">
-      <node ref="C26" pin="2"/>
-      <node ref="R23" pin="1"/>
-      <node ref="C25" pin="1"/>
-    </net>
-    <net code="59" name="Net-(C23-Pad1)">
-      <node ref="C23" pin="1"/>
-      <node ref="U5" pin="3"/>
-      <node ref="R20" pin="2"/>
-    </net>
-    <net code="60" name="Net-(C20-Pad2)">
-      <node ref="R19" pin="2"/>
-      <node ref="R20" pin="1"/>
+    <net code="62" name="Net-(C20-Pad2)">
+      <node ref="R14" pin="2"/>
       <node ref="C20" pin="2"/>
+      <node ref="U4" pin="2"/>
+      <node ref="U4" pin="1"/>
     </net>
-    <net code="61" name="Net-(C21-Pad1)">
+    <net code="63" name="Net-(C20-Pad1)">
+      <node ref="C20" pin="1"/>
+      <node ref="D1" pin="1"/>
+      <node ref="R24" pin="2"/>
+    </net>
+    <net code="64" name="Net-(C21-Pad1)">
+      <node ref="R25" pin="2"/>
       <node ref="C21" pin="1"/>
       <node ref="D2" pin="1"/>
+    </net>
+    <net code="65" name="Net-(C17-Pad1)">
+      <node ref="C17" pin="1"/>
+      <node ref="U4" pin="7"/>
+      <node ref="U4" pin="6"/>
+      <node ref="C21" pin="2"/>
+    </net>
+    <net code="66" name="Net-(C14-Pad1)">
+      <node ref="C14" pin="1"/>
+      <node ref="C16" pin="2"/>
+      <node ref="R14" pin="1"/>
+    </net>
+    <net code="67" name="Net-(R19-Pad1)">
+      <node ref="R20" pin="2"/>
+      <node ref="R19" pin="1"/>
+      <node ref="R24" pin="1"/>
+    </net>
+    <net code="68" name="Net-(C17-Pad2)">
+      <node ref="R13" pin="2"/>
+      <node ref="R15" pin="1"/>
+      <node ref="C17" pin="2"/>
+    </net>
+    <net code="69" name="Net-(C19-Pad1)">
+      <node ref="C19" pin="1"/>
+      <node ref="R15" pin="2"/>
+      <node ref="U4" pin="5"/>
+    </net>
+    <net code="70" name="Net-(C16-Pad1)">
+      <node ref="U4" pin="3"/>
+      <node ref="C16" pin="1"/>
+      <node ref="R16" pin="1"/>
+    </net>
+    <net code="71" name="Net-(C18-Pad1)">
+      <node ref="C18" pin="1"/>
+      <node ref="U5" pin="3"/>
       <node ref="R18" pin="2"/>
     </net>
-    <net code="62" name="Net-(C16-Pad1)">
-      <node ref="C17" pin="2"/>
-      <node ref="C16" pin="1"/>
-      <node ref="R9" pin="1"/>
+    <net code="72" name="Net-(C15-Pad1)">
+      <node ref="C18" pin="2"/>
+      <node ref="R17" pin="1"/>
+      <node ref="C15" pin="1"/>
     </net>
   </nets>
 </export>

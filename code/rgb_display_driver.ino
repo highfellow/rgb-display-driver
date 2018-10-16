@@ -21,7 +21,7 @@
 #define OUT_PORT PORTD // port to use for PWM output.
 #define OUT_DDR DDRD // data direction register for given port.
 #define OUT_BASE 4 // offset of first PWM pin in given port.
-#define CHAN_BASE 3 // analog pin of first frequency channel
+#define CHAN_BASE 2 // analog pin of first frequency channel
 #define MODES 4 // number of driver modes.
 #define MAX_TIME 15000 // maximum fade time in 30000ths of a second
 #define LEVEL_SAMPS 300000 // samples to average level over.

@@ -63,10 +63,10 @@ F 10 "http://www.digikey.co.uk/product-detail/en/phoenix-contact/1945122/277-175
 	-1   0    0    1   
 $EndComp
 $Comp
-L +12V #PWR1
+L +12V #PWR01
 U 1 1 5518B6D2
 P 900 4350
-F 0 "#PWR1" H 900 4300 20  0001 C CNN
+F 0 "#PWR01" H 900 4300 20  0001 C CNN
 F 1 "+12V" H 900 4450 30  0000 C CNN
 F 2 "" H 900 4350 60  0000 C CNN
 F 3 "" H 900 4350 60  0000 C CNN
@@ -74,10 +74,10 @@ F 3 "" H 900 4350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-rgb #PWR3
+L GND-rgb #PWR02
 U 1 1 5518B6E1
 P 2050 7350
-F 0 "#PWR3" H 2050 7350 30  0001 C CNN
+F 0 "#PWR02" H 2050 7350 30  0001 C CNN
 F 1 "GND-rgb" H 2050 7280 30  0001 C CNN
 F 2 "" H 2050 7350 60  0000 C CNN
 F 3 "" H 2050 7350 60  0000 C CNN
@@ -85,10 +85,10 @@ F 3 "" H 2050 7350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-rgb #PWR5
+L GND-rgb #PWR03
 U 1 1 5518B77B
 P 2100 3600
-F 0 "#PWR5" H 2100 3600 30  0001 C CNN
+F 0 "#PWR03" H 2100 3600 30  0001 C CNN
 F 1 "GND-rgb" H 2100 3530 30  0001 C CNN
 F 2 "" H 2100 3600 60  0000 C CNN
 F 3 "" H 2100 3600 60  0000 C CNN
@@ -96,10 +96,10 @@ F 3 "" H 2100 3600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR4
+L +5V #PWR04
 U 1 1 5518B7A3
 P 2100 800
-F 0 "#PWR4" H 2100 890 20  0001 C CNN
+F 0 "#PWR04" H 2100 890 20  0001 C CNN
 F 1 "+5V" H 2100 890 30  0000 C CNN
 F 2 "" H 2100 800 60  0000 C CNN
 F 3 "" H 2100 800 60  0000 C CNN
@@ -107,10 +107,10 @@ F 3 "" H 2100 800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR2
+L +5V #PWR05
 U 1 1 5518BAA6
 P 2050 4650
-F 0 "#PWR2" H 2050 4740 20  0001 C CNN
+F 0 "#PWR05" H 2050 4740 20  0001 C CNN
 F 1 "+5V" H 2050 4740 30  0000 C CNN
 F 2 "" H 2050 4650 60  0000 C CNN
 F 3 "" H 2050 4650 60  0000 C CNN
@@ -136,10 +136,10 @@ F 10 "http://www.digikey.co.uk/product-detail/en/bourns-inc/3362P-1-103LF/3362P-
 	0    1    -1   0   
 $EndComp
 $Comp
-L GND-rgb #PWR10
+L GND-rgb #PWR06
 U 1 1 5518BC47
 P 5800 3800
-F 0 "#PWR10" H 5800 3800 30  0001 C CNN
+F 0 "#PWR06" H 5800 3800 30  0001 C CNN
 F 1 "GND-rgb" H 5800 3730 30  0001 C CNN
 F 2 "" H 5800 3800 60  0000 C CNN
 F 3 "" H 5800 3800 60  0000 C CNN
@@ -147,10 +147,10 @@ F 3 "" H 5800 3800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR8
+L +5V #PWR07
 U 1 1 5518BC4D
 P 5600 3800
-F 0 "#PWR8" H 5600 3890 20  0001 C CNN
+F 0 "#PWR07" H 5600 3890 20  0001 C CNN
 F 1 "+5V" H 5600 3890 30  0000 C CNN
 F 2 "" H 5600 3800 60  0000 C CNN
 F 3 "" H 5600 3800 60  0000 C CNN
@@ -254,10 +254,10 @@ F 10 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18J
 	-1   0    0    1   
 $EndComp
 $Comp
-L +5V #PWR6
+L +5V #PWR08
 U 1 1 551CD394
 P 5250 1950
-F 0 "#PWR6" H 5250 2040 20  0001 C CNN
+F 0 "#PWR08" H 5250 2040 20  0001 C CNN
 F 1 "+5V" H 5250 2040 30  0000 C CNN
 F 2 "" H 5250 1950 60  0000 C CNN
 F 3 "" H 5250 1950 60  0000 C CNN
@@ -265,10 +265,10 @@ F 3 "" H 5250 1950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-rgb-controller #PWR11
+L GND-RESCUE-rgb-controller #PWR09
 U 1 1 551CD490
 P 6500 1850
-F 0 "#PWR11" H 6500 1850 30  0001 C CNN
+F 0 "#PWR09" H 6500 1850 30  0001 C CNN
 F 1 "GND" H 6500 1780 30  0001 C CNN
 F 2 "" H 6500 1850 60  0000 C CNN
 F 3 "" H 6500 1850 60  0000 C CNN
@@ -280,40 +280,28 @@ NoConn ~ 4300 2300
 $Comp
 L LED_HEADER J2
 U 1 1 551D9585
-P 4850 4800
-F 0 "J2" H 4850 4050 60  0000 C CNN
-F 1 "LED_CONNECTOR" H 4850 5350 60  0000 C CNN
-F 2 "" H 4600 4800 60  0000 C CNN
-F 3 "" H 4600 4800 60  0000 C CNN
-F 4 "CUI Inc." H 4850 4800 60  0001 C CNN "Manufacturer"
-F 5 "6 Position Circular Connector Receptacle, Female Sockets Solder Silver" H 4850 4800 60  0001 C CNN "Product description"
-F 6 "MD-60S" H 4850 4800 60  0001 C CNN "Product code"
-F 7 "Digikey" H 4850 4800 60  0001 C CNN "Supplier"
-F 8 "CP-2460-ND" H 4850 4800 60  0001 C CNN "Supplier code"
-F 9 "Rated to 2A per conductor at 12V DC" H 4850 4800 60  0001 C CNN "Notes"
-F 10 "No" H 4850 4800 60  0001 C CNN "Order"
-F 11 "http://www.digikey.co.uk/product-detail/en/cui-inc/MD-60S/CP-2460-ND/145311" H 4850 4800 60  0001 C CNN "Supplier URL"
-	1    4850 4800
+P 4850 4350
+F 0 "J2" H 4850 3600 60  0000 C CNN
+F 1 "LED_CONNECTOR" H 4850 4900 60  0000 C CNN
+F 2 "" H 4600 4350 60  0000 C CNN
+F 3 "" H 4600 4350 60  0000 C CNN
+F 4 "CUI Inc." H 4850 4350 60  0001 C CNN "Manufacturer"
+F 5 "6 Position Circular Connector Receptacle, Female Sockets Solder Silver" H 4850 4350 60  0001 C CNN "Product description"
+F 6 "MD-60S" H 4850 4350 60  0001 C CNN "Product code"
+F 7 "Digikey" H 4850 4350 60  0001 C CNN "Supplier"
+F 8 "CP-2460-ND" H 4850 4350 60  0001 C CNN "Supplier code"
+F 9 "Rated to 2A per conductor at 12V DC" H 4850 4350 60  0001 C CNN "Notes"
+F 10 "No" H 4850 4350 60  0001 C CNN "Order"
+F 11 "http://www.digikey.co.uk/product-detail/en/cui-inc/MD-60S/CP-2460-ND/145311" H 4850 4350 60  0001 C CNN "Supplier URL"
+	1    4850 4350
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	2400 3350 2100 3350
 Wire Wire Line
-	2100 3250 2100 3350
+	2100 3250 2100 3600
 Wire Wire Line
-	2100 3350 2100 3600
-Wire Wire Line
-	700  3250 1100 3250
-Wire Wire Line
-	1100 3250 1500 3250
-Wire Wire Line
-	1500 3250 1900 3250
-Wire Wire Line
-	1900 3250 2100 3250
-Wire Wire Line
-	2100 3250 2300 3250
-Wire Wire Line
-	2300 3250 2400 3250
+	700  3250 2400 3250
 Connection ~ 2100 3350
 Connection ~ 2100 3250
 Connection ~ 1100 3250
@@ -327,30 +315,18 @@ Wire Wire Line
 	2300 2050 2300 3250
 Connection ~ 2300 3250
 Wire Wire Line
-	2050 1650 2300 1650
-Wire Wire Line
-	2300 1650 2400 1650
+	2050 1650 2400 1650
 Connection ~ 2300 1650
 Wire Wire Line
-	1500 1350 1900 1350
-Wire Wire Line
-	1900 1350 2300 1350
-Wire Wire Line
-	2300 1350 2400 1350
+	1500 1350 2400 1350
 Wire Wire Line
 	1900 1400 1900 1350
 Connection ~ 1900 1350
 Wire Wire Line
-	700  1050 1100 1050
-Wire Wire Line
-	1100 1050 2100 1050
-Wire Wire Line
-	2100 1050 2400 1050
+	700  1050 2400 1050
 Connection ~ 1100 1050
 Wire Wire Line
-	2100 800  2100 900 
-Wire Wire Line
-	2100 900  2100 1050
+	2100 800  2100 1050
 Connection ~ 2100 1050
 Wire Wire Line
 	2100 900  2300 900 
@@ -361,30 +337,22 @@ Connection ~ 2100 900
 Wire Wire Line
 	5400 2500 5400 3050
 Wire Wire Line
-	4300 2500 5250 2500
-Wire Wire Line
-	5250 2500 5400 2500
+	4300 2500 5400 2500
 Wire Wire Line
 	5250 2000 5250 1950
 Wire Wire Line
-	4300 1750 5650 1750
-Wire Wire Line
-	5650 1750 5950 1750
+	4300 1750 5950 1750
 Wire Wire Line
 	6350 1750 6500 1750
 Wire Wire Line
-	6500 1150 6500 1750
-Wire Wire Line
-	6500 1750 6500 1850
+	6500 1150 6500 1850
 Wire Wire Line
 	6500 1150 6350 1150
 Connection ~ 6500 1750
 Connection ~ 5650 1750
 Connection ~ 5650 1150
 Wire Wire Line
-	5250 1150 5650 1150
-Wire Wire Line
-	5650 1150 5950 1150
+	5250 1150 5950 1150
 Wire Wire Line
 	5250 1150 5250 1650
 Wire Wire Line
@@ -414,18 +382,18 @@ Wire Wire Line
 Connection ~ 4650 6550
 Connection ~ 3050 6550
 $Comp
-L +12V #PWR7
+L +12V #PWR010
 U 1 1 551D98BB
-P 5250 5400
-F 0 "#PWR7" H 5250 5350 20  0001 C CNN
-F 1 "+12V" H 5250 5500 30  0000 C CNN
-F 2 "" H 5250 5400 60  0000 C CNN
-F 3 "" H 5250 5400 60  0000 C CNN
-	1    5250 5400
+P 5250 4950
+F 0 "#PWR010" H 5250 4900 20  0001 C CNN
+F 1 "+12V" H 5250 5050 30  0000 C CNN
+F 2 "" H 5250 4950 60  0000 C CNN
+F 3 "" H 5250 4950 60  0000 C CNN
+	1    5250 4950
 	-1   0    0    1   
 $EndComp
-Connection ~ 5100 5150
-Connection ~ 5250 5150
+Connection ~ 5100 4700
+Connection ~ 5250 4700
 Text Label 4500 1150 0    60   ~ 0
 G_RED
 Text Label 4500 1250 0    60   ~ 0
@@ -444,21 +412,9 @@ Text Label 4100 6350 2    60   ~ 0
 G_GREEN
 Connection ~ 2050 6550
 Wire Wire Line
-	4650 5750 4650 5150
+	4650 5750 4650 4700
 Wire Wire Line
-	6200 5750 4800 5750
-Wire Wire Line
-	4800 5750 4800 5150
-Wire Wire Line
-	3050 5750 4500 5750
-Wire Wire Line
-	4500 5750 4500 5150
-Wire Wire Line
-	2050 6550 3050 6550
-Wire Wire Line
-	3050 6550 4650 6550
-Wire Wire Line
-	4650 6550 6200 6550
+	2050 6550 6200 6550
 $Comp
 L LCD_HEADER J5
 U 1 1 551E0FC8
@@ -478,10 +434,10 @@ F 10 "http://www.digikey.co.uk/product-detail/en/on-shore-technology-inc/302-S14
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR19
+L +5V #PWR011
 U 1 1 551E0FE4
 P 10100 850
-F 0 "#PWR19" H 10100 940 20  0001 C CNN
+F 0 "#PWR011" H 10100 940 20  0001 C CNN
 F 1 "+5V" H 10100 940 30  0000 C CNN
 F 2 "" H 10100 850 60  0000 C CNN
 F 3 "" H 10100 850 60  0000 C CNN
@@ -489,10 +445,10 @@ F 3 "" H 10100 850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-rgb #PWR20
+L GND-rgb #PWR012
 U 1 1 551E0FEB
 P 10100 1050
-F 0 "#PWR20" H 10100 1050 30  0001 C CNN
+F 0 "#PWR012" H 10100 1050 30  0001 C CNN
 F 1 "GND-rgb" H 10100 980 30  0001 C CNN
 F 2 "" H 10100 1050 60  0000 C CNN
 F 3 "" H 10100 1050 60  0000 C CNN
@@ -500,10 +456,10 @@ F 3 "" H 10100 1050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-rgb #PWR18
+L GND-rgb #PWR013
 U 1 1 551E1185
 P 9600 1500
-F 0 "#PWR18" H 9600 1500 30  0001 C CNN
+F 0 "#PWR013" H 9600 1500 30  0001 C CNN
 F 1 "GND-rgb" H 9600 1430 30  0001 C CNN
 F 2 "" H 9600 1500 60  0000 C CNN
 F 3 "" H 9600 1500 60  0000 C CNN
@@ -521,16 +477,10 @@ DB2
 Text Label 10050 2200 0    60   ~ 0
 DB3
 Wire Wire Line
-	9600 850  9950 850 
-Wire Wire Line
-	9950 850  10100 850 
-Wire Wire Line
-	10100 850  10350 850 
+	9600 850  10350 850 
 Connection ~ 10100 850 
 Wire Wire Line
-	10100 1000 10250 1000
-Wire Wire Line
-	10250 1000 10350 1000
+	10100 1000 10350 1000
 Wire Wire Line
 	10100 1000 10100 1050
 Wire Wire Line
@@ -584,10 +534,10 @@ Wire Wire Line
 Wire Wire Line
 	4500 1450 4300 1450
 $Comp
-L GND-rgb #PWR16
+L GND-rgb #PWR014
 U 1 1 551E1894
 P 8250 900
-F 0 "#PWR16" H 8250 900 30  0001 C CNN
+F 0 "#PWR014" H 8250 900 30  0001 C CNN
 F 1 "GND-rgb" H 8250 830 30  0001 C CNN
 F 2 "" H 8250 900 60  0000 C CNN
 F 3 "" H 8250 900 60  0000 C CNN
@@ -647,10 +597,10 @@ Wire Wire Line
 Wire Wire Line
 	4500 2100 4300 2100
 $Comp
-L GND-rgb #PWR13
+L GND-rgb #PWR015
 U 1 1 551EB8A4
 P 7750 4250
-F 0 "#PWR13" H 7750 4250 30  0001 C CNN
+F 0 "#PWR015" H 7750 4250 30  0001 C CNN
 F 1 "GND-rgb" H 7750 4180 30  0001 C CNN
 F 2 "" H 7750 4250 60  0000 C CNN
 F 3 "" H 7750 4250 60  0000 C CNN
@@ -688,10 +638,10 @@ Wire Wire Line
 Wire Wire Line
 	10400 5900 10150 5900
 $Comp
-L GND-rgb #PWR15
+L GND-rgb #PWR016
 U 1 1 551F1C53
 P 7750 6350
-F 0 "#PWR15" H 7750 6350 30  0001 C CNN
+F 0 "#PWR016" H 7750 6350 30  0001 C CNN
 F 1 "GND-rgb" H 7750 6280 30  0001 C CNN
 F 2 "" H 7750 6350 60  0000 C CNN
 F 3 "" H 7750 6350 60  0000 C CNN
@@ -699,10 +649,10 @@ F 3 "" H 7750 6350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12V #PWR12
+L +12V #PWR017
 U 1 1 551F1D25
 P 7500 3900
-F 0 "#PWR12" H 7500 3850 20  0001 C CNN
+F 0 "#PWR017" H 7500 3850 20  0001 C CNN
 F 1 "+12V" H 7500 4000 30  0000 C CNN
 F 2 "" H 7500 3900 60  0000 C CNN
 F 3 "" H 7500 3900 60  0000 C CNN
@@ -710,10 +660,10 @@ F 3 "" H 7500 3900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12V #PWR14
+L +12V #PWR018
 U 1 1 551F1D4C
 P 7750 5900
-F 0 "#PWR14" H 7750 5850 20  0001 C CNN
+F 0 "#PWR018" H 7750 5850 20  0001 C CNN
 F 1 "+12V" H 7750 6000 30  0000 C CNN
 F 2 "" H 7750 5900 60  0000 C CNN
 F 3 "" H 7750 5900 60  0000 C CNN
@@ -744,10 +694,10 @@ Wire Wire Line
 	9950 1600 9950 850 
 Connection ~ 9950 850 
 $Comp
-L GND-rgb #PWR21
+L GND-rgb #PWR019
 U 1 1 55226CD3
 P 10200 2750
-F 0 "#PWR21" H 10200 2750 30  0001 C CNN
+F 0 "#PWR019" H 10200 2750 30  0001 C CNN
 F 1 "GND-rgb" H 10200 2680 30  0001 C CNN
 F 2 "" H 10200 2750 60  0000 C CNN
 F 3 "" H 10200 2750 60  0000 C CNN
@@ -770,9 +720,7 @@ $EndSheet
 Wire Wire Line
 	900  6700 900  7150
 Wire Wire Line
-	900  4350 900  4650
-Wire Wire Line
-	900  4650 900  5200
+	900  4350 900  5200
 Connection ~ 900  4650
 $Comp
 L SW_POWER SW1
@@ -838,16 +786,10 @@ F 10 "http://www.digikey.co.uk/product-detail/en/littelfuse-inc/03540101ZXGY/F14
 	1    900  5450
 	0    -1   -1   0   
 $EndComp
-Text Label 7150 3250 3    60   ~ 0
-G_RED
 Wire Wire Line
 	8250 1450 8050 1450
 Wire Wire Line
 	8050 1300 8250 1300
-Text Label 7500 3250 3    60   ~ 0
-G_GREEN
-Text Label 7850 3250 3    60   ~ 0
-G_BLUE
 $Comp
 L R-rgb R2
 U 1 1 58040332
@@ -859,11 +801,11 @@ F 3 "" H 7150 2550 30  0000 C CNN
 F 4 "5%" H 7150 2550 60  0001 C CNN "Tolerance"
 F 5 "Stackpole Electronics Inc." H 7150 2550 60  0001 C CNN "Manufacturer"
 F 6 "METAL FILM 0.125W 5% 130 OHM" H 7150 2550 60  0001 C CNN "Product description"
-F 7 "RNF18JBD130R" H 7150 2550 60  0001 C CNN "Product code"
+F 7 "CF18JT130RCT-ND" H 7150 2550 60  0001 C CNN "Product code"
 F 8 "Digikey" H 7150 2550 60  0001 C CNN "Supplier"
-F 9 "1263-RNF18JBD130R-CHP" H 7150 2550 60  0001 C CNN "Supplier code"
+F 9 "CF18JT130R" H 7150 2550 60  0001 C CNN "Supplier code"
 F 10 "No" H 7150 2550 60  0001 C CNN "Order"
-F 11 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/RNF18JBD130R/1263-RNF18JBD130R-CHP/5227247" H 7150 2550 60  0001 C CNN "Supplier URL"
+F 11 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT130R/CF18JT130RCT-ND/2022721" H 7150 2550 60  0001 C CNN "Supplier URL"
 	1    7150 2550
 	-1   0    0    1   
 $EndComp
@@ -896,10 +838,10 @@ Wire Wire Line
 Text Label 8550 2550 2    60   ~ 0
 LIGHT
 $Comp
-L +5V #PWR17
+L +5V #PWR020
 U 1 1 5804312B
 P 9100 2350
-F 0 "#PWR17" H 9100 2440 20  0001 C CNN
+F 0 "#PWR020" H 9100 2440 20  0001 C CNN
 F 1 "+5V" H 9100 2440 30  0000 C CNN
 F 2 "" H 9100 2350 60  0000 C CNN
 F 3 "" H 9100 2350 60  0000 C CNN
@@ -944,11 +886,7 @@ F 10 "http://www.digikey.co.uk/product-detail/en/cui-inc/PJ-082BH/CP-082BHCT-ND/
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	2050 4950 2050 6550
-Wire Wire Line
-	2050 6550 2050 7150
-Wire Wire Line
-	2050 7150 2050 7350
+	2050 4950 2050 7350
 Connection ~ 2050 7150
 Text Label 5650 6350 2    60   ~ 0
 G_BLUE
@@ -958,46 +896,25 @@ Wire Wire Line
 	4200 6350 4100 6350
 Wire Wire Line
 	2600 6350 2500 6350
+Wire Wire Line
+	5250 4700 5250 4950
+Wire Wire Line
+	4950 4700 5250 4700
 $Comp
-L R-rgb R4
-U 1 1 5803FD55
-P 7850 2300
-F 0 "R4" V 7930 2300 40  0000 C CNN
-F 1 "20R" V 7857 2301 40  0000 C CNN
-F 2 "" V 7780 2300 30  0000 C CNN
-F 3 "" H 7850 2300 30  0000 C CNN
-F 4 "1%" H 7850 2300 60  0001 C CNN "Tolerance"
-F 5 "Stackpole Electronics Inc." H 7850 2300 60  0001 C CNN "Manufacturer"
-F 6 "METAL FILM 0.125W 5% 22 OHM" H 7850 2300 60  0001 C CNN "Product description"
-F 7 "RNF18JBD22R0" H 7850 2300 60  0001 C CNN "Product code"
-F 8 "Digikey" H 7850 2300 60  0001 C CNN "Supplier"
-F 9 "1263-RNF18JBD22R0-CHP" H 7850 2300 60  0001 C CNN "Supplier code"
-F 10 "No" H 7850 2300 60  0001 C CNN "Order"
-F 11 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/RNF18JBD22R0/1263-RNF18JBD22R0-CHP/5227254" H 7850 2300 60  0001 C CNN "Supplier URL"
-	1    7850 2300
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5250 5150 5250 5400
-Wire Wire Line
-	4950 5150 5100 5150
-Wire Wire Line
-	5100 5150 5250 5150
-$Comp
-L GND-rgb #PWR9
+L GND-rgb #PWR021
 U 1 1 580BA40F
-P 5600 5300
-F 0 "#PWR9" H 5600 5300 30  0001 C CNN
-F 1 "GND-rgb" H 5600 5230 30  0001 C CNN
-F 2 "" H 5600 5300 60  0000 C CNN
-F 3 "" H 5600 5300 60  0000 C CNN
-	1    5600 5300
+P 5600 4850
+F 0 "#PWR021" H 5600 4850 30  0001 C CNN
+F 1 "GND-rgb" H 5600 4780 30  0001 C CNN
+F 2 "" H 5600 4850 60  0000 C CNN
+F 3 "" H 5600 4850 60  0000 C CNN
+	1    5600 4850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5400 5150 5600 5150
+	5400 4700 5600 4700
 Wire Wire Line
-	5600 5150 5600 5300
+	5600 4700 5600 4850
 $Comp
 L IRL510PBF Q1
 U 1 1 580BADB0
@@ -1053,7 +970,7 @@ F 10 "http://www.digikey.co.uk/product-detail/en/vishay-siliconix/IRL510PBF/IRL5
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7150 2800 7150 3250
+	7150 2800 7150 3500
 Wire Wire Line
 	8250 1750 7500 1750
 Wire Wire Line
@@ -1075,9 +992,9 @@ Wire Wire Line
 Wire Wire Line
 	8000 3100 7850 3100
 Wire Wire Line
-	7850 3100 7850 3250
+	7850 3100 7850 3500
 Wire Wire Line
-	7500 3100 7500 3250
+	7500 3100 7500 3500
 $Comp
 L C-rgb C3
 U 1 1 580BF0C2
@@ -1217,9 +1134,7 @@ Wire Wire Line
 Wire Wire Line
 	8150 2050 8150 3200
 Wire Wire Line
-	8150 3200 9100 3200
-Wire Wire Line
-	9100 3200 9950 3200
+	8150 3200 9950 3200
 Wire Wire Line
 	9100 3200 9100 3150
 Wire Wire Line
@@ -1260,11 +1175,12 @@ F 3 "" H 7500 2300 30  0000 C CNN
 F 4 "1%" H 7500 2300 60  0001 C CNN "Tolerance"
 F 5 "Stackpole Electronics Inc." H 7500 2300 60  0001 C CNN "Manufacturer"
 F 6 "METAL FILM 0.125W 5% 22 OHM" H 7500 2300 60  0001 C CNN "Product description"
-F 7 "RNF18JBD22R0" H 7500 2300 60  0001 C CNN "Product code"
+F 7 "CF18JT22R0" H 7500 2300 60  0001 C CNN "Product code"
 F 8 "Digikey" H 7500 2300 60  0001 C CNN "Supplier"
-F 9 "1263-RNF18JBD22R0-CHP" H 7500 2300 60  0001 C CNN "Supplier code"
+F 9 "CF18JT22R0CT-ND
+" H 7500 2300 60  0001 C CNN "Supplier code"
 F 10 "No" H 7500 2300 60  0001 C CNN "Order"
-F 11 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/RNF18JBD22R0/1263-RNF18JBD22R0-CHP/5227254" H 7500 2300 60  0001 C CNN "Supplier URL"
+F 11 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT22R0/CF18JT22R0CT-ND/2022702" H 7500 2300 60  0001 C CNN "Supplier URL"
 	1    7500 2300
 	-1   0    0    1   
 $EndComp
@@ -1272,4 +1188,48 @@ Wire Wire Line
 	10350 2500 10200 2500
 Wire Wire Line
 	10200 2500 10200 2750
+Wire Wire Line
+	4500 4700 4500 5200
+Wire Wire Line
+	4500 5200 3050 5200
+Wire Wire Line
+	3050 5200 3050 5750
+Wire Wire Line
+	4800 4700 4800 5200
+Wire Wire Line
+	4800 5200 6200 5200
+Wire Wire Line
+	6200 5200 6200 5750
+Text Label 3050 5550 0    60   ~ 0
+LED_R
+Text Label 4650 5550 0    60   ~ 0
+LED_G
+Text Label 6200 5550 0    60   ~ 0
+LED_B
+Text Label 7850 3500 0    60   ~ 0
+LED_B
+Text Label 7500 3500 0    60   ~ 0
+LED_G
+Text Label 7150 3500 0    60   ~ 0
+LED_R
+$Comp
+L R-rgb R?
+U 1 1 5814DAC8
+P 7850 2300
+F 0 "R?" V 7930 2300 40  0000 C CNN
+F 1 "20R" V 7857 2301 40  0000 C CNN
+F 2 "" V 7780 2300 30  0000 C CNN
+F 3 "" H 7850 2300 30  0000 C CNN
+F 4 "1%" H 7850 2300 60  0001 C CNN "Tolerance"
+F 5 "Stackpole Electronics Inc." H 7850 2300 60  0001 C CNN "Manufacturer"
+F 6 "METAL FILM 0.125W 5% 22 OHM" H 7850 2300 60  0001 C CNN "Product description"
+F 7 "CF18JT22R0" H 7850 2300 60  0001 C CNN "Product code"
+F 8 "Digikey" H 7850 2300 60  0001 C CNN "Supplier"
+F 9 "CF18JT22R0CT-ND
+" H 7850 2300 60  0001 C CNN "Supplier code"
+F 10 "No" H 7850 2300 60  0001 C CNN "Order"
+F 11 "http://www.digikey.co.uk/product-detail/en/stackpole-electronics-inc/CF18JT22R0/CF18JT22R0CT-ND/2022702" H 7850 2300 60  0001 C CNN "Supplier URL"
+	1    7850 2300
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
